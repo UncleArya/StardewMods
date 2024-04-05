@@ -1,0 +1,112 @@
+{
+	"Changes": [
+		// Stone Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.StoneChicken": {
+					"DisplayName": "{{i18n: Chicken.StoneChicken.Name}}",
+					"House": "Coop",
+					"PurchasePrice": "{{query: {{Level1ChickenPurchasePrice}} / 2}}",
+					"ShopTexture": "{{ModId}}/StoneShopTexture",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 32,
+						"Height": 16
+					},
+					"RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
+					"ShopDescription": "{{i18n: Chicken.StoneChicken.Description}}",
+					"ShopMissingBuildingDescription": "{{i18n: Chicken.StoneChicken.MissingBuildingDescription}}",
+					"EggItemIds": ["{{ModId}}.StoneEgg", "{{ModId}}.LargeStoneEgg"],
+					"IncubationTime": "{{Level1ChickenIncubationTime}}",
+					"BirthText": "{{i18n: Chicken.StoneChicken.BirthText}}",
+					"DaysToMature": "{{Level1ChickenDaysToMature}}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.StoneEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeStoneEgg"
+						}
+					],
+					"DaysToProduce": "{{Level1ChickenDaysToProduce}}",
+					"DeluxeProduceMinimumFriendship": 400,
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/StoneChicken",
+					"BabyTexture": "{{ModId}}/StoneChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": true,
+					"HappinessDrain": 20,
+					"SellPrice": "{{Level1ChickenSellPrice}}"
+				}
+			},
+			"When": {
+				"EnableStoneChicken": true
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.StoneEgg": {
+					"Name": "{{ModId}}.StoneEgg",
+					"DisplayName": "{{i18n: Egg.Stone.Name}}",
+					"Description": "{{i18n: Egg.Stone.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Level1EggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 4,
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_grey"
+					]
+				}
+			},
+			"When": {
+				"EnableStoneChicken": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.LargeStoneEgg": {
+					"Name": "{{ModId}}.LargeStoneEgg",
+					"DisplayName": "{{i18n: LargeEgg.Stone.Name}}",
+					"Description": "{{i18n: LargeEgg.Stone.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Level1LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 5,
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_grey"
+					]
+				}
+			},
+			"When": {
+				"EnableStoneChicken": true
+			}
+		}
+	]
+}

@@ -1,0 +1,295 @@
+{
+	"Format": "2.0.0",
+	// Config
+	"ConfigSchema": {
+		// Chickens
+		"EnableClayChicken": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "Level1Chickens"
+		},
+		"EnableCoalChicken": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "Level1Chickens"
+		},
+		"EnableStoneChicken": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "Level1Chickens"
+		},
+		"EnableWoodChicken": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "Level1Chickens"
+		},
+		"Level1ChickenPurchasePrice": {
+			"Default": 1600,
+			"Section": "Level1Chickens"
+		},
+		"Level1ChickenSellPrice": {
+			"Default": 1600,
+			"Section": "Level1Chickens"
+		},
+		"Level1ChickenRequiredBuilding": {
+			"AllowValues": "Coop, Big Coop, Deluxe Coop",
+			"Default": "Coop",
+			"Section": "Level1Chickens"
+		},
+		"Level1ChickenIncubationTime": {
+			"Default": 9000,
+			"Section": "Level1Chickens"
+		},
+		"Level1ChickenDaysToMature": {
+			"Default": 3,
+			"Section": "Level1Chickens"
+		},
+		"Level1ChickenDaysToProduce": {
+			"Default": 1,
+			"Section": "Level1Chickens"
+		},
+		"Level1EggSellPrice": {
+			"Default": 50,
+			"Section": "Level1Chickens"
+		},
+		"Level1LargeEggSellPrice": {
+			"Default": 95,
+			"Section": "Level1Chickens"
+		},
+		// Clay Chicken
+		"ClayEggClayMin": {
+			"Default": 1,
+			"Section": "Clay"
+		},
+		"ClayEggClayMax": {
+			"Default": 2,
+			"Section": "Clay"
+		},
+		"ClayEggClayTime": {
+			"Default": 180,
+			"Section": "Clay"
+		},
+		"LargeClayEggClayMin": {
+			"Default": 2,
+			"Section": "Clay"
+		},
+		"LargeClayEggClayMax": {
+			"Default": 4,
+			"Section": "Clay"
+		},
+		"LargeClayEggClayTime": {
+			"Default": 180,
+			"Section": "Clay"
+		},
+		// Coal Chicken
+		"CoalEggCoalMin": {
+			"Default": 1,
+			"Section": "Coal"
+		},
+		"CoalEggCoalMax": {
+			"Default": 2,
+			"Section": "Coal"
+		},
+		"CoalEggCoalTime": {
+			"Default": 180,
+			"Section": "Coal"
+		},
+		"LargeCoalEggCoalMin": {
+			"Default": 2,
+			"Section": "Coal"
+		},
+		"LargeCoalEggCoalMax": {
+			"Default": 4,
+			"Section": "Coal"
+		},
+		"LargeCoalEggCoalTime": {
+			"Default": 180,
+			"Section": "Coal"
+		},
+		// Stone Chicken
+		"StoneEggStoneMin": {
+			"Default": 3,
+			"Section": "Stone"
+		},
+		"StoneEggStoneMax": {
+			"Default": 5,
+			"Section": "Stone"
+		},
+		"StoneEggStoneTime": {
+			"Default": 180,
+			"Section": "Stone"
+		},
+		"LargeStoneEggStoneMin": {
+			"Default": 5,
+			"Section": "Stone"
+		},
+		"LargeStoneEggStoneMax": {
+			"Default": 10,
+			"Section": "Stone"
+		},
+		"LargeStoneEggStoneTime": {
+			"Default": 180,
+			"Section": "Stone"
+		},
+		// Wood Chicken
+		"WoodEggWoodMin": {
+			"Default": 3,
+			"Section": "Wood"
+		},
+		"WoodEggWoodMax": {
+			"Default": 5,
+			"Section": "Wood"
+		},
+		"WoodEggWoodTime": {
+			"Default": 180,
+			"Section": "Wood"
+		},
+		"LargeWoodEggWoodMin": {
+			"Default": 5,
+			"Section": "Wood"
+		},
+		"LargeWoodEggWoodMax": {
+			"Default": 10,
+			"Section": "Wood"
+		},
+		"LargeWoodEggWoodTime": {
+			"Default": 180,
+			"Section": "Wood"
+		},
+		// Resource Egg Converter
+		"ConverterUnlockFarmingLevel2": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "Converter"
+		},
+		"CraftingIngredient1": {
+			"Default": "(O)388", // wood
+			"Section": "Converter"
+		},
+		"CraftingIngredient1Amount": {
+			"Default": 30,
+			"Section": "Converter"
+		},
+		"CraftingIngredient2": {
+			"Default": "(O)390", // stone
+			"Section": "Converter"
+		},
+		"CraftingIngredient2Amount": {
+			"Default": 30,
+			"Section": "Converter"
+		},
+		"CraftingIngredient3": {
+			"Default": "(O)86", // earth crystal
+			"Section": "Converter"
+		},
+		"CraftingIngredient3Amount": {
+			"Default": 2,
+			"Section": "Converter"
+		},
+		"CraftingIngredient4": {
+			"Default": "(O)334", // copper bar
+			"Section": "Converter"
+		},
+		"CraftingIngredient4Amount": {
+			"Default": 2,
+			"Section": "Converter"
+		},
+		"ConverterPurchasePrice": {
+			"Default": 1000,
+			"Section": "Converter"
+		},
+		// Mayonnaise Machine
+		"MayoMinutesUntilReady": {
+			"Default": 180,
+			"Section": "MayoMachine"
+		},
+		"DeluxeMayoMinutesUntilReady": {
+			"Default": 180,
+			"Section": "MayoMachine"
+		}
+	},
+	// Dynamic Tokens
+	"DynamicTokens": [
+		{
+			"Name": "ResourceEggConverterCraftingRecipe",
+			"Value": "{{CraftingIngredient1}} {{CraftingIngredient1Amount}} {{CraftingIngredient2}} {{CraftingIngredient2Amount}} {{CraftingIngredient3}} {{CraftingIngredient3Amount}} {{CraftingIngredient4}} {{CraftingIngredient4Amount}}"
+		}
+	],
+	// Changes
+	"Changes": [
+		// Machine and Eggs
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/Eggs, {{ModId}}/ResourceEggConverter",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		// Clay Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/ClayChicken, {{ModId}}/ClayChickenBaby, {{ModId}}/ClayShopTexture,",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		// Coal Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/CoalChicken, {{ModId}}/CoalChickenBaby, {{ModId}}/CoalShopTexture,",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		// Stone Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/StoneChicken, {{ModId}}/StoneChickenBaby, {{ModId}}/StoneShopTexture,",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		// Wood Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/WoodChicken, {{ModId}}/WoodChickenBaby, {{ModId}}/WoodShopTexture,",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		// Resource Egg Converter
+		{
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}.ResourceEggConverter": {
+					"Name": "{{ModId}}.ResourceEggConverter",
+					"DisplayName": "{{i18n: BigCraftable.ResourceEggConverter.Name}}",
+					"Description": "{{i18n: BigCraftable.ResourceEggConverter.Description}}",
+					"Price": 50,
+					"Fragility": 0,
+					"CanBePlacedIndoors": true,
+					"CanBePlacedOutdoors": true,
+					"Texture": "{{ModId}}/ResourceEggConverter",
+					"SpriteIndex": 0,
+					"ContextTags": ["category_big_craftable"]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}.ResourceEggConverter": "{{ResourceEggConverterCraftingRecipe}}/Home/{{ModId}}.ResourceEggConverter/true/Farming 2/{{i18n: BigCraftable.ResourceEggConverter.Name}}"
+			},
+			"When": {
+				"ConverterUnlockFarmingLevel2": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}.ResourceEggConverter": "{{ResourceEggConverterCraftingRecipe}}/Home/{{ModId}}.ResourceEggConverter/true/null/{{i18n: BigCraftable.ResourceEggConverter.Name}}"
+			},
+			"When": {
+				"ConverterUnlockFarmingLevel2": false
+			}
+		},
+		// Include Chickens & Machine Data
+		{
+			"Action": "Include",
+			"FromFile": "machines/machines.json, chickens/clay.json, chickens/coal.json, chickens/stone.json, chickens/wood.json"
+		}
+	]
+}

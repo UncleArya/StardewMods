@@ -1,0 +1,112 @@
+{
+	"Changes": [
+		// Clay Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.ClayChicken": {
+					"DisplayName": "{{i18n: Chicken.ClayChicken.Name}}",
+					"House": "Coop",
+					"PurchasePrice": "{{query: {{Level1ChickenPurchasePrice}} / 2}}",
+					"ShopTexture": "{{ModId}}/ClayShopTexture",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 32,
+						"Height": 16
+					},
+					"RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
+					"ShopDescription": "{{i18n: Chicken.ClayChicken.Description}}",
+					"ShopMissingBuildingDescription": "{{i18n: Chicken.ClayChicken.MissingBuildingDescription}}",
+					"EggItemIds": ["{{ModId}}.ClayEgg", "{{ModId}}.LargeClayEgg"],
+					"IncubationTime": "{{Level1ChickenIncubationTime}}",
+					"BirthText": "{{i18n: Chicken.ClayChicken.BirthText}}",
+					"DaysToMature": "{{Level1ChickenDaysToMature}}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.ClayEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeClayEgg"
+						}
+					],
+					"DaysToProduce": "{{Level1ChickenDaysToProduce}}",
+					"DeluxeProduceMinimumFriendship": 400,
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/ClayChicken",
+					"BabyTexture": "{{ModId}}/ClayChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": true,
+					"HappinessDrain": 20,
+					"SellPrice": "{{Level1ChickenSellPrice}}"
+				}
+			},
+			"When": {
+				"EnableClayChicken": true
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.ClayEgg": {
+					"Name": "{{ModId}}.ClayEgg",
+					"DisplayName": "{{i18n: Egg.Clay.Name}}",
+					"Description": "{{i18n: Egg.Clay.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Level1EggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 0,
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_brown"
+					]
+				}
+			},
+			"When": {
+				"EnableClayChicken": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.LargeClayEgg": {
+					"Name": "{{ModId}}.LargeClayEgg",
+					"DisplayName": "{{i18n: LargeEgg.Clay.Name}}",
+					"Description": "{{i18n: LargeEgg.Clay.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Level1LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 1,
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_brown"
+					]
+				}
+			},
+			"When": {
+				"EnableClayChicken": true
+			}
+		}
+	]
+}
