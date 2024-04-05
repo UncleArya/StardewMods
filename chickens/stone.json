@@ -40,7 +40,7 @@
 					"BabyTexture": "{{ModId}}/StoneChickenBaby",
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
-					"CanSwim": true,
+					"CanSwim": "{{ChickensCanSwim}}",
 					"HappinessDrain": 20,
 					"SellPrice": "{{Level1ChickenSellPrice}}"
 				}

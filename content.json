@@ -2,7 +2,16 @@
 	"Format": "2.0.0",
 	// Config
 	"ConfigSchema": {
-		// Chickens
+		// Global
+		"EnableProgressionMode": {
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		"ChickensCanSwim": {
+			"AllowValues": "true, false",
+			"Default": true
+		},
+		// Level 1 Chickens
 		"EnableClayChicken": {
 			"AllowValues": "true, false",
 			"Default": true,
@@ -55,6 +64,37 @@
 		"Level1LargeEggSellPrice": {
 			"Default": 95,
 			"Section": "Level1Chickens"
+		},
+		// Level 2 Chickens
+		"EnableCopperChicken": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "Level2Chickens"
+		},
+		"Level2ChickenRequiredBuilding": {
+			"AllowValues": "Coop, Big Coop, Deluxe Coop",
+			"Default": "Big Coop",
+			"Section": "Level2Chickens"
+		},
+		"Level2ChickenIncubationTime": {
+			"Default": 9000,
+			"Section": "Level2Chickens"
+		},
+		"Level2ChickenDaysToMature": {
+			"Default": 3,
+			"Section": "Level2Chickens"
+		},
+		"Level2ChickenDaysToProduce": {
+			"Default": 1,
+			"Section": "Level2Chickens"
+		},
+		"Level2EggSellPrice": {
+			"Default": 50,
+			"Section": "Level2Chickens"
+		},
+		"Level2LargeEggSellPrice": {
+			"Default": 95,
+			"Section": "Level2Chickens"
 		},
 		// Clay Chicken
 		"ClayEggClayMin": {
