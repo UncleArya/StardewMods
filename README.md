@@ -1,4 +1,5 @@
-![ChickenCollection](https://github.com/UncleArya/ResourceChickens/assets/100550741/c223f0c0-25e8-4eb3-bc40-0afa00b4de73)
+![ChickenCollection](https://github.com/UncleArya/ResourceChickens/assets/100550741/9ccb8c33-c4f1-4bd5-8d2f-5f669963d8a0)
+
 <br/>**Show your chickens some love and they will reward you with special eggs**.  
 <br/>Currently, Resource Chickens includes:
 
@@ -8,11 +9,11 @@
 - **Wood Chicken**
 
 Purchase baby Resource Chickens from Marnie once you have a Coop constructed. Resource Chickens cost twice as much as vanilla chickens because they can be twice as helpful. Resource eggs can be put into a Resource Egg Converter to produce their respective resource, or, if you already have plenty of that resource available, put the special resource eggs into the vanilla Mayonnaise Maker to produce mayo (large resource eggs also produce gold quality mayo like vanilla eggs)! Resource eggs can also be put into the Incubator in the Big Coop or Deluxe Coop to make more Resource Chickens.  
-![MachineCollection](https://github.com/UncleArya/ResourceChickens/assets/100550741/f0b30748-f47d-4217-85e9-8a85743cd07c)
+![MachineCollection](https://github.com/UncleArya/ResourceChickens/assets/100550741/cdf60653-c2c5-4c56-8a72-55142987edab)
 <br/>**Craft (or purchase) a Resource Egg Converter**  
 The crafting recipe for the Resource Egg Converter is unlocked once reaching Farming skill level 2. Marnie will start selling the Resource Egg Converter to you at that time as well. Once a resource egg is put into the machine, it takes 3 hours for them to be turned into a resource. Production time can be adjusted in the configs.  
 
-![gameplay(1)](https://github.com/UncleArya/ResourceChickens/assets/100550741/9ff2359a-cfca-4aa2-aff2-a26b0181f62c)
+![gameplay](https://github.com/UncleArya/ResourceChickens/assets/100550741/6a142d2f-303b-478c-ab36-187242fbb7c5)
 
 
 Resource Chickens can start producing large resource eggs once you reach a 2 heart relationship with them, which can be turned into slightly more resources.  
@@ -20,7 +21,7 @@ Resource Chickens can start producing large resource eggs once you reach a 2 hea
 <br/>Also works with the Auto Grabber!  
 <br/>Could be a unique way to collect resources on challenge runs.  
 
-![customisability](https://github.com/UncleArya/ResourceChickens/assets/100550741/c56b6aff-17ce-4e4a-910e-d2698e3ee1e6)
+![customisability](https://github.com/UncleArya/ResourceChickens/assets/100550741/e5511628-d9f7-4163-9aac-6d7b76028b0d)
 
 Feel like aspects of Resource Chickens are overpowered or underpowered? Just about everything can be customised in the config settings, either directly in the config.json or by using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098) (recommended).  
 <br/>Some of what can be customised:
@@ -32,7 +33,7 @@ Feel like aspects of Resource Chickens are overpowered or underpowered? Just abo
 - Change what tier of Coop (Coop, Big Coop, Deluxe Coop) is required before you can purchase Resource Chickens
 - And lots more!
 
-![future-plans](https://github.com/UncleArya/ResourceChickens/assets/100550741/5403c0ab-5668-4374-935c-25caf0efb465)
+![future-plans](https://github.com/UncleArya/ResourceChickens/assets/100550741/1c910e82-8daf-4eaa-acfe-a54dfb07f3b1)
 
 Here are my goals as I continue to develop and update Resource Chickens:
 
@@ -41,16 +42,21 @@ Here are my goals as I continue to develop and update Resource Chickens:
 - A progression mode where you need to combine multiple types of resource eggs to incubate higher level resource chickens
 - Gift tastes for vanilla and some expansion NPCs
 
-![sprite-art](https://github.com/UncleArya/ResourceChickens/assets/100550741/87bded49-ca4f-4674-a76b-7a3f839030cb)
+![sprite-art](https://github.com/UncleArya/ResourceChickens/assets/100550741/b80fee2d-eb74-4fce-bef5-7b9051fe7751)
 
 All sprites are recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe. If anyone wishes to create alternative (and probably better) sprites for this mod, I would be happy to add them as a config option for other players to use too! Just reach out to me over Nexus or the SDV Discord.  
-<br/>![localisation](https://github.com/UncleArya/ResourceChickens/assets/100550741/fcf95e84-a0b9-461e-8a9a-1cdc3f199430)
+
+![localisation](https://github.com/UncleArya/ResourceChickens/assets/100550741/73dda029-4b5e-44c9-a5d6-5c32b530dc9b)
+
 
 Want to help translate this mod into another language? This mod is fully prepared for i18n localisation. Download the default.json file in the i18n folder of this mod. I can then add your translation file to the main mod file for improved localisation support.  
-<br/>![compatibility](https://github.com/UncleArya/ResourceChickens/assets/100550741/18140ee7-72b5-4a9a-a11b-41cacb5b43da)
+
+![compatibility](https://github.com/UncleArya/ResourceChickens/assets/100550741/6fd7bf0e-ffc8-4edb-82f0-9125eef99c80)
+
 
 This mod relies entirely on [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915), so it should be fully compatible with pretty much every other mod out there. Please let me know if you come across any issues.  
-<br/>![install](https://github.com/UncleArya/ResourceChickens/assets/100550741/0436bff0-8d6b-4c25-b84d-195eff78cd59)
+
+![install](https://github.com/UncleArya/ResourceChickens/assets/100550741/3c2f1601-d779-4a6f-8fab-e72baf1365fb)
 
 *(Can be added to an existing save)*
 
