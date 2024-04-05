@@ -1,5 +1,4 @@
 # Changelog
-----------
 
 ## 0.2.0
 - Added category for Level 1 Chickens (Clay, Coal, Stone, Wood)
