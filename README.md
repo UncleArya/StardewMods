@@ -60,5 +60,5 @@ This mod relies entirely on [Content Patcher](https://www.nexusmods.com/stardewv
 - Download Resource Chickens (and make sure you have [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915), but I am sure you already do)
 - Add the Resource Chickens folder to your Mod folder
 - If playing multiplayer, all players will need this mod too
-- **Can be added to an existing save**
+- **Resource Chickens can be added to an existing save**
 - If removing from an in-progress save, be sure to sell your Resource Chickens and eggs and remove the Resource Egg Converter Machine before deleting Resource Chickens from your Mods folder.
