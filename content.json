@@ -300,6 +300,12 @@
 			"Target": "{{ModId}}/CopperChicken, {{ModId}}/CopperChickenBaby",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
+		// Fiber Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/FiberChicken, {{ModId}}/FiberChickenBaby",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
 		// Stone Chicken
 		{
 			"Action": "Load",
@@ -354,7 +360,7 @@
 		// Include Chickens & Machine Data
 		{
 			"Action": "Include",
-			"FromFile": "machines/machines.json, chickens/clay.json, chickens/coal.json, chickens/copper.json, chickens/stone.json, chickens/wood.json"
+			"FromFile": "machines/machines.json, chickens/clay.json, chickens/coal.json, chickens/copper.json, chickens/fiber.json, chickens/stone.json, chickens/wood.json"
 		}
 	]
 }
