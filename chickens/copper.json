@@ -8,17 +8,6 @@
 				"{{ModId}}.CopperChicken": {
 					"DisplayName": "{{i18n: Chicken.CopperChicken.Name}}",
 					"House": "Coop",
-					// "PurchasePrice": "{{query: {{Level1ChickenPurchasePrice}} / 2}}",
-					// "ShopTexture": "{{ModId}}/CopperShopTexture",
-					// "ShopSourceRect": {
-					// 	"X": 0,
-					// 	"Y": 0,
-					// 	"Width": 32,
-					// 	"Height": 16
-					// },
-					// "RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
-					// "ShopDescription": "{{i18n: Chicken.CopperChicken.Description}}",
-					// "ShopMissingBuildingDescription": "{{i18n: Chicken.CopperChicken.MissingBuildingDescription}}",
 					"EggItemIds": ["{{ModId}}.CopperEgg", "{{ModId}}.LargeCopperEgg"],
 					"IncubationTime": "{{Level2ChickenIncubationTime}}",
 					"BirthText": "{{i18n: Chicken.CopperChicken.BirthText}}",
@@ -46,8 +35,7 @@
 				}
 			},
 			"When": {
-				"EnableProgressionMode": true,
-				"EnableCopperChicken": true
+				"EnableProgressionMode": true
 			}
 		},
 		// Chicken Eggs
@@ -63,7 +51,7 @@
 					"Category": -18,
 					"Price": "{{Level2EggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 0, //! Update
+					"SpriteIndex": 0, // Update
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -72,13 +60,12 @@
 						"category_egg",
 						"category_sell_at_pierres_and_marnies",
 						"chicken_item",
-						"color_brown" //! Update
+						"color_copper"
 					]
 				}
 			},
 			"When": {
-				"EnableProgressionMode": true,
-				"EnableCopperChicken": true
+				"EnableProgressionMode": true
 			}
 		},
 		{
@@ -93,7 +80,7 @@
 					"Category": -18,
 					"Price": "{{Level2LargeEggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 0, //! Update
+					"SpriteIndex": 0, // Update
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -102,13 +89,12 @@
 						"category_egg",
 						"category_sell_at_pierres_and_marnies",
 						"chicken_item",
-						"color_brown" //! Update
+						"color_copper"
 					]
 				}
 			},
 			"When": {
-				"EnableProgressionMode": true,
-				"EnableCopperChicken": true
+				"EnableProgressionMode": true
 			}
 		}
 	]

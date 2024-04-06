@@ -85,6 +85,45 @@
 							],
 							"MinutesUntilReady": "{{LargeCoalEggCoalTime}}"
 						},
+						// Copper Chicken
+						{
+							"Id": "{{ModId}}.CopperEgg",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.CopperEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)378",
+									"MinStack": "{{CopperEggCopperMin}}",
+									"MaxStack": "{{CopperEggCopperMax}}"
+								}
+							],
+							"MinutesUntilReady": "{{CopperEggCopperTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeCopperEgg",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeCopperEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)378",
+									"MinStack": "{{LargeCopperEggCopperMin}}",
+									"MaxStack": "{{LargeCopperEggCopperMax}}"
+								}
+							],
+							"MinutesUntilReady": "{{LargeCopperEggCopperTime}}"
+						},
 						// Stone Chicken
 						{
 							"Id": "{{ModId}}.StoneEgg",
@@ -266,6 +305,36 @@
 					"Triggers": [
 						{
 							"RequiredItemId": "{{ModId}}.LargeCoalEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)306",
+							"Quality": 2
+						}
+					],
+					"MinutesUntilReady": "{{DeluxeMayoMinutesUntilReady}}"
+				},
+				// Copper Chicken
+				"{{ModId}}.CopperEgg": {
+					"Id": "{{ModId}}.CopperEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "{{ModId}}.CopperEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)306"
+						}
+					],
+					"MinutesUntilReady": "{{MayoMinutesUntilReady}}"
+				},
+				"{{ModId}}.LargeCopperEgg": {
+					"Id": "{{ModId}}.LargeCopperEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "{{ModId}}.LargeCopperEgg"
 						}
 					],
 					"OutputItem": [

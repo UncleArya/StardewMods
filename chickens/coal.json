@@ -46,7 +46,7 @@
 				}
 			},
 			"When": {
-				"EnableCoalChicken": true
+				"Query: {{EnableCoalChicken}} = true OR {{EnableProgressionMode}} = true": true
 			}
 		},
 		// Chicken Eggs
@@ -76,7 +76,7 @@
 				}
 			},
 			"When": {
-				"EnableCoalChicken": true
+				"Query: {{EnableCoalChicken}} = true OR {{EnableProgressionMode}} = true": true
 			}
 		},
 		{
@@ -105,7 +105,7 @@
 				}
 			},
 			"When": {
-				"EnableCoalChicken": true
+				"Query: {{EnableCoalChicken}} = true OR {{EnableProgressionMode}} = true": true
 			}
 		}
 	]

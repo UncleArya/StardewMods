@@ -66,22 +66,16 @@
 			"Section": "Level1Chickens"
 		},
 		// Level 2 Chickens
-		"EnableCopperChicken": {
-			"AllowValues": "true, false",
-			"Default": true,
-			"Section": "Level2Chickens"
-		},
-		"Level2ChickenRequiredBuilding": {
-			"AllowValues": "Coop, Big Coop, Deluxe Coop",
-			"Default": "Big Coop",
+		"Level2ChickenSellPrice": {
+			"Default": 1600,
 			"Section": "Level2Chickens"
 		},
 		"Level2ChickenIncubationTime": {
-			"Default": 9000,
+			"Default": 10, // Update 9000
 			"Section": "Level2Chickens"
 		},
 		"Level2ChickenDaysToMature": {
-			"Default": 3,
+			"Default": 1, // Update 3
 			"Section": "Level2Chickens"
 		},
 		"Level2ChickenDaysToProduce": {
@@ -145,6 +139,31 @@
 		"LargeCoalEggCoalTime": {
 			"Default": 180,
 			"Section": "Coal"
+		},
+		// Copper Chicken
+		"CopperEggCopperMin": {
+			"Default": 2,
+			"Section": "Copper"
+		},
+		"CopperEggCopperMax": {
+			"Default": 4,
+			"Section": "Copper"
+		},
+		"CopperEggCopperTime": {
+			"Default": 180,
+			"Section": "Copper"
+		},
+		"LargeCopperEggCopperMin": {
+			"Default": 4,
+			"Section": "Copper"
+		},
+		"LargeCopperEggCopperMax": {
+			"Default": 8,
+			"Section": "Copper"
+		},
+		"LargeCopperEggCopperTime": {
+			"Default": 180,
+			"Section": "Copper"
 		},
 		// Stone Chicken
 		"StoneEggStoneMin": {
@@ -275,6 +294,12 @@
 			"Target": "{{ModId}}/CoalChicken, {{ModId}}/CoalChickenBaby, {{ModId}}/CoalShopTexture,",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
+		// Copper Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/CopperChicken, {{ModId}}/CopperChickenBaby",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
 		// Stone Chicken
 		{
 			"Action": "Load",
@@ -329,7 +354,7 @@
 		// Include Chickens & Machine Data
 		{
 			"Action": "Include",
-			"FromFile": "machines/machines.json, chickens/clay.json, chickens/coal.json, chickens/stone.json, chickens/wood.json"
+			"FromFile": "machines/machines.json, chickens/clay.json, chickens/coal.json, chickens/copper.json, chickens/stone.json, chickens/wood.json"
 		}
 	]
 }

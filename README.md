@@ -15,7 +15,6 @@ The crafting recipe for the Resource Egg Converter is unlocked once reaching Far
 
 ![gameplay](https://github.com/UncleArya/ResourceChickens/assets/100550741/6a142d2f-303b-478c-ab36-187242fbb7c5)
 
-
 Resource Chickens can start producing large resource eggs once you reach a 2 heart relationship with them, which can be turned into slightly more resources.  
 <br/>Works with [Automate](https://www.nexusmods.com/stardewvalley/mods/1063)!  
 <br/>Also works with the Auto Grabber!  
@@ -44,24 +43,22 @@ Here are my goals as I continue to develop and update Resource Chickens:
 
 ![sprite-art](https://github.com/UncleArya/ResourceChickens/assets/100550741/b80fee2d-eb74-4fce-bef5-7b9051fe7751)
 
-All sprites are recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe. If anyone wishes to create alternative (and probably better) sprites for this mod, I would be happy to add them as a config option for other players to use too! Just reach out to me over Nexus or the SDV Discord.  
+All sprites are recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe.
+
+If you enjoy making pixel art as a hobby and wish to make edits to my sprites or create your own for this mod, I would be happy to add them as an option for other players to use too! Just reach out to me over Nexus or the SDV Discord. 
 
 ![localisation](https://github.com/UncleArya/ResourceChickens/assets/100550741/73dda029-4b5e-44c9-a5d6-5c32b530dc9b)
-
 
 Want to help translate this mod into another language? This mod is fully prepared for i18n localisation. Download the default.json file in the i18n folder of this mod. I can then add your translation file to the main mod file for improved localisation support.  
 
 ![compatibility](https://github.com/UncleArya/ResourceChickens/assets/100550741/6fd7bf0e-ffc8-4edb-82f0-9125eef99c80)
 
-
 This mod relies entirely on [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915), so it should be fully compatible with pretty much every other mod out there. Please let me know if you come across any issues.  
 
 ![install](https://github.com/UncleArya/ResourceChickens/assets/100550741/3c2f1601-d779-4a6f-8fab-e72baf1365fb)
 
-*(Can be added to an existing save)*
-
 - Download Resource Chickens (and make sure you have [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915), but I am sure you already do)
 - Add the Resource Chickens folder to your Mod folder
 - If playing multiplayer, all players will need this mod too
-
-If removing from an in-progress save, be sure to sell your Resource Chickens and eggs and remove the Resource Egg Converter Machine before deleting Resource Chickens from your Mods folder.
+- **Can be added to an existing save**
+- If removing from an in-progress save, be sure to sell your Resource Chickens and eggs and remove the Resource Egg Converter Machine before deleting Resource Chickens from your Mods folder.
