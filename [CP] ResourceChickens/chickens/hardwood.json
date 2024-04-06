@@ -1,36 +1,36 @@
 {
 	"Changes": [
-		// Copper Chicken
+		// Hardwood Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.CopperChicken": {
-					"DisplayName": "{{i18n: Chicken.CopperChicken.Name}}",
+				"{{ModId}}.HardwoodChicken": {
+					"DisplayName": "{{i18n: Chicken.HardwoodChicken.Name}}",
 					"House": "Coop",
 					"EggItemIds": [
-						"{{ModId}}.CopperEgg",
-						"{{ModId}}.LargeCopperEgg",
-						"{{ModId}}.CopperEggFusionChamber"
+						"{{ModId}}.HardwoodEgg",
+						"{{ModId}}.LargeHardwoodEgg",
+						"{{ModId}}.HardwoodEggFusionChamber"
 					],
 					"IncubationTime": "{{Level2ChickenIncubationTime}}",
-					"BirthText": "{{i18n: Chicken.CopperChicken.BirthText}}",
+					"BirthText": "{{i18n: Chicken.HardwoodChicken.BirthText}}",
 					"DaysToMature": "{{Level2ChickenDaysToMature}}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.CopperEgg"
+							"ItemId": "{{ModId}}.HardwoodEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeCopperEgg"
+							"ItemId": "{{ModId}}.LargeHardwoodEgg"
 						}
 					],
 					"DaysToProduce": "{{Level2ChickenDaysToProduce}}",
 					"DeluxeProduceMinimumFriendship": 400,
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/CopperChicken",
-					"BabyTexture": "{{ModId}}/CopperChickenBaby",
+					"Texture": "{{ModId}}/HardwoodChicken",
+					"BabyTexture": "{{ModId}}/HardwoodChickenBaby",
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
@@ -47,10 +47,10 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.CopperEgg": {
-					"Name": "{{ModId}}.CopperEgg",
-					"DisplayName": "{{i18n: Egg.Copper.Name}}",
-					"Description": "{{i18n: Egg.Copper.Description}}",
+				"{{ModId}}.HardwoodEgg": {
+					"Name": "{{ModId}}.HardwoodEgg",
+					"DisplayName": "{{i18n: Egg.Hardwood.Name}}",
+					"Description": "{{i18n: Egg.Hardwood.Description}}",
 					"Type": "Basic",
 					"Category": -18,
 					"Price": "{{Level2EggSellPrice}}",
@@ -64,13 +64,13 @@
 						"category_egg",
 						"category_sell_at_pierres_and_marnies",
 						"chicken_item",
-						"color_copper"
+						"color_brown"
 					]
 				},
-				"{{ModId}}.LargeCopperEgg": {
-					"Name": "{{ModId}}.LargeCopperEgg",
-					"DisplayName": "{{i18n: LargeEgg.Copper.Name}}",
-					"Description": "{{i18n: LargeEgg.Copper.Description}}",
+				"{{ModId}}.LargeHardwoodEgg": {
+					"Name": "{{ModId}}.LargeHardwoodEgg",
+					"DisplayName": "{{i18n: LargeEgg.Hardwood.Name}}",
+					"Description": "{{i18n: LargeEgg.Hardwood.Description}}",
 					"Type": "Basic",
 					"Category": -18,
 					"Price": "{{Level2LargeEggSellPrice}}",
@@ -84,17 +84,17 @@
 						"category_egg",
 						"category_sell_at_pierres_and_marnies",
 						"chicken_item",
-						"color_copper"
+						"color_brown"
 					]
 				},
-				"{{ModId}}.CopperEggFusionChamber": {
-					"Name": "{{ModId}}.CopperEggFusionChamber",
-					"DisplayName": "{{i18n: FusionChamber.Copper.Name}}",
+				"{{ModId}}.HardwoodEggFusionChamber": {
+					"Name": "{{ModId}}.HardwoodEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Hardwood.Name}}",
 					"Description": "{{i18n: FusionChamber.Description}}",
 					"Type": "Crafting",
 					"Category": -18,
 					"Price": "{{Level2LargeEggSellPrice}}",
-					"Texture": "{{ModId}}/CopperChicken", // Update
+					"Texture": "{{ModId}}/HardwoodChicken", // Update
 					"SpriteIndex": 0, // Update
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,

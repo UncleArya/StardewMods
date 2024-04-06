@@ -66,6 +66,11 @@
 			"Section": "Level1Chickens"
 		},
 		// Level 2 Chickens
+		"Level2UnlockFarmingLevel": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Section": "Level2Chickens"
+		},
 		"Level2ChickenSellPrice": {
 			"Default": 1600,
 			"Section": "Level2Chickens"
@@ -150,7 +155,7 @@
 			"Section": "Copper"
 		},
 		"CopperEggCopperTime": {
-			"Default": 180,
+			"Default": 10, // Update 180
 			"Section": "Copper"
 		},
 		"LargeCopperEggCopperMin": {
@@ -162,8 +167,58 @@
 			"Section": "Copper"
 		},
 		"LargeCopperEggCopperTime": {
-			"Default": 180,
+			"Default": 10, // Update 180
 			"Section": "Copper"
+		},
+		// Fiber Chicken
+		"FiberEggFiberMin": {
+			"Default": 1,
+			"Section": "Fiber"
+		},
+		"FiberEggFiberMax": {
+			"Default": 2,
+			"Section": "Fiber"
+		},
+		"FiberEggFiberTime": {
+			"Default": 10, // Update 180
+			"Section": "Fiber"
+		},
+		"LargeFiberEggFiberMin": {
+			"Default": 2,
+			"Section": "Fiber"
+		},
+		"LargeFiberEggFiberMax": {
+			"Default": 4,
+			"Section": "Fiber"
+		},
+		"LargeFiberEggFiberTime": {
+			"Default": 10, // Update 180
+			"Section": "Fiber"
+		},
+		// Hardwood Chicken
+		"HardwoodEggHardwoodMin": {
+			"Default": 1,
+			"Section": "Hardwood"
+		},
+		"HardwoodEggHardwoodMax": {
+			"Default": 2,
+			"Section": "Hardwood"
+		},
+		"HardwoodEggHardwoodTime": {
+			"Default": 10, // Update 180
+			"Section": "Hardwood"
+		},
+		"LargeHardwoodEggHardwoodMin": {
+			"Default": 2,
+			"Section": "Hardwood"
+		},
+		"LargeHardwoodEggHardwoodMax": {
+			"Default": 4,
+			"Section": "Hardwood"
+		},
+		"LargeHardwoodEggHardwoodTime": {
+			"Default": 10, // Update 180
+			"Section": "Hardwood"
 		},
 		// Stone Chicken
 		"StoneEggStoneMin": {
@@ -306,6 +361,12 @@
 			"Target": "{{ModId}}/FiberChicken, {{ModId}}/FiberChickenBaby",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
+		// Hardwood Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HardwoodChicken, {{ModId}}/HardwoodChickenBaby",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
 		// Stone Chicken
 		{
 			"Action": "Load",
@@ -318,73 +379,38 @@
 			"Target": "{{ModId}}/WoodChicken, {{ModId}}/WoodChickenBaby, {{ModId}}/WoodShopTexture,",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
-		// Resource Egg Converter
-		{
-			"Action": "EditData",
-			"Target": "Data/BigCraftables",
-			"Entries": {
-				"{{ModId}}.ResourceEggConverter": {
-					"Name": "{{ModId}}.ResourceEggConverter",
-					"DisplayName": "{{i18n: BigCraftable.ResourceEggConverter.Name}}",
-					"Description": "{{i18n: BigCraftable.ResourceEggConverter.Description}}",
-					"Price": 50,
-					"Fragility": 0,
-					"CanBePlacedIndoors": true,
-					"CanBePlacedOutdoors": true,
-					"Texture": "{{ModId}}/ResourceEggConverter",
-					"SpriteIndex": 0,
-					"ContextTags": ["category_big_craftable"]
-				}
-			}
-		},
-		{
-			"Action": "EditData",
-			"Target": "Data/CraftingRecipes",
-			"Entries": {
-				"{{ModId}}.ResourceEggConverter": "{{ResourceEggConverterCraftingRecipe}}/Home/{{ModId}}.ResourceEggConverter/true/Farming 2/{{i18n: BigCraftable.ResourceEggConverter.Name}}"
-			},
-			"When": {
-				"ConverterUnlockFarmingLevel2": true
-			}
-		},
-		{
-			"Action": "EditData",
-			"Target": "Data/CraftingRecipes",
-			"Entries": {
-				"{{ModId}}.ResourceEggConverter": "{{ResourceEggConverterCraftingRecipe}}/Home/{{ModId}}.ResourceEggConverter/true/null/{{i18n: BigCraftable.ResourceEggConverter.Name}}"
-			},
-			"When": {
-				"ConverterUnlockFarmingLevel2": false
-			}
-		},
-		// Include Chickens & Machine Data
+		// Include Chickens
 		{
 			"Action": "Include",
-			"FromFile": "machines/machines.json, chickens/clay.json, chickens/coal.json, chickens/copper.json, chickens/fiber.json, chickens/stone.json, chickens/wood.json"
+			"FromFile": "chickens/clay.json, chickens/coal.json, chickens/copper.json, chickens/fiber.json, chickens/hardwood.json, chickens/stone.json, chickens/wood.json"
+		},
+		// Include Other Data
+		{
+			"Action": "Include",
+			"FromFile": "data/craftingrecipes.json, data/machines.json"
 		}
 	]
 }
 
-// TODO: Level 2 Chickens
+// TODO: Change DeluxeProduceMinimumFriendship to a config option
+
+// TODO: Sprites
 /*
-- Add object: Egg Stasis Chamber
+- Chickens : Copper, Fiber, Hardwood
+- Eggs
+- Egg Fusion Chamber X 3
 */
 
 // TODO: Copper Chicken
 /*
 - crafting recipe for copper egg
 - sprites
-- add to machines
-- configs
 */
 
 // TODO: Hardwood Chicken
 /*
-- create chicken.json
-- crafting recipe for copper egg
+- crafting recipe for hardwood egg
 - sprites
-- add to machines
-- configs
 */
 
 // TODO: Fiber Chicken
@@ -392,9 +418,15 @@
 - FTM forage spawning
 - FTM special weed spawing
 - sprites
-- add to machines
-- configs
 */
+
+// TODO: change eggs from category -18 to -5
+
+// TODO: refactor chicken.json pages to shorten it
+
+// TODO: refactor default.json descriptions to 1 line per item type
+
+// TODO: add a check for unlocking crafting recipes if existing character is already a high enough level
 
 // TODO: update README
 /*

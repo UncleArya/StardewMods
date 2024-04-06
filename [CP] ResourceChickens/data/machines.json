@@ -3,6 +3,24 @@
 		// Resource Egg Converter
 		{
 			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"Entries": {
+				"{{ModId}}.ResourceEggConverter": {
+					"Name": "{{ModId}}.ResourceEggConverter",
+					"DisplayName": "{{i18n: BigCraftable.ResourceEggConverter.Name}}",
+					"Description": "{{i18n: BigCraftable.ResourceEggConverter.Description}}",
+					"Price": 50,
+					"Fragility": 0,
+					"CanBePlacedIndoors": true,
+					"CanBePlacedOutdoors": true,
+					"Texture": "{{ModId}}/ResourceEggConverter",
+					"SpriteIndex": 0,
+					"ContextTags": ["category_big_craftable"]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
 			"Target": "Data/Machines",
 			"Entries": {
 				"(BC){{ModId}}.ResourceEggConverter": {
@@ -123,6 +141,84 @@
 								}
 							],
 							"MinutesUntilReady": "{{LargeCopperEggCopperTime}}"
+						},
+						// Fiber Chicken
+						{
+							"Id": "{{ModId}}.FiberEgg",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.FiberEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)771",
+									"MinStack": "{{FiberEggFiberMin}}",
+									"MaxStack": "{{FiberEggFiberMax}}"
+								}
+							],
+							"MinutesUntilReady": "{{FiberEggFiberTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeFiberEgg",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeFiberEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)771",
+									"MinStack": "{{LargeFiberEggFiberMin}}",
+									"MaxStack": "{{LargeFiberEggFiberMax}}"
+								}
+							],
+							"MinutesUntilReady": "{{LargeFiberEggFiberTime}}"
+						},
+						// Hardwood Chicken
+						{
+							"Id": "{{ModId}}.HardwoodEgg",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.HardwoodEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)709",
+									"MinStack": "{{HardwoodEggHardwoodMin}}",
+									"MaxStack": "{{HardwoodEggHardwoodMax}}"
+								}
+							],
+							"MinutesUntilReady": "{{HardwoodEggHardwoodTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeHardwoodEgg",
+							"Triggers": [
+								{
+									"Id": "ItemPlacedInMachine",
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeHardwoodEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)709",
+									"MinStack": "{{LargeHardwoodEggHardwoodMin}}",
+									"MaxStack": "{{LargeHardwoodEggHardwoodMax}}"
+								}
+							],
+							"MinutesUntilReady": "{{LargeHardwoodEggHardwoodTime}}"
 						},
 						// Stone Chicken
 						{
@@ -335,6 +431,66 @@
 					"Triggers": [
 						{
 							"RequiredItemId": "{{ModId}}.LargeCopperEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)306",
+							"Quality": 2
+						}
+					],
+					"MinutesUntilReady": "{{DeluxeMayoMinutesUntilReady}}"
+				},
+				// Fiber Chicken
+				"{{ModId}}.FiberEgg": {
+					"Id": "{{ModId}}.FiberEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "{{ModId}}.FiberEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)306"
+						}
+					],
+					"MinutesUntilReady": "{{MayoMinutesUntilReady}}"
+				},
+				"{{ModId}}.LargeFiberEgg": {
+					"Id": "{{ModId}}.LargeFiberEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "{{ModId}}.LargeFiberEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)306",
+							"Quality": 2
+						}
+					],
+					"MinutesUntilReady": "{{DeluxeMayoMinutesUntilReady}}"
+				},
+				// Hardwood Chicken
+				"{{ModId}}.HardwoodEgg": {
+					"Id": "{{ModId}}.HardwoodEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "{{ModId}}.HardwoodEgg"
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)306"
+						}
+					],
+					"MinutesUntilReady": "{{MayoMinutesUntilReady}}"
+				},
+				"{{ModId}}.LargeHardwoodEgg": {
+					"Id": "{{ModId}}.LargeHardwoodEgg",
+					"Triggers": [
+						{
+							"RequiredItemId": "{{ModId}}.LargeHardwoodEgg"
 						}
 					],
 					"OutputItem": [

@@ -60,18 +60,9 @@
 						"category_egg",
 						"category_sell_at_pierres_and_marnies",
 						"chicken_item",
-						"color_Fiber"
+						"color_green"
 					]
-				}
-			},
-			"When": {
-				"EnableProgressionMode": true
-			}
-		},
-		{
-			"Action": "EditData",
-			"Target": "Data/Objects",
-			"Entries": {
+				},
 				"{{ModId}}.LargeFiberEgg": {
 					"Name": "{{ModId}}.LargeFiberEgg",
 					"DisplayName": "{{i18n: LargeEgg.Fiber.Name}}",
@@ -89,26 +80,12 @@
 						"category_egg",
 						"category_sell_at_pierres_and_marnies",
 						"chicken_item",
-						"color_Fiber"
+						"color_green"
 					]
 				}
 			},
 			"When": {
 				"EnableProgressionMode": true
-			}
-		},
-		// Forage Spawn
-		{
-			"Action": "EditData",
-			"Target": "Data/Locations",
-			"TargetField": ["Forest", "Forage"],
-			"Entries": {
-				"(O){{ModId}}.FiberEgg": {
-					"ItemId": "(O){{ModId}}.FiberEgg",
-					"Condition": "PLAYER_FORAGING_LEVEL Current 2, !SEASON Winter", // Update: Add config
-					"Quality": 0,
-					"Chance": 1 // Update: config option
-				}
 			}
 		}
 	]

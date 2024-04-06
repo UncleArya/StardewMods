@@ -1,0 +1,50 @@
+{
+	"Changes": [
+		// Resource Egg Converter
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}.ResourceEggConverter": "{{ResourceEggConverterCraftingRecipe}}/Home/{{ModId}}.ResourceEggConverter/true/Farming 2/{{i18n: BigCraftable.ResourceEggConverter.Name}}"
+			},
+			"When": {
+				"ConverterUnlockFarmingLevel2": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}.ResourceEggConverter": "{{ResourceEggConverterCraftingRecipe}}/Home/{{ModId}}.ResourceEggConverter/true/null/{{i18n: BigCraftable.ResourceEggConverter.Name}}"
+			},
+			"When": {
+				"ConverterUnlockFarmingLevel2": false
+			}
+		},
+		// Level 2 Chicken Egg Fusion Chambers
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}.CopperEggFusionChamber": "388 1/Home/{{ModId}}.CopperEggFusionChamber/false/Farming 3/{{i18n: FusionChamber.Copper.Name}}", // Update recipe
+				"{{ModId}}.HardwoodEggFusionChamber": "388 1/Home/{{ModId}}.HardwoodEggFusionChamber/false/Farming 4/{{i18n: FusionChamber.Hardwood.Name}}" // Update recipe
+			},
+			"When": {
+				"EnableProgressionMode": true,
+				"Level2UnlockFarmingLevel": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}.CopperEggFusionChamber": "388 1/Home/{{ModId}}.CopperEggFusionChamber/false/null/{{i18n: FusionChamber.Copper.Name}}", // Update recipe
+				"{{ModId}}.HardwoodEggFusionChamber": "388 1/Home/{{ModId}}.HardwoodEggFusionChamber/false/null/{{i18n: FusionChamber.Hardwood.Name}}" // Update recipe
+			},
+			"When": {
+				"EnableProgressionMode": true,
+				"Level2UnlockFarmingLevel": false
+			}
+		}
+	]
+}
