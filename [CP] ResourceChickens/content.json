@@ -364,3 +364,43 @@
 		}
 	]
 }
+
+// TODO: Level 2 Chickens
+/*
+- Add object: Egg Stasis Chamber
+*/
+
+// TODO: Copper Chicken
+/*
+- crafting recipe for copper egg
+- sprites
+- add to machines
+- configs
+*/
+
+// TODO: Hardwood Chicken
+/*
+- create chicken.json
+- crafting recipe for copper egg
+- sprites
+- add to machines
+- configs
+*/
+
+// TODO: Fiber Chicken
+/*
+- FTM forage spawning
+- FTM special weed spawing
+- sprites
+- add to machines
+- configs
+*/
+
+// TODO: update README
+/*
+- add new info
+- add chart of chicken info
+- info pages with sprite references
+*/
+
+// TODO: update changelog
