@@ -55,7 +55,7 @@
 					"Category": -18,
 					"Price": "{{Level2EggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 0, // Update
+					"SpriteIndex": 8,
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -75,7 +75,7 @@
 					"Category": -18,
 					"Price": "{{Level2LargeEggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 0, // Update
+					"SpriteIndex": 9,
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,

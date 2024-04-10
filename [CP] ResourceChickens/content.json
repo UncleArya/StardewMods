@@ -396,31 +396,26 @@
 
 // TODO: Sprites
 /*
-- Chickens : Copper, Fiber, Hardwood
-- Eggs
-- Egg Fusion Chamber X 3
+- Egg Fusion Chamber X 2
 */
 
 // TODO: Copper Chicken
 /*
 - crafting recipe for copper egg
-- sprites
 */
 
 // TODO: Hardwood Chicken
 /*
 - crafting recipe for hardwood egg
-- sprites
 */
 
 // TODO: Fiber Chicken
 /*
 - FTM forage spawning
 - FTM special weed spawing
-- sprites
 */
 
-// TODO: change eggs from category -18 to -5
+// TODO: change eggs from category -18 to -5?? maybe
 
 // TODO: refactor chicken.json pages to shorten it
 
