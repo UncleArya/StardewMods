@@ -40,7 +40,8 @@
 								{
 									"ItemId": "(O)330",
 									"MinStack": "{{ClayEggClayMin}}",
-									"MaxStack": "{{ClayEggClayMax}}"
+									"MaxStack": "{{ClayEggClayMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level1EggProcessingTime}}"
@@ -59,7 +60,8 @@
 								{
 									"ItemId": "(O)330",
 									"MinStack": "{{LargeClayEggClayMin}}",
-									"MaxStack": "{{LargeClayEggClayMax}}"
+									"MaxStack": "{{LargeClayEggClayMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level1LargeEggProcessingTime}}"
@@ -79,7 +81,8 @@
 								{
 									"ItemId": "(O)382",
 									"MinStack": "{{CoalEggCoalMin}}",
-									"MaxStack": "{{CoalEggCoalMax}}"
+									"MaxStack": "{{CoalEggCoalMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level1EggProcessingTime}}"
@@ -98,7 +101,8 @@
 								{
 									"ItemId": "(O)382",
 									"MinStack": "{{LargeCoalEggCoalMin}}",
-									"MaxStack": "{{LargeCoalEggCoalMax}}"
+									"MaxStack": "{{LargeCoalEggCoalMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level1LargeEggProcessingTime}}"
@@ -118,7 +122,8 @@
 								{
 									"ItemId": "(O)378",
 									"MinStack": "{{CopperEggCopperMin}}",
-									"MaxStack": "{{CopperEggCopperMax}}"
+									"MaxStack": "{{CopperEggCopperMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level2EggProcessingTime}}"
@@ -137,7 +142,8 @@
 								{
 									"ItemId": "(O)378",
 									"MinStack": "{{LargeCopperEggCopperMin}}",
-									"MaxStack": "{{LargeCopperEggCopperMax}}"
+									"MaxStack": "{{LargeCopperEggCopperMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level2LargeEggProcessingTime}}"
@@ -157,7 +163,8 @@
 								{
 									"ItemId": "(O)771",
 									"MinStack": "{{FiberEggFiberMin}}",
-									"MaxStack": "{{FiberEggFiberMax}}"
+									"MaxStack": "{{FiberEggFiberMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level2EggProcessingTime}}"
@@ -176,7 +183,8 @@
 								{
 									"ItemId": "(O)771",
 									"MinStack": "{{LargeFiberEggFiberMin}}",
-									"MaxStack": "{{LargeFiberEggFiberMax}}"
+									"MaxStack": "{{LargeFiberEggFiberMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level2LargeEggProcessingTime}}"
@@ -196,7 +204,8 @@
 								{
 									"ItemId": "(O)709",
 									"MinStack": "{{HardwoodEggHardwoodMin}}",
-									"MaxStack": "{{HardwoodEggHardwoodMax}}"
+									"MaxStack": "{{HardwoodEggHardwoodMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level2EggProcessingTime}}"
@@ -215,7 +224,8 @@
 								{
 									"ItemId": "(O)709",
 									"MinStack": "{{LargeHardwoodEggHardwoodMin}}",
-									"MaxStack": "{{LargeHardwoodEggHardwoodMax}}"
+									"MaxStack": "{{LargeHardwoodEggHardwoodMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level2LargeEggProcessingTime}}"
@@ -235,7 +245,8 @@
 								{
 									"ItemId": "(O)390",
 									"MinStack": "{{StoneEggStoneMin}}",
-									"MaxStack": "{{StoneEggStoneMax}}"
+									"MaxStack": "{{StoneEggStoneMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level1EggProcessingTime}}"
@@ -254,7 +265,8 @@
 								{
 									"ItemId": "(O)390",
 									"MinStack": "{{LargeStoneEggStoneMin}}",
-									"MaxStack": "{{LargeStoneEggStoneMax}}"
+									"MaxStack": "{{LargeStoneEggStoneMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level1LargeEggProcessingTime}}"
@@ -274,7 +286,8 @@
 								{
 									"ItemId": "(O)388",
 									"MinStack": "{{WoodEggWoodMin}}",
-									"MaxStack": "{{WoodEggWoodMax}}"
+									"MaxStack": "{{WoodEggWoodMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level1EggProcessingTime}}"
@@ -293,7 +306,8 @@
 								{
 									"ItemId": "(O)388",
 									"MinStack": "{{LargeWoodEggWoodMin}}",
-									"MaxStack": "{{LargeWoodEggWoodMax}}"
+									"MaxStack": "{{LargeWoodEggWoodMax}}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{Level1LargeEggProcessingTime}}"
