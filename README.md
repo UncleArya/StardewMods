@@ -100,11 +100,9 @@ Here are my goals as I continue to develop and update Resource Chickens:
 ### ![sprite-art](https://github.com/UncleArya/ResourceChickens/assets/100550741/b80fee2d-eb74-4fce-bef5-7b9051fe7751)
 
 There are currently two appearance options for Resource Chickens sprites using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098):
-
-**Vanilla Style:** recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe.
-**Hatta Style:** custom and unique sprites created by the wonderfully talented [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
-
-Reference images are on the [Nexus page](https://www.nexusmods.com/stardewvalley/mods/21800) and also in the mod folder.
+</br>**Vanilla Style:** recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe.
+</br>**Hatta Style:** custom and unique sprites created by the wonderfully talented [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
+</br>Reference images are on the [Nexus page](https://www.nexusmods.com/stardewvalley/mods/21800) and also in the mod folder.
 
 ### ![localisation](https://github.com/UncleArya/ResourceChickens/assets/100550741/73dda029-4b5e-44c9-a5d6-5c32b530dc9b)
 
