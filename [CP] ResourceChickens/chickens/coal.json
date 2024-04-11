@@ -18,7 +18,7 @@
 					},
 					"RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
 					"ShopDescription": "{{i18n: Chicken.CoalChicken.Description}}",
-					"ShopMissingBuildingDescription": "{{i18n: Chicken.CoalChicken.MissingBuildingDescription}}",
+					"ShopMissingBuildingDescription": "{{i18n: Chicken.Level1.MissingBuildingDescription}}",
 					"EggItemIds": ["{{ModId}}.CoalEgg", "{{ModId}}.LargeCoalEgg"],
 					"IncubationTime": "{{Level1ChickenIncubationTime}}",
 					"BirthText": "{{i18n: Chicken.CoalChicken.BirthText}}",
@@ -34,7 +34,7 @@
 						}
 					],
 					"DaysToProduce": "{{Level1ChickenDaysToProduce}}",
-					"DeluxeProduceMinimumFriendship": 400,
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/CoalChicken",
 					"BabyTexture": "{{ModId}}/CoalChickenBaby",
@@ -57,13 +57,33 @@
 				"{{ModId}}.CoalEgg": {
 					"Name": "{{ModId}}.CoalEgg",
 					"DisplayName": "{{i18n: Egg.Coal.Name}}",
-					"Description": "{{i18n: Egg.Coal.Description}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
-					"Category": -18,
+					"Category": -5,
 					"Price": "{{Level1EggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 2,
-					"Edibility": -300,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_black"
+					]
+				},
+				"{{ModId}}.LargeCoalEgg": {
+					"Name": "{{ModId}}.LargeCoalEgg",
+					"DisplayName": "{{i18n: LargeEgg.Coal.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level1LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 3,
+					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
@@ -80,32 +100,11 @@
 			}
 		},
 		{
-			"Action": "EditData",
-			"Target": "Data/Objects",
-			"Entries": {
-				"{{ModId}}.LargeCoalEgg": {
-					"Name": "{{ModId}}.LargeCoalEgg",
-					"DisplayName": "{{i18n: LargeEgg.Coal.Name}}",
-					"Description": "{{i18n: LargeEgg.Coal.Description}}",
-					"Type": "Basic",
-					"Category": -18,
-					"Price": "{{Level1LargeEggSellPrice}}",
-					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 3,
-					"Edibility": -300,
-					"ExcludeFromFishingCollection": true,
-					"ExcludeFromShippingCollection": true,
-					"ExcludeFromRandomSale": true,
-					"ContextTags": [
-						"category_egg",
-						"category_sell_at_pierres_and_marnies",
-						"chicken_item",
-						"color_black"
-					]
-				}
-			},
+			"Action": "EditImage",
+			"Target": "{{ModId}}/CoalChicken",
+			"FromFile": "assets/tophatta/CoalChicken.png",
 			"When": {
-				"Query: {{EnableCoalChicken}} = true OR {{EnableProgressionMode}} = true": true
+				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		}
 	]

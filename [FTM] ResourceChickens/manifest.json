@@ -1,0 +1,13 @@
+{
+	"Name": "[FTM] Resource Chickens",
+	"Author": "UncleArya",
+	"Version": "0.2.0",
+	"Description": "Allows for spawning of forageable items related to Resource Chickens.",
+	"UniqueID": "UncleArya.ResourceChickensFTM",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": ["Nexus:21800"],
+	"ContentPackFor": {
+		"UniqueID": "Esca.FarmTypeManager",
+		"MinimumVersion": "1.10.1"
+	}
+}

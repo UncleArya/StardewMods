@@ -1,0 +1,44 @@
+{
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "Animals/Blue Chicken",
+			"FromFile": "assets/tophatta/BlueChicken",
+			"When": {
+				"VanillaChickensMatchHattaStyle": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Animals/Brown Chicken",
+			"FromFile": "assets/tophatta/BrownChicken.png",
+			"When": {
+				"VanillaChickensMatchHattaStyle": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Animals/Golden Chicken",
+			"FromFile": "assets/tophatta/GoldenChicken.png",
+			"When": {
+				"VanillaChickensMatchHattaStyle": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Animals/Void Chicken",
+			"FromFile": "assets/tophatta/VoidChicken.png",
+			"When": {
+				"VanillaChickensMatchHattaStyle": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Animals/White Chicken",
+			"FromFile": "assets/tophatta/WhiteChicken.png",
+			"When": {
+				"VanillaChickensMatchHattaStyle": true
+			}
+		}
+	]
+}

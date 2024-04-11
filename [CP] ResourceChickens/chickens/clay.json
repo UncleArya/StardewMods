@@ -18,7 +18,7 @@
 					},
 					"RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
 					"ShopDescription": "{{i18n: Chicken.ClayChicken.Description}}",
-					"ShopMissingBuildingDescription": "{{i18n: Chicken.ClayChicken.MissingBuildingDescription}}",
+					"ShopMissingBuildingDescription": "{{i18n: Chicken.Level1.MissingBuildingDescription}}",
 					"EggItemIds": ["{{ModId}}.ClayEgg", "{{ModId}}.LargeClayEgg"],
 					"IncubationTime": "{{Level1ChickenIncubationTime}}",
 					"BirthText": "{{i18n: Chicken.ClayChicken.BirthText}}",
@@ -34,7 +34,7 @@
 						}
 					],
 					"DaysToProduce": "{{Level1ChickenDaysToProduce}}",
-					"DeluxeProduceMinimumFriendship": 400,
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/ClayChicken",
 					"BabyTexture": "{{ModId}}/ClayChickenBaby",
@@ -57,13 +57,33 @@
 				"{{ModId}}.ClayEgg": {
 					"Name": "{{ModId}}.ClayEgg",
 					"DisplayName": "{{i18n: Egg.Clay.Name}}",
-					"Description": "{{i18n: Egg.Clay.Description}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
-					"Category": -18,
+					"Category": -5,
 					"Price": "{{Level1EggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 0,
-					"Edibility": -300,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_brown"
+					]
+				},
+				"{{ModId}}.LargeClayEgg": {
+					"Name": "{{ModId}}.LargeClayEgg",
+					"DisplayName": "{{i18n: LargeEgg.Clay.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level1LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 1,
+					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
@@ -80,32 +100,11 @@
 			}
 		},
 		{
-			"Action": "EditData",
-			"Target": "Data/Objects",
-			"Entries": {
-				"{{ModId}}.LargeClayEgg": {
-					"Name": "{{ModId}}.LargeClayEgg",
-					"DisplayName": "{{i18n: LargeEgg.Clay.Name}}",
-					"Description": "{{i18n: LargeEgg.Clay.Description}}",
-					"Type": "Basic",
-					"Category": -18,
-					"Price": "{{Level1LargeEggSellPrice}}",
-					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 1,
-					"Edibility": -300,
-					"ExcludeFromFishingCollection": true,
-					"ExcludeFromShippingCollection": true,
-					"ExcludeFromRandomSale": true,
-					"ContextTags": [
-						"category_egg",
-						"category_sell_at_pierres_and_marnies",
-						"chicken_item",
-						"color_brown"
-					]
-				}
-			},
+			"Action": "EditImage",
+			"Target": "{{ModId}}/ClayChicken",
+			"FromFile": "assets/tophatta/ClayChicken.png",
 			"When": {
-				"Query: {{EnableClayChicken}} = true OR {{EnableProgressionMode}} = true": true
+				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		}
 	]

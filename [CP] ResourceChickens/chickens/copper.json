@@ -27,7 +27,7 @@
 						}
 					],
 					"DaysToProduce": "{{Level2ChickenDaysToProduce}}",
-					"DeluxeProduceMinimumFriendship": 400,
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/CopperChicken",
 					"BabyTexture": "{{ModId}}/CopperChickenBaby",
@@ -50,13 +50,13 @@
 				"{{ModId}}.CopperEgg": {
 					"Name": "{{ModId}}.CopperEgg",
 					"DisplayName": "{{i18n: Egg.Copper.Name}}",
-					"Description": "{{i18n: Egg.Copper.Description}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
-					"Category": -18,
+					"Category": -5,
 					"Price": "{{Level2EggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 8,
-					"Edibility": -300,
+					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
@@ -70,13 +70,13 @@
 				"{{ModId}}.LargeCopperEgg": {
 					"Name": "{{ModId}}.LargeCopperEgg",
 					"DisplayName": "{{i18n: LargeEgg.Copper.Name}}",
-					"Description": "{{i18n: LargeEgg.Copper.Description}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
-					"Category": -18,
+					"Category": -5,
 					"Price": "{{Level2LargeEggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 9,
-					"Edibility": -300,
+					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
@@ -104,6 +104,14 @@
 			},
 			"When": {
 				"EnableProgressionMode": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/CopperChicken",
+			"FromFile": "assets/tophatta/CopperChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		}
 	]

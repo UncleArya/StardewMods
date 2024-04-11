@@ -3,13 +3,30 @@
 	// Config
 	"ConfigSchema": {
 		// Global
+		"ChickenAppearanceVersion": {
+			"AllowValues": "VanillaStyle, HattaStyle",
+			"Default": "VanillaStyle",
+			"Section": "Global"
+		},
+		"VanillaChickensMatchHattaStyle": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Section": "Global"
+		},
 		"EnableProgressionMode": {
 			"AllowValues": "true, false",
-			"Default": true
+			"Default": true,
+			"Section": "Global"
 		},
 		"ChickensCanSwim": {
 			"AllowValues": "true, false",
-			"Default": true
+			"Default": false,
+			"Section": "Global"
+		},
+		"HeartsRequiredForLargeEggs": {
+			"AllowValues": "1, 2, 3, 4, 5",
+			"Default": 2,
+			"Section": "Global"
 		},
 		// Level 1 Chickens
 		"EnableClayChicken": {
@@ -57,6 +74,14 @@
 			"Default": 1,
 			"Section": "Level1Chickens"
 		},
+		"Level1EggProcessingTime": {
+			"Default": 180,
+			"Section": "Level1Chickens"
+		},
+		"Level1LargeEggProcessingTime": {
+			"Default": 180,
+			"Section": "Level1Chickens"
+		},
 		"Level1EggSellPrice": {
 			"Default": 50,
 			"Section": "Level1Chickens"
@@ -66,33 +91,36 @@
 			"Section": "Level1Chickens"
 		},
 		// Level 2 Chickens
-		"Level2UnlockFarmingLevel": {
-			"AllowValues": "true, false",
-			"Default": true,
-			"Section": "Level2Chickens"
-		},
 		"Level2ChickenSellPrice": {
 			"Default": 1600,
 			"Section": "Level2Chickens"
 		},
 		"Level2ChickenIncubationTime": {
-			"Default": 10, // Update 9000
+			"Default": 9000,
 			"Section": "Level2Chickens"
 		},
 		"Level2ChickenDaysToMature": {
-			"Default": 1, // Update 3
+			"Default": 3,
 			"Section": "Level2Chickens"
 		},
 		"Level2ChickenDaysToProduce": {
 			"Default": 1,
 			"Section": "Level2Chickens"
 		},
+		"Level2EggProcessingTime": {
+			"Default": 180,
+			"Section": "Level2Chickens"
+		},
+		"Level2LargeEggProcessingTime": {
+			"Default": 180,
+			"Section": "Level2Chickens"
+		},
 		"Level2EggSellPrice": {
-			"Default": 50,
+			"Default": 60,
 			"Section": "Level2Chickens"
 		},
 		"Level2LargeEggSellPrice": {
-			"Default": 95,
+			"Default": 110,
 			"Section": "Level2Chickens"
 		},
 		// Clay Chicken
@@ -104,20 +132,12 @@
 			"Default": 2,
 			"Section": "Clay"
 		},
-		"ClayEggClayTime": {
-			"Default": 180,
-			"Section": "Clay"
-		},
 		"LargeClayEggClayMin": {
 			"Default": 2,
 			"Section": "Clay"
 		},
 		"LargeClayEggClayMax": {
 			"Default": 4,
-			"Section": "Clay"
-		},
-		"LargeClayEggClayTime": {
-			"Default": 180,
 			"Section": "Clay"
 		},
 		// Coal Chicken
@@ -129,20 +149,12 @@
 			"Default": 2,
 			"Section": "Coal"
 		},
-		"CoalEggCoalTime": {
-			"Default": 180,
-			"Section": "Coal"
-		},
 		"LargeCoalEggCoalMin": {
 			"Default": 2,
 			"Section": "Coal"
 		},
 		"LargeCoalEggCoalMax": {
 			"Default": 4,
-			"Section": "Coal"
-		},
-		"LargeCoalEggCoalTime": {
-			"Default": 180,
 			"Section": "Coal"
 		},
 		// Copper Chicken
@@ -154,10 +166,6 @@
 			"Default": 4,
 			"Section": "Copper"
 		},
-		"CopperEggCopperTime": {
-			"Default": 10, // Update 180
-			"Section": "Copper"
-		},
 		"LargeCopperEggCopperMin": {
 			"Default": 4,
 			"Section": "Copper"
@@ -166,8 +174,20 @@
 			"Default": 8,
 			"Section": "Copper"
 		},
-		"LargeCopperEggCopperTime": {
-			"Default": 10, // Update 180
+		"CopperChamberCraftingIngredient3": {
+			"Default": "(O)334", // copper bar
+			"Section": "Copper"
+		},
+		"CopperChamberCraftingIngredient3Amount": {
+			"Default": 5,
+			"Section": "Copper"
+		},
+		"CopperChamberCraftingIngredient4": {
+			"Default": "(O)338", // refined quartz
+			"Section": "Copper"
+		},
+		"CopperChamberCraftingIngredient4Amount": {
+			"Default": 10,
 			"Section": "Copper"
 		},
 		// Fiber Chicken
@@ -179,20 +199,12 @@
 			"Default": 2,
 			"Section": "Fiber"
 		},
-		"FiberEggFiberTime": {
-			"Default": 10, // Update 180
-			"Section": "Fiber"
-		},
 		"LargeFiberEggFiberMin": {
 			"Default": 2,
 			"Section": "Fiber"
 		},
 		"LargeFiberEggFiberMax": {
 			"Default": 4,
-			"Section": "Fiber"
-		},
-		"LargeFiberEggFiberTime": {
-			"Default": 10, // Update 180
 			"Section": "Fiber"
 		},
 		// Hardwood Chicken
@@ -204,10 +216,6 @@
 			"Default": 2,
 			"Section": "Hardwood"
 		},
-		"HardwoodEggHardwoodTime": {
-			"Default": 10, // Update 180
-			"Section": "Hardwood"
-		},
 		"LargeHardwoodEggHardwoodMin": {
 			"Default": 2,
 			"Section": "Hardwood"
@@ -216,8 +224,20 @@
 			"Default": 4,
 			"Section": "Hardwood"
 		},
-		"LargeHardwoodEggHardwoodTime": {
-			"Default": 10, // Update 180
+		"HardwoodChamberCraftingIngredient3": {
+			"Default": "(O)709", // hardwood
+			"Section": "Hardwood"
+		},
+		"HardwoodChamberCraftingIngredient3Amount": {
+			"Default": 20,
+			"Section": "Hardwood"
+		},
+		"HardwoodChamberCraftingIngredient4": {
+			"Default": "(O)338", // refined quartz
+			"Section": "Hardwood"
+		},
+		"HardwoodChamberCraftingIngredient4Amount": {
+			"Default": 10,
 			"Section": "Hardwood"
 		},
 		// Stone Chicken
@@ -229,20 +249,12 @@
 			"Default": 5,
 			"Section": "Stone"
 		},
-		"StoneEggStoneTime": {
-			"Default": 180,
-			"Section": "Stone"
-		},
 		"LargeStoneEggStoneMin": {
 			"Default": 5,
 			"Section": "Stone"
 		},
 		"LargeStoneEggStoneMax": {
 			"Default": 10,
-			"Section": "Stone"
-		},
-		"LargeStoneEggStoneTime": {
-			"Default": 180,
 			"Section": "Stone"
 		},
 		// Wood Chicken
@@ -254,10 +266,6 @@
 			"Default": 5,
 			"Section": "Wood"
 		},
-		"WoodEggWoodTime": {
-			"Default": 180,
-			"Section": "Wood"
-		},
 		"LargeWoodEggWoodMin": {
 			"Default": 5,
 			"Section": "Wood"
@@ -266,45 +274,36 @@
 			"Default": 10,
 			"Section": "Wood"
 		},
-		"LargeWoodEggWoodTime": {
-			"Default": 180,
-			"Section": "Wood"
-		},
 		// Resource Egg Converter
-		"ConverterUnlockFarmingLevel2": {
-			"AllowValues": "true, false",
-			"Default": true,
-			"Section": "Converter"
-		},
-		"CraftingIngredient1": {
+		"ConverterCraftingIngredient1": {
 			"Default": "(O)388", // wood
 			"Section": "Converter"
 		},
-		"CraftingIngredient1Amount": {
+		"ConverterCraftingIngredient1Amount": {
 			"Default": 30,
 			"Section": "Converter"
 		},
-		"CraftingIngredient2": {
+		"ConverterCraftingIngredient2": {
 			"Default": "(O)390", // stone
 			"Section": "Converter"
 		},
-		"CraftingIngredient2Amount": {
+		"ConverterCraftingIngredient2Amount": {
 			"Default": 30,
 			"Section": "Converter"
 		},
-		"CraftingIngredient3": {
+		"ConverterCraftingIngredient3": {
 			"Default": "(O)86", // earth crystal
 			"Section": "Converter"
 		},
-		"CraftingIngredient3Amount": {
+		"ConverterCraftingIngredient3Amount": {
 			"Default": 2,
 			"Section": "Converter"
 		},
-		"CraftingIngredient4": {
+		"ConverterCraftingIngredient4": {
 			"Default": "(O)334", // copper bar
 			"Section": "Converter"
 		},
-		"CraftingIngredient4Amount": {
+		"ConverterCraftingIngredient4Amount": {
 			"Default": 2,
 			"Section": "Converter"
 		},
@@ -326,7 +325,15 @@
 	"DynamicTokens": [
 		{
 			"Name": "ResourceEggConverterCraftingRecipe",
-			"Value": "{{CraftingIngredient1}} {{CraftingIngredient1Amount}} {{CraftingIngredient2}} {{CraftingIngredient2Amount}} {{CraftingIngredient3}} {{CraftingIngredient3Amount}} {{CraftingIngredient4}} {{CraftingIngredient4Amount}}"
+			"Value": "{{ConverterCraftingIngredient1}} {{ConverterCraftingIngredient1Amount}} {{ConverterCraftingIngredient2}} {{ConverterCraftingIngredient2Amount}} {{ConverterCraftingIngredient3}} {{ConverterCraftingIngredient3Amount}} {{ConverterCraftingIngredient4}} {{ConverterCraftingIngredient4Amount}}"
+		},
+		{
+			"Name": "CopperEggFusionChamberRecipe",
+			"Value": "{{ModId}}.LargeStoneEgg 1 {{ModId}}.LargeCoalEgg 1 {{CopperChamberCraftingIngredient3}} {{CopperChamberCraftingIngredient3Amount}} {{CopperChamberCraftingIngredient4}} {{CopperChamberCraftingIngredient4Amount}}"
+		},
+		{
+			"Name": "HardwoodEggFusionChamberRecipe",
+			"Value": "{{ModId}}.LargeWoodEgg 1 {{ModId}}.LargeClayEgg 1 {{HardwoodChamberCraftingIngredient3}} {{HardwoodChamberCraftingIngredient3Amount}} {{HardwoodChamberCraftingIngredient4}} {{HardwoodChamberCraftingIngredient4Amount}}"
 		}
 	],
 	// Changes
@@ -382,7 +389,7 @@
 		// Include Chickens
 		{
 			"Action": "Include",
-			"FromFile": "chickens/clay.json, chickens/coal.json, chickens/copper.json, chickens/fiber.json, chickens/hardwood.json, chickens/stone.json, chickens/wood.json"
+			"FromFile": "chickens/clay.json, chickens/coal.json, chickens/copper.json, chickens/fiber.json, chickens/hardwood.json, chickens/stone.json, chickens/vanilla.json, chickens/wood.json"
 		},
 		// Include Other Data
 		{
@@ -392,41 +399,13 @@
 	]
 }
 
-// TODO: Change DeluxeProduceMinimumFriendship to a config option
-
 // TODO: Sprites
 /*
 - Egg Fusion Chamber X 2
 */
 
-// TODO: Copper Chicken
-/*
-- crafting recipe for copper egg
-*/
-
-// TODO: Hardwood Chicken
-/*
-- crafting recipe for hardwood egg
-*/
-
-// TODO: Fiber Chicken
-/*
-- FTM forage spawning
-- FTM special weed spawing
-*/
-
-// TODO: change eggs from category -18 to -5?? maybe
-
-// TODO: refactor chicken.json pages to shorten it
-
-// TODO: refactor default.json descriptions to 1 line per item type
-
-// TODO: add a check for unlocking crafting recipes if existing character is already a high enough level
-
 // TODO: update README
 /*
-- add new info
-- add chart of chicken info
 - info pages with sprite references
 */
 

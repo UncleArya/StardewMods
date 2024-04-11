@@ -43,7 +43,7 @@
 									"MaxStack": "{{ClayEggClayMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{ClayEggClayTime}}"
+							"MinutesUntilReady": "{{Level1EggProcessingTime}}"
 						},
 						{
 							"Id": "{{ModId}}.LargeClayEgg",
@@ -62,7 +62,7 @@
 									"MaxStack": "{{LargeClayEggClayMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{LargeClayEggClayTime}}"
+							"MinutesUntilReady": "{{Level1LargeEggProcessingTime}}"
 						},
 						// Coal Chicken
 						{
@@ -82,7 +82,7 @@
 									"MaxStack": "{{CoalEggCoalMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{CoalEggCoalTime}}"
+							"MinutesUntilReady": "{{Level1EggProcessingTime}}"
 						},
 						{
 							"Id": "{{ModId}}.LargeCoalEgg",
@@ -101,7 +101,7 @@
 									"MaxStack": "{{LargeCoalEggCoalMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{LargeCoalEggCoalTime}}"
+							"MinutesUntilReady": "{{Level1LargeEggProcessingTime}}"
 						},
 						// Copper Chicken
 						{
@@ -121,7 +121,7 @@
 									"MaxStack": "{{CopperEggCopperMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{CopperEggCopperTime}}"
+							"MinutesUntilReady": "{{Level2EggProcessingTime}}"
 						},
 						{
 							"Id": "{{ModId}}.LargeCopperEgg",
@@ -140,7 +140,7 @@
 									"MaxStack": "{{LargeCopperEggCopperMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{LargeCopperEggCopperTime}}"
+							"MinutesUntilReady": "{{Level2LargeEggProcessingTime}}"
 						},
 						// Fiber Chicken
 						{
@@ -160,7 +160,7 @@
 									"MaxStack": "{{FiberEggFiberMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{FiberEggFiberTime}}"
+							"MinutesUntilReady": "{{Level2EggProcessingTime}}"
 						},
 						{
 							"Id": "{{ModId}}.LargeFiberEgg",
@@ -179,7 +179,7 @@
 									"MaxStack": "{{LargeFiberEggFiberMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{LargeFiberEggFiberTime}}"
+							"MinutesUntilReady": "{{Level2LargeEggProcessingTime}}"
 						},
 						// Hardwood Chicken
 						{
@@ -199,7 +199,7 @@
 									"MaxStack": "{{HardwoodEggHardwoodMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{HardwoodEggHardwoodTime}}"
+							"MinutesUntilReady": "{{Level2EggProcessingTime}}"
 						},
 						{
 							"Id": "{{ModId}}.LargeHardwoodEgg",
@@ -218,7 +218,7 @@
 									"MaxStack": "{{LargeHardwoodEggHardwoodMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{LargeHardwoodEggHardwoodTime}}"
+							"MinutesUntilReady": "{{Level2LargeEggProcessingTime}}"
 						},
 						// Stone Chicken
 						{
@@ -238,7 +238,7 @@
 									"MaxStack": "{{StoneEggStoneMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{StoneEggStoneTime}}"
+							"MinutesUntilReady": "{{Level1EggProcessingTime}}"
 						},
 						{
 							"Id": "{{ModId}}.LargeStoneEgg",
@@ -257,7 +257,7 @@
 									"MaxStack": "{{LargeStoneEggStoneMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{LargeStoneEggStoneTime}}"
+							"MinutesUntilReady": "{{Level1LargeEggProcessingTime}}"
 						},
 						// Wood Chicken
 						{
@@ -277,7 +277,7 @@
 									"MaxStack": "{{WoodEggWoodMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{WoodEggWoodTime}}"
+							"MinutesUntilReady": "{{Level1EggProcessingTime}}"
 						},
 						{
 							"Id": "{{ModId}}.LargeWoodEgg",
@@ -296,7 +296,7 @@
 									"MaxStack": "{{LargeWoodEggWoodMax}}"
 								}
 							],
-							"MinutesUntilReady": "{{LargeWoodEggWoodTime}}"
+							"MinutesUntilReady": "{{Level1LargeEggProcessingTime}}"
 						}
 					],
 					"LoadEffects": [
@@ -325,24 +325,6 @@
 					"Condition": "PLAYER_FARMING_LEVEL Current 2",
 					"Price": "{{ConverterPurchasePrice}}"
 				}
-			},
-			"When": {
-				"ConverterUnlockFarmingLevel2": true
-			}
-		},
-		{
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["AnimalShop", "Items"],
-			"Entries": {
-				"(BC){{ModId}}.ResourceEggConverter": {
-					"Id": "(BC){{ModId}}.ResourceEggConverter",
-					"ItemId": "(BC){{ModId}}.ResourceEggConverter",
-					"Price": "{{ConverterPurchasePrice}}"
-				}
-			},
-			"When": {
-				"ConverterUnlockFarmingLevel2": false
 			}
 		},
 		// Edits to the Mayonnaise Machine

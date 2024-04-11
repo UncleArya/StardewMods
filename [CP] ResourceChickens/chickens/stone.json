@@ -18,7 +18,7 @@
 					},
 					"RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
 					"ShopDescription": "{{i18n: Chicken.StoneChicken.Description}}",
-					"ShopMissingBuildingDescription": "{{i18n: Chicken.StoneChicken.MissingBuildingDescription}}",
+					"ShopMissingBuildingDescription": "{{i18n: Chicken.Level1.MissingBuildingDescription}}",
 					"EggItemIds": ["{{ModId}}.StoneEgg", "{{ModId}}.LargeStoneEgg"],
 					"IncubationTime": "{{Level1ChickenIncubationTime}}",
 					"BirthText": "{{i18n: Chicken.StoneChicken.BirthText}}",
@@ -34,7 +34,7 @@
 						}
 					],
 					"DaysToProduce": "{{Level1ChickenDaysToProduce}}",
-					"DeluxeProduceMinimumFriendship": 400,
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/StoneChicken",
 					"BabyTexture": "{{ModId}}/StoneChickenBaby",
@@ -57,13 +57,33 @@
 				"{{ModId}}.StoneEgg": {
 					"Name": "{{ModId}}.StoneEgg",
 					"DisplayName": "{{i18n: Egg.Stone.Name}}",
-					"Description": "{{i18n: Egg.Stone.Description}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
-					"Category": -18,
+					"Category": -5,
 					"Price": "{{Level1EggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 4,
-					"Edibility": -300,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_grey"
+					]
+				},
+				"{{ModId}}.LargeStoneEgg": {
+					"Name": "{{ModId}}.LargeStoneEgg",
+					"DisplayName": "{{i18n: LargeEgg.Stone.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level1LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 5,
+					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
@@ -80,32 +100,11 @@
 			}
 		},
 		{
-			"Action": "EditData",
-			"Target": "Data/Objects",
-			"Entries": {
-				"{{ModId}}.LargeStoneEgg": {
-					"Name": "{{ModId}}.LargeStoneEgg",
-					"DisplayName": "{{i18n: LargeEgg.Stone.Name}}",
-					"Description": "{{i18n: LargeEgg.Stone.Description}}",
-					"Type": "Basic",
-					"Category": -18,
-					"Price": "{{Level1LargeEggSellPrice}}",
-					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 5,
-					"Edibility": -300,
-					"ExcludeFromFishingCollection": true,
-					"ExcludeFromShippingCollection": true,
-					"ExcludeFromRandomSale": true,
-					"ContextTags": [
-						"category_egg",
-						"category_sell_at_pierres_and_marnies",
-						"chicken_item",
-						"color_grey"
-					]
-				}
-			},
+			"Action": "EditImage",
+			"Target": "{{ModId}}/StoneChicken",
+			"FromFile": "assets/tophatta/StoneChicken.png",
 			"When": {
-				"Query: {{EnableStoneChicken}} = true OR {{EnableProgressionMode}} = true": true
+				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		}
 	]

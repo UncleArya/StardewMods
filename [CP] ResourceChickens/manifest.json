@@ -4,6 +4,7 @@
 	"Version": "0.2.0",
 	"Description": "Adds new resource chickens to the game that produce special eggs that can be converted into resources",
 	"UniqueID": "UncleArya.ResourceChickens",
+	"MinimumApiVersion": "4.0.0",
 	"UpdateKeys": ["Nexus:21800"],
 	"ContentPackFor": {
 		"UniqueID": "Pathoschild.ContentPatcher"

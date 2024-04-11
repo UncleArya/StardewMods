@@ -27,7 +27,7 @@
 						}
 					],
 					"DaysToProduce": "{{Level2ChickenDaysToProduce}}",
-					"DeluxeProduceMinimumFriendship": 400,
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/HardwoodChicken",
 					"BabyTexture": "{{ModId}}/HardwoodChickenBaby",
@@ -50,13 +50,13 @@
 				"{{ModId}}.HardwoodEgg": {
 					"Name": "{{ModId}}.HardwoodEgg",
 					"DisplayName": "{{i18n: Egg.Hardwood.Name}}",
-					"Description": "{{i18n: Egg.Hardwood.Description}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
-					"Category": -18,
+					"Category": -5,
 					"Price": "{{Level2EggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 12,
-					"Edibility": -300,
+					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
@@ -70,13 +70,13 @@
 				"{{ModId}}.LargeHardwoodEgg": {
 					"Name": "{{ModId}}.LargeHardwoodEgg",
 					"DisplayName": "{{i18n: LargeEgg.Hardwood.Name}}",
-					"Description": "{{i18n: LargeEgg.Hardwood.Description}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
-					"Category": -18,
+					"Category": -5,
 					"Price": "{{Level2LargeEggSellPrice}}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 13,
-					"Edibility": -300,
+					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
@@ -104,6 +104,14 @@
 			},
 			"When": {
 				"EnableProgressionMode": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/HardwoodChicken",
+			"FromFile": "assets/tophatta/HardwoodChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		}
 	]

@@ -1,0 +1,182 @@
+{
+	"ForageSpawnEnabled": true,
+	"LargeObjectSpawnEnabled": false,
+	"OreSpawnEnabled": false,
+	"MonsterSpawnEnabled": false,
+	"Forage_Spawn_Settings": {
+		"Areas": [
+			{
+				"SpringItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.FiberEgg",
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"SummerItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.FiberEgg",
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"FallItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.FiberEgg",
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"WinterItemIndex": null,
+				"UniqueAreaID": "ResourceChickens.Woods",
+				"MapName": "Woods",
+				"MinimumSpawnsPerDay": 1,
+				"MaximumSpawnsPerDay": 1,
+				"IncludeTerrainTypes": ["All"],
+				"ExcludeTerrainTypes": [],
+				"IncludeCoordinates": [],
+				"ExcludeCoordinates": [],
+				"StrictTileChecking": "Maximum",
+				"SpawnTiming": {
+					"StartTime": 600,
+					"EndTime": 600,
+					"MinimumTimeBetweenSpawns": 10,
+					"MaximumSimultaneousSpawns": null,
+					"OnlySpawnIfAPlayerIsPresent": false,
+					"SpawnSound": ""
+				},
+				"ExtraConditions": {
+					"Years": [],
+					"Seasons": [],
+					"Days": [],
+					"WeatherYesterday": [],
+					"WeatherToday": [],
+					"WeatherTomorrow": [],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Any 2"],
+					"CPConditions": {},
+					"EPUPreconditions": [],
+					"LimitedNumberOfSpawns": null
+				},
+				"DaysUntilSpawnsExpire": 1
+			},
+			{
+				"SpringItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"SummerItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"FallItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"WinterItemIndex": null,
+				"UniqueAreaID": "ResourceChickens.Forest",
+				"MapName": "Forest",
+				"MinimumSpawnsPerDay": 1,
+				"MaximumSpawnsPerDay": 1,
+				"IncludeTerrainTypes": ["Diggable"],
+				"ExcludeTerrainTypes": [],
+				"IncludeCoordinates": [],
+				"ExcludeCoordinates": [],
+				"StrictTileChecking": "Maximum",
+				"SpawnTiming": {
+					"StartTime": 600,
+					"EndTime": 600,
+					"MinimumTimeBetweenSpawns": 10,
+					"MaximumSimultaneousSpawns": null,
+					"OnlySpawnIfAPlayerIsPresent": false,
+					"SpawnSound": ""
+				},
+				"ExtraConditions": {
+					"Years": [],
+					"Seasons": [],
+					"Days": [],
+					"WeatherYesterday": [],
+					"WeatherToday": [],
+					"WeatherTomorrow": [],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Any 2"],
+					"CPConditions": {},
+					"EPUPreconditions": [],
+					"LimitedNumberOfSpawns": null
+				},
+				"DaysUntilSpawnsExpire": 1
+			},
+			{
+				"SpringItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"SummerItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"FallItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"WinterItemIndex": null,
+				"UniqueAreaID": "ResourceChickens.Railroad",
+				"MapName": "Railroad",
+				"MinimumSpawnsPerDay": 1,
+				"MaximumSpawnsPerDay": 1,
+				"IncludeTerrainTypes": ["Diggable"],
+				"ExcludeTerrainTypes": [],
+				"IncludeCoordinates": [],
+				"ExcludeCoordinates": [],
+				"StrictTileChecking": "Maximum",
+				"SpawnTiming": {
+					"StartTime": 600,
+					"EndTime": 600,
+					"MinimumTimeBetweenSpawns": 10,
+					"MaximumSimultaneousSpawns": null,
+					"OnlySpawnIfAPlayerIsPresent": false,
+					"SpawnSound": ""
+				},
+				"ExtraConditions": {
+					"Years": [],
+					"Seasons": [],
+					"Days": [],
+					"WeatherYesterday": [],
+					"WeatherToday": [],
+					"WeatherTomorrow": [],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Any 2"],
+					"CPConditions": {},
+					"EPUPreconditions": [],
+					"LimitedNumberOfSpawns": null
+				},
+				"DaysUntilSpawnsExpire": 1
+			}
+		],
+		"PercentExtraSpawnsPerForagingLevel": 0,
+		"SpringItemIndex": [16, 20, 22, 257],
+		"SummerItemIndex": [396, 398, 402, 404],
+		"FallItemIndex": [281, 404, 420, 422],
+		"WinterItemIndex": [],
+		"CustomTileIndex": []
+	},
+	"Large_Object_Spawn_Settings": {
+		"Areas": [],
+		"CustomTileIndex": []
+	}
+}

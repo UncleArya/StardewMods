@@ -3,10 +3,26 @@
 ## 0.2.0
 - Added category for Level 1 Chickens (Clay, Coal, Stone, Wood)
 - Added Level 2 Chickens (Copper, Fiber, Hardwood)
+- Added unlockable crafting recipes for Copper and Hardwood Egg Fusion Chambers to hatch your first baby copper and hardwood chickens
+- Additional copper and hardwood chickens can be hatched in the vanilla incubator using the copper and hardwood eggs those chickens lay
+- Added requirement of Farm Type Manager (FTM) to allow for forage spawning
+- Added forage spawn conditions for the fiber chicken egg
+- Once obtained, a fiber chicken egg can be placed in the vanilla incubator to hatch a fiber chicken
 - Added a Progression Mode to allow for unlocking of Level 2 and above chickens
-- Level 1 Chickens can only be individually disabled if Progression Mode is also disabled as all Level 1 Chickens are required to unlock Level 2 Chickens
+- Level 1 Chickens can only be individually disabled if Progression Mode is also disabled as all Level 1 Chickens are required for obtaining Level 2 Chickens
 - If Progression Mode is enabled, all Level 1 Chickens will be force enabled
-- Added option to disable chicken swimming (enabled by default)
+- Resource Chickens now have 2 appearance options in the configs (VanillaStyle, HattaStyle)
+- Added alternative custom sprites for all resource chickens, done by [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
+- Added an option to have vanilla chickens sprites also be changed to match Hatta Style resource chickens
+- Changed egg item category to allow for use in cooking recipes
+- Changed egg edibility to match usability in cooking
+- Removed redundant config options and repetitious lines in default.json to make translating easier for translators going forward
+
+## 0.1.2
+- Added Chinese language support. Thanks [Orville9972](https://www.nexusmods.com/users/73926958)!
+
+## 0.1.1
+- Quick change to disable swimming chickens by default (can be enabled in the config)
 
 ## 0.1.0
 - Initial release
