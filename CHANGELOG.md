@@ -1,11 +1,14 @@
 # Changelog
 
 ## 0.2.0
+- Added Copper Chicken
+- Added Fiber Chicken
+- Added Hardwood Chicken
 - Added category for Level 1 Chickens (Clay, Coal, Stone, Wood)
-- Added Level 2 Chickens (Copper, Fiber, Hardwood)
+- Added category for Level 2 Chickens (Copper, Fiber, Hardwood)
 - Added unlockable crafting recipes for Copper and Hardwood Egg Fusion Chambers to hatch your first baby copper and hardwood chickens
 - Additional copper and hardwood chickens can be hatched in the vanilla incubator using the copper and hardwood eggs those chickens lay
-- Added requirement of Farm Type Manager (FTM) to allow for forage spawning
+- Added requirement for Farm Type Manager (FTM) to allow for forage spawning
 - Added forage spawn conditions for the fiber chicken egg
 - Once obtained, a fiber chicken egg can be placed in the vanilla incubator to hatch a fiber chicken
 - Added a Progression Mode to allow for unlocking of Level 2 and above chickens
