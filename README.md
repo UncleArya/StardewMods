@@ -1,4 +1,4 @@
-### ![ChickenCollection](https://github.com/UncleArya/ResourceChickens/assets/100550741/9ccb8c33-c4f1-4bd5-8d2f-5f669963d8a0)
+### ![ChickenCollection](https://github.com/UncleArya/ResourceChickens/assets/100550741/db27f280-450f-49df-a394-b757d0098274)
 
 <br/>**Show your chickens some love and they will reward you with special eggs that can be converted into crafting and building resources**.
 
