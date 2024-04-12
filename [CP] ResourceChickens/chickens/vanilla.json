@@ -10,8 +10,24 @@
 		},
 		{
 			"Action": "EditImage",
+			"Target": "Animals/BabyBlue Chicken",
+			"FromFile": "assets/tophatta/BlueChickenBaby",
+			"When": {
+				"VanillaChickensMatchHattaStyle": true
+			}
+		},
+		{
+			"Action": "EditImage",
 			"Target": "Animals/Brown Chicken",
 			"FromFile": "assets/tophatta/BrownChicken.png",
+			"When": {
+				"VanillaChickensMatchHattaStyle": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Animals/BabyBrown Chicken",
+			"FromFile": "assets/tophatta/BrownChickenBaby.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -26,6 +42,14 @@
 		},
 		{
 			"Action": "EditImage",
+			"Target": "Animals/BabyGolden Chicken",
+			"FromFile": "assets/tophatta/GoldenChickenBaby.png",
+			"When": {
+				"VanillaChickensMatchHattaStyle": true
+			}
+		},
+		{
+			"Action": "EditImage",
 			"Target": "Animals/Void Chicken",
 			"FromFile": "assets/tophatta/VoidChicken.png",
 			"When": {
@@ -34,8 +58,24 @@
 		},
 		{
 			"Action": "EditImage",
+			"Target": "Animals/BabyVoid Chicken",
+			"FromFile": "assets/tophatta/VoidChickenBaby.png",
+			"When": {
+				"VanillaChickensMatchHattaStyle": true
+			}
+		},
+		{
+			"Action": "EditImage",
 			"Target": "Animals/White Chicken",
 			"FromFile": "assets/tophatta/WhiteChicken.png",
+			"When": {
+				"VanillaChickensMatchHattaStyle": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Animals/BabyWhite Chicken",
+			"FromFile": "assets/tophatta/WhiteChickenBaby.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}

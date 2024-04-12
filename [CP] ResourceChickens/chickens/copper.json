@@ -91,11 +91,11 @@
 					"Name": "{{ModId}}.CopperEggFusionChamber",
 					"DisplayName": "{{i18n: FusionChamber.Copper.Name}}",
 					"Description": "{{i18n: FusionChamber.Description}}",
-					"Type": "Crafting",
+					"Type": "Basic",
 					"Category": -18,
 					"Price": "{{Level2LargeEggSellPrice}}",
-					"Texture": "{{ModId}}/CopperChicken", // Update
-					"SpriteIndex": 0, // Update
+					"Texture": "{{ModId}}/Items",
+					"SpriteIndex": 0,
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -110,6 +110,14 @@
 			"Action": "EditImage",
 			"Target": "{{ModId}}/CopperChicken",
 			"FromFile": "assets/tophatta/CopperChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/CopperChickenBaby",
+			"FromFile": "assets/tophatta/CopperChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

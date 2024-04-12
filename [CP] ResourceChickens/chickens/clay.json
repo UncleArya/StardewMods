@@ -106,6 +106,14 @@
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/ClayChickenBaby",
+			"FromFile": "assets/tophatta/ClayChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
 		}
 	]
 }

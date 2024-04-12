@@ -103,14 +103,14 @@ Some spirtes are edits done by me of existing vanilla sprites originally made by
 </br>
 </br>There are currently two appearance options for Resource Chickens sprites using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098):
 </br>
+</br>**Vanilla Style:** recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe.
 
 ![vanilla-style-transparent](https://github.com/UncleArya/ResourceChickens/assets/100550741/37c86e12-92ae-482c-8e37-031cc3aaaa9d)
 
-</br>**Vanilla Style:** recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe.
+</br>**Hatta Style:** custom and unique sprites created by the wonderfully talented [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 
 ![hatta-style-transparent](https://github.com/UncleArya/ResourceChickens/assets/100550741/01f6e506-9598-46a7-8ada-11165b1ae696)
 
-</br>**Hatta Style:** custom and unique sprites created by the wonderfully talented [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 </br>You can also enable vanilla chickens to look Hatta Style
 </br>
 </br>Reference images are on the [Nexus page](https://www.nexusmods.com/stardewvalley/mods/21800) and also in the mod folder.

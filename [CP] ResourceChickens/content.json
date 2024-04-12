@@ -341,7 +341,7 @@
 		// Machine and Eggs
 		{
 			"Action": "Load",
-			"Target": "{{ModId}}/Eggs, {{ModId}}/ResourceEggConverter",
+			"Target": "{{ModId}}/Eggs, {{ModId}}/ResourceEggConverter, {{ModId}}/Items",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
 		// Clay Chicken
@@ -398,11 +398,6 @@
 		}
 	]
 }
-
-// TODO: Sprites
-/*
-- Egg Fusion Chamber X 2
-*/
 
 // TODO: update README
 /*

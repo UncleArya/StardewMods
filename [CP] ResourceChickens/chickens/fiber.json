@@ -95,6 +95,14 @@
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/FiberChickenBaby",
+			"FromFile": "assets/tophatta/FiberChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
 		}
 	]
 }

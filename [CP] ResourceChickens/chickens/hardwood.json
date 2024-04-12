@@ -91,11 +91,11 @@
 					"Name": "{{ModId}}.HardwoodEggFusionChamber",
 					"DisplayName": "{{i18n: FusionChamber.Hardwood.Name}}",
 					"Description": "{{i18n: FusionChamber.Description}}",
-					"Type": "Crafting",
+					"Type": "Basic",
 					"Category": -18,
 					"Price": "{{Level2LargeEggSellPrice}}",
-					"Texture": "{{ModId}}/HardwoodChicken", // Update
-					"SpriteIndex": 0, // Update
+					"Texture": "{{ModId}}/Items",
+					"SpriteIndex": 1,
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -110,6 +110,14 @@
 			"Action": "EditImage",
 			"Target": "{{ModId}}/HardwoodChicken",
 			"FromFile": "assets/tophatta/HardwoodChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/HardwoodChickenBaby",
+			"FromFile": "assets/tophatta/HardwoodChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
