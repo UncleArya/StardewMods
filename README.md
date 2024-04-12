@@ -99,9 +99,9 @@ Here are my goals as I continue to develop and update Resource Chickens:
 
 ### ![sprite-art](https://github.com/UncleArya/ResourceChickens/assets/100550741/b80fee2d-eb74-4fce-bef5-7b9051fe7751)
 
-</br>Some spirtes are edits done by me of existing vanilla sprites originally made by ConcernedApe, with many sprites being original creations made by [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652).
+Some spirtes are edits done by me of existing vanilla sprites originally made by ConcernedApe, with many sprites being original creations made by [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652).
 </br>There are currently two appearance options for Resource Chickens sprites using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098):
-
+</br>
 ![vanilla-style-transparent](https://github.com/UncleArya/ResourceChickens/assets/100550741/3f3d6728-bf36-47c7-853f-655ac42298c9)
 
 </br>**Vanilla Style:** recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe.
