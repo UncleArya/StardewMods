@@ -1,4 +1,4 @@
-### ![ChickenCollection](https://github.com/UncleArya/ResourceChickens/assets/100550741/9ccb8c33-c4f1-4bd5-8d2f-5f669963d8a0)
+### ![ChickenCollection](https://github.com/UncleArya/ResourceChickens/assets/100550741/db27f280-450f-49df-a394-b757d0098274)
 
 <br/>**Show your chickens some love and they will reward you with special eggs that can be converted into crafting and building resources**.
 
@@ -99,8 +99,17 @@ Here are my goals as I continue to develop and update Resource Chickens:
 
 ### ![sprite-art](https://github.com/UncleArya/ResourceChickens/assets/100550741/b80fee2d-eb74-4fce-bef5-7b9051fe7751)
 
-There are currently two appearance options for Resource Chickens sprites using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098):
+Some spirtes are edits done by me of existing vanilla sprites originally made by ConcernedApe, with many sprites being original creations made by [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652).
+</br>
+</br>There are currently two appearance options for Resource Chickens sprites using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098):
+</br>
+
+![vanilla-style-transparent](https://github.com/UncleArya/ResourceChickens/assets/100550741/37c86e12-92ae-482c-8e37-031cc3aaaa9d)
+
 </br>**Vanilla Style:** recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe.
+
+![hatta-style-transparent](https://github.com/UncleArya/ResourceChickens/assets/100550741/01f6e506-9598-46a7-8ada-11165b1ae696)
+
 </br>**Hatta Style:** custom and unique sprites created by the wonderfully talented [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 </br>Reference images are on the [Nexus page](https://www.nexusmods.com/stardewvalley/mods/21800) and also in the mod folder.
 
