@@ -1,0 +1,81 @@
+{
+	"Format": "2.0.0",
+	//Config
+	"configSchema": {
+		//Enabled
+		"Enable Beach Minecart": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "A minecart will appear on the beach on all non-festival days on the beach map."
+		},
+		//Enable for Festivals
+		"Enable Festivals": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "A minecart will appear on the beach during (vanilla) festivals. May or may not be interactable depending on the festival."
+		},
+		//Custom Name
+		"MinecartName": {
+			"AllowBlank": "true",
+			"Description": "(Optional) Can enter a custom value for the location name. Defaults to 'Beach' or translated alternative."
+		}
+	},
+	"Changes": [
+		//Add minecart
+		{
+			"Action": "EditData",
+			"Target": "Data/Minecarts",
+			"TargetField": ["Default", "Destinations"],
+			"Entries": {
+				"Beach": {
+					"Id": "Beach",
+					"DisplayName": "{{i18n: Beach}}",
+					"TargetLocation": "Beach",
+					"TargetTile": { "X": 41, "Y": 2 },
+					"TargetDirection": "down"
+				}
+			}
+		},
+		//Add minecart (custom name)
+		{
+			"Action": "EditData",
+			"Target": "Data/Minecarts",
+			"TargetField": ["Default", "Destinations"],
+			"Entries": {
+				"Beach": {
+					"Id": "Beach",
+					"DisplayName": "{{MinecartName}}",
+					"TargetLocation": "Beach",
+					"TargetTile": { "X": 41, "Y": 2 },
+					"TargetDirection": "down"
+				}
+			},
+			"When": {
+				"MinecartName": "{{MinecartName}}"
+			}
+		},
+
+		//Map Edit
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Beach",
+			"FromFile": "assets/Beach.tmx",
+			"FromArea": { "X": 40, "Y": 0, "Width": 5, "Height": 5 },
+			"ToArea": { "X": 40, "Y": 0, "Width": 5, "Height": 5 },
+			"When": {
+				"Enable Beach Minecart": true
+			}
+		},
+		// Festivals
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Beach-Jellies, Maps/Beach-Jellies2, Maps/Beach-Luau, Maps/Beach-Luau2, Maps/Beach-NightMarket",
+			"FromFile": "assets/{{TargetWithoutPath}}.tmx",
+			"FromArea": { "X": 40, "Y": 0, "Width": 5, "Height": 5 },
+			"ToArea": { "X": 40, "Y": 0, "Width": 5, "Height": 5 },
+			"When": {
+				"Enable Festivals": true
+			}
+		}
+	]
+}
