@@ -1,4 +1,4 @@
-#### This is a simple content pack for Stardew that allows for aging of all artisan goods in the Cask using only Content Patcher.
+#### This is a simple content pack for Stardew that allows for aging far more artisan goods in the Cask using only Content Patcher.
 
 **Fully customisable, you can place the following items in a cask to increase their quality and value over time.**
 
