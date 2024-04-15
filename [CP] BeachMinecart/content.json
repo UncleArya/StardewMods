@@ -34,6 +34,9 @@
 					"TargetTile": { "X": 41, "Y": 2 },
 					"TargetDirection": "down"
 				}
+			},
+			"When": {
+				"Enable Beach Minecart": true
 			}
 		},
 		//Add minecart (custom name)
@@ -51,6 +54,7 @@
 				}
 			},
 			"When": {
+				"Enable Beach Minecart": true,
 				"MinecartName": "{{MinecartName}}"
 			}
 		},
@@ -59,9 +63,9 @@
 		{
 			"Action": "EditMap",
 			"Target": "Maps/Beach",
-			"FromFile": "assets/Beach.tmx",
-			"FromArea": { "X": 40, "Y": 0, "Width": 5, "Height": 5 },
-			"ToArea": { "X": 40, "Y": 0, "Width": 5, "Height": 5 },
+			"FromFile": "assets/Beach-Minecart.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 5 },
+			"ToArea": { "X": 41, "Y": 0, "Width": 4, "Height": 5 },
 			"When": {
 				"Enable Beach Minecart": true
 			}
@@ -70,10 +74,11 @@
 		{
 			"Action": "EditMap",
 			"Target": "Maps/Beach-Jellies, Maps/Beach-Jellies2, Maps/Beach-Luau, Maps/Beach-Luau2, Maps/Beach-NightMarket",
-			"FromFile": "assets/{{TargetWithoutPath}}.tmx",
-			"FromArea": { "X": 40, "Y": 0, "Width": 5, "Height": 5 },
-			"ToArea": { "X": 40, "Y": 0, "Width": 5, "Height": 5 },
+			"FromFile": "assets/{{TargetWithoutPath}}-Minecart.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 4, "Height": 5 },
+			"ToArea": { "X": 41, "Y": 0, "Width": 4, "Height": 5 },
 			"When": {
+				"Enable Beach Minecart": true,
 				"Enable Festivals": true
 			}
 		}

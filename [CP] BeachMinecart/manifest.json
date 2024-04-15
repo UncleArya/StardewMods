@@ -1,7 +1,7 @@
 {
 	"Name": "Beach Minecart",
 	"Author": "UncleArya",
-	"Version": "1.3.3",
+	"Version": "1.4.0",
 	"Description": "Adds a minecart location to the beach",
 	"UniqueID": "unclearya.beachminecart",
 	"UpdateKeys": ["Nexus:13650"],
