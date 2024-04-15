@@ -1,0 +1,595 @@
+/*
+BALANCING NOTES
+| Value   | AgingMultiplier | Days |
+| -----   | --------------- | ---- |
+|1000+    | 1               | 56   |
+|600-1000 | 1.66            | 34   |
+|400-600  | 2               | 28   |
+|<400     | 4               | 14   |
+*/
+{
+	"Format": "2.0.0",
+	// Config
+	"ConfigSchema": {
+		"AllowJelly": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for jelly to be placed in casks"
+		},
+		"AllowJuice": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for juice to be placed in casks"
+		},
+		"AllowPickles": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for pickles to be placed in casks"
+		},
+		"AllowHoney": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for honey to be placed in casks"
+		},
+		"AllowTruffleOil": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for truffle oil to be placed in casks"
+		},
+		"AllowAgedRoe": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for aged roe to be placed in casks"
+		},
+		"AllowCaviar": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for caviar to be placed in casks"
+		},
+		"AllowRaisins": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for raisins to be placed in casks"
+		},
+		"AllowDriedFruit": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for dried fruit to be placed in casks"
+		},
+		"AllowDriedMushrooms": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for dried mushrooms to be placed in casks"
+		},
+		"AllowSmokedFish": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for smoked fish to be placed in casks"
+		},
+		"AllowMayo": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Description": "Allows for mayo to be placed in casks"
+		},
+		"AllowSyrups": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Description": "Allows for syrups, resin, and tar to be placed in casks"
+		},
+		"AllowCoffee": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Description": "Allows for coffee to be placed in casks"
+		},
+		"AllowGreenTea": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Description": "Allows for green tea to be placed in casks"
+		},
+		"AllowOil": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Description": "Allows for oil to be placed in casks"
+		}
+	},
+	"Changes": [
+		// Jelly
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.Jelly": {
+					"Id": "{{ModId}}.Caskmaster.Jelly",
+					"Triggers": [
+						{
+							"Id": "Jelly",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["jelly_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Jelly",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowJelly": true
+			}
+		},
+		// Juice
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.Juice": {
+					"Id": "{{ModId}}.Caskmaster.Juice",
+					"Triggers": [
+						{
+							"Id": "Juice",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["juice_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Juice",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowJuice": true
+			}
+		},
+
+		// Pickles
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.Pickles": {
+					"Id": "{{ModId}}.Caskmaster.Pickles",
+					"Triggers": [
+						{
+							"Id": "Pickles",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["pickle_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Pickles",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowPickles": true
+			}
+		},
+
+		// Honey
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.Honey": {
+					"Id": "{{ModId}}.Caskmaster.Honey",
+					"Triggers": [
+						{
+							"Id": "Honey",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["honey_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Honey",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowHoney": true
+			}
+		},
+		// TruffleOil
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.TruffleOil": {
+					"Id": "{{ModId}}.Caskmaster.TruffleOil",
+					"Triggers": [
+						{
+							"Id": "TruffleOil",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)432",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "TruffleOil",
+							"CustomData": {
+								"AgingMultiplier": "1"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowTruffleOil": true
+			}
+		},
+		// AgedRoe
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.AgedRoe": {
+					"Id": "{{ModId}}.Caskmaster.AgedRoe",
+					"Triggers": [
+						{
+							"Id": "AgedRoe",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)447",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "AgedRoe",
+							"CustomData": {
+								"AgingMultiplier": "2"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowAgedRoe": true
+			}
+		},
+		// Caviar
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.Caviar": {
+					"Id": "{{ModId}}.Caskmaster.Caviar",
+					"Triggers": [
+						{
+							"Id": "Caviar",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)445",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Caviar",
+							"CustomData": {
+								"AgingMultiplier": "2"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowCaviar": true
+			}
+		},
+		// Raisins
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.Raisins": {
+					"Id": "{{ModId}}.Caskmaster.Raisins",
+					"Triggers": [
+						{
+							"Id": "Raisins",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "Raisins",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Raisins",
+							"CustomData": {
+								"AgingMultiplier": "2"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowRaisins": true
+			}
+		},
+		// DriedFruit
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.DriedFruit": {
+					"Id": "{{ModId}}.Caskmaster.DriedFruit",
+					"Triggers": [
+						{
+							"Id": "DriedFruit",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "DriedFruit",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "DriedFruit",
+							"CustomData": {
+								"AgingMultiplier": "1.66"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowDriedFruit": true
+			}
+		},
+		// DriedMushrooms
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.DriedMushrooms": {
+					"Id": "{{ModId}}.Caskmaster.DriedMushrooms",
+					"Triggers": [
+						{
+							"Id": "DriedMushrooms",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "DriedMushrooms",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "DriedMushrooms",
+							"CustomData": {
+								"AgingMultiplier": "2"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowDriedMushrooms": true
+			}
+		},
+		// SmokedFish
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.SmokedFish": {
+					"Id": "{{ModId}}.Caskmaster.SmokedFish",
+					"Triggers": [
+						{
+							"Id": "SmokedFish",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "SmokedFish",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "SmokedFish",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowSmokedFish": true
+			}
+		},
+		// Mayo
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.Mayo": {
+					"Id": "{{ModId}}.Caskmaster.Mayo",
+					"Triggers": [
+						{
+							"Id": "Mayo",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["mayo_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Mayo",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowMayo": true
+			}
+		},
+		// Syrups
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.Syrups": {
+					"Id": "{{ModId}}.Caskmaster.Syrups",
+					"Triggers": [
+						{
+							"Id": "Syrups",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["syrup_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Syrups",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowSyrups": true
+			}
+		},
+		// Coffee
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.Coffee": {
+					"Id": "{{ModId}}.Caskmaster.Coffee",
+					"Triggers": [
+						{
+							"Id": "Coffee",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)395",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Coffee",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowCoffee": true
+			}
+		},
+		// GreenTea
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.GreenTea": {
+					"Id": "{{ModId}}.Caskmaster.GreenTea",
+					"Triggers": [
+						{
+							"Id": "GreenTea",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)614",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "GreenTea",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowGreenTea": true
+			}
+		},
+		// Oil
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}Caskmaster.Oil": {
+					"Id": "{{ModId}}.Caskmaster.Oil",
+					"Triggers": [
+						{
+							"Id": "Oil",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)247",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Oil",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowOil": true
+			}
+		}
+	]
+}

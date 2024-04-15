@@ -1,0 +1,12 @@
+{
+	"Name": "Caskmaster",
+	"Author": "UncleArya",
+	"Version": "1.0.0",
+	"Description": "Makes changes and tweaks to casks",
+	"UniqueID": "UncleArya.Caskmaster",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": ["Nexus: 22588"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}
