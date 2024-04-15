@@ -1,4 +1,4 @@
-![caskmaster](https://github.com/UncleArya/CaskMaster/assets/100550741/39827d62-4c56-48e2-a0d0-03e938a4373f)
+![banner](https://github.com/UncleArya/CaskMaster/assets/100550741/15f01a10-0e13-48f7-a432-6c0a824c7afd)
 
 #### This is a simple content pack for Stardew that allows for aging far more artisan goods in the Cask using only Content Patcher.
 
