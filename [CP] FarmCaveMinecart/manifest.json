@@ -4,6 +4,7 @@
 	"Version": "1.3.0",
 	"Description": "Access minecart locations on the farm.",
 	"UniqueID": "unclearya.farmcaveminecart",
+	"MinimumApiVersion": "4.0.0",
 	"UpdateKeys": ["Nexus:14870"],
 	"ContentPackFor": {
 		"UniqueID": "Pathoschild.ContentPatcher"
