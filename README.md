@@ -31,25 +31,26 @@ Any other items you would like to be added into casks? Let me know!
 I have attempted to balance processing time based on the average sell value of an item compared to the processing time for vanilla cask items. Please let me know if you feel the balancing is too overpowered or underpowered with any of these items.
 
 <details>
-	<summary>Days Per Item</summary>
-	| Item            | Days To Iridium |
-	| --------------- | --------------- |
-	| Jelly           | 14              |
-	| Juice           | 14              |
-	| Pickles         | 14              |
-	| Honey           | 14              |
-	| Truffle Oil     | 56              |
-	| Aged Roe        | 28              |
-	| Caviar          | 28              |
-	| Raisins         | 28              |
-	| Dried Fruit     | 34              |
-	| Dried Mushrooms | 28              |
-	| Smoked Fish     | 14              |
-	| Mayo            | 14              |
-	| Syrups          | 14              |
-	| Coffee          | 14              |
-	| Green Tea       | 14              |
-	| Oil             | 14              |
+<summary>Days Per Item</summary>
+	
+| Item            | Days To Iridium |
+| --------------- | --------------- |
+| Jelly           | 14              |
+| Juice           | 14              |
+| Pickles         | 14              |
+| Honey           | 14              |
+| Truffle Oil     | 56              |
+| Aged Roe        | 28              |
+| Caviar          | 28              |
+| Raisins         | 28              |
+| Dried Fruit     | 34              |
+| Dried Mushrooms | 28              |
+| Smoked Fish     | 14              |
+| Mayo            | 14              |
+| Syrups          | 14              |
+| Coffee          | 14              |
+| Green Tea       | 14              |
+| Oil             | 14              |
 </details>
 
 #### Sell Prices
