@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1
+
+-   Added Turkish language support. Thanks [Stola90](https://forums.nexusmods.com/profile/193926774-stola90/)!
+
 ## 0.2.0
 
 -   Added Copper Chicken

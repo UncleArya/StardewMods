@@ -120,7 +120,7 @@ Some spirtes are edits done by me of existing vanilla sprites originally made by
 
 ### ![localisation](https://github.com/UncleArya/ResourceChickens/assets/100550741/73dda029-4b5e-44c9-a5d6-5c32b530dc9b)
 
-Current languages supported: English 🇬🇧, Chinese 🇨🇳 (Thanks [Orville9972](https://www.nexusmods.com/users/73926958))
+Current languages supported: English 🇬🇧, Chinese 🇨🇳 (Thanks [Orville9972](https://www.nexusmods.com/users/73926958)), Turkish 🇹🇷 (Thanks [Stola90](https://forums.nexusmods.com/profile/193926774-stola90/))
 
 Want to help translate this mod into another language? This mod is fully prepared for i18n localisation. Download the default.json file in the i18n folder of this mod or reach out to me over Discord (UncleArya). I can then add your translation file to the main mod file for improved localisation support.
 
