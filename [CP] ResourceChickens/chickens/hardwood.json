@@ -1,0 +1,126 @@
+{
+	"Changes": [
+		// Hardwood Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.HardwoodChicken": {
+					"DisplayName": "{{i18n: Chicken.HardwoodChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": [
+						"{{ModId}}.HardwoodEgg",
+						"{{ModId}}.LargeHardwoodEgg",
+						"{{ModId}}.HardwoodEggFusionChamber"
+					],
+					"IncubationTime": "{{Level2ChickenIncubationTime}}",
+					"BirthText": "{{i18n: Chicken.HardwoodChicken.BirthText}}",
+					"DaysToMature": "{{Level2ChickenDaysToMature}}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.HardwoodEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeHardwoodEgg"
+						}
+					],
+					"DaysToProduce": "{{Level2ChickenDaysToProduce}}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/HardwoodChicken",
+					"BabyTexture": "{{ModId}}/HardwoodChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Level2ChickenSellPrice}}"
+				}
+			},
+			"When": {
+				"EnableProgressionMode": true
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.HardwoodEgg": {
+					"Name": "{{ModId}}.HardwoodEgg",
+					"DisplayName": "{{i18n: Egg.Hardwood.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level2EggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 12,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_brown"
+					]
+				},
+				"{{ModId}}.LargeHardwoodEgg": {
+					"Name": "{{ModId}}.LargeHardwoodEgg",
+					"DisplayName": "{{i18n: LargeEgg.Hardwood.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level2LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 13,
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_brown"
+					]
+				},
+				"{{ModId}}.HardwoodEggFusionChamber": {
+					"Name": "{{ModId}}.HardwoodEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Hardwood.Name}}",
+					"Description": "{{i18n: FusionChamber.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Level2LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Items",
+					"SpriteIndex": 1,
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true
+				}
+			},
+			"When": {
+				"EnableProgressionMode": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/HardwoodChicken",
+			"FromFile": "assets/tophatta/HardwoodChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/HardwoodChickenBaby",
+			"FromFile": "assets/tophatta/HardwoodChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

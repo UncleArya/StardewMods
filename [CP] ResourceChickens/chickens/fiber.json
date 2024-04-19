@@ -1,0 +1,108 @@
+{
+	"Changes": [
+		// Fiber Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.FiberChicken": {
+					"DisplayName": "{{i18n: Chicken.FiberChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": ["{{ModId}}.FiberEgg", "{{ModId}}.LargeFiberEgg"],
+					"IncubationTime": "{{Level2ChickenIncubationTime}}",
+					"BirthText": "{{i18n: Chicken.FiberChicken.BirthText}}",
+					"DaysToMature": "{{Level2ChickenDaysToMature}}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.FiberEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeFiberEgg"
+						}
+					],
+					"DaysToProduce": "{{Level2ChickenDaysToProduce}}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/FiberChicken",
+					"BabyTexture": "{{ModId}}/FiberChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Level2ChickenSellPrice}}"
+				}
+			},
+			"When": {
+				"EnableProgressionMode": true
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.FiberEgg": {
+					"Name": "{{ModId}}.FiberEgg",
+					"DisplayName": "{{i18n: Egg.Fiber.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level2EggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 10,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_green"
+					]
+				},
+				"{{ModId}}.LargeFiberEgg": {
+					"Name": "{{ModId}}.LargeFiberEgg",
+					"DisplayName": "{{i18n: LargeEgg.Fiber.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level2LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 11,
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_green"
+					]
+				}
+			},
+			"When": {
+				"EnableProgressionMode": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/FiberChicken",
+			"FromFile": "assets/tophatta/FiberChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/FiberChickenBaby",
+			"FromFile": "assets/tophatta/FiberChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

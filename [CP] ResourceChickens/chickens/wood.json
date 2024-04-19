@@ -1,0 +1,119 @@
+{
+	"Changes": [
+		// Wood Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.WoodChicken": {
+					"DisplayName": "{{i18n: Chicken.WoodChicken.Name}}",
+					"House": "Coop",
+					"PurchasePrice": "{{query: {{Level1ChickenPurchasePrice}} / 2}}",
+					"ShopTexture": "{{ModId}}/WoodShopTexture",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 32,
+						"Height": 16
+					},
+					"RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
+					"ShopDescription": "{{i18n: Chicken.WoodChicken.Description}}",
+					"ShopMissingBuildingDescription": "{{i18n: Chicken.Level1.MissingBuildingDescription}}",
+					"EggItemIds": ["{{ModId}}.WoodEgg", "{{ModId}}.LargeWoodEgg"],
+					"IncubationTime": "{{Level1ChickenIncubationTime}}",
+					"BirthText": "{{i18n: Chicken.WoodChicken.BirthText}}",
+					"DaysToMature": "{{Level1ChickenDaysToMature}}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.WoodEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeWoodEgg"
+						}
+					],
+					"DaysToProduce": "{{Level1ChickenDaysToProduce}}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/WoodChicken",
+					"BabyTexture": "{{ModId}}/WoodChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Level1ChickenSellPrice}}"
+				}
+			},
+			"When": {
+				"Query: {{EnableWoodChicken}} = true OR {{EnableProgressionMode}} = true": true
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.WoodEgg": {
+					"Name": "{{ModId}}.WoodEgg",
+					"DisplayName": "{{i18n: Egg.Wood.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level1EggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 6,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_brown"
+					]
+				},
+				"{{ModId}}.LargeWoodEgg": {
+					"Name": "{{ModId}}.LargeWoodEgg",
+					"DisplayName": "{{i18n: LargeEgg.Wood.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level1LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 7,
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_brown"
+					]
+				}
+			},
+			"When": {
+				"Query: {{EnableWoodChicken}} = true OR {{EnableProgressionMode}} = true": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/WoodChicken",
+			"FromFile": "assets/tophatta/WoodChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/WoodChickenBaby",
+			"FromFile": "assets/tophatta/WoodChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

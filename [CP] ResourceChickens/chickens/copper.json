@@ -1,0 +1,126 @@
+{
+	"Changes": [
+		// Copper Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.CopperChicken": {
+					"DisplayName": "{{i18n: Chicken.CopperChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": [
+						"{{ModId}}.CopperEgg",
+						"{{ModId}}.LargeCopperEgg",
+						"{{ModId}}.CopperEggFusionChamber"
+					],
+					"IncubationTime": "{{Level2ChickenIncubationTime}}",
+					"BirthText": "{{i18n: Chicken.CopperChicken.BirthText}}",
+					"DaysToMature": "{{Level2ChickenDaysToMature}}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.CopperEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeCopperEgg"
+						}
+					],
+					"DaysToProduce": "{{Level2ChickenDaysToProduce}}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/CopperChicken",
+					"BabyTexture": "{{ModId}}/CopperChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Level2ChickenSellPrice}}"
+				}
+			},
+			"When": {
+				"EnableProgressionMode": true
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.CopperEgg": {
+					"Name": "{{ModId}}.CopperEgg",
+					"DisplayName": "{{i18n: Egg.Copper.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level2EggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 8,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_copper"
+					]
+				},
+				"{{ModId}}.LargeCopperEgg": {
+					"Name": "{{ModId}}.LargeCopperEgg",
+					"DisplayName": "{{i18n: LargeEgg.Copper.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level2LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 9,
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_copper"
+					]
+				},
+				"{{ModId}}.CopperEggFusionChamber": {
+					"Name": "{{ModId}}.CopperEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Copper.Name}}",
+					"Description": "{{i18n: FusionChamber.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Level2LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Items",
+					"SpriteIndex": 0,
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true
+				}
+			},
+			"When": {
+				"EnableProgressionMode": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/CopperChicken",
+			"FromFile": "assets/tophatta/CopperChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/CopperChickenBaby",
+			"FromFile": "assets/tophatta/CopperChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

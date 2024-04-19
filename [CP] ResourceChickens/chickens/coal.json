@@ -1,0 +1,119 @@
+{
+	"Changes": [
+		// Coal Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.CoalChicken": {
+					"DisplayName": "{{i18n: Chicken.CoalChicken.Name}}",
+					"House": "Coop",
+					"PurchasePrice": "{{query: {{Level1ChickenPurchasePrice}} / 2}}",
+					"ShopTexture": "{{ModId}}/CoalShopTexture",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 32,
+						"Height": 16
+					},
+					"RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
+					"ShopDescription": "{{i18n: Chicken.CoalChicken.Description}}",
+					"ShopMissingBuildingDescription": "{{i18n: Chicken.Level1.MissingBuildingDescription}}",
+					"EggItemIds": ["{{ModId}}.CoalEgg", "{{ModId}}.LargeCoalEgg"],
+					"IncubationTime": "{{Level1ChickenIncubationTime}}",
+					"BirthText": "{{i18n: Chicken.CoalChicken.BirthText}}",
+					"DaysToMature": "{{Level1ChickenDaysToMature}}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.CoalEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeCoalEgg"
+						}
+					],
+					"DaysToProduce": "{{Level1ChickenDaysToProduce}}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/CoalChicken",
+					"BabyTexture": "{{ModId}}/CoalChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Level1ChickenSellPrice}}"
+				}
+			},
+			"When": {
+				"Query: {{EnableCoalChicken}} = true OR {{EnableProgressionMode}} = true": true
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.CoalEgg": {
+					"Name": "{{ModId}}.CoalEgg",
+					"DisplayName": "{{i18n: Egg.Coal.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level1EggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 2,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_black"
+					]
+				},
+				"{{ModId}}.LargeCoalEgg": {
+					"Name": "{{ModId}}.LargeCoalEgg",
+					"DisplayName": "{{i18n: LargeEgg.Coal.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level1LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 3,
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_black"
+					]
+				}
+			},
+			"When": {
+				"Query: {{EnableCoalChicken}} = true OR {{EnableProgressionMode}} = true": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/CoalChicken",
+			"FromFile": "assets/tophatta/CoalChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/CoalChickenBaby",
+			"FromFile": "assets/tophatta/CoalChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

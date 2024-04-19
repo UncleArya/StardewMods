@@ -1,0 +1,119 @@
+{
+	"Changes": [
+		// Clay Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.ClayChicken": {
+					"DisplayName": "{{i18n: Chicken.ClayChicken.Name}}",
+					"House": "Coop",
+					"PurchasePrice": "{{query: {{Level1ChickenPurchasePrice}} / 2}}",
+					"ShopTexture": "{{ModId}}/ClayShopTexture",
+					"ShopSourceRect": {
+						"X": 0,
+						"Y": 0,
+						"Width": 32,
+						"Height": 16
+					},
+					"RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
+					"ShopDescription": "{{i18n: Chicken.ClayChicken.Description}}",
+					"ShopMissingBuildingDescription": "{{i18n: Chicken.Level1.MissingBuildingDescription}}",
+					"EggItemIds": ["{{ModId}}.ClayEgg", "{{ModId}}.LargeClayEgg"],
+					"IncubationTime": "{{Level1ChickenIncubationTime}}",
+					"BirthText": "{{i18n: Chicken.ClayChicken.BirthText}}",
+					"DaysToMature": "{{Level1ChickenDaysToMature}}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.ClayEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeClayEgg"
+						}
+					],
+					"DaysToProduce": "{{Level1ChickenDaysToProduce}}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/ClayChicken",
+					"BabyTexture": "{{ModId}}/ClayChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Level1ChickenSellPrice}}"
+				}
+			},
+			"When": {
+				"Query: {{EnableClayChicken}} = true OR {{EnableProgressionMode}} = true": true
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.ClayEgg": {
+					"Name": "{{ModId}}.ClayEgg",
+					"DisplayName": "{{i18n: Egg.Clay.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level1EggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 0,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_brown"
+					]
+				},
+				"{{ModId}}.LargeClayEgg": {
+					"Name": "{{ModId}}.LargeClayEgg",
+					"DisplayName": "{{i18n: LargeEgg.Clay.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Level1LargeEggSellPrice}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 1,
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": [
+						"category_egg",
+						"category_sell_at_pierres_and_marnies",
+						"chicken_item",
+						"color_brown"
+					]
+				}
+			},
+			"When": {
+				"Query: {{EnableClayChicken}} = true OR {{EnableProgressionMode}} = true": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/ClayChicken",
+			"FromFile": "assets/tophatta/ClayChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/ClayChickenBaby",
+			"FromFile": "assets/tophatta/ClayChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

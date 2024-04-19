@@ -1,0 +1,24 @@
+{
+	"Changes": [
+		// Resource Egg Converter
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}.ResourceEggConverter": "{{ResourceEggConverterCraftingRecipe}}/Home/{{ModId}}.ResourceEggConverter/true/Farming 2/{{i18n: BigCraftable.ResourceEggConverter.Name}}"
+			}
+		},
+		// Level 2 Chicken Egg Fusion Chambers
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}.CopperEggFusionChamber": "{{CopperEggFusionChamberRecipe}}/Home/{{ModId}}.CopperEggFusionChamber/false/Farming 3/{{i18n: FusionChamber.Copper.Name}}",
+				"{{ModId}}.HardwoodEggFusionChamber": "{{HardwoodEggFusionChamberRecipe}}/Home/{{ModId}}.HardwoodEggFusionChamber/false/Farming 3/{{i18n: FusionChamber.Hardwood.Name}}"
+			},
+			"When": {
+				"EnableProgressionMode": true
+			}
+		}
+	]
+}
