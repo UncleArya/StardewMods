@@ -22,3 +22,4 @@ This content pack adds 1 new minecart location to the vanilla farm cave, which b
 #### Credits
 
 I took motivation from [Integrated Minecarts](https://www.nexusmods.com/stardewvalley/mods/11881) to try creating a new minecart location. So huge props to [Jibblestein](https://www.nexusmods.com/stardewvalley/users/5639823) for creating a very cool mod. Huge thanks to [Pathoschild](https://www.nexusmods.com/stardewvalley/users/1552317) for making CP docs so easy to understand.
+
