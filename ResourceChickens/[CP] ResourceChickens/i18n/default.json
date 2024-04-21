@@ -1,7 +1,7 @@
 /*
 ~Notes to translators~ Update 0.3.0
-Lines Added: 
-Lines Changed: 
+Lines Added: 58, 66, 71-86
+Lines Changed: 89
 */
 // Thank you translators!!
 {
@@ -55,7 +55,7 @@ Lines Changed:
 
 	// Config
 	// Appearance & Behaviour
-	"config.section.AppearanceBehaviour.name": "Appearance & Behaviour",
+	/*Added*/ "config.section.AppearanceBehaviour.name": "Appearance & Behaviour",
 	"config.ChickenAppearanceVersion.name": "Chicken Appearance Style",
 	"config.ChickenAppearanceVersion.description": "Choose the sprite style you would like for your resource chickens. Reference images on Nexus and in mod folder.\nVanillaStyle: vanilla chicken sprites recoloured by UncleArya\nHattaStyle: custom chicken sprites made by Tophatta",
 	"config.VanillaChickensMatchHattaStyle.name": "Vanilla Chickens Hatta Style",
@@ -63,29 +63,29 @@ Lines Changed:
 	"config.ChickensCanSwim.name": "Chickens Can Swim",
 	"config.ChickensCanSwim.description": "Allows resource chickens to swim in water when they are happy\nDefault: False",
 	// Difficulty Scaling
-	"config.section.DifficultyScaling.name": "Difficulty Scaling",
+	/*Added*/ "config.section.DifficultyScaling.name": "Difficulty Scaling",
 	"config.Level1ChickenRequiredBuilding.name": "Required Building",
 	"config.Level1ChickenRequiredBuilding.description": "The level of coop needed to purchase a resource chicken from Marnie\nDefault: Coop",
 	"config.HeartsRequiredForLargeEggs.name": "Hearts Required for Large Eggs",
 	"config.HeartsRequiredForLargeEggs.description": "The amount of full relationship hearts needed with a chicken before it can produce large eggs\nDefault: 2",
-	"config.ResourceEggConversionAmount.name": "Amount of Resources Obtained",
-	"config.ResourceEggConversionAmount.description": "Amount of resources obtained from a resource egg when it is placed in a Resource Egg Converter.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n4x: Quadruple the default amount",
-	"config.ResourceEggSellPrice.name": "Egg Sell Price",
-	"config.ResourceEggSellPrice.description": "Sell price for resource eggs.\n\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n4x: Quadruple the default amount",
-	"config.ResourceChickenPrice.name": "Chicken Sell/Purchase Price",
-	"config.ResourceChickenPrice.description": "Cost to purchase chickens from Marnie and amount received when selling a chicken.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
-	"config.ResourceChickenIncubationTime.name": "Time to Hatch",
-	"config.ResourceChickenIncubationTime.description": "Amount of time required for a resource egg to hatch in an incubator.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
-	"config.ResourceChickenDaysToMature.name": "Time to Mature",
-	"config.ResourceChickenDaysToMature.description": "Amount of time required for a baby resource chicken to mature into an adult.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
-	"config.ResourceChickenDaysToProduce.name": "Time to Produce an Egg",
-	"config.ResourceChickenDaysToProduce.description": "Amount of time required for a resource chicken to lay an egg.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
+	/*Added*/ "config.ResourceEggConversionAmount.name": "Amount of Resources Obtained",
+	/*Added*/ "config.ResourceEggConversionAmount.description": "Amount of resources obtained from a resource egg when it is placed in a Resource Egg Converter.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n4x: Quadruple the default amount",
+	/*Added*/ "config.ResourceEggSellPrice.name": "Egg Sell Price",
+	/*Added*/ "config.ResourceEggSellPrice.description": "Sell price for resource eggs.\n\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n4x: Quadruple the default amount",
+	/*Added*/ "config.ResourceChickenPrice.name": "Chicken Sell/Purchase Price",
+	/*Added*/ "config.ResourceChickenPrice.description": "Cost to purchase chickens from Marnie and amount received when selling a chicken.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
+	/*Added*/ "config.ResourceChickenIncubationTime.name": "Time to Hatch",
+	/*Added*/ "config.ResourceChickenIncubationTime.description": "Amount of time required for a resource egg to hatch in an incubator.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
+	/*Added*/ "config.ResourceChickenDaysToMature.name": "Time to Mature",
+	/*Added*/ "config.ResourceChickenDaysToMature.description": "Amount of time required for a baby resource chicken to mature into an adult.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
+	/*Added*/ "config.ResourceChickenDaysToProduce.name": "Time to Produce an Egg",
+	/*Added*/ "config.ResourceChickenDaysToProduce.description": "Amount of time required for a resource chicken to lay an egg.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
 	// Machine Tweaks
-	"config.section.MachineTweaks.name": "Machine Tweaks",
-	"config.ResourceEggProcessingTime.name": "Resource Processing Time (Mins)",
-	"config.ResourceEggProcessingTime.description": "Length in minutes for a resource egg to be converted into it's respective resource in the Resource Egg Converter\nDefault: 180",
+	/*Added*/ "config.section.MachineTweaks.name": "Machine Tweaks",
+	/*Added*/ "config.ResourceEggProcessingTime.name": "Resource Processing Time (Mins)",
+	/*Added*/ "config.ResourceEggProcessingTime.description": "Length in minutes for a resource egg to be converted into it's respective resource in the Resource Egg Converter\nDefault: 180",
 	"config.ConverterPurchasePrice.name": "Converter Purchase Price",
 	"config.ConverterPurchasePrice.description": "Price of purchasing the Resource Egg Converter from Marnie\nDefault: 1000",
-	"config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
+	/*CHANGED*/ "config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
 	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180"
 }
