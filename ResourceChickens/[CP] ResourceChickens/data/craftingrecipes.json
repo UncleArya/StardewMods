@@ -5,16 +5,18 @@
 			"Action": "EditData",
 			"Target": "Data/CraftingRecipes",
 			"Entries": {
-				"{{ModId}}.ResourceEggConverter": "{{ResourceEggConverterCraftingRecipe}}/Home/{{ModId}}.ResourceEggConverter/true/Farming 2/{{i18n: BigCraftable.ResourceEggConverter.Name}}"
+				"{{ModId}}.ResourceEggConverter": "(O)388 30 (O)390 30 (O)86 2 (O)334 2/Home/{{ModId}}.ResourceEggConverter/true/Farming 2/{{i18n: BigCraftable.ResourceEggConverter.Name}}"
 			}
 		},
-		// Level 2 Chicken Egg Fusion Chambers
+		// Chicken Egg Fusion Chambers
 		{
 			"Action": "EditData",
 			"Target": "Data/CraftingRecipes",
 			"Entries": {
-				"{{ModId}}.CopperEggFusionChamber": "{{CopperEggFusionChamberRecipe}}/Home/{{ModId}}.CopperEggFusionChamber/false/Farming 3/{{i18n: FusionChamber.Copper.Name}}",
-				"{{ModId}}.HardwoodEggFusionChamber": "{{HardwoodEggFusionChamberRecipe}}/Home/{{ModId}}.HardwoodEggFusionChamber/false/Farming 3/{{i18n: FusionChamber.Hardwood.Name}}"
+				"{{ModId}}.CopperEggFusionChamber": "{{ModId}}.LargeStoneEgg 1 {{ModId}}.LargeCoalEgg 1 (O)334 5 (O)338 10/Home/{{ModId}}.CopperEggFusionChamber/false/Farming 3/{{i18n: FusionChamber.Copper.Name}}",
+				"{{ModId}}.HardwoodEggFusionChamber": "{{ModId}}.LargeWoodEgg 1 {{ModId}}.LargeClayEgg 1 (O)709 20 (O)338 10/Home/{{ModId}}.HardwoodEggFusionChamber/false/Farming 3/{{i18n: FusionChamber.Hardwood.Name}}",
+				"{{ModId}}.IronEggFusionChamber": "{{ModId}}.LargeCopperEgg 1 {{ModId}}.LargeCoalEgg 1 (O)335 5 (O)338 10/Home/{{ModId}}.IronEggFusionChamber/false/Farming 4/{{i18n: FusionChamber.Iron.Name}}",
+				"{{ModId}}.QuartzEggFusionChamber": "{{ModId}}.LargeHardwoodEgg 1 {{ModId}}.LargeStoneEgg 1 (O)709 40 (O)338 10/Home/{{ModId}}.QuartzEggFusionChamber/false/Farming 4/{{i18n: FusionChamber.Quartz.Name}}"
 			}
 		}
 	]

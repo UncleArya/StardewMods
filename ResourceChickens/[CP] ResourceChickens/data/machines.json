@@ -20,11 +20,58 @@
 			}
 		},
 		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/ResourceEggConverter",
+			"FromFile": "assets/tophatta/ResourceEggConverter.png",
+			"When": {
+				"ObjectAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"Entries": {
 				"(BC){{ModId}}.ResourceEggConverter": {
 					"OutputRules": [
+						// Bait Chicken
+						{
+							"Id": "{{ModId}}.BaitEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.BaitEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)685",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeBaitEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeBaitEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)685",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
 						// Clay Chicken
 						{
 							"Id": "{{ModId}}.ClayEgg",
@@ -215,6 +262,123 @@
 									"ItemId": "(O)709",
 									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
 									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						// Iron Chicken
+						{
+							"Id": "{{ModId}}.IronEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.IronEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)380",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeIronEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeIronEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)380",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						// Moss Chicken
+						{
+							"Id": "{{ModId}}.MossEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.MossEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)Moss",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeMossEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeMossEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)Moss",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						// Quartz Chicken
+						{
+							"Id": "{{ModId}}.QuartzEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.QuartzEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)80",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeQuartzEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeQuartzEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)80",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
 									"IncrementMachineParentSheetIndex": 1
 								}
 							],

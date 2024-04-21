@@ -2,6 +2,12 @@
 
 ## 0.3.0
 
+-   Added new Level 2 Chicken (Bait Chicken)
+-   Added new Level 3 Chickens (Iron Chicken, Quartz Chicken, Moss Chicken)
+-   Added crafting recipes for Iron and Quartz Fusion Chambers
+-   Added forage and spawn conditions for moss chicken egg
+-   Added forage condition for bait chicken egg
+-   Slightly increased forage spawn rate for fiber chicken egg
 -   Greatly simplified the config options for better clarity and readability
 -   Added difficulty options (easier and harder) for: amount of resources obtained from resource eggs, egg price, chicken price, days for a baby chicken to hatch, days for a baby chicken to mature, days for a chicken to produce an egg
 -   Level 1 resource egg sell price defaults to the same as vanilla eggs

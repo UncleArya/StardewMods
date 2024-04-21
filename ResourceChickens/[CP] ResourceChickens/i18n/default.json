@@ -1,6 +1,6 @@
 /*
 ~Notes to translators~ Update 0.3.0
-Lines Added: 58, 66, 71-86
+Lines Added: 58, 66, 71-86, 92+
 Lines Changed: 89
 */
 // Thank you translators!!
@@ -87,5 +87,30 @@ Lines Changed: 89
 	"config.ConverterPurchasePrice.name": "Converter Purchase Price",
 	"config.ConverterPurchasePrice.description": "Price of purchasing the Resource Egg Converter from Marnie\nDefault: 1000",
 	/*CHANGED*/ "config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
-	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180"
+	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180",
+
+	/*Added*/ "config.ObjectAppearanceVersion.name": "Object Appearance Style",
+	/*Added*/ "config.ObjectAppearanceVersion.description": "Choose the sprite style you would like for objects such as the Resource Egg Converter and egg fusion chambers.\nReference images on Nexus and in mod folder.\nVanillaStyle: vanilla inspired sprites created by UncleArya and Tophatta\nHattaStyle: custom sprites made by Tophatta inspired by Gwen's Medieval Craftables",
+
+	/*Added*/ "Chicken.IronChicken.Name": "Iron Chicken",
+	/*Added*/ "Chicken.IronChicken.BirthText": "A baby iron chicken was born!",
+	/*Added*/ "Egg.Iron.Name": "Iron Egg",
+	/*Added*/ "LargeEgg.Iron.Name": "Large Iron Egg",
+	/*Added*/ "FusionChamber.Iron.Name": "Iron Egg Fusion Chamber",
+
+	/*Added*/ "Chicken.QuartzChicken.Name": "Quartz Chicken",
+	/*Added*/ "Chicken.QuartzChicken.BirthText": "A baby quartz chicken was born!",
+	/*Added*/ "Egg.Quartz.Name": "Quartz Egg",
+	/*Added*/ "LargeEgg.Quartz.Name": "Large Quartz Egg",
+	/*Added*/ "FusionChamber.Quartz.Name": "Quartz Egg Fusion Chamber",
+
+	/*Added*/ "Chicken.BaitChicken.Name": "Bait Chicken",
+	/*Added*/ "Chicken.BaitChicken.BirthText": "A baby bait chicken was born!",
+	/*Added*/ "Egg.Bait.Name": "Bait Egg",
+	/*Added*/ "LargeEgg.Bait.Name": "Large Bait Egg",
+
+	/*Added*/ "Chicken.MossChicken.Name": "Moss Chicken",
+	/*Added*/ "Chicken.MossChicken.BirthText": "A baby moss chicken was born!",
+	/*Added*/ "Egg.Moss.Name": "Moss Egg",
+	/*Added*/ "LargeEgg.Moss.Name": "Large Moss Egg"
 }

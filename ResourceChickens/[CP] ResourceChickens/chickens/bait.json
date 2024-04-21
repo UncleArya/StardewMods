@@ -1,0 +1,92 @@
+{
+	"Changes": [
+		// Bait Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.BaitChicken": {
+					"DisplayName": "{{i18n: Chicken.BaitChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": ["{{ModId}}.BaitEgg", "{{ModId}}.LargeBaitEgg"],
+					"IncubationTime": "{{ResourceChickenIncubationTimeChoice}}",
+					"BirthText": "{{i18n: Chicken.BaitChicken.BirthText}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.BaitEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeBaitEgg"
+						}
+					],
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/BaitChicken",
+					"BabyTexture": "{{ModId}}/BaitChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.1}}, 0, up }}"
+				}
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.BaitEgg": {
+					"Name": "{{ModId}}.BaitEgg",
+					"DisplayName": "{{i18n: Egg.Bait.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.1}}, 0, up}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 10, // Update
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["resource_egg_item", "color_pink"]
+				},
+				"{{ModId}}.LargeBaitEgg": {
+					"Name": "{{ModId}}.LargeBaitEgg",
+					"DisplayName": "{{i18n: LargeEgg.Bait.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 11, // Update
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["large_resource_egg_item", "color_pink"]
+				}
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/BaitChicken",
+			"FromFile": "assets/tophatta/BaitChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/BaitChickenBaby",
+			"FromFile": "assets/tophatta/BaitChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

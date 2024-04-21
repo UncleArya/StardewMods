@@ -1,0 +1,110 @@
+{
+	"Changes": [
+		// Quartz Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.QuartzChicken": {
+					"DisplayName": "{{i18n: Chicken.QuartzChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": [
+						"{{ModId}}.QuartzEgg",
+						"{{ModId}}.LargeQuartzEgg",
+						"{{ModId}}.QuartzEggFusionChamber"
+					],
+					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
+					"BirthText": "{{i18n: Chicken.QuartzChicken.BirthText}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.QuartzEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeQuartzEgg"
+						}
+					],
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/QuartzChicken",
+					"BabyTexture": "{{ModId}}/QuartzChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.2}}, 0, up }}"
+				}
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.QuartzEgg": {
+					"Name": "{{ModId}}.QuartzEgg",
+					"DisplayName": "{{i18n: Egg.Quartz.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.2}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 8, // Update
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["resource_egg_item", "color_white"]
+				},
+				"{{ModId}}.LargeQuartzEgg": {
+					"Name": "{{ModId}}.LargeQuartzEgg",
+					"DisplayName": "{{i18n: LargeEgg.Quartz.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 9, // Update
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["large_resource_egg_item", "color_white"]
+				},
+				"{{ModId}}.QuartzEggFusionChamber": {
+					"Name": "{{ModId}}.QuartzEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Quartz.Name}}",
+					"Description": "{{i18n: FusionChamber.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Items",
+					"SpriteIndex": 0, // Update
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true
+				}
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/QuartzChicken",
+			"FromFile": "assets/tophatta/QuartzChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/QuartzChickenBaby",
+			"FromFile": "assets/tophatta/QuartzChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

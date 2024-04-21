@@ -13,6 +13,11 @@
 			"Default": false,
 			"Section": "AppearanceBehaviour"
 		},
+		"ObjectAppearanceVersion": {
+			"AllowValues": "VanillaStyle, HattaStyle",
+			"Default": "VanillaStyle",
+			"Section": "AppearanceBehaviour"
+		},
 		"ChickensCanSwim": {
 			"AllowValues": "true, false",
 			"Default": false,
@@ -213,19 +218,6 @@
 			"When": {
 				"ResourceChickenDaysToMature": "2x"
 			}
-		},
-		// Crafting Recipes
-		{
-			"Name": "ResourceEggConverterCraftingRecipe",
-			"Value": "(O)388 30 (O)390 30 (O)86 2 (O)334 2"
-		},
-		{
-			"Name": "CopperEggFusionChamberRecipe",
-			"Value": "{{ModId}}.LargeStoneEgg 1 {{ModId}}.LargeCoalEgg 1 (O)334 5 (O)338 10"
-		},
-		{
-			"Name": "HardwoodEggFusionChamberRecipe",
-			"Value": "{{ModId}}.LargeWoodEgg 1 {{ModId}}.LargeClayEgg 1 (O)709 20 (O)338 10"
 		}
 	],
 	// Changes
@@ -234,6 +226,12 @@
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/Eggs, {{ModId}}/ResourceEggConverter, {{ModId}}/Items",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		// Bait Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/BaitChicken, {{ModId}}/BaitChickenBaby",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
 		// Clay Chicken
@@ -266,6 +264,18 @@
 			"Target": "{{ModId}}/HardwoodChicken, {{ModId}}/HardwoodChickenBaby",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
+		// Iron Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/IronChicken, {{ModId}}/IronChickenBaby",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
+		// Quartz Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/QuartzChicken, {{ModId}}/QuartzChickenBaby",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
 		// Stone Chicken
 		{
 			"Action": "Load",
@@ -279,14 +289,26 @@
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
 		// Include Chickens
+		// Level 1
 		{
 			"Action": "Include",
-			"FromFile": "chickens/clay.json, chickens/coal.json, chickens/copper.json, chickens/fiber.json, chickens/hardwood.json, chickens/stone.json, chickens/vanilla.json, chickens/wood.json"
+			"FromFile": "chickens/clay.json, chickens/coal.json, chickens/stone.json, chickens/wood.json"
 		},
-		// Include Other Data
+		// Level 2
 		{
 			"Action": "Include",
-			"FromFile": "data/craftingrecipes.json, data/machines.json"
+			"FromFile": "chickens/bait.json, chickens/copper.json, chickens/fiber.json, chickens/hardwood.json"
+		},
+		// Level 3
+		{
+			"Action": "Include",
+			"FromFile": "chickens/iron.json, chickens/moss.json, chickens/quartz.json"
+		},
+		// Everything else
+		{
+			"Action": "Include",
+			"FromFile": "data/craftingrecipes.json, data/machines.json, chickens/vanilla.json"
 		}
 	]
 }
+// GreenRain

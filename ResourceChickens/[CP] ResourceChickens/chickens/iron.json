@@ -1,0 +1,110 @@
+{
+	"Changes": [
+		// Iron Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.IronChicken": {
+					"DisplayName": "{{i18n: Chicken.IronChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": [
+						"{{ModId}}.IronEgg",
+						"{{ModId}}.LargeIronEgg",
+						"{{ModId}}.IronEggFusionChamber"
+					],
+					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
+					"BirthText": "{{i18n: Chicken.IronChicken.BirthText}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.IronEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeIronEgg"
+						}
+					],
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/IronChicken",
+					"BabyTexture": "{{ModId}}/IronChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.2}}, 0, up }}"
+				}
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.IronEgg": {
+					"Name": "{{ModId}}.IronEgg",
+					"DisplayName": "{{i18n: Egg.Iron.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.2}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 8, // Update
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["resource_egg_item", "color_iron"]
+				},
+				"{{ModId}}.LargeIronEgg": {
+					"Name": "{{ModId}}.LargeIronEgg",
+					"DisplayName": "{{i18n: LargeEgg.Iron.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 9, // Update
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["large_resource_egg_item", "color_iron"]
+				},
+				"{{ModId}}.IronEggFusionChamber": {
+					"Name": "{{ModId}}.IronEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Iron.Name}}",
+					"Description": "{{i18n: FusionChamber.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Items",
+					"SpriteIndex": 0, // Update
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true
+				}
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/IronChicken",
+			"FromFile": "assets/tophatta/IronChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/IronChickenBaby",
+			"FromFile": "assets/tophatta/IronChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}
