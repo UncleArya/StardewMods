@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.3.0
+
+-   Greatly simplified the config options for better clarity and readability
+-   Added difficulty options (easier and harder) for: amount of resources obtained from resource eggs, egg price, chicken price, days for a baby chicken to hatch, days for a baby chicken to mature, days for a chicken to produce an egg
+-   Level 1 resource egg sell price defaults to the same as vanilla eggs
+-   Level 1 chickens sell & purchase price defaults to double vanilla chickens (since they have double the usefulness)
+-   Each subsequent increase in chicken level adds 10% to both the sell price of eggs and sell price of chickens
+-   Some more advanced chickens coming in future updates may take longer to incubate, mature, and produce resource eggs to scale with rarity of resources produced
+-   Combined resource egg converter processing options into a singular time for all resource eggs
+-   Combined mayo machine processing options into a singular time for all resource eggs
+-   Removed Progression Mode and ability to disable individual chickens, as level 1 chickens are now all required to obtain higher level chickens
+
+## 0.2.2
+
+-   Added Spanish language support. Thanks [LuCiiel20](https://forums.nexusmods.com/profile/11110368-luciiel20/)!
+
 ## 0.2.1
 
 -   Added Turkish language support. Thanks [Stola90](https://forums.nexusmods.com/profile/193926774-stola90/)!

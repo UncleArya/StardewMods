@@ -13,9 +13,9 @@
 						"{{ModId}}.LargeHardwoodEgg",
 						"{{ModId}}.HardwoodEggFusionChamber"
 					],
-					"IncubationTime": "{{Level2ChickenIncubationTime}}",
+					"IncubationTime": "{{ResourceChickenIncubationTimeChoice}}",
 					"BirthText": "{{i18n: Chicken.HardwoodChicken.BirthText}}",
-					"DaysToMature": "{{Level2ChickenDaysToMature}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
 							"ItemId": "{{ModId}}.HardwoodEgg"
@@ -26,7 +26,7 @@
 							"ItemId": "{{ModId}}.LargeHardwoodEgg"
 						}
 					],
-					"DaysToProduce": "{{Level2ChickenDaysToProduce}}",
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/HardwoodChicken",
@@ -35,11 +35,8 @@
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
 					"HappinessDrain": 20,
-					"SellPrice": "{{Level2ChickenSellPrice}}"
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.1}}, 0, up }}"
 				}
-			},
-			"When": {
-				"EnableProgressionMode": true
 			}
 		},
 		// Chicken Eggs
@@ -53,19 +50,14 @@
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Level2EggSellPrice}}",
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.1}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 12,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": [
-						"category_egg",
-						"category_sell_at_pierres_and_marnies",
-						"chicken_item",
-						"color_brown"
-					]
+					"ContextTags": ["resource_egg_item", "color_brown"]
 				},
 				"{{ModId}}.LargeHardwoodEgg": {
 					"Name": "{{ModId}}.LargeHardwoodEgg",
@@ -73,19 +65,14 @@
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Level2LargeEggSellPrice}}",
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 13,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": [
-						"category_egg",
-						"category_sell_at_pierres_and_marnies",
-						"chicken_item",
-						"color_brown"
-					]
+					"ContextTags": ["large_resource_egg_item", "color_brown"]
 				},
 				"{{ModId}}.HardwoodEggFusionChamber": {
 					"Name": "{{ModId}}.HardwoodEggFusionChamber",
@@ -93,7 +80,7 @@
 					"Description": "{{i18n: FusionChamber.Description}}",
 					"Type": "Basic",
 					"Category": -18,
-					"Price": "{{Level2LargeEggSellPrice}}",
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Items",
 					"SpriteIndex": 1,
 					"Edibility": -300,
@@ -101,9 +88,6 @@
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true
 				}
-			},
-			"When": {
-				"EnableProgressionMode": true
 			}
 		},
 		{

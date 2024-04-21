@@ -8,7 +8,7 @@
 				"{{ModId}}.StoneChicken": {
 					"DisplayName": "{{i18n: Chicken.StoneChicken.Name}}",
 					"House": "Coop",
-					"PurchasePrice": "{{query: {{Level1ChickenPurchasePrice}} / 2}}",
+					"PurchasePrice": "{{query: {{ResourceChickenPriceChoice}} / 2}}",
 					"ShopTexture": "{{ModId}}/StoneShopTexture",
 					"ShopSourceRect": {
 						"X": 0,
@@ -20,9 +20,9 @@
 					"ShopDescription": "{{i18n: Chicken.StoneChicken.Description}}",
 					"ShopMissingBuildingDescription": "{{i18n: Chicken.Level1.MissingBuildingDescription}}",
 					"EggItemIds": ["{{ModId}}.StoneEgg", "{{ModId}}.LargeStoneEgg"],
-					"IncubationTime": "{{Level1ChickenIncubationTime}}",
+					"IncubationTime": "{{ResourceChickenIncubationTimeChoice}}",
 					"BirthText": "{{i18n: Chicken.StoneChicken.BirthText}}",
-					"DaysToMature": "{{Level1ChickenDaysToMature}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
 							"ItemId": "{{ModId}}.StoneEgg"
@@ -33,7 +33,7 @@
 							"ItemId": "{{ModId}}.LargeStoneEgg"
 						}
 					],
-					"DaysToProduce": "{{Level1ChickenDaysToProduce}}",
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/StoneChicken",
@@ -42,11 +42,8 @@
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
 					"HappinessDrain": 20,
-					"SellPrice": "{{Level1ChickenSellPrice}}"
+					"SellPrice": "{{ResourceChickenPriceChoice}}"
 				}
-			},
-			"When": {
-				"Query: {{EnableStoneChicken}} = true OR {{EnableProgressionMode}} = true": true
 			}
 		},
 		// Chicken Eggs
@@ -60,19 +57,14 @@
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Level1EggSellPrice}}",
+					"Price": "{{ResourceEggSellPriceChoice}}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 4,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": [
-						"category_egg",
-						"category_sell_at_pierres_and_marnies",
-						"chicken_item",
-						"color_grey"
-					]
+					"ContextTags": ["resource_egg_item", "color_grey"]
 				},
 				"{{ModId}}.LargeStoneEgg": {
 					"Name": "{{ModId}}.LargeStoneEgg",
@@ -80,23 +72,15 @@
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Level1LargeEggSellPrice}}",
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 5,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": [
-						"category_egg",
-						"category_sell_at_pierres_and_marnies",
-						"chicken_item",
-						"color_grey"
-					]
+					"ContextTags": ["large_resource_egg_item", "color_grey"]
 				}
-			},
-			"When": {
-				"Query: {{EnableStoneChicken}} = true OR {{EnableProgressionMode}} = true": true
 			}
 		},
 		{

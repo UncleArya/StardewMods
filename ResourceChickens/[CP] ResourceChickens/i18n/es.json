@@ -1,0 +1,91 @@
+/*
+~Notes to translators~ Update 0.3.0
+Lines Added: 58, 66, 71-86
+Lines Changed: 89
+*/
+// Thank you translators!!
+{
+	// Chickens
+	"Chicken.ClayChicken.Name": "Pollo de arcilla",
+	"Chicken.ClayChicken.Description": "Las gallinas de arcilla ponen huevos de recursos especiales que pueden convertirse en arcilla en el Convertidor de huevos de recursos.\nVive en el Gallinero.",
+	"Chicken.ClayChicken.BirthText": "Ha nacido un pollito de arcilla!",
+	"Chicken.CoalChicken.Name": "Pollo de carbón",
+	"Chicken.CoalChicken.Description": "Las gallinas de carbón ponen huevos de recursos especiales que pueden convertirse en carbón en el Convertidor de Huevos de Recursos.\nVive en el Gallinero.",
+	"Chicken.CoalChicken.BirthText": "Ha nacido un pollito de carbón!",
+	"Chicken.CopperChicken.Name": "Pollo de cobre",
+	"Chicken.CopperChicken.BirthText": "Ha nacido un pollito de cobre!",
+	"Chicken.FiberChicken.Name": "Pollo de fibra vegetal",
+	"Chicken.FiberChicken.BirthText": "Ha nacido un pollito de fibra!",
+	"Chicken.HardwoodChicken.Name": "Pollo de madera noble",
+	"Chicken.HardwoodChicken.BirthText": "Ha nacido un pollito de madera noble!",
+	"Chicken.StoneChicken.Name": "Pollo Pétreo",
+	"Chicken.StoneChicken.Description": "Las gallinas pétreas ponen huevos de recursos especiales que pueden convertirse en piedra en el Convertidor de Huevos de Recursos.\nVive en el Gallinero.",
+	"Chicken.StoneChicken.BirthText": "Ha nacido un pollito pétreo!",
+	"Chicken.WoodChicken.Name": "Wood Chicken",
+	"Chicken.WoodChicken.Description": "Las gallinas de madera ponen huevos de recursos especiales que pueden convertirse en madera en el Convertidor de Huevos de Recursos.\nVive en el Gallinero.",
+	"Chicken.WoodChicken.BirthText": "Ha nacido un pollito de madera!",
+	"Chicken.Level1.MissingBuildingDescription": "Requiere la construcción de un Corral",
+
+	// Eggs
+	"Egg.Clay.Name": "Huevo de arcilla",
+	"LargeEgg.Clay.Name": "Huevo de arcilla XL",
+	"Egg.Coal.Name": "Huevo de carbón",
+	"LargeEgg.Coal.Name": "Huevo de carbón XL",
+	"Egg.Copper.Name": "Huevo de cobre",
+	"LargeEgg.Copper.Name": "Huevo de cobre XL",
+	"Egg.Fiber.Name": "Huevo de fibra vegetal",
+	"LargeEgg.Fiber.Name": "Huevo de fibra vegetal XL",
+	"Egg.Hardwood.Name": "Huevo de madera noble",
+	"LargeEgg.Hardwood.Name": "Huevo de madera noble XL",
+	"Egg.Stone.Name": "Huevo de piedra",
+	"LargeEgg.Stone.Name": "Huevo de piedra XL",
+	"Egg.Wood.Name": "Huevo de madera",
+	"LargeEgg.Wood.Name": "Huevo de madera XL",
+	"ResourceEgg.Description": "Un huevo especial que puede convertirse en recursos en el Convertidor de Huevos de Recursos. También puede convertirse en mayonesa o usarse para cocinar.",
+
+	// Objects
+	"FusionChamber.Copper.Name": "Cámara de fusión de huevos de cobre",
+	"FusionChamber.Hardwood.Name": "Cámara de fusión de huevos de madera noble",
+	"FusionChamber.Description": "Introducir en una incubadora de huevos para incubar un pollito de recursos",
+
+	// Big Craftables
+	"BigCraftable.ResourceEggConverter.Name": "Convertidor de huevos de recursos",
+	"BigCraftable.ResourceEggConverter.Description": "Convierte los huevos de recursos especiales, puestos por las gallinas de recursos, en útiles materiales de construcción y artesanía.",
+	"BigCraftable.ResourceEggConverter.InvalidItemMessage": "En esta máquina sólo pueden colocarse huevos de recursos especiales.",
+
+	// Config
+	// Appearance & Behaviour
+	/*Added*/ "config.section.AppearanceBehaviour.name": "Appearance & Behaviour",
+	"config.ChickenAppearanceVersion.name": "Apariencia de los pollos",
+	"config.ChickenAppearanceVersion.description": "Elige el estilo de sprite que quieras para tus pollos de recursos. Imágenes de referencia en Nexus y en la carpeta mod.\nVanillaStyle: sprites de pollo vainilla recoloreados por UncleArya\nHattaStyle: sprites de pollo personalizados hechos por Tophatta",
+	"config.VanillaChickensMatchHattaStyle.name": "Pollos vanilla al estilo Hatta",
+	"config.VanillaChickensMatchHattaStyle.description": "Los sprites de pollo vanilla serán sustituidos por sprites de pollo personalizados hechos por Tophatta.\nCoincide con los pollos de recursos ajustados al estilo Hatta. Imágenes de referencia en Nexus y en la carpeta mod.",
+	"config.ChickensCanSwim.name": "Las gallinas pueden nadar",
+	"config.ChickensCanSwim.description": "Permite que los pollos de recursos naden en el agua cuando están felices.\nPor defecto: Desactivado",
+	// Difficulty Scaling
+	/*Added*/ "config.section.DifficultyScaling.name": "Difficulty Scaling",
+	"config.Level1ChickenRequiredBuilding.name": "Construccion Requerida",
+	"config.Level1ChickenRequiredBuilding.description": "El nivel del Corral que necesitas para poder comprar Pollos de recursos de Marnie\nPor defecto: Corral Básico",
+	"config.HeartsRequiredForLargeEggs.name": "Corazones necesarios para huevos XL",
+	"config.HeartsRequiredForLargeEggs.description": "La cantidad de corazones de relación que necesita una gallina antes de que pueda producir huevos XL.\nPor defecto: 2",
+	/*Added*/ "config.ResourceEggConversionAmount.name": "Amount of Resources Obtained",
+	/*Added*/ "config.ResourceEggConversionAmount.description": "Amount of resources obtained from a resource egg when it is placed in a Resource Egg Converter.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n4x: Quadruple the default amount",
+	/*Added*/ "config.ResourceEggSellPrice.name": "Egg Sell Price",
+	/*Added*/ "config.ResourceEggSellPrice.description": "Sell price for resource eggs.\n\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n4x: Quadruple the default amount",
+	/*Added*/ "config.ResourceChickenPrice.name": "Chicken Sell/Purchase Price",
+	/*Added*/ "config.ResourceChickenPrice.description": "Cost to purchase chickens from Marnie and amount received when selling a chicken.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
+	/*Added*/ "config.ResourceChickenIncubationTime.name": "Time to Hatch",
+	/*Added*/ "config.ResourceChickenIncubationTime.description": "Amount of time required for a resource egg to hatch in an incubator.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
+	/*Added*/ "config.ResourceChickenDaysToMature.name": "Time to Mature",
+	/*Added*/ "config.ResourceChickenDaysToMature.description": "Amount of time required for a baby resource chicken to mature into an adult.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
+	/*Added*/ "config.ResourceChickenDaysToProduce.name": "Time to Produce an Egg",
+	/*Added*/ "config.ResourceChickenDaysToProduce.description": "Amount of time required for a resource chicken to lay an egg.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n",
+	// Machine Tweaks
+	/*Added*/ "config.section.MachineTweaks.name": "Machine Tweaks",
+	/*Added*/ "config.ResourceEggProcessingTime.name": "Resource Processing Time (Mins)",
+	/*Added*/ "config.ResourceEggProcessingTime.description": "Length in minutes for a resource egg to be converted into it's respective resource in the Resource Egg Converter\nDefault: 180",
+	"config.ConverterPurchasePrice.name": "Convertidor Precio de compra",
+	"config.ConverterPurchasePrice.description": "Precio de la compra del Convertidor de huevos de recursos de Marnie\nPor defecto: 1000",
+	/*CHANGED*/ "config.MayoMinutesUntilReady.name": "Tiempo de procesamiento (Mins)",
+	"config.MayoMinutesUntilReady.description": "Tiempo en minutos para que un huevo de recurso se convierta en mayonesa\nPor defecto: 180"
+}

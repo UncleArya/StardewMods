@@ -2,338 +2,230 @@
 	"Format": "2.0.0",
 	// Config
 	"ConfigSchema": {
-		// Global
+		// Appearance & Behaviour
 		"ChickenAppearanceVersion": {
 			"AllowValues": "VanillaStyle, HattaStyle",
 			"Default": "VanillaStyle",
-			"Section": "Global"
+			"Section": "AppearanceBehaviour"
 		},
 		"VanillaChickensMatchHattaStyle": {
 			"AllowValues": "true, false",
 			"Default": false,
-			"Section": "Global"
-		},
-		"EnableProgressionMode": {
-			"AllowValues": "true, false",
-			"Default": true,
-			"Section": "Global"
+			"Section": "AppearanceBehaviour"
 		},
 		"ChickensCanSwim": {
 			"AllowValues": "true, false",
 			"Default": false,
-			"Section": "Global"
+			"Section": "AppearanceBehaviour"
+		},
+		// Difficulty Scaling
+		"Level1ChickenRequiredBuilding": {
+			"AllowValues": "Coop, Big Coop, Deluxe Coop",
+			"Default": "Coop",
+			"Section": "DifficultyScaling"
 		},
 		"HeartsRequiredForLargeEggs": {
 			"AllowValues": "1, 2, 3, 4, 5",
 			"Default": 2,
-			"Section": "Global"
-		},
-		// Level 1 Chickens
-		"EnableClayChicken": {
-			"AllowValues": "true, false",
-			"Default": true,
-			"Section": "Level1Chickens"
-		},
-		"EnableCoalChicken": {
-			"AllowValues": "true, false",
-			"Default": true,
-			"Section": "Level1Chickens"
-		},
-		"EnableStoneChicken": {
-			"AllowValues": "true, false",
-			"Default": true,
-			"Section": "Level1Chickens"
-		},
-		"EnableWoodChicken": {
-			"AllowValues": "true, false",
-			"Default": true,
-			"Section": "Level1Chickens"
-		},
-		"Level1ChickenPurchasePrice": {
-			"Default": 1600,
-			"Section": "Level1Chickens"
-		},
-		"Level1ChickenSellPrice": {
-			"Default": 1600,
-			"Section": "Level1Chickens"
-		},
-		"Level1ChickenRequiredBuilding": {
-			"AllowValues": "Coop, Big Coop, Deluxe Coop",
-			"Default": "Coop",
-			"Section": "Level1Chickens"
-		},
-		"Level1ChickenIncubationTime": {
-			"Default": 9000,
-			"Section": "Level1Chickens"
-		},
-		"Level1ChickenDaysToMature": {
-			"Default": 3,
-			"Section": "Level1Chickens"
-		},
-		"Level1ChickenDaysToProduce": {
-			"Default": 1,
-			"Section": "Level1Chickens"
-		},
-		"Level1EggProcessingTime": {
-			"Default": 180,
-			"Section": "Level1Chickens"
-		},
-		"Level1LargeEggProcessingTime": {
-			"Default": 180,
-			"Section": "Level1Chickens"
-		},
-		"Level1EggSellPrice": {
-			"Default": 50,
-			"Section": "Level1Chickens"
-		},
-		"Level1LargeEggSellPrice": {
-			"Default": 95,
-			"Section": "Level1Chickens"
-		},
-		// Level 2 Chickens
-		"Level2ChickenSellPrice": {
-			"Default": 1600,
-			"Section": "Level2Chickens"
-		},
-		"Level2ChickenIncubationTime": {
-			"Default": 9000,
-			"Section": "Level2Chickens"
-		},
-		"Level2ChickenDaysToMature": {
-			"Default": 3,
-			"Section": "Level2Chickens"
-		},
-		"Level2ChickenDaysToProduce": {
-			"Default": 1,
-			"Section": "Level2Chickens"
-		},
-		"Level2EggProcessingTime": {
-			"Default": 180,
-			"Section": "Level2Chickens"
-		},
-		"Level2LargeEggProcessingTime": {
-			"Default": 180,
-			"Section": "Level2Chickens"
-		},
-		"Level2EggSellPrice": {
-			"Default": 60,
-			"Section": "Level2Chickens"
-		},
-		"Level2LargeEggSellPrice": {
-			"Default": 110,
-			"Section": "Level2Chickens"
-		},
-		// Clay Chicken
-		"ClayEggClayMin": {
-			"Default": 1,
-			"Section": "Clay"
-		},
-		"ClayEggClayMax": {
-			"Default": 2,
-			"Section": "Clay"
-		},
-		"LargeClayEggClayMin": {
-			"Default": 2,
-			"Section": "Clay"
-		},
-		"LargeClayEggClayMax": {
-			"Default": 4,
-			"Section": "Clay"
-		},
-		// Coal Chicken
-		"CoalEggCoalMin": {
-			"Default": 1,
-			"Section": "Coal"
-		},
-		"CoalEggCoalMax": {
-			"Default": 2,
-			"Section": "Coal"
-		},
-		"LargeCoalEggCoalMin": {
-			"Default": 2,
-			"Section": "Coal"
-		},
-		"LargeCoalEggCoalMax": {
-			"Default": 4,
-			"Section": "Coal"
-		},
-		// Copper Chicken
-		"CopperEggCopperMin": {
-			"Default": 2,
-			"Section": "Copper"
-		},
-		"CopperEggCopperMax": {
-			"Default": 4,
-			"Section": "Copper"
-		},
-		"LargeCopperEggCopperMin": {
-			"Default": 4,
-			"Section": "Copper"
-		},
-		"LargeCopperEggCopperMax": {
-			"Default": 8,
-			"Section": "Copper"
-		},
-		"CopperChamberCraftingIngredient3": {
-			"Default": "(O)334", // copper bar
-			"Section": "Copper"
-		},
-		"CopperChamberCraftingIngredient3Amount": {
-			"Default": 5,
-			"Section": "Copper"
-		},
-		"CopperChamberCraftingIngredient4": {
-			"Default": "(O)338", // refined quartz
-			"Section": "Copper"
-		},
-		"CopperChamberCraftingIngredient4Amount": {
-			"Default": 10,
-			"Section": "Copper"
-		},
-		// Fiber Chicken
-		"FiberEggFiberMin": {
-			"Default": 1,
-			"Section": "Fiber"
-		},
-		"FiberEggFiberMax": {
-			"Default": 2,
-			"Section": "Fiber"
-		},
-		"LargeFiberEggFiberMin": {
-			"Default": 2,
-			"Section": "Fiber"
-		},
-		"LargeFiberEggFiberMax": {
-			"Default": 4,
-			"Section": "Fiber"
-		},
-		// Hardwood Chicken
-		"HardwoodEggHardwoodMin": {
-			"Default": 1,
-			"Section": "Hardwood"
-		},
-		"HardwoodEggHardwoodMax": {
-			"Default": 2,
-			"Section": "Hardwood"
-		},
-		"LargeHardwoodEggHardwoodMin": {
-			"Default": 2,
-			"Section": "Hardwood"
-		},
-		"LargeHardwoodEggHardwoodMax": {
-			"Default": 4,
-			"Section": "Hardwood"
-		},
-		"HardwoodChamberCraftingIngredient3": {
-			"Default": "(O)709", // hardwood
-			"Section": "Hardwood"
-		},
-		"HardwoodChamberCraftingIngredient3Amount": {
-			"Default": 20,
-			"Section": "Hardwood"
-		},
-		"HardwoodChamberCraftingIngredient4": {
-			"Default": "(O)338", // refined quartz
-			"Section": "Hardwood"
-		},
-		"HardwoodChamberCraftingIngredient4Amount": {
-			"Default": 10,
-			"Section": "Hardwood"
-		},
-		// Stone Chicken
-		"StoneEggStoneMin": {
-			"Default": 3,
-			"Section": "Stone"
-		},
-		"StoneEggStoneMax": {
-			"Default": 5,
-			"Section": "Stone"
-		},
-		"LargeStoneEggStoneMin": {
-			"Default": 5,
-			"Section": "Stone"
-		},
-		"LargeStoneEggStoneMax": {
-			"Default": 10,
-			"Section": "Stone"
-		},
-		// Wood Chicken
-		"WoodEggWoodMin": {
-			"Default": 3,
-			"Section": "Wood"
-		},
-		"WoodEggWoodMax": {
-			"Default": 5,
-			"Section": "Wood"
-		},
-		"LargeWoodEggWoodMin": {
-			"Default": 5,
-			"Section": "Wood"
-		},
-		"LargeWoodEggWoodMax": {
-			"Default": 10,
-			"Section": "Wood"
-		},
-		// Resource Egg Converter
-		"ConverterCraftingIngredient1": {
-			"Default": "(O)388", // wood
-			"Section": "Converter"
-		},
-		"ConverterCraftingIngredient1Amount": {
-			"Default": 30,
-			"Section": "Converter"
-		},
-		"ConverterCraftingIngredient2": {
-			"Default": "(O)390", // stone
-			"Section": "Converter"
-		},
-		"ConverterCraftingIngredient2Amount": {
-			"Default": 30,
-			"Section": "Converter"
-		},
-		"ConverterCraftingIngredient3": {
-			"Default": "(O)86", // earth crystal
-			"Section": "Converter"
-		},
-		"ConverterCraftingIngredient3Amount": {
-			"Default": 2,
-			"Section": "Converter"
-		},
-		"ConverterCraftingIngredient4": {
-			"Default": "(O)334", // copper bar
-			"Section": "Converter"
-		},
-		"ConverterCraftingIngredient4Amount": {
-			"Default": 2,
-			"Section": "Converter"
+			"Section": "DifficultyScaling"
+		},
+		"ResourceEggConversionAmount": {
+			"AllowValues": "0.5x, Default, 2x, 4x",
+			"Default": "Default",
+			"Section": "DifficultyScaling"
+		},
+		"ResourceEggSellPrice": {
+			"AllowValues": "Default, 2x, 4x",
+			"Default": "Default",
+			"Section": "DifficultyScaling"
+		},
+		"ResourceChickenPrice": {
+			"AllowValues": "0.5x, Default, 2x",
+			"Default": "Default",
+			"Section": "DifficultyScaling"
+		},
+		"ResourceChickenIncubationTime": {
+			"AllowValues": "0.5x, Default, 2x",
+			"Default": "Default",
+			"Section": "DifficultyScaling"
+		},
+		"ResourceChickenDaysToMature": {
+			"AllowValues": "0.5x, Default, 2x",
+			"Default": "Default",
+			"Section": "DifficultyScaling"
+		},
+		"ResourceChickenDaysToProduce": {
+			"AllowValues": "0.5x, Default, 2x",
+			"Default": "Default",
+			"Section": "DifficultyScaling"
+		},
+		// Machine Tweaks
+		"ResourceEggProcessingTime": {
+			"Default": 10, // Update 180
+			"Section": "MachineTweaks"
 		},
 		"ConverterPurchasePrice": {
 			"Default": 1000,
-			"Section": "Converter"
+			"Section": "MachineTweaks"
 		},
-		// Mayonnaise Machine
 		"MayoMinutesUntilReady": {
-			"Default": 180,
-			"Section": "MayoMachine"
-		},
-		"DeluxeMayoMinutesUntilReady": {
-			"Default": 180,
-			"Section": "MayoMachine"
+			"Default": 10, // Update 180
+			"Section": "MachineTweaks"
 		}
 	},
 	// Dynamic Tokens
 	"DynamicTokens": [
+		// Conversion Amount Choice
+		{
+			"Name": "ResourceEggConversionChoice",
+			"Value": 0.5,
+			"When": {
+				"ResourceEggConversionAmount": "0.5x"
+			}
+		},
+		{
+			"Name": "ResourceEggConversionChoice",
+			"Value": 1,
+			"When": {
+				"ResourceEggConversionAmount": "Default"
+			}
+		},
+		{
+			"Name": "ResourceEggConversionChoice",
+			"Value": 2,
+			"When": {
+				"ResourceEggConversionAmount": "2x"
+			}
+		},
+		{
+			"Name": "ResourceEggConversionChoice",
+			"Value": 4,
+			"When": {
+				"ResourceEggConversionAmount": "4x"
+			}
+		},
+		// Egg Sell Price
+		{
+			"Name": "ResourceEggSellPriceChoice",
+			"Value": 50,
+			"When": {
+				"ResourceEggSellPrice": "Default"
+			}
+		},
+		{
+			"Name": "ResourceEggSellPriceChoice",
+			"Value": 100,
+			"When": {
+				"ResourceEggSellPrice": "2x"
+			}
+		},
+		{
+			"Name": "ResourceEggSellPriceChoice",
+			"Value": 200,
+			"When": {
+				"ResourceEggSellPrice": "4x"
+			}
+		},
+		// Resource Chicken Incubation Time
+		{
+			"Name": "ResourceChickenIncubationTimeChoice",
+			"Value": 4500,
+			"When": {
+				"ResourceChickenIncubationTime": "0.5x"
+			}
+		},
+		{
+			"Name": "ResourceChickenIncubationTimeChoice",
+			"Value": 9000,
+			"When": {
+				"ResourceChickenIncubationTime": "Default"
+			}
+		},
+		{
+			"Name": "ResourceChickenIncubationTimeChoice",
+			"Value": 18000,
+			"When": {
+				"ResourceChickenIncubationTime": "2x"
+			}
+		},
+		// Resource Chicken Incubation Time
+		{
+			"Name": "ResourceChickenPriceChoice",
+			"Value": 800,
+			"When": {
+				"ResourceChickenPrice": "0.5x"
+			}
+		},
+		{
+			"Name": "ResourceChickenPriceChoice",
+			"Value": 1600,
+			"When": {
+				"ResourceChickenPrice": "Default"
+			}
+		},
+		{
+			"Name": "ResourceChickenPriceChoice",
+			"Value": 3200,
+			"When": {
+				"ResourceChickenPrice": "2x"
+			}
+		},
+		// Chickens Days to Produce
+		{
+			"Name": "ResourceChickenDaysToProduceChoice",
+			"Value": 0.5,
+			"When": {
+				"ResourceChickenDaysToProduce": "0.5x"
+			}
+		},
+		{
+			"Name": "ResourceChickenDaysToProduceChoice",
+			"Value": 1,
+			"When": {
+				"ResourceChickenDaysToProduce": "Default"
+			}
+		},
+		{
+			"Name": "ResourceChickenDaysToProduceChoice",
+			"Value": 2,
+			"When": {
+				"ResourceChickenDaysToProduce": "2x"
+			}
+		},
+		// Chickens Days to Mature
+		{
+			"Name": "ResourceChickenDaysToMatureChoice",
+			"Value": 0.5,
+			"When": {
+				"ResourceChickenDaysToMature": "0.5x"
+			}
+		},
+		{
+			"Name": "ResourceChickenDaysToMatureChoice",
+			"Value": 1,
+			"When": {
+				"ResourceChickenDaysToMature": "Default"
+			}
+		},
+		{
+			"Name": "ResourceChickenDaysToMatureChoice",
+			"Value": 2,
+			"When": {
+				"ResourceChickenDaysToMature": "2x"
+			}
+		},
+		// Crafting Recipes
 		{
 			"Name": "ResourceEggConverterCraftingRecipe",
-			"Value": "{{ConverterCraftingIngredient1}} {{ConverterCraftingIngredient1Amount}} {{ConverterCraftingIngredient2}} {{ConverterCraftingIngredient2Amount}} {{ConverterCraftingIngredient3}} {{ConverterCraftingIngredient3Amount}} {{ConverterCraftingIngredient4}} {{ConverterCraftingIngredient4Amount}}"
+			"Value": "(O)388 30 (O)390 30 (O)86 2 (O)334 2"
 		},
 		{
 			"Name": "CopperEggFusionChamberRecipe",
-			"Value": "{{ModId}}.LargeStoneEgg 1 {{ModId}}.LargeCoalEgg 1 {{CopperChamberCraftingIngredient3}} {{CopperChamberCraftingIngredient3Amount}} {{CopperChamberCraftingIngredient4}} {{CopperChamberCraftingIngredient4Amount}}"
+			"Value": "{{ModId}}.LargeStoneEgg 1 {{ModId}}.LargeCoalEgg 1 (O)334 5 (O)338 10"
 		},
 		{
 			"Name": "HardwoodEggFusionChamberRecipe",
-			"Value": "{{ModId}}.LargeWoodEgg 1 {{ModId}}.LargeClayEgg 1 {{HardwoodChamberCraftingIngredient3}} {{HardwoodChamberCraftingIngredient3Amount}} {{HardwoodChamberCraftingIngredient4}} {{HardwoodChamberCraftingIngredient4Amount}}"
+			"Value": "{{ModId}}.LargeWoodEgg 1 {{ModId}}.LargeClayEgg 1 (O)709 20 (O)338 10"
 		}
 	],
 	// Changes
