@@ -270,6 +270,12 @@
 			"Target": "{{ModId}}/IronChicken, {{ModId}}/IronChickenBaby",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
+		// Moss Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/MossChicken, {{ModId}}/MossChickenBaby",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
 		// Quartz Chicken
 		{
 			"Action": "Load",

@@ -48,7 +48,7 @@
 					"Category": -5,
 					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.1}}, 0, up}}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 10, // Update
+					"SpriteIndex": 14,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -63,7 +63,7 @@
 					"Category": -5,
 					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 11, // Update
+					"SpriteIndex": 15,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
