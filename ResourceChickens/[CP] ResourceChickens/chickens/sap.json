@@ -1,0 +1,143 @@
+{
+	"Changes": [
+		// Sap Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.SapChicken": {
+					"DisplayName": "{{i18n: Chicken.SapChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": ["{{ModId}}.SapEgg", "{{ModId}}.LargeSapEgg"],
+					"IncubationTime": "{{ResourceChickenIncubationTimeChoice}}",
+					"BirthText": "{{i18n: Chicken.SapChicken.BirthText}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.SapEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeSapEgg"
+						}
+					],
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/SapChicken",
+					"BabyTexture": "{{ModId}}/SapChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.1}}, 0, up }}"
+				}
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.SapEgg": {
+					"Name": "{{ModId}}.SapEgg",
+					"DisplayName": "{{i18n: Egg.Sap.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.1}}, 0, up}}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 22,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["resource_egg_item", "color_yellow"]
+				},
+				"{{ModId}}.LargeSapEgg": {
+					"Name": "{{ModId}}.LargeSapEgg",
+					"DisplayName": "{{i18n: LargeEgg.Sap.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 23,
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["large_resource_egg_item", "color_yellow"]
+				}
+			}
+		},
+		// Spawn Condition
+		{
+			"Action": "EditData",
+			"Target": "Data/WildTrees",
+			"Fields": {
+				"1": {
+					"ChopItems": [
+						{
+							"Id": "{{ModId}}.SapEgg",
+							"ItemId": "{{ModId}}.SapEgg",
+							"MinSize": "Tree",
+							"Chance": 0.05,
+							"Condition": "PLAYER_FORAGING_LEVEL Current 2"
+						}
+					]
+				},
+				"2": {
+					"ChopItems": [
+						{
+							"Id": "{{ModId}}.SapEgg",
+							"ItemId": "{{ModId}}.SapEgg",
+							"MinSize": "Tree",
+							"Chance": 0.05,
+							"Condition": "PLAYER_FORAGING_LEVEL Current 2"
+						}
+					]
+				},
+				"3": {
+					"ChopItems": [
+						{
+							"Id": "{{ModId}}.SapEgg",
+							"ItemId": "{{ModId}}.SapEgg",
+							"MinSize": "Tree",
+							"Chance": 0.05,
+							"Condition": "PLAYER_FORAGING_LEVEL Current 2"
+						}
+					]
+				},
+				"8": {
+					"ChopItems": [
+						{
+							"Id": "{{ModId}}.SapEgg",
+							"ItemId": "{{ModId}}.SapEgg",
+							"MinSize": "Tree",
+							"Chance": 0.05,
+							"Condition": "PLAYER_FORAGING_LEVEL Current 2"
+						}
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/SapChicken",
+			"FromFile": "assets/tophatta/SapChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/SapChickenBaby",
+			"FromFile": "assets/tophatta/SapChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

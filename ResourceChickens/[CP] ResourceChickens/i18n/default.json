@@ -112,5 +112,15 @@ Lines Changed: 89
 	/*Added*/ "Chicken.MossChicken.Name": "Moss Chicken",
 	/*Added*/ "Chicken.MossChicken.BirthText": "A baby moss chicken was born!",
 	/*Added*/ "Egg.Moss.Name": "Moss Egg",
-	/*Added*/ "LargeEgg.Moss.Name": "Large Moss Egg"
+	/*Added*/ "LargeEgg.Moss.Name": "Large Moss Egg",
+
+	/*Added*/ "Chicken.SapChicken.Name": "Sap Chicken",
+	/*Added*/ "Chicken.SapChicken.BirthText": "A baby sap chicken was born!",
+	/*Added*/ "Egg.Sap.Name": "Sap Egg",
+	/*Added*/ "LargeEgg.Sap.Name": "Large Sap Egg",
+
+	/*Added*/ "Chicken.GeodeChicken.Name": "Geode Chicken",
+	/*Added*/ "Chicken.GeodeChicken.BirthText": "A baby geode chicken was born!",
+	/*Added*/ "Egg.Geode.Name": "Geode Egg",
+	/*Added*/ "LargeEgg.Geode.Name": "Large Geode Egg"
 }

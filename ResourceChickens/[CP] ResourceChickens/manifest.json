@@ -8,5 +8,17 @@
 	"UpdateKeys": ["Nexus:21800"],
 	"ContentPackFor": {
 		"UniqueID": "Pathoschild.ContentPatcher"
-	}
+	},
+	"Dependencies": [
+		{
+			"UniqueID": "mistyspring.ItemExtensions",
+			"MinimumVersion": "1.4.0",
+			"IsRequired": false
+		},
+		{
+			"UniqueID": "Esca.FarmTypeManager",
+			"MinimumVersion": "1.17.0",
+			"IsRequired": false
+		}
+	]
 }

@@ -222,7 +222,7 @@
 	],
 	// Changes
 	"Changes": [
-		// Machine and Eggs
+		// Items & Objects
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/Eggs, {{ModId}}/ResourceEggConverter, {{ModId}}/Items",
@@ -258,6 +258,12 @@
 			"Target": "{{ModId}}/FiberChicken, {{ModId}}/FiberChickenBaby",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
+		// Geode Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/GeodeChicken, {{ModId}}/GeodeChickenBaby",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
 		// Hardwood Chicken
 		{
 			"Action": "Load",
@@ -282,6 +288,12 @@
 			"Target": "{{ModId}}/QuartzChicken, {{ModId}}/QuartzChickenBaby",
 			"FromFile": "assets/{{TargetWithoutPath}}.png"
 		},
+		// Sap Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/SapChicken, {{ModId}}/SapChickenBaby",
+			"FromFile": "assets/{{TargetWithoutPath}}.png"
+		},
 		// Stone Chicken
 		{
 			"Action": "Load",
@@ -303,18 +315,17 @@
 		// Level 2
 		{
 			"Action": "Include",
-			"FromFile": "chickens/bait.json, chickens/copper.json, chickens/fiber.json, chickens/hardwood.json"
+			"FromFile": "chickens/bait.json, chickens/copper.json, chickens/fiber.json, chickens/hardwood.json, chickens/sap.json"
 		},
 		// Level 3
 		{
 			"Action": "Include",
-			"FromFile": "chickens/iron.json, chickens/moss.json, chickens/quartz.json"
+			"FromFile": "chickens/iron.json, chickens/geode.json, chickens/moss.json, chickens/quartz.json"
 		},
 		// Everything else
 		{
 			"Action": "Include",
-			"FromFile": "data/craftingrecipes.json, data/machines.json, chickens/vanilla.json"
+			"FromFile": "data/craftingrecipes.json, data/customnodes.json, data/machines.json, chickens/vanilla.json"
 		}
 	]
 }
-// GreenRain

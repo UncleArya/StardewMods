@@ -83,14 +83,16 @@
 							"Id": "{{ModId}}.MossEgg",
 							"ItemId": "{{ModId}}.MossEgg",
 							"MinSize": "Tree",
-							"Chance": 0.15
+							"Chance": 0.15,
+							"Condition": "PLAYER_FORAGING_LEVEL Current 3"
 						}
 					],
 					"ShakeItems": [
 						{
 							"Id": "{{ModId}}.MossEgg",
 							"ItemId": "{{ModId}}.MossEgg",
-							"Chance": 0.15
+							"Chance": 0.15,
+							"Condition": "PLAYER_FORAGING_LEVEL Current 3"
 						}
 					]
 				},
@@ -100,14 +102,16 @@
 							"Id": "{{ModId}}.MossEgg",
 							"ItemId": "{{ModId}}.MossEgg",
 							"MinSize": "Tree",
-							"Chance": 0.15
+							"Chance": 0.15,
+							"Condition": "PLAYER_FORAGING_LEVEL Current 3"
 						}
 					],
 					"ShakeItems": [
 						{
 							"Id": "{{ModId}}.MossEgg",
 							"ItemId": "{{ModId}}.MossEgg",
-							"Chance": 0.15
+							"Chance": 0.15,
+							"Condition": "PLAYER_FORAGING_LEVEL Current 3"
 						}
 					]
 				}

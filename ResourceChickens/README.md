@@ -11,28 +11,43 @@
 
 #### Level 2 Chickens
 
+-   **Bait Chicken**
 -   **Copper Chicken**
 -   **Fiber Chicken**
 -   **Hardwood Chicken**
+-   **Sap Chicken**
 
 #### Level 3 Chickens
 
--   **Coming soon!**
+-   **Geode Chicken**
+-   **Iron Chicken**
+-   **Moss Chicken**
+-   **Quartz Chicken**
+
+#### Level 4 Chickens
+
+-   **Coming Soon!**
 
 Purchase level 1 baby Resource Chickens from Marnie once you have a Coop constructed. Resource Chickens cost twice as much as vanilla chickens because they can be twice as helpful. Resource eggs can be converted into resources, turned into mayo, and used in cooking recipes.
 
-Level 2 chickens produce eggs that provide higher tier resources but can only be obtained through gameplay.
+Level 2 and above chickens produce eggs that provide higher tier resources but can only be obtained through gameplay.
 
 <details>
-<summary>How To Obtain All Resource Chickens</summary>
+<summary>Spoiler: How To Obtain All Resource Chickens</summary>
 	
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
+| Bait | Forage around the Beach Tide Pools the day after rain | Fishing Level 2 |
 | Clay | Purchase from Marnie | Construct a Coop |
 | Coal | Purchase from Marnie | Construct a Coop |
-| Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming Skill Level 3 |
-| Fiber | Forage in the Secret Woods, Artifact Spot in the Forest or Railroad | Forage Skill Level 3 |
-| Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Skill Level 3 |
+| Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming Level 3 |
+| Fiber | Drop from breaking weeds in the Forest or Railroad, forage in the Secret Woods | Forage Level 3 |
+| Geode | Rare drop from geode stones in the Mines and Skull Cavern | Mining Level 3 |
+| Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Level 3 |
+| Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming Level 4 |
+| Moss | Rare drop from shaking/chopping green rain trees, forage in the Forest day after green rain | Foraging Level 3 |
+| Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming Level 4 |
+| Sap | Rare drop from chopping Oak, Maple, Pine, or Mahogany trees | Foraging Level 2 |
 | Stone | Purchase from Marnie | Construct a Coop |
 | Wood | Purchase from Marnie | Construct a Coop |
 </details>
@@ -40,17 +55,31 @@ Level 2 chickens produce eggs that provide higher tier resources but can only be
 <details>
 <summary>Spoiler: Help Obtaining a Fiber Chicken</summary>
 
-Once you have reached **Forage skill level 3** (or any player has if playing multiplayer), the following will have a chance to spawn:
+Once you have reached **Forage skill level 2**, the following will have a chance to spawn:
 
+-   A rare drop from breaking weeds in the [Cindersap Forest](https://stardewvalleywiki.com/Cindersap_Forest) that contain a fiber chicken egg
+-   A rare drop from breaking weeds in the [Railroad](https://stardewvalleywiki.com/Railroad) that contain a fiber chicken egg
 -   A fiber chicken egg in the [Secret Woods](https://stardewvalleywiki.com/Secret_Woods)
--   An artifact dig spot in the [Cindersap Forest](https://stardewvalleywiki.com/Cindersap_Forest) containing a fiber chicken egg
--   An artifact dig spot around the [Railroad](https://stardewvalleywiki.com/Railroad) containing a fiber chicken egg
--   Each map location will only have a **maximum of 1** fiber chicken egg forage spawn per day
+-   Each map location will each have a **maximum of 1** fiber chicken egg spawn per day
 -   If a forage spawn has occurred in that map that day, it will reset and go away at the end of each day
--   Each map location has a **50% chance** of spawing a fiber chicken egg forage spot each day
--   There is a chance that there will be 0 fiber chicken egg forage spawn on any given day
 
 _If you feel fiber chicken egg forage spots are too rare or not rare enough, please provide feedback. This is not currently something that can be user configurable, so I attempted to balance it as evenly as I thought people would want_
+
+</details>
+</br>
+<details>
+<summary>Spoiler: How to Find and Process Geode Eggs</summary>
+
+Once you have reached **Mining skill level 3**, four types of custom geode stones will have a rare chance to spawn in the Mines, each containing a geode chicken egg.
+
+Geode chicken eggs, when placed in the Resource Egg Converter will randomly produce the following:
+
+-   A geode once any player has entered the Mines once
+-   A frozen geode once any player has reached level 40 in the Mines
+-   A magma geode once any player has reached level 80 in the Mines
+-   An omni geode once any player has reached the bottom of the Mines
+
+_If you feel geode chicken eggs are too rare or not rare enough, please provide feedback._
 
 </details>
 
@@ -70,23 +99,28 @@ Resource eggs can be put into a Resource Egg Converter to produce their respecti
 
 </details>
 
+### Dependencies
+
+-   [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) - Required
+-   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain Geode and Fiber Chickens
+-   [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) - Required to obtain Bait, Moss, and Fiber Chickens
+
 ### ![gameplay](https://github.com/UncleArya/ResourceChickens/assets/100550741/6a142d2f-303b-478c-ab36-187242fbb7c5)
 
 Resource Chickens can start producing large resource eggs once you reach a 2 heart relationship with them (configurable), which can be turned into slightly more resources.  
 <br/>Works with [Automate](https://www.nexusmods.com/stardewvalley/mods/1063)!  
-<br/>Also works with the Auto Grabber!  
-<br/>Could be a unique way to collect resources on challenge runs.
+<br/>Also works with the Auto Grabber!
 
 ### ![customisability](https://github.com/UncleArya/ResourceChickens/assets/100550741/e5511628-d9f7-4163-9aac-6d7b76028b0d)
 
-Feel like aspects of Resource Chickens are overpowered or underpowered? Just about everything can be customised in the config settings, either directly in the config.json or by using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098) (recommended).  
+Feel like aspects of Resource Chickens are overpowered or underpowered? There are many difficulty and balancing settings to customise your playthrough. Either change directly in the config.json or by using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098) (recommended).  
 <br/>Some of what can be customised:
 
 -   The appearance of resource chickens (and vanilla chickens to match)
--   Change the purchase and/or sell price of chickens
--   Change how much of each resource you can get from each chicken type
+-   The sell and purchase price of Resource Chickens
+-   Amount of resources you can get from your Resource Chickens
+-   How quickly Resource Chickens produce eggs
 -   How long it takes to incubate and hatch baby resource chickens
--   Change the crafting recipe for machines and items that require crafting
 -   Change what tier of Coop (Coop, Big Coop, Deluxe Coop) is required before you can purchase Resource Chickens
 -   And lots more!
 
@@ -120,21 +154,22 @@ Some spirtes are edits done by me of existing vanilla sprites originally made by
 
 ### ![localisation](https://github.com/UncleArya/ResourceChickens/assets/100550741/73dda029-4b5e-44c9-a5d6-5c32b530dc9b)
 
-Current languages supported: English 🇬🇧, Chinese 🇨🇳 (Thanks [Orville9972](https://www.nexusmods.com/users/73926958)), Spanish 🇪🇸 (Thanks [LuCiiel20](https://forums.nexusmods.com/profile/11110368-luciiel20/)) Turkish 🇹🇷 (Thanks [Stola90](https://forums.nexusmods.com/profile/193926774-stola90/))
+Current languages supported: English 🇬🇧, Chinese 🇨🇳 (Thanks [Orville9972](https://www.nexusmods.com/users/73926958)), Spanish 🇪🇸 (Thanks [LuCiiel20](https://forums.nexusmods.com/profile/11110368-luciiel20/)), and Turkish 🇹🇷 (Thanks [Stola90](https://forums.nexusmods.com/profile/193926774-stola90/))
 
 Want to help translate this mod into another language? This mod is fully prepared for i18n localisation. Download the default.json file in the i18n folder of this mod or reach out to me over Discord (UncleArya). I can then add your translation file to the main mod file for improved localisation support.
 
 ### ![compatibility](https://github.com/UncleArya/ResourceChickens/assets/100550741/6fd7bf0e-ffc8-4edb-82f0-9125eef99c80)
 
-This mod relies entirely on [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915), so it should be fully compatible with pretty much every other mod out there. [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) is used to allow for mod items to spawn as forage but it does not change vanilla forage spawning.
+This mod relies entirely on [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915), so it should be fully compatible with pretty much every other mod out there.
 
 Please let me know if you come across any issues.
 
 ### ![install](https://github.com/UncleArya/ResourceChickens/assets/100550741/3c2f1601-d779-4a6f-8fab-e72baf1365fb)
 
--   Ensure you have [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) and [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231)
+-   Ensure you have [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915)
+-   Ensure you have [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) and [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357)
 -   Download Resource Chickens
 -   Add the Resource Chickens folder to your Mod folder
--   If playing multiplayer, all players will need this mod too
+-   If playing multiplayer, all players will need this mod and the mod dependencies too
 -   **Resource Chickens can be added to an existing save**
 -   If removing from an in-progress save, be sure to sell all Resource Chickens and mod items prior to removal

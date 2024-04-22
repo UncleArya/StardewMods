@@ -82,7 +82,7 @@
 					"Category": -18,
 					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Items",
-					"SpriteIndex": 0, // Update
+					"SpriteIndex": 2,
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,

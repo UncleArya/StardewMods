@@ -53,33 +53,33 @@
 					"WeatherYesterday": [],
 					"WeatherToday": [],
 					"WeatherTomorrow": [],
-					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Any 2"],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 2"],
 					"CPConditions": {},
 					"EPUPreconditions": [],
 					"LimitedNumberOfSpawns": null
 				},
 				"DaysUntilSpawnsExpire": 1
 			},
-			// Fiber Egg - Artifact Spots
+			// Fiber Egg - Weed Spawns
 			{
 				"SpringItemIndex": [
 					{
-						"Category": "Buried",
-						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
 						"PercentChanceToSpawn": 50
 					}
 				],
 				"SummerItemIndex": [
 					{
-						"Category": "Buried",
-						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
 						"PercentChanceToSpawn": 50
 					}
 				],
 				"FallItemIndex": [
 					{
-						"Category": "Buried",
-						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
 						"PercentChanceToSpawn": 50
 					}
 				],
@@ -88,7 +88,7 @@
 				"MapName": "Forest",
 				"MinimumSpawnsPerDay": 1,
 				"MaximumSpawnsPerDay": 1,
-				"IncludeTerrainTypes": ["Diggable"],
+				"IncludeTerrainTypes": ["All"],
 				"ExcludeTerrainTypes": [],
 				"IncludeCoordinates": [],
 				"ExcludeCoordinates": [],
@@ -108,7 +108,7 @@
 					"WeatherYesterday": [],
 					"WeatherToday": [],
 					"WeatherTomorrow": [],
-					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Any 2"],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 2"],
 					"CPConditions": {},
 					"EPUPreconditions": [],
 					"LimitedNumberOfSpawns": null
@@ -118,22 +118,22 @@
 			{
 				"SpringItemIndex": [
 					{
-						"Category": "Buried",
-						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
 						"PercentChanceToSpawn": 50
 					}
 				],
 				"SummerItemIndex": [
 					{
-						"Category": "Buried",
-						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
 						"PercentChanceToSpawn": 50
 					}
 				],
 				"FallItemIndex": [
 					{
-						"Category": "Buried",
-						"Contents": ["UncleArya.ResourceChickens.FiberEgg"],
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
 						"PercentChanceToSpawn": 50
 					}
 				],
@@ -162,7 +162,7 @@
 					"WeatherYesterday": [],
 					"WeatherToday": [],
 					"WeatherTomorrow": [],
-					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Any 2"],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 2"],
 					"CPConditions": {},
 					"EPUPreconditions": [],
 					"LimitedNumberOfSpawns": null
@@ -217,7 +217,7 @@
 					"WeatherYesterday": ["Rain", "Storm"],
 					"WeatherToday": [],
 					"WeatherTomorrow": [],
-					"GameStateQueries": ["PLAYER_FISHING_LEVEL Any 2"],
+					"GameStateQueries": ["PLAYER_FISHING_LEVEL Current 2"],
 					"CPConditions": {},
 					"EPUPreconditions": [],
 					"LimitedNumberOfSpawns": null
@@ -260,7 +260,7 @@
 					"WeatherYesterday": ["GreenRain"],
 					"WeatherToday": [],
 					"WeatherTomorrow": [],
-					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Any 3"],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 3"],
 					"CPConditions": {},
 					"EPUPreconditions": [],
 					"LimitedNumberOfSpawns": null

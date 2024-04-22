@@ -2,11 +2,16 @@
 
 ## 0.3.0
 
--   Added new Level 2 Chicken (Bait Chicken)
--   Added new Level 3 Chickens (Iron Chicken, Quartz Chicken, Moss Chicken)
--   Added crafting recipes for Iron and Quartz Fusion Chambers
--   Added forage and spawn conditions for moss chicken egg
+-   Added new Level 2 Chickens (Bait Chicken, Sap Chicken)
+-   Added new Level 3 Chickens (Iron Chicken, Quartz Chicken, Moss Chicken, Geode Chicken)
+-   Added craftable Iron and Quartz Fusion Chambers and their recipes
+-	Added [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) as a dependency to allow for custom node spawns
+-	[Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) and [Farm Type Manager ](https://www.nexusmods.com/stardewvalley/mods/3231) are technically not a firm requirement but if they are not installed then the Geode, Bait, and Fiber chickens are not obtainable and the Moss chicken egg forage conditions will not apply
+-	Added 4 custom geode stone nodes and conditions for them to drop geode chicken eggs
+-   Added forage and drop conditions for moss chicken egg
 -   Added forage condition for bait chicken egg
+-	Added drop condition for sap chicken egg
+-	Changed fiber egg drop condition from artifact spot to drop chance from custom weeds
 -   Slightly increased forage spawn rate for fiber chicken egg
 -   Greatly simplified the config options for better clarity and readability
 -   Added difficulty options (easier and harder) for: amount of resources obtained from resource eggs, egg price, chicken price, days for a baby chicken to hatch, days for a baby chicken to mature, days for a chicken to produce an egg
@@ -35,7 +40,7 @@
 -   Added category for Level 2 Chickens (Copper, Fiber, Hardwood)
 -   Added unlockable crafting recipes and corresponding items for Copper and Hardwood Egg Fusion Chambers to hatch baby copper and hardwood chickens
 -   Additional copper and hardwood chickens can be hatched in the vanilla incubator using the copper and hardwood eggs those chickens lay
--   Added requirement for Farm Type Manager (FTM) to allow for forage spawning
+-   Added [Farm Type Manager (FTM)](https://www.nexusmods.com/stardewvalley/mods/3231) as a dependency to allow for forage spawning
 -   Added forage spawn conditions for the fiber chicken egg
 -   Once obtained, a fiber chicken egg can be placed in the vanilla incubator to hatch a fiber chicken
 -   Added a Progression Mode to allow for unlocking of Level 2 and above chickens
