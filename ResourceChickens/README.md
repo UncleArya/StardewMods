@@ -99,7 +99,7 @@ Resource eggs can be put into a Resource Egg Converter to produce their respecti
 
 </details>
 
-### Dependencies
+### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/a3e758b3-eae3-43b3-b765-8afb25873018)
 
 -   [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) - Required
 -   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain Geode and Fiber Chickens
