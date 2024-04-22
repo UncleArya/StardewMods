@@ -32,6 +32,8 @@ Purchase level 1 baby Resource Chickens from Marnie once you have a Coop constru
 
 Level 2 and above chickens produce eggs that provide higher tier resources but can only be obtained through gameplay.
 
+Each subsequent increase in chicken level adds 10% to both the sell price of eggs and sell price of chickens!
+
 <details>
 <summary>Spoiler: How To Obtain All Resource Chickens</summary>
 	
