@@ -1,6 +1,6 @@
 /*
 ~Notes to translators~ Update 0.3.0
-Lines Added: 58, 66, 71-86, 92+
+Lines Added: 28-39, 57-68, 74-75, 90-92, 98-114
 Lines Changed: 89
 */
 // Thank you translators!!
@@ -25,6 +25,18 @@ Lines Changed: 89
 	"Chicken.WoodChicken.Description": "Adult wood chickens lay special resource eggs that can be turned into wood in the Resource Egg Converter.\nLives in the Coop.",
 	"Chicken.WoodChicken.BirthText": "A baby wood chicken was born!",
 	"Chicken.Level1.MissingBuildingDescription": "Requires construction of a Coop",
+	/*Added*/ "Chicken.BaitChicken.Name": "Bait Chicken",
+	/*Added*/ "Chicken.BaitChicken.BirthText": "A baby bait chicken was born!",
+	/*Added*/ "Chicken.IronChicken.Name": "Iron Chicken",
+	/*Added*/ "Chicken.IronChicken.BirthText": "A baby iron chicken was born!",
+	/*Added*/ "Chicken.GeodeChicken.Name": "Geode Chicken",
+	/*Added*/ "Chicken.GeodeChicken.BirthText": "A baby geode chicken was born!",
+	/*Added*/ "Chicken.MossChicken.Name": "Moss Chicken",
+	/*Added*/ "Chicken.MossChicken.BirthText": "A baby moss chicken was born!",
+	/*Added*/ "Chicken.QuartzChicken.Name": "Quartz Chicken",
+	/*Added*/ "Chicken.QuartzChicken.BirthText": "A baby quartz chicken was born!",
+	/*Added*/ "Chicken.SapChicken.Name": "Sap Chicken",
+	/*Added*/ "Chicken.SapChicken.BirthText": "A baby sap chicken was born!",
 
 	// Eggs
 	"Egg.Clay.Name": "Clay Egg",
@@ -42,11 +54,25 @@ Lines Changed: 89
 	"Egg.Wood.Name": "Wood Egg",
 	"LargeEgg.Wood.Name": "Large Wood Egg",
 	"ResourceEgg.Description": "A special egg that can be turned into resources in the Resource Egg Converter. Can also be turned into mayo or used for cooking.",
+	/*Added*/ "Egg.Bait.Name": "Bait Egg",
+	/*Added*/ "LargeEgg.Bait.Name": "Large Bait Egg",
+	/*Added*/ "Egg.Iron.Name": "Iron Egg",
+	/*Added*/ "LargeEgg.Iron.Name": "Large Iron Egg",
+	/*Added*/ "Egg.Geode.Name": "Geode Egg",
+	/*Added*/ "LargeEgg.Geode.Name": "Large Geode Egg",
+	/*Added*/ "Egg.Moss.Name": "Moss Egg",
+	/*Added*/ "LargeEgg.Moss.Name": "Large Moss Egg",
+	/*Added*/ "Egg.Quartz.Name": "Quartz Egg",
+	/*Added*/ "LargeEgg.Quartz.Name": "Large Quartz Egg",
+	/*Added*/ "Egg.Sap.Name": "Sap Egg",
+	/*Added*/ "LargeEgg.Sap.Name": "Large Sap Egg",
 
 	// Objects
 	"FusionChamber.Copper.Name": "Copper Egg Fusion Chamber",
 	"FusionChamber.Hardwood.Name": "Hardwood Egg Fusion Chamber",
 	"FusionChamber.Description": "Insert into an egg incubator to hatch a baby resource chicken",
+	/*Added*/ "FusionChamber.Iron.Name": "Iron Egg Fusion Chamber",
+	/*Added*/ "FusionChamber.Quartz.Name": "Quartz Egg Fusion Chamber",
 
 	// Big Craftables
 	"BigCraftable.ResourceEggConverter.Name": "Resource Egg Converter",
@@ -55,19 +81,21 @@ Lines Changed: 89
 
 	// Config
 	// Appearance & Behaviour
-	/*Added*/ "config.section.AppearanceBehaviour.name": "Appearance & Behaviour",
 	"config.ChickenAppearanceVersion.name": "Chicken Appearance Style",
 	"config.ChickenAppearanceVersion.description": "Choose the sprite style you would like for your resource chickens. Reference images on Nexus and in mod folder.\nVanillaStyle: vanilla chicken sprites recoloured by UncleArya\nHattaStyle: custom chicken sprites made by Tophatta",
 	"config.VanillaChickensMatchHattaStyle.name": "Vanilla Chickens Hatta Style",
 	"config.VanillaChickensMatchHattaStyle.description": "Vanilla chicken sprites will be replaced by custom chicken sprites made by Tophatta. Matches Resource Chickens set to Hatta Style. Reference images on Nexus and in mod folder.",
 	"config.ChickensCanSwim.name": "Chickens Can Swim",
 	"config.ChickensCanSwim.description": "Allows resource chickens to swim in water when they are happy\nDefault: False",
-	// Difficulty Scaling
-	/*Added*/ "config.section.DifficultyScaling.name": "Difficulty Scaling",
+	/*Added*/ "config.section.AppearanceBehaviour.name": "Appearance & Behaviour",
+	/*Added*/ "config.ObjectAppearanceVersion.name": "Object Appearance Style",
+	/*Added*/ "config.ObjectAppearanceVersion.description": "Choose the sprite style you would like for objects such as the Resource Egg Converter and egg fusion chambers.\nReference images on Nexus and in mod folder.\nVanillaStyle: vanilla inspired sprites created by UncleArya and Tophatta\nHattaStyle: custom sprites made by Tophatta inspired by Gwen's Medieval Craftables",
+	// Difficulty & Balancing Scaling
 	"config.Level1ChickenRequiredBuilding.name": "Required Building",
 	"config.Level1ChickenRequiredBuilding.description": "The level of coop needed to purchase a resource chicken from Marnie\nDefault: Coop",
 	"config.HeartsRequiredForLargeEggs.name": "Hearts Required for Large Eggs",
 	"config.HeartsRequiredForLargeEggs.description": "The amount of full relationship hearts needed with a chicken before it can produce large eggs\nDefault: 2",
+	/*Added*/ "config.section.DifficultyScaling.name": "Difficulty & Balance Scaling",
 	/*Added*/ "config.ResourceEggConversionAmount.name": "Amount of Resources Obtained",
 	/*Added*/ "config.ResourceEggConversionAmount.description": "Amount of resources obtained from a resource egg when it is placed in a Resource Egg Converter.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n4x: Quadruple the default amount",
 	/*Added*/ "config.ResourceEggSellPrice.name": "Egg Sell Price",
@@ -88,39 +116,4 @@ Lines Changed: 89
 	"config.ConverterPurchasePrice.description": "Price of purchasing the Resource Egg Converter from Marnie\nDefault: 1000",
 	/*CHANGED*/ "config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
 	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180",
-
-	/*Added*/ "config.ObjectAppearanceVersion.name": "Object Appearance Style",
-	/*Added*/ "config.ObjectAppearanceVersion.description": "Choose the sprite style you would like for objects such as the Resource Egg Converter and egg fusion chambers.\nReference images on Nexus and in mod folder.\nVanillaStyle: vanilla inspired sprites created by UncleArya and Tophatta\nHattaStyle: custom sprites made by Tophatta inspired by Gwen's Medieval Craftables",
-
-	/*Added*/ "Chicken.IronChicken.Name": "Iron Chicken",
-	/*Added*/ "Chicken.IronChicken.BirthText": "A baby iron chicken was born!",
-	/*Added*/ "Egg.Iron.Name": "Iron Egg",
-	/*Added*/ "LargeEgg.Iron.Name": "Large Iron Egg",
-	/*Added*/ "FusionChamber.Iron.Name": "Iron Egg Fusion Chamber",
-
-	/*Added*/ "Chicken.QuartzChicken.Name": "Quartz Chicken",
-	/*Added*/ "Chicken.QuartzChicken.BirthText": "A baby quartz chicken was born!",
-	/*Added*/ "Egg.Quartz.Name": "Quartz Egg",
-	/*Added*/ "LargeEgg.Quartz.Name": "Large Quartz Egg",
-	/*Added*/ "FusionChamber.Quartz.Name": "Quartz Egg Fusion Chamber",
-
-	/*Added*/ "Chicken.BaitChicken.Name": "Bait Chicken",
-	/*Added*/ "Chicken.BaitChicken.BirthText": "A baby bait chicken was born!",
-	/*Added*/ "Egg.Bait.Name": "Bait Egg",
-	/*Added*/ "LargeEgg.Bait.Name": "Large Bait Egg",
-
-	/*Added*/ "Chicken.MossChicken.Name": "Moss Chicken",
-	/*Added*/ "Chicken.MossChicken.BirthText": "A baby moss chicken was born!",
-	/*Added*/ "Egg.Moss.Name": "Moss Egg",
-	/*Added*/ "LargeEgg.Moss.Name": "Large Moss Egg",
-
-	/*Added*/ "Chicken.SapChicken.Name": "Sap Chicken",
-	/*Added*/ "Chicken.SapChicken.BirthText": "A baby sap chicken was born!",
-	/*Added*/ "Egg.Sap.Name": "Sap Egg",
-	/*Added*/ "LargeEgg.Sap.Name": "Large Sap Egg",
-
-	/*Added*/ "Chicken.GeodeChicken.Name": "Geode Chicken",
-	/*Added*/ "Chicken.GeodeChicken.BirthText": "A baby geode chicken was born!",
-	/*Added*/ "Egg.Geode.Name": "Geode Egg",
-	/*Added*/ "LargeEgg.Geode.Name": "Large Geode Egg"
 }

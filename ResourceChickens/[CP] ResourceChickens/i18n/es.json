@@ -1,6 +1,6 @@
 /*
 ~Notes to translators~ Update 0.3.0
-Lines Added: 58, 66, 71-86
+Lines Added: 28-39, 57-68, 74-75, 90-92, 98-114
 Lines Changed: 89
 */
 // Thank you translators!!
@@ -25,6 +25,18 @@ Lines Changed: 89
 	"Chicken.WoodChicken.Description": "Las gallinas de madera ponen huevos de recursos especiales que pueden convertirse en madera en el Convertidor de Huevos de Recursos.\nVive en el Gallinero.",
 	"Chicken.WoodChicken.BirthText": "Ha nacido un pollito de madera!",
 	"Chicken.Level1.MissingBuildingDescription": "Requiere la construcción de un Corral",
+	/*Added*/ "Chicken.BaitChicken.Name": "Bait Chicken",
+	/*Added*/ "Chicken.BaitChicken.BirthText": "A baby bait chicken was born!",
+	/*Added*/ "Chicken.IronChicken.Name": "Iron Chicken",
+	/*Added*/ "Chicken.IronChicken.BirthText": "A baby iron chicken was born!",
+	/*Added*/ "Chicken.GeodeChicken.Name": "Geode Chicken",
+	/*Added*/ "Chicken.GeodeChicken.BirthText": "A baby geode chicken was born!",
+	/*Added*/ "Chicken.MossChicken.Name": "Moss Chicken",
+	/*Added*/ "Chicken.MossChicken.BirthText": "A baby moss chicken was born!",
+	/*Added*/ "Chicken.QuartzChicken.Name": "Quartz Chicken",
+	/*Added*/ "Chicken.QuartzChicken.BirthText": "A baby quartz chicken was born!",
+	/*Added*/ "Chicken.SapChicken.Name": "Sap Chicken",
+	/*Added*/ "Chicken.SapChicken.BirthText": "A baby sap chicken was born!",
 
 	// Eggs
 	"Egg.Clay.Name": "Huevo de arcilla",
@@ -42,11 +54,25 @@ Lines Changed: 89
 	"Egg.Wood.Name": "Huevo de madera",
 	"LargeEgg.Wood.Name": "Huevo de madera XL",
 	"ResourceEgg.Description": "Un huevo especial que puede convertirse en recursos en el Convertidor de Huevos de Recursos. También puede convertirse en mayonesa o usarse para cocinar.",
+	/*Added*/ "Egg.Bait.Name": "Bait Egg",
+	/*Added*/ "LargeEgg.Bait.Name": "Large Bait Egg",
+	/*Added*/ "Egg.Iron.Name": "Iron Egg",
+	/*Added*/ "LargeEgg.Iron.Name": "Large Iron Egg",
+	/*Added*/ "Egg.Geode.Name": "Geode Egg",
+	/*Added*/ "LargeEgg.Geode.Name": "Large Geode Egg",
+	/*Added*/ "Egg.Moss.Name": "Moss Egg",
+	/*Added*/ "LargeEgg.Moss.Name": "Large Moss Egg",
+	/*Added*/ "Egg.Quartz.Name": "Quartz Egg",
+	/*Added*/ "LargeEgg.Quartz.Name": "Large Quartz Egg",
+	/*Added*/ "Egg.Sap.Name": "Sap Egg",
+	/*Added*/ "LargeEgg.Sap.Name": "Large Sap Egg",
 
 	// Objects
 	"FusionChamber.Copper.Name": "Cámara de fusión de huevos de cobre",
 	"FusionChamber.Hardwood.Name": "Cámara de fusión de huevos de madera noble",
 	"FusionChamber.Description": "Introducir en una incubadora de huevos para incubar un pollito de recursos",
+	/*Added*/ "FusionChamber.Iron.Name": "Iron Egg Fusion Chamber",
+	/*Added*/ "FusionChamber.Quartz.Name": "Quartz Egg Fusion Chamber",
 
 	// Big Craftables
 	"BigCraftable.ResourceEggConverter.Name": "Convertidor de huevos de recursos",
@@ -55,19 +81,21 @@ Lines Changed: 89
 
 	// Config
 	// Appearance & Behaviour
-	/*Added*/ "config.section.AppearanceBehaviour.name": "Appearance & Behaviour",
 	"config.ChickenAppearanceVersion.name": "Apariencia de los pollos",
 	"config.ChickenAppearanceVersion.description": "Elige el estilo de sprite que quieras para tus pollos de recursos. Imágenes de referencia en Nexus y en la carpeta mod.\nVanillaStyle: sprites de pollo vainilla recoloreados por UncleArya\nHattaStyle: sprites de pollo personalizados hechos por Tophatta",
 	"config.VanillaChickensMatchHattaStyle.name": "Pollos vanilla al estilo Hatta",
 	"config.VanillaChickensMatchHattaStyle.description": "Los sprites de pollo vanilla serán sustituidos por sprites de pollo personalizados hechos por Tophatta.\nCoincide con los pollos de recursos ajustados al estilo Hatta. Imágenes de referencia en Nexus y en la carpeta mod.",
 	"config.ChickensCanSwim.name": "Las gallinas pueden nadar",
 	"config.ChickensCanSwim.description": "Permite que los pollos de recursos naden en el agua cuando están felices.\nPor defecto: Desactivado",
-	// Difficulty Scaling
-	/*Added*/ "config.section.DifficultyScaling.name": "Difficulty Scaling",
+	/*Added*/ "config.section.AppearanceBehaviour.name": "Appearance & Behaviour",
+	/*Added*/ "config.ObjectAppearanceVersion.name": "Object Appearance Style",
+	/*Added*/ "config.ObjectAppearanceVersion.description": "Choose the sprite style you would like for objects such as the Resource Egg Converter and egg fusion chambers.\nReference images on Nexus and in mod folder.\nVanillaStyle: vanilla inspired sprites created by UncleArya and Tophatta\nHattaStyle: custom sprites made by Tophatta inspired by Gwen's Medieval Craftables",
+	// Difficulty & Balancing
 	"config.Level1ChickenRequiredBuilding.name": "Construccion Requerida",
 	"config.Level1ChickenRequiredBuilding.description": "El nivel del Corral que necesitas para poder comprar Pollos de recursos de Marnie\nPor defecto: Corral Básico",
 	"config.HeartsRequiredForLargeEggs.name": "Corazones necesarios para huevos XL",
 	"config.HeartsRequiredForLargeEggs.description": "La cantidad de corazones de relación que necesita una gallina antes de que pueda producir huevos XL.\nPor defecto: 2",
+	/*Added*/ "config.section.DifficultyScaling.name": "Difficulty & Balancing",
 	/*Added*/ "config.ResourceEggConversionAmount.name": "Amount of Resources Obtained",
 	/*Added*/ "config.ResourceEggConversionAmount.description": "Amount of resources obtained from a resource egg when it is placed in a Resource Egg Converter.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n4x: Quadruple the default amount",
 	/*Added*/ "config.ResourceEggSellPrice.name": "Egg Sell Price",
