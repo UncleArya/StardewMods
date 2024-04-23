@@ -1,3 +1,5 @@
+![banner](https://github.com/UncleArya/StardewMods/assets/100550741/67eb01d2-3587-426a-95d9-909a7bfe9529)
+
 # Better Recycling Machine
 
 Use the Recycling Machine for more than just trash. Recycle artifacts, fertilizers and soils, fences, signs, sprinklers, and more!
@@ -8,12 +10,12 @@ Better Recycling Machine was written from scratch to work entirely, and solely w
 
 ## What You Can Recycle:
 
-    Artifacts
-    Fertilizers and Soils
-    Sprinklers (disabled by default)
-    Fences and Gates (disabled by default)
-    Signs (disabled by default)
-    Torches
+-    Artifacts
+-    Fertilizers and Soils
+-    Sprinklers (disabled by default)
+-    Fences and Gates (disabled by default)
+-    Signs (disabled by default)
+-    Torches
 
 All categories can be toggled on and off in the config.
 
