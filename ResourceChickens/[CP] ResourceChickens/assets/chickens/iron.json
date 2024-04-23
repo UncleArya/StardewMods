@@ -1,41 +1,41 @@
 {
 	"Changes": [
-		// Hardwood Chicken
+		// Iron Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.HardwoodChicken": {
-					"DisplayName": "{{i18n: Chicken.HardwoodChicken.Name}}",
+				"{{ModId}}.IronChicken": {
+					"DisplayName": "{{i18n: Chicken.IronChicken.Name}}",
 					"House": "Coop",
 					"EggItemIds": [
-						"{{ModId}}.HardwoodEgg",
-						"{{ModId}}.LargeHardwoodEgg",
-						"{{ModId}}.HardwoodEggFusionChamber"
+						"{{ModId}}.IronEgg",
+						"{{ModId}}.LargeIronEgg",
+						"{{ModId}}.IronEggFusionChamber"
 					],
-					"IncubationTime": "{{ResourceChickenIncubationTimeChoice}}",
-					"BirthText": "{{i18n: Chicken.HardwoodChicken.BirthText}}",
+					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
+					"BirthText": "{{i18n: Chicken.IronChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.HardwoodEgg"
+							"ItemId": "{{ModId}}.IronEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeHardwoodEgg"
+							"ItemId": "{{ModId}}.LargeIronEgg"
 						}
 					],
 					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/HardwoodChicken",
-					"BabyTexture": "{{ModId}}/HardwoodChickenBaby",
+					"Texture": "{{ModId}}/IronChicken",
+					"BabyTexture": "{{ModId}}/IronChickenBaby",
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
 					"HappinessDrain": 20,
-					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.1}}, 0, up }}"
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.2}}, 0, up }}"
 				}
 			}
 		},
@@ -44,45 +44,45 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.HardwoodEgg": {
-					"Name": "{{ModId}}.HardwoodEgg",
-					"DisplayName": "{{i18n: Egg.Hardwood.Name}}",
+				"{{ModId}}.IronEgg": {
+					"Name": "{{ModId}}.IronEgg",
+					"DisplayName": "{{i18n: Egg.Iron.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.1}}, 0, up }}",
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.2}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 12,
+					"SpriteIndex": 16,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_brown"]
+					"ContextTags": ["resource_egg_item", "color_iron"]
 				},
-				"{{ModId}}.LargeHardwoodEgg": {
-					"Name": "{{ModId}}.LargeHardwoodEgg",
-					"DisplayName": "{{i18n: LargeEgg.Hardwood.Name}}",
+				"{{ModId}}.LargeIronEgg": {
+					"Name": "{{ModId}}.LargeIronEgg",
+					"DisplayName": "{{i18n: LargeEgg.Iron.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 13,
+					"SpriteIndex": 17,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_brown"]
+					"ContextTags": ["large_resource_egg_item", "color_iron"]
 				},
-				"{{ModId}}.HardwoodEggFusionChamber": {
-					"Name": "{{ModId}}.HardwoodEggFusionChamber",
-					"DisplayName": "{{i18n: FusionChamber.Hardwood.Name}}",
+				"{{ModId}}.IronEggFusionChamber": {
+					"Name": "{{ModId}}.IronEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Iron.Name}}",
 					"Description": "{{i18n: FusionChamber.Description}}",
 					"Type": "Basic",
 					"Category": -18,
-					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
-					"Texture": "{{ModId}}/Items",
-					"SpriteIndex": 1,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/FusionChambers",
+					"SpriteIndex": 2,
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -92,16 +92,16 @@
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/HardwoodChicken",
-			"FromFile": "assets/tophatta/HardwoodChicken.png",
+			"Target": "{{ModId}}/IronChicken",
+			"FromFile": "assets/images/hattastyle/IronChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/HardwoodChickenBaby",
-			"FromFile": "assets/tophatta/HardwoodChickenBaby.png",
+			"Target": "{{ModId}}/IronChickenBaby",
+			"FromFile": "assets/images/hattastyle/IronChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

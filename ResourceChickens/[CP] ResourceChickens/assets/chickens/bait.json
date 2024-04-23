@@ -75,7 +75,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "{{ModId}}/BaitChicken",
-			"FromFile": "assets/tophatta/BaitChicken.png",
+			"FromFile": "assets/images/hattastyle/BaitChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
@@ -83,7 +83,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "{{ModId}}/BaitChickenBaby",
-			"FromFile": "assets/tophatta/BaitChickenBaby.png",
+			"FromFile": "assets/images/hattastyle/BaitChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

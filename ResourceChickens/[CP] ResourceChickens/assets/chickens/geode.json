@@ -1,48 +1,37 @@
 {
 	"Changes": [
-		// Stone Chicken
+		// Geode Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.StoneChicken": {
-					"DisplayName": "{{i18n: Chicken.StoneChicken.Name}}",
+				"{{ModId}}.GeodeChicken": {
+					"DisplayName": "{{i18n: Chicken.GeodeChicken.Name}}",
 					"House": "Coop",
-					"PurchasePrice": "{{query: {{ResourceChickenPriceChoice}} / 2}}",
-					"ShopTexture": "{{ModId}}/StoneShopTexture",
-					"ShopSourceRect": {
-						"X": 0,
-						"Y": 0,
-						"Width": 32,
-						"Height": 16
-					},
-					"RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
-					"ShopDescription": "{{i18n: Chicken.StoneChicken.Description}}",
-					"ShopMissingBuildingDescription": "{{i18n: Chicken.Level1.MissingBuildingDescription}}",
-					"EggItemIds": ["{{ModId}}.StoneEgg", "{{ModId}}.LargeStoneEgg"],
-					"IncubationTime": "{{ResourceChickenIncubationTimeChoice}}",
-					"BirthText": "{{i18n: Chicken.StoneChicken.BirthText}}",
+					"EggItemIds": ["{{ModId}}.GeodeEgg", "{{ModId}}.LargeGeodeEgg", "{{ModId}}.GeodeEggFusionChamber"],
+					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
+					"BirthText": "{{i18n: Chicken.GeodeChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.StoneEgg"
+							"ItemId": "{{ModId}}.GeodeEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeStoneEgg"
+							"ItemId": "{{ModId}}.LargeGeodeEgg"
 						}
 					],
 					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/StoneChicken",
-					"BabyTexture": "{{ModId}}/StoneChickenBaby",
+					"Texture": "{{ModId}}/GeodeChicken",
+					"BabyTexture": "{{ModId}}/GeodeChickenBaby",
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
 					"HappinessDrain": 20,
-					"SellPrice": "{{ResourceChickenPriceChoice}}"
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.2}}, 0, up }}"
 				}
 			}
 		},
@@ -51,30 +40,30 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.StoneEgg": {
-					"Name": "{{ModId}}.StoneEgg",
-					"DisplayName": "{{i18n: Egg.Stone.Name}}",
+				"{{ModId}}.GeodeEgg": {
+					"Name": "{{ModId}}.GeodeEgg",
+					"DisplayName": "{{i18n: Egg.Geode.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{ResourceEggSellPriceChoice}}",
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.2}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 4,
+					"SpriteIndex": 24,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
 					"ContextTags": ["resource_egg_item", "color_grey"]
 				},
-				"{{ModId}}.LargeStoneEgg": {
-					"Name": "{{ModId}}.LargeStoneEgg",
-					"DisplayName": "{{i18n: LargeEgg.Stone.Name}}",
+				"{{ModId}}.LargeGeodeEgg": {
+					"Name": "{{ModId}}.LargeGeodeEgg",
+					"DisplayName": "{{i18n: LargeEgg.Geode.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.9}}, 0, up }}",
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 5,
+					"SpriteIndex": 25,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -83,18 +72,19 @@
 				}
 			}
 		},
+		// HattaStyle Sprites
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/StoneChicken",
-			"FromFile": "assets/tophatta/StoneChicken.png",
+			"Target": "{{ModId}}/GeodeChicken",
+			"FromFile": "assets/images/hattastyle/GeodeChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/StoneChickenBaby",
-			"FromFile": "assets/tophatta/StoneChickenBaby.png",
+			"Target": "{{ModId}}/GeodeChickenBaby",
+			"FromFile": "assets/images/hattastyle/GeodeChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

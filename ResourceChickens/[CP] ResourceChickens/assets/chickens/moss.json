@@ -121,7 +121,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "{{ModId}}/MossChicken",
-			"FromFile": "assets/tophatta/MossChicken.png",
+			"FromFile": "assets/images/hattastyle/MossChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
@@ -129,7 +129,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "{{ModId}}/MossChickenBaby",
-			"FromFile": "assets/tophatta/MossChickenBaby.png",
+			"FromFile": "assets/images/hattastyle/MossChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

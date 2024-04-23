@@ -1,32 +1,36 @@
 {
 	"Changes": [
-		// Geode Chicken
+		// Quartz Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.GeodeChicken": {
-					"DisplayName": "{{i18n: Chicken.GeodeChicken.Name}}",
+				"{{ModId}}.QuartzChicken": {
+					"DisplayName": "{{i18n: Chicken.QuartzChicken.Name}}",
 					"House": "Coop",
-					"EggItemIds": ["{{ModId}}.GeodeEgg", "{{ModId}}.LargeGeodeEgg", "{{ModId}}.GeodeEggFusionChamber"],
+					"EggItemIds": [
+						"{{ModId}}.QuartzEgg",
+						"{{ModId}}.LargeQuartzEgg",
+						"{{ModId}}.QuartzEggFusionChamber"
+					],
 					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
-					"BirthText": "{{i18n: Chicken.GeodeChicken.BirthText}}",
+					"BirthText": "{{i18n: Chicken.QuartzChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.GeodeEgg"
+							"ItemId": "{{ModId}}.QuartzEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeGeodeEgg"
+							"ItemId": "{{ModId}}.LargeQuartzEgg"
 						}
 					],
 					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/GeodeChicken",
-					"BabyTexture": "{{ModId}}/GeodeChickenBaby",
+					"Texture": "{{ModId}}/QuartzChicken",
+					"BabyTexture": "{{ModId}}/QuartzChickenBaby",
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
@@ -40,51 +44,64 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.GeodeEgg": {
-					"Name": "{{ModId}}.GeodeEgg",
-					"DisplayName": "{{i18n: Egg.Geode.Name}}",
+				"{{ModId}}.QuartzEgg": {
+					"Name": "{{ModId}}.QuartzEgg",
+					"DisplayName": "{{i18n: Egg.Quartz.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
 					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.2}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 24,
+					"SpriteIndex": 20,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_grey"]
+					"ContextTags": ["resource_egg_item", "color_white"]
 				},
-				"{{ModId}}.LargeGeodeEgg": {
-					"Name": "{{ModId}}.LargeGeodeEgg",
-					"DisplayName": "{{i18n: LargeEgg.Geode.Name}}",
+				"{{ModId}}.LargeQuartzEgg": {
+					"Name": "{{ModId}}.LargeQuartzEgg",
+					"DisplayName": "{{i18n: LargeEgg.Quartz.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
 					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 25,
+					"SpriteIndex": 21,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_grey"]
+					"ContextTags": ["large_resource_egg_item", "color_white"]
+				},
+				"{{ModId}}.QuartzEggFusionChamber": {
+					"Name": "{{ModId}}.QuartzEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Quartz.Name}}",
+					"Description": "{{i18n: FusionChamber.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/FusionChambers",
+					"SpriteIndex": 3,
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true
 				}
 			}
 		},
-		// HattaStyle Sprites
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/GeodeChicken",
-			"FromFile": "assets/tophatta/GeodeChicken.png",
+			"Target": "{{ModId}}/QuartzChicken",
+			"FromFile": "assets/images/hattastyle/QuartzChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/GeodeChickenBaby",
-			"FromFile": "assets/tophatta/GeodeChickenBaby.png",
+			"Target": "{{ModId}}/QuartzChickenBaby",
+			"FromFile": "assets/images/hattastyle/QuartzChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

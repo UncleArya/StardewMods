@@ -3,7 +3,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/Blue Chicken",
-			"FromFile": "assets/tophatta/BlueChicken",
+			"FromFile": "assets/images/hattastyle/BlueChicken",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -11,7 +11,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/BabyBlue Chicken",
-			"FromFile": "assets/tophatta/BlueChickenBaby",
+			"FromFile": "assets/images/hattastyle/BlueChickenBaby",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -19,7 +19,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/Brown Chicken",
-			"FromFile": "assets/tophatta/BrownChicken.png",
+			"FromFile": "assets/images/hattastyle/BrownChicken.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -27,7 +27,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/BabyBrown Chicken",
-			"FromFile": "assets/tophatta/BrownChickenBaby.png",
+			"FromFile": "assets/images/hattastyle/BrownChickenBaby.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -35,7 +35,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/Golden Chicken",
-			"FromFile": "assets/tophatta/GoldenChicken.png",
+			"FromFile": "assets/images/hattastyle/GoldenChicken.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -43,7 +43,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/BabyGolden Chicken",
-			"FromFile": "assets/tophatta/GoldenChickenBaby.png",
+			"FromFile": "assets/images/hattastyle/GoldenChickenBaby.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -51,7 +51,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/Void Chicken",
-			"FromFile": "assets/tophatta/VoidChicken.png",
+			"FromFile": "assets/images/hattastyle/VoidChicken.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -59,7 +59,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/BabyVoid Chicken",
-			"FromFile": "assets/tophatta/VoidChickenBaby.png",
+			"FromFile": "assets/images/hattastyle/VoidChickenBaby.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -67,7 +67,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/White Chicken",
-			"FromFile": "assets/tophatta/WhiteChicken.png",
+			"FromFile": "assets/images/hattastyle/WhiteChicken.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -75,7 +75,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/BabyWhite Chicken",
-			"FromFile": "assets/tophatta/WhiteChickenBaby.png",
+			"FromFile": "assets/images/hattastyle/WhiteChickenBaby.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}

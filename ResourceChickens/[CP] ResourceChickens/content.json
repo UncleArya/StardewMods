@@ -66,7 +66,7 @@
 		},
 		// Machine Tweaks
 		"ResourceEggProcessingTime": {
-			"Default": 10, // Update 180
+			"Default": 180,
 			"Section": "MachineTweaks"
 		},
 		"ConverterPurchasePrice": {
@@ -74,7 +74,7 @@
 			"Section": "MachineTweaks"
 		},
 		"MayoMinutesUntilReady": {
-			"Default": 10, // Update 180
+			"Default": 180,
 			"Section": "MachineTweaks"
 		}
 	},
@@ -222,110 +222,132 @@
 	],
 	// Changes
 	"Changes": [
-		// Items & Objects
+		// Objects
 		{
 			"Action": "Load",
-			"Target": "{{ModId}}/Eggs, {{ModId}}/ResourceEggConverter, {{ModId}}/Items",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"Target": "{{ModId}}/Eggs, {{ModId}}/ResourceEggConverter, {{ModId}}/Items, {{ModId}}/FusionChambers",
+			"FromFile": "assets/images/objects/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/ResourceEggConverter",
+			"FromFile": "assets/images/objects/ResourceEggConverterHattaStyle.png",
+			"When": {
+				"ObjectAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/FusionChambers",
+			"FromFile": "assets/images/objects/FusionChambersHattaStyle.png",
+			"When": {
+				"ObjectAppearanceVersion": "HattaStyle"
+			}
+		},
+		// Shop Textures
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/ClayShopTexture, {{ModId}}/CoalShopTexture, {{ModId}}/StoneShopTexture, {{ModId}}/WoodShopTexture",
+			"FromFile": "assets/images/shops/{{TargetWithoutPath}}.png"
 		},
 		// Bait Chicken
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/BaitChicken, {{ModId}}/BaitChickenBaby",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Clay Chicken
 		{
 			"Action": "Load",
-			"Target": "{{ModId}}/ClayChicken, {{ModId}}/ClayChickenBaby, {{ModId}}/ClayShopTexture,",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"Target": "{{ModId}}/ClayChicken, {{ModId}}/ClayChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Coal Chicken
 		{
 			"Action": "Load",
-			"Target": "{{ModId}}/CoalChicken, {{ModId}}/CoalChickenBaby, {{ModId}}/CoalShopTexture,",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"Target": "{{ModId}}/CoalChicken, {{ModId}}/CoalChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Copper Chicken
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/CopperChicken, {{ModId}}/CopperChickenBaby",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Fiber Chicken
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/FiberChicken, {{ModId}}/FiberChickenBaby",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Geode Chicken
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/GeodeChicken, {{ModId}}/GeodeChickenBaby",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Hardwood Chicken
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/HardwoodChicken, {{ModId}}/HardwoodChickenBaby",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Iron Chicken
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/IronChicken, {{ModId}}/IronChickenBaby",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Moss Chicken
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/MossChicken, {{ModId}}/MossChickenBaby",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Quartz Chicken
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/QuartzChicken, {{ModId}}/QuartzChickenBaby",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Sap Chicken
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/SapChicken, {{ModId}}/SapChickenBaby",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Stone Chicken
 		{
 			"Action": "Load",
-			"Target": "{{ModId}}/StoneChicken, {{ModId}}/StoneChickenBaby, {{ModId}}/StoneShopTexture,",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"Target": "{{ModId}}/StoneChicken, {{ModId}}/StoneChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Wood Chicken
 		{
 			"Action": "Load",
-			"Target": "{{ModId}}/WoodChicken, {{ModId}}/WoodChickenBaby, {{ModId}}/WoodShopTexture,",
-			"FromFile": "assets/{{TargetWithoutPath}}.png"
+			"Target": "{{ModId}}/WoodChicken, {{ModId}}/WoodChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Include Chickens
 		// Level 1
 		{
 			"Action": "Include",
-			"FromFile": "chickens/clay.json, chickens/coal.json, chickens/stone.json, chickens/wood.json"
+			"FromFile": "assets/chickens/clay.json, assets/chickens/coal.json, assets/chickens/stone.json, assets/chickens/wood.json"
 		},
 		// Level 2
 		{
 			"Action": "Include",
-			"FromFile": "chickens/bait.json, chickens/copper.json, chickens/fiber.json, chickens/hardwood.json, chickens/sap.json"
+			"FromFile": "assets/chickens/bait.json, assets/chickens/copper.json, assets/chickens/fiber.json, assets/chickens/hardwood.json, assets/chickens/sap.json"
 		},
 		// Level 3
 		{
 			"Action": "Include",
-			"FromFile": "chickens/iron.json, chickens/geode.json, chickens/moss.json, chickens/quartz.json"
+			"FromFile": "assets/chickens/iron.json, assets/chickens/geode.json, assets/chickens/moss.json, assets/chickens/quartz.json"
 		},
 		// Everything else
 		{
 			"Action": "Include",
-			"FromFile": "data/craftingrecipes.json, data/customnodes.json, data/machines.json, chickens/vanilla.json"
+			"FromFile": "assets/data/craftingrecipes.json, assets/data/customnodes.json, assets/data/machines.json, assets/chickens/vanilla.json"
 		}
 	]
 }

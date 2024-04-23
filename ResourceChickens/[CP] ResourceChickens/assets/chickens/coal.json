@@ -1,15 +1,15 @@
 {
 	"Changes": [
-		// Clay Chicken
+		// Coal Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.ClayChicken": {
-					"DisplayName": "{{i18n: Chicken.ClayChicken.Name}}",
+				"{{ModId}}.CoalChicken": {
+					"DisplayName": "{{i18n: Chicken.CoalChicken.Name}}",
 					"House": "Coop",
 					"PurchasePrice": "{{query: {{ResourceChickenPriceChoice}} / 2}}",
-					"ShopTexture": "{{ModId}}/ClayShopTexture",
+					"ShopTexture": "{{ModId}}/CoalShopTexture",
 					"ShopSourceRect": {
 						"X": 0,
 						"Y": 0,
@@ -17,27 +17,27 @@
 						"Height": 16
 					},
 					"RequiredBuilding": "{{Level1ChickenRequiredBuilding}}",
-					"ShopDescription": "{{i18n: Chicken.ClayChicken.Description}}",
+					"ShopDescription": "{{i18n: Chicken.CoalChicken.Description}}",
 					"ShopMissingBuildingDescription": "{{i18n: Chicken.Level1.MissingBuildingDescription}}",
-					"EggItemIds": ["{{ModId}}.ClayEgg", "{{ModId}}.LargeClayEgg"],
+					"EggItemIds": ["{{ModId}}.CoalEgg", "{{ModId}}.LargeCoalEgg"],
 					"IncubationTime": "{{ResourceChickenIncubationTimeChoice}}",
-					"BirthText": "{{i18n: Chicken.ClayChicken.BirthText}}",
+					"BirthText": "{{i18n: Chicken.CoalChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.ClayEgg"
+							"ItemId": "{{ModId}}.CoalEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeClayEgg"
+							"ItemId": "{{ModId}}.LargeCoalEgg"
 						}
 					],
 					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/ClayChicken",
-					"BabyTexture": "{{ModId}}/ClayChickenBaby",
+					"Texture": "{{ModId}}/CoalChicken",
+					"BabyTexture": "{{ModId}}/CoalChickenBaby",
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
@@ -51,50 +51,50 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.ClayEgg": {
-					"Name": "{{ModId}}.ClayEgg",
-					"DisplayName": "{{i18n: Egg.Clay.Name}}",
+				"{{ModId}}.CoalEgg": {
+					"Name": "{{ModId}}.CoalEgg",
+					"DisplayName": "{{i18n: Egg.Coal.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
 					"Price": "{{ResourceEggSellPriceChoice}}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 0,
+					"SpriteIndex": 2,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_brown"]
+					"ContextTags": ["resource_egg_item", "color_black"]
 				},
-				"{{ModId}}.LargeClayEgg": {
-					"Name": "{{ModId}}.LargeClayEgg",
-					"DisplayName": "{{i18n: LargeEgg.Clay.Name}}",
+				"{{ModId}}.LargeCoalEgg": {
+					"Name": "{{ModId}}.LargeCoalEgg",
+					"DisplayName": "{{i18n: LargeEgg.Coal.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
 					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 1,
+					"SpriteIndex": 3,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_brown"]
+					"ContextTags": ["large_resource_egg_item", "color_black"]
 				}
 			}
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/ClayChicken",
-			"FromFile": "assets/tophatta/ClayChicken.png",
+			"Target": "{{ModId}}/CoalChicken",
+			"FromFile": "assets/images/hattastyle/CoalChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/ClayChickenBaby",
-			"FromFile": "assets/tophatta/ClayChickenBaby.png",
+			"Target": "{{ModId}}/CoalChickenBaby",
+			"FromFile": "assets/images/hattastyle/CoalChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

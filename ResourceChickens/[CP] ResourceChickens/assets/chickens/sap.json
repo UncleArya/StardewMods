@@ -126,7 +126,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "{{ModId}}/SapChicken",
-			"FromFile": "assets/tophatta/SapChicken.png",
+			"FromFile": "assets/images/hattastyle/SapChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
@@ -134,7 +134,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "{{ModId}}/SapChickenBaby",
-			"FromFile": "assets/tophatta/SapChickenBaby.png",
+			"FromFile": "assets/images/hattastyle/SapChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

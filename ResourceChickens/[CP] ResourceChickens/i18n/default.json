@@ -95,7 +95,7 @@ Lines Changed: 89
 	"config.Level1ChickenRequiredBuilding.description": "The level of coop needed to purchase a resource chicken from Marnie\nDefault: Coop",
 	"config.HeartsRequiredForLargeEggs.name": "Hearts Required for Large Eggs",
 	"config.HeartsRequiredForLargeEggs.description": "The amount of full relationship hearts needed with a chicken before it can produce large eggs\nDefault: 2",
-	/*Added*/ "config.section.DifficultyScaling.name": "Difficulty & Balance Scaling",
+	/*Added*/ "config.section.DifficultyScaling.name": "Difficulty & Balancing",
 	/*Added*/ "config.ResourceEggConversionAmount.name": "Amount of Resources Obtained",
 	/*Added*/ "config.ResourceEggConversionAmount.description": "Amount of resources obtained from a resource egg when it is placed in a Resource Egg Converter.\n\n0.5x: Half the default amount\nDefault: See mod page for spreadsheet of values\n2x: Double the default amount\n4x: Quadruple the default amount",
 	/*Added*/ "config.ResourceEggSellPrice.name": "Egg Sell Price",

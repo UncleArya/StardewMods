@@ -20,14 +20,6 @@
 			}
 		},
 		{
-			"Action": "EditImage",
-			"Target": "{{ModId}}/ResourceEggConverter",
-			"FromFile": "assets/tophatta/ResourceEggConverter.png",
-			"When": {
-				"ObjectAppearanceVersion": "HattaStyle"
-			}
-		},
-		{
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"Entries": {

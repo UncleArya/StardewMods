@@ -86,7 +86,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "{{ModId}}/WoodChicken",
-			"FromFile": "assets/tophatta/WoodChicken.png",
+			"FromFile": "assets/images/hattastyle/WoodChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
@@ -94,7 +94,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "{{ModId}}/WoodChickenBaby",
-			"FromFile": "assets/tophatta/WoodChickenBaby.png",
+			"FromFile": "assets/images/hattastyle/WoodChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

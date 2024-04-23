@@ -1,41 +1,41 @@
 {
 	"Changes": [
-		// Quartz Chicken
+		// Copper Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.QuartzChicken": {
-					"DisplayName": "{{i18n: Chicken.QuartzChicken.Name}}",
+				"{{ModId}}.CopperChicken": {
+					"DisplayName": "{{i18n: Chicken.CopperChicken.Name}}",
 					"House": "Coop",
 					"EggItemIds": [
-						"{{ModId}}.QuartzEgg",
-						"{{ModId}}.LargeQuartzEgg",
-						"{{ModId}}.QuartzEggFusionChamber"
+						"{{ModId}}.CopperEgg",
+						"{{ModId}}.LargeCopperEgg",
+						"{{ModId}}.CopperEggFusionChamber"
 					],
-					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
-					"BirthText": "{{i18n: Chicken.QuartzChicken.BirthText}}",
+					"IncubationTime": "{{ResourceChickenIncubationTimeChoice}}",
+					"BirthText": "{{i18n: Chicken.CopperChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.QuartzEgg"
+							"ItemId": "{{ModId}}.CopperEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeQuartzEgg"
+							"ItemId": "{{ModId}}.LargeCopperEgg"
 						}
 					],
 					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/QuartzChicken",
-					"BabyTexture": "{{ModId}}/QuartzChickenBaby",
+					"Texture": "{{ModId}}/CopperChicken",
+					"BabyTexture": "{{ModId}}/CopperChickenBaby",
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
 					"HappinessDrain": 20,
-					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.2}}, 0, up }}"
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.1}}, 0, up }}"
 				}
 			}
 		},
@@ -44,45 +44,45 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.QuartzEgg": {
-					"Name": "{{ModId}}.QuartzEgg",
-					"DisplayName": "{{i18n: Egg.Quartz.Name}}",
+				"{{ModId}}.CopperEgg": {
+					"Name": "{{ModId}}.CopperEgg",
+					"DisplayName": "{{i18n: Egg.Copper.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.2}}, 0, up }}",
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.1}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 20,
+					"SpriteIndex": 8,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_white"]
+					"ContextTags": ["resource_egg_item", "color_copper"]
 				},
-				"{{ModId}}.LargeQuartzEgg": {
-					"Name": "{{ModId}}.LargeQuartzEgg",
-					"DisplayName": "{{i18n: LargeEgg.Quartz.Name}}",
+				"{{ModId}}.LargeCopperEgg": {
+					"Name": "{{ModId}}.LargeCopperEgg",
+					"DisplayName": "{{i18n: LargeEgg.Copper.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 21,
+					"SpriteIndex": 9,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_white"]
+					"ContextTags": ["large_resource_egg_item", "color_copper"]
 				},
-				"{{ModId}}.QuartzEggFusionChamber": {
-					"Name": "{{ModId}}.QuartzEggFusionChamber",
-					"DisplayName": "{{i18n: FusionChamber.Quartz.Name}}",
+				"{{ModId}}.CopperEggFusionChamber": {
+					"Name": "{{ModId}}.CopperEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Copper.Name}}",
 					"Description": "{{i18n: FusionChamber.Description}}",
 					"Type": "Basic",
 					"Category": -18,
-					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
-					"Texture": "{{ModId}}/Items",
-					"SpriteIndex": 3,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/FusionChambers",
+					"SpriteIndex": 0,
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -92,16 +92,16 @@
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/QuartzChicken",
-			"FromFile": "assets/tophatta/QuartzChicken.png",
+			"Target": "{{ModId}}/CopperChicken",
+			"FromFile": "assets/images/hattastyle/CopperChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/QuartzChickenBaby",
-			"FromFile": "assets/tophatta/QuartzChickenBaby.png",
+			"Target": "{{ModId}}/CopperChickenBaby",
+			"FromFile": "assets/images/hattastyle/CopperChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

@@ -22,6 +22,8 @@
 -   Combined resource egg converter processing options into a singular time for all resource eggs
 -   Combined mayo machine processing options into a singular time for all resource eggs
 -   Removed Progression Mode and ability to disable individual chickens, as level 1 chickens are now all required to obtain higher level chickens
+-	Reorganized file & folder structure to better align with CP best practices and support future updates
+-	Be sure to fully delete previous mod folder when updating, do not overwrite
 
 ## 0.2.2
 

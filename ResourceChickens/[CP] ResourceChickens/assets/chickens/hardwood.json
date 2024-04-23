@@ -1,36 +1,36 @@
 {
 	"Changes": [
-		// Copper Chicken
+		// Hardwood Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.CopperChicken": {
-					"DisplayName": "{{i18n: Chicken.CopperChicken.Name}}",
+				"{{ModId}}.HardwoodChicken": {
+					"DisplayName": "{{i18n: Chicken.HardwoodChicken.Name}}",
 					"House": "Coop",
 					"EggItemIds": [
-						"{{ModId}}.CopperEgg",
-						"{{ModId}}.LargeCopperEgg",
-						"{{ModId}}.CopperEggFusionChamber"
+						"{{ModId}}.HardwoodEgg",
+						"{{ModId}}.LargeHardwoodEgg",
+						"{{ModId}}.HardwoodEggFusionChamber"
 					],
 					"IncubationTime": "{{ResourceChickenIncubationTimeChoice}}",
-					"BirthText": "{{i18n: Chicken.CopperChicken.BirthText}}",
+					"BirthText": "{{i18n: Chicken.HardwoodChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.CopperEgg"
+							"ItemId": "{{ModId}}.HardwoodEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeCopperEgg"
+							"ItemId": "{{ModId}}.LargeHardwoodEgg"
 						}
 					],
 					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/CopperChicken",
-					"BabyTexture": "{{ModId}}/CopperChickenBaby",
+					"Texture": "{{ModId}}/HardwoodChicken",
+					"BabyTexture": "{{ModId}}/HardwoodChickenBaby",
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
@@ -44,45 +44,45 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.CopperEgg": {
-					"Name": "{{ModId}}.CopperEgg",
-					"DisplayName": "{{i18n: Egg.Copper.Name}}",
+				"{{ModId}}.HardwoodEgg": {
+					"Name": "{{ModId}}.HardwoodEgg",
+					"DisplayName": "{{i18n: Egg.Hardwood.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
 					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.1}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 8,
+					"SpriteIndex": 12,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_copper"]
+					"ContextTags": ["resource_egg_item", "color_brown"]
 				},
-				"{{ModId}}.LargeCopperEgg": {
-					"Name": "{{ModId}}.LargeCopperEgg",
-					"DisplayName": "{{i18n: LargeEgg.Copper.Name}}",
+				"{{ModId}}.LargeHardwoodEgg": {
+					"Name": "{{ModId}}.LargeHardwoodEgg",
+					"DisplayName": "{{i18n: LargeEgg.Hardwood.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
 					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 9,
+					"SpriteIndex": 13,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_copper"]
+					"ContextTags": ["large_resource_egg_item", "color_brown"]
 				},
-				"{{ModId}}.CopperEggFusionChamber": {
-					"Name": "{{ModId}}.CopperEggFusionChamber",
-					"DisplayName": "{{i18n: FusionChamber.Copper.Name}}",
+				"{{ModId}}.HardwoodEggFusionChamber": {
+					"Name": "{{ModId}}.HardwoodEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Hardwood.Name}}",
 					"Description": "{{i18n: FusionChamber.Description}}",
 					"Type": "Basic",
 					"Category": -18,
 					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
-					"Texture": "{{ModId}}/Items",
-					"SpriteIndex": 0,
+					"Texture": "{{ModId}}/FusionChambers",
+					"SpriteIndex": 1,
 					"Edibility": -300,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -92,16 +92,16 @@
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/CopperChicken",
-			"FromFile": "assets/tophatta/CopperChicken.png",
+			"Target": "{{ModId}}/HardwoodChicken",
+			"FromFile": "assets/images/hattastyle/HardwoodChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/CopperChickenBaby",
-			"FromFile": "assets/tophatta/CopperChickenBaby.png",
+			"Target": "{{ModId}}/HardwoodChickenBaby",
+			"FromFile": "assets/images/hattastyle/HardwoodChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
