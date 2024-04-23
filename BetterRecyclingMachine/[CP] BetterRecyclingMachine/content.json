@@ -1,0 +1,816 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"EnableArtifacts": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for artifacts to be recycled in the Recycling Machine"
+		},
+		"EnableFertilizers": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for fertilizers and soils to be recycled in the Recycling Machine"
+		},
+		"EnableSprinklers": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Description": "Allows for sprinklers to be recycled in the Recycling Machine"
+		},
+		"EnableFences": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Description": "Allows for fences and gates to be recycled in the Recycling Machine"
+		},
+		"EnableSigns": {
+			"AllowValues": "true, false",
+			"Default": false,
+			"Description": "Allows for signs to be recycled in the Recycling Machine"
+		},
+		"EnableTorches": {
+			"AllowValues": "true, false",
+			"Default": true,
+			"Description": "Allows for torches to be recycled in the Recycling Machine"
+		}
+	},
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)20", "OutputRules"],
+			"Entries": {
+				// Ceramic Item
+				"{{ModId}}.Ceramic": {
+					"Id": "{{ModId}}.Ceramic",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "ceramic_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Ceramic",
+							"ItemId": "(O)330",
+							"MinStack": 3,
+							"MaxStack": 5
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Ancient Item
+				"{{ModId}}.Ancient": {
+					"Id": "{{ModId}}.Ancient",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "ancient_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Ancient",
+							"ItemId": "(O)388",
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Bone Item
+				"{{ModId}}.Bone": {
+					"Id": "{{ModId}}.Bone",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "bone_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Bone",
+							"ItemId": "(O)881",
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Chicken Item
+				"{{ModId}}.Chicken": {
+					"Id": "{{ModId}}.Chicken",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "chicken_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Chicken",
+							"RandomItemId": ["(O)388", "(O)709"],
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Cowboy Item
+				"{{ModId}}.Cowboy": {
+					"Id": "{{ModId}}.Cowboy",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "cowboy_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Cowboy",
+							"ItemId": "(O)378",
+							"MinStack": 3,
+							"MaxStack": 5
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Elvish Item
+				"{{ModId}}.Elvish": {
+					"Id": "{{ModId}}.Elvish",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "elvish_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Elvish",
+							"ItemId": "(O)384",
+							"MinStack": 3,
+							"MaxStack": 5
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Fossil Item
+				"{{ModId}}.Fossil": {
+					"Id": "{{ModId}}.Fossil",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "fossil_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Fossil",
+							"ItemId": "(O)881",
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Golden Relic Item
+				"{{ModId}}.GoldenRelic": {
+					"Id": "{{ModId}}.GoldenRelic",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "golden_relic_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.GoldenRelic",
+							"ItemId": "(O)384",
+							"MinStack": 3,
+							"MaxStack": 5
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Hunting Item
+				"{{ModId}}.Hunting": {
+					"Id": "{{ModId}}.Hunting",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "hunting_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Hunting",
+							"ItemId": "(O)390",
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Instrument Item
+				"{{ModId}}.Instrument": {
+					"Id": "{{ModId}}.Instrument",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "instrument_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Instrument",
+							"ItemId": "(O)388",
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Marine Item
+				"{{ModId}}.Marine": {
+					"Id": "{{ModId}}.Marine",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "marine_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Marine",
+							"ItemId": "(O)881",
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Noble Item
+				"{{ModId}}.Noble": {
+					"Id": "{{ModId}}.Noble",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "noble_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Noble",
+							"ItemId": "(O)388",
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Prehistoric Item
+				"{{ModId}}.Prehistoric": {
+					"Id": "{{ModId}}.Prehistoric",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "prehistoric_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Prehistoric",
+							"RandomItemId": ["(O)390", "(O)881"],
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Scroll Item
+				"{{ModId}}.Scroll": {
+					"Id": "{{ModId}}.Scroll",
+					"Triggers": [
+						{
+							"Id": "Scroll",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "scroll_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Scroll",
+							"ItemId": "(O)382",
+							"MinStack": 2,
+							"MaxStack": 4
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Statue Item
+				"{{ModId}}.Statue": {
+					"Id": "{{ModId}}.Statue",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "statue_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Statue",
+							"RandomItemId": ["(O)388", "(O)709"],
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Toy Item
+				"{{ModId}}.Toy": {
+					"Id": "{{ModId}}.Toy",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch", "toy_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Toy",
+							"RandomItemId": ["(O)428", "(O)709"],
+							"MinStack": 1,
+							"MaxStack": 3
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Artifact Catch-all Backup
+				"{{ModId}}.AllArtifacts": {
+					"Id": "{{ModId}}.AllArtifacts",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.AllArtifacts",
+							"RandomItemId": ["(O)388", "(O)390", "(O)330", "(O)381", "(O)881"],
+							"MinStack": 5,
+							"MaxStack": 10
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				}
+			},
+			"When": {
+				"EnableArtifacts": true
+			}
+		},
+		// Fertilizers
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)20", "OutputRules"],
+			"Entries": {
+				// Deluxe Fertilizer
+				"{{ModId}}.DeluxeFertilizer": {
+					"Id": "{{ModId}}.DeluxeFertilizer",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)919",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.DeluxeFertilizer",
+							"ItemId": "(O)386",
+							"MinStack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				},
+				// Deluxe Retaining
+				"{{ModId}}.DeluxeRetaining": {
+					"Id": "{{ModId}}.DeluxeRetaining",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)920",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.DeluxeRetaining",
+							"ItemId": "(O)330",
+							"MinStack": 1,
+							"MaxStack": 2
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				},
+				// Hyper Speed-Gro
+				"{{ModId}}.HyperSpeedGro": {
+					"Id": "{{ModId}}.HyperSpeedGro",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)918",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.HyperSpeedGro",
+							"ItemId": "(O)909",
+							"MinStack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				},
+				// Quality Tier
+				"{{ModId}}.QualityFertilizer": {
+					"Id": "{{ModId}}.QualityFertilizer",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["quality_fertilizer_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.QualityFertilizer",
+							"RandomItemId": ["(O)92", "(O)390", "(O)881"],
+							"MinStack": 1,
+							"MaxStack": 3
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				},
+				// Regular Tier
+				"{{ModId}}.RegularFertilizer": {
+					"Id": "{{ModId}}.RegularFertilizer",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["fertilizer_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.RegularFertilizer",
+							"RandomItemId": ["(O)92", "(O)390", "(O)Moss"],
+							"MinStack": 1,
+							"MaxStack": 3
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				}
+			},
+			"When": {
+				"EnableFertilizers": true
+			}
+		},
+		// Sprinklers
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)20", "OutputRules"],
+			"Entries": {
+				// Sprinkler
+				"{{ModId}}.BasicSprinkler": {
+					"Id": "{{ModId}}.BasicSprinkler",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)599",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.BasicSprinkler",
+							"RandomItemId": ["(O)378", "(O)380"],
+							"MinStack": 3,
+							"MaxStack": 5
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Quality Sprinkler
+				"{{ModId}}.QualitySprinkler": {
+					"Id": "{{ModId}}.QualitySprinkler",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)621",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.QualitySprinkler",
+							"RandomItemId": ["(O)380", "(O)384"],
+							"MinStack": 3,
+							"MaxStack": 5
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Iridium Sprinkler
+				"{{ModId}}.IridiumSprinkler": {
+					"Id": "{{ModId}}.IridiumSprinkler",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)645",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.IridiumSprinkler",
+							"RandomItemId": ["(O)384", "(O)386"],
+							"MinStack": 3,
+							"MaxStack": 5
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				}
+			},
+			"When": {
+				"EnableSprinklers": true
+			}
+		},
+		// Fencing
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)20", "OutputRules"],
+			"Entries": {
+				// Wood Fence
+				"{{ModId}}.WoodFence": {
+					"Id": "{{ModId}}.WoodFence",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_wood_fence"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.WoodFence",
+							"ItemId": "(O)388",
+							"MinStack": 1,
+							"MaxStack": 2
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				},
+				// Hardwood Fence
+				"{{ModId}}.HardwoodFence": {
+					"Id": "{{ModId}}.HardwoodFence",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_hardwood_fence"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.HardwoodFence",
+							"ItemId": "(O)709",
+							"MinStack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				},
+				// Stone Fence
+				"{{ModId}}.StoneFence": {
+					"Id": "{{ModId}}.StoneFence",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_stone_fence"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.StoneFence",
+							"ItemId": "(O)390",
+							"MinStack": 1,
+							"MaxStack": 2
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				},
+				// Iron Fence
+				"{{ModId}}.IronFence": {
+					"Id": "{{ModId}}.IronFence",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_iron_fence"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.IronFence",
+							"ItemId": "(O)380",
+							"MinStack": 2,
+							"MaxStack": 4
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				},
+				// Gate
+				"{{ModId}}.Gate": {
+					"Id": "{{ModId}}.Gate",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_gate"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Gate",
+							"ItemId": "(O)388",
+							"MinStack": 5,
+							"MaxStack": 8
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				}
+			},
+			"When": {
+				"EnableFences": true
+			}
+		},
+		// Signs
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)20", "OutputRules"],
+			"Entries": {
+				// Wood Sign
+				"{{ModId}}.WoodSign": {
+					"Id": "{{ModId}}.WoodSign",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_wood_sign"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.WoodSign",
+							"ItemId": "(O)388",
+							"MinStack": 10,
+							"MaxStack": 20
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Text Sign
+				"{{ModId}}.TextSign": {
+					"Id": "{{ModId}}.TextSign",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_text_sign"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.TextSign",
+							"ItemId": "(O)388",
+							"MinStack": 10,
+							"MaxStack": 20
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Stone Sign
+				"{{ModId}}.StoneSign": {
+					"Id": "{{ModId}}.StoneSign",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_stone_sign"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.StoneSign",
+							"ItemId": "(O)390",
+							"MinStack": 10,
+							"MaxStack": 20
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				}
+			},
+			"When": {
+				"EnableSigns": true
+			}
+		},
+		// Torches
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)20", "OutputRules"],
+			"Entries": {
+				"{{ModId}}.Torches": {
+					"Id": "{{ModId}}.Torches",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["torch_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Torches",
+							"ItemId": "(O)388",
+							"MinStack": 1,
+							"MaxStack": 2
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 30
+				}
+			},
+			"When": {
+				"EnableTorches": true
+			}
+		}
+	]
+}

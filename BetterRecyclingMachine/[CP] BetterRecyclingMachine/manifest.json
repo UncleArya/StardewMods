@@ -1,0 +1,12 @@
+﻿{
+	"Name": "Better Recycling Machine",
+	"Author": "UncleArya",
+	"Version": "1.0.0",
+	"Description": "Allows you to process more items with the Recycling Machine than just trash.",
+	"UniqueID": "UncleArya.BetterRecycling",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": ["Nexus:23060"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}
