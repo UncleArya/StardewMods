@@ -115,5 +115,5 @@ Lines Changed: 89
 	"config.ConverterPurchasePrice.name": "Converter Purchase Price",
 	"config.ConverterPurchasePrice.description": "Price of purchasing the Resource Egg Converter from Marnie\nDefault: 1000",
 	/*CHANGED*/ "config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
-	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180",
+	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180"
 }
