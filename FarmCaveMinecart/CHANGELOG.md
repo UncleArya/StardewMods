@@ -1,6 +1,6 @@
 # 1.4.0
 
--	added compatibility with [Hot Spring Farm Cave](https://www.nexusmods.com/stardewvalley/mods/5849?tab=files)
+-	added compatibility with [Hot Spring Farm Cave](https://www.nexusmods.com/stardewvalley/mods/5849)
 -	if Hot Spring Farm Cave is installed, the correct map edit should automatically apply
 -	changed internal location string ID from *FarmCave* to *unclearya.farmcaveminecart.FarmCave* to align with CP best practices and avoid potential conflicts in naming with other mods
 
