@@ -34,7 +34,7 @@
  <objectgroup id="8" name="Buildings">
   <object id="1" name="TileData" x="0" y="16" width="16" height="16">
    <properties>
-    <property name="Action" value="MinecartTransport Default FarmCave"/>
+    <property name="Action" value="MinecartTransport Default unclearya.farmcaveminecart.FarmCave"/>
    </properties>
   </object>
  </objectgroup>

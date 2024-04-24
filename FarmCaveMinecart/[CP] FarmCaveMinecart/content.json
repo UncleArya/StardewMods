@@ -1,25 +1,34 @@
 {
 	"Format": "2.0.0",
 	//Config
-	"configSchema": {
+	"ConfigSchema": {
 		//Enabled
 		"Enable Farm Cave Minecart": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "A minecart will appear in the farm cave if enabled."
 		},
 		//Enabled
 		"Compatability Mode": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Description": "Makes minimal changes to the FarmCave map for potentially increased compatibility with other custom FarmCave maps."
 		},
 		//Custom Name
 		"FarmCaveMinecartName": {
-			"AllowBlank": "true",
+			"AllowBlank": true,
 			"Description": "(Optional) Can enter a custom value for the location name. Defaults to 'Farm' or translated equivalent."
 		}
 	},
+	"DynamicTokens": [
+		{
+			"Name": "VanillaFarmCave",
+			"Value": "true",
+			"When": {
+				"HasMod |contains=Hesper.HotSpringFarmcave": false
+			}
+		}
+	],
 	"Changes": [
 		//Add minecart
 		{
@@ -27,8 +36,8 @@
 			"Target": "Data/Minecarts",
 			"TargetField": ["Default", "Destinations"],
 			"Entries": {
-				"FarmCave": {
-					"Id": "FarmCave",
+				"{{ModId}}.FarmCave": {
+					"Id": "{{ModId}}.FarmCave",
 					"DisplayName": "{{i18n: Farm}}",
 					"TargetLocation": "FarmCave",
 					"TargetTile": { "X": 6, "Y": 4 },
@@ -44,13 +53,10 @@
 			"Action": "EditData",
 			"Target": "Data/Minecarts",
 			"TargetField": ["Default", "Destinations"],
-			"Entries": {
-				"FarmCave": {
-					"Id": "FarmCave",
-					"DisplayName": "{{FarmCaveMinecartName}}",
-					"TargetLocation": "FarmCave",
-					"TargetTile": { "X": 6, "Y": 4 },
-					"TargetDirection": "down"
+			"Fields": {
+				"{{ModId}}.FarmCave": {
+					"Id": "{{ModId}}.FarmCave",
+					"DisplayName": "{{FarmCaveMinecartName}}"
 				}
 			},
 			"When": {
@@ -65,9 +71,9 @@
 			"FromFile": "assets/FarmCave-Minecart.tmx",
 			"FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 3 },
 			"ToArea": { "X": 5, "Y": 1, "Width": 3, "Height": 3 },
-			"Priority": "Late",
 			"When": {
 				"Enable Farm Cave Minecart": true,
+				"VanillaFarmCave": true,
 				"Compatability Mode": false
 			}
 		},
@@ -78,11 +84,42 @@
 			"FromFile": "assets/FarmCave-Minecart2.tmx",
 			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
 			"ToArea": { "X": 6, "Y": 2, "Width": 1, "Height": 2 },
-			"Priority": "Late",
 			"When": {
 				"Enable Farm Cave Minecart": true,
+				"VanillaFarmCave": true,
 				"Compatability Mode": true
+			}
+		},
+		//Compat with Hesper's Hot Spring Farm Cave
+		{
+			"Action": "EditData",
+			"Target": "Data/Minecarts",
+			"TargetField": ["Default", "Destinations"],
+			"Fields": {
+				"{{ModId}}.FarmCave": {
+					"Id": "{{ModId}}.FarmCave",
+					"TargetTile": { "X": 3, "Y": 8 }
+				}
+			},
+			"When": {
+				"Enable Farm Cave Minecart": true,
+				"HasMod": "Hesper.HotSpringFarmcave"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/FarmCave",
+			"FromFile": "assets/FarmCave-HotSpring-AryaEdit.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 2 },
+			"ToArea": { "X": 2, "Y": 6, "Width": 2, "Height": 2 },
+			"When": {
+				"Enable Farm Cave Minecart": true,
+				"HasMod": "Hesper.HotSpringFarmcave"
 			}
 		}
 	]
 }
+
+// 2,6 2x2
+
+//3,8 down warp

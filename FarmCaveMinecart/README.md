@@ -1,4 +1,4 @@
-**The only Farm Cave map I can guarantee this mod is going to work on is the vanilla farm cave. Modded farm caves will be using different maps and may not work depending on how much they change the layout of the map. There is a "Compatibility Mode" config option that can be enabled to attempt improving general compatibility.**
+**Modded farm caves will be using different maps and may not work depending on how much they change the layout of the vanilla farm cave map. There is a "Compatibility Mode" config option that can be enabled to attempt improving general compatibility.**
 
 This content pack adds 1 new minecart location to the vanilla farm cave, which becomes usable once you unlock the minecarts as normal. This mod should work with any farm map that uses the vanilla farm cave layout.
 
@@ -18,6 +18,7 @@ This content pack adds 1 new minecart location to the vanilla farm cave, which b
 
 -   [Beach Minecart](https://www.nexusmods.com/stardewvalley/mods/13650) - the beach gets added to the minecart destination list if installed.
 -   [Integrated Minecarts](https://www.nexusmods.com/stardewvalley/mods/11881) - highly recommended to use alongside any custom minecart mods and mods that add additional minecarts (Ridgeside, East Scarp, SVE) as it integrates all minecart networks into one single destination list and allows you to re-order the destination list.
+-	[Hot Spring Farm Cave](https://www.nexusmods.com/stardewvalley/mods/5849?tab=files) - if Hot Spring Farm Cave is installed, a compatibility patch should automatically apply
 
 #### Credits
 
