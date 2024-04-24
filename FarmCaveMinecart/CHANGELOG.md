@@ -2,7 +2,7 @@
 
 -	added compatibility with [Hot Spring Farm Cave](https://www.nexusmods.com/stardewvalley/mods/5849?tab=files)
 -	if Hot Spring Farm Cave is installed, the correct map edit should automatically apply
--	changed internal location string from FarmCave to unclearya.farmcaveminecart.FarmCave to align with CP best practices and avoid potential conflicts in naming with other mods
+-	changed internal location string ID from *FarmCave* to *unclearya.farmcaveminecart.FarmCave* to align with CP best practices and avoid potential conflicts in naming with other mods
 
 # 1.3.0
 
