@@ -26,7 +26,8 @@
 
 #### Level 4 Chickens
 
--   **Coming Soon!**
+-	**Bone Chicken**
+-   **Gold Chicken**
 
 Purchase level 1 baby Resource Chickens from Marnie once you have a Coop constructed. Resource Chickens cost twice as much as vanilla chickens because they can be twice as helpful. Resource eggs can be converted into resources, turned into mayo, and used in cooking recipes.
 
@@ -39,11 +40,13 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 	
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
+| Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging level 4 |
 | Bait | Forage around the Beach Tide Pools the day after rain | Fishing Level 2 |
 | Clay | Purchase from Marnie | Construct a Coop |
 | Coal | Purchase from Marnie | Construct a Coop |
 | Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming Level 3 |
 | Fiber | Drop from breaking weeds in the Forest or Railroad, forage in the Secret Woods | Forage Level 3 |
+| Gold | Craft and incubate a Gold Egg Fusion Chamber | Farming level 5 |
 | Geode | Rare drop from geode stones in the Mines and Skull Cavern | Mining Level 3 |
 | Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Level 3 |
 | Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming Level 4 |
@@ -104,8 +107,8 @@ Resource eggs can be put into a Resource Egg Converter to produce their respecti
 ### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/a3e758b3-eae3-43b3-b765-8afb25873018)
 
 -   [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) - Required
--   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain Geode and Fiber Chickens
--   [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) - Required to obtain Bait, Moss, and Fiber Chickens
+-   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain Bone, Geode, and Fiber Chickens
+-   [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) - Required to obtain Bait, Bone, Moss, and Fiber Chickens
 
 ### ![gameplay](https://github.com/UncleArya/ResourceChickens/assets/100550741/6a142d2f-303b-478c-ab36-187242fbb7c5)
 

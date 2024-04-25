@@ -1,0 +1,92 @@
+{
+	"Changes": [
+		// Bone Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.BoneChicken": {
+					"DisplayName": "{{i18n: Chicken.BoneChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": ["{{ModId}}.BoneEgg", "{{ModId}}.LargeBoneEgg", "{{ModId}}.BoneEggFusionChamber"],
+					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
+					"BirthText": "{{i18n: Chicken.BoneChicken.BirthText}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.BoneEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeBoneEgg"
+						}
+					],
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/BoneChicken",
+					"BabyTexture": "{{ModId}}/BoneChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.3}}, 0, up }}"
+				}
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.BoneEgg": {
+					"Name": "{{ModId}}.BoneEgg",
+					"DisplayName": "{{i18n: Egg.Bone.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.3}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 16, // Update
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["resource_egg_item", "color_white"]
+				},
+				"{{ModId}}.LargeBoneEgg": {
+					"Name": "{{ModId}}.LargeBoneEgg",
+					"DisplayName": "{{i18n: LargeEgg.Bone.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.3) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 17, // Update
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["large_resource_egg_item", "color_white"]
+				}
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/BoneChicken",
+			"FromFile": "assets/images/hattastyle/BoneChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/BoneChickenBaby",
+			"FromFile": "assets/images/hattastyle/BoneChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

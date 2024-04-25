@@ -266,6 +266,128 @@
 					"LimitedNumberOfSpawns": null
 				},
 				"DaysUntilSpawnsExpire": 1
+			},
+			// Bone Egg - Railroad
+			{
+				"SpringItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.BoneEgg"],
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"SummerItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.BoneEgg"],
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"FallItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.BoneEgg"],
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"WinterItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.BoneEgg"],
+						"PercentChanceToSpawn": 25
+					}
+				],
+				"UniqueAreaID": "ResourceChickens.Railroad.Bone",
+				"MapName": "Railroad",
+				"MinimumSpawnsPerDay": 1,
+				"MaximumSpawnsPerDay": 1,
+				"IncludeTerrainTypes": ["Diggable"],
+				"ExcludeTerrainTypes": [],
+				"IncludeCoordinates": [],
+				"ExcludeCoordinates": [],
+				"StrictTileChecking": "Maximum",
+				"SpawnTiming": {
+					"StartTime": 600,
+					"EndTime": 600,
+					"MinimumTimeBetweenSpawns": 10,
+					"MaximumSimultaneousSpawns": null,
+					"OnlySpawnIfAPlayerIsPresent": false,
+					"SpawnSound": ""
+				},
+				"ExtraConditions": {
+					"Years": [],
+					"Seasons": [],
+					"Days": [],
+					"WeatherYesterday": [],
+					"WeatherToday": [],
+					"WeatherTomorrow": [],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 4"],
+					"CPConditions": {},
+					"EPUPreconditions": [],
+					"LimitedNumberOfSpawns": null
+				},
+				"DaysUntilSpawnsExpire": 1
+			},
+			// Bone Egg - Desert
+			{
+				"SpringItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.BoneEgg"],
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"SummerItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.BoneEgg"],
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"FallItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.BoneEgg"],
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"WinterItemIndex": [
+					{
+						"Category": "Buried",
+						"Contents": ["UncleArya.ResourceChickens.BoneEgg"],
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"UniqueAreaID": "ResourceChickens.Desert.Bone",
+				"MapName": "Desert",
+				"MinimumSpawnsPerDay": 1,
+				"MaximumSpawnsPerDay": 3,
+				"IncludeTerrainTypes": ["Diggable"],
+				"ExcludeTerrainTypes": [],
+				"IncludeCoordinates": [],
+				"ExcludeCoordinates": [],
+				"StrictTileChecking": "Maximum",
+				"SpawnTiming": {
+					"StartTime": 600,
+					"EndTime": 600,
+					"MinimumTimeBetweenSpawns": 10,
+					"MaximumSimultaneousSpawns": null,
+					"OnlySpawnIfAPlayerIsPresent": false,
+					"SpawnSound": ""
+				},
+				"ExtraConditions": {
+					"Years": [],
+					"Seasons": [],
+					"Days": [],
+					"WeatherYesterday": [],
+					"WeatherToday": [],
+					"WeatherTomorrow": [],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 4"],
+					"CPConditions": {},
+					"EPUPreconditions": [],
+					"LimitedNumberOfSpawns": null
+				},
+				"DaysUntilSpawnsExpire": 1
 			}
 		],
 		"PercentExtraSpawnsPerForagingLevel": 0,

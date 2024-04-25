@@ -10,7 +10,7 @@
 		},
 		"VanillaChickensMatchHattaStyle": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Section": "AppearanceBehaviour"
 		},
 		"ObjectAppearanceVersion": {
@@ -20,7 +20,7 @@
 		},
 		"ChickensCanSwim": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Section": "AppearanceBehaviour"
 		},
 		// Difficulty Scaling
@@ -31,7 +31,7 @@
 		},
 		"HeartsRequiredForLargeEggs": {
 			"AllowValues": "1, 2, 3, 4, 5",
-			"Default": 2,
+			"Default": "2",
 			"Section": "DifficultyScaling"
 		},
 		"ResourceEggConversionAmount": {
@@ -66,15 +66,15 @@
 		},
 		// Machine Tweaks
 		"ResourceEggProcessingTime": {
-			"Default": 180,
+			"Default": "180",
 			"Section": "MachineTweaks"
 		},
 		"ConverterPurchasePrice": {
-			"Default": 1000,
+			"Default": "1000",
 			"Section": "MachineTweaks"
 		},
 		"MayoMinutesUntilReady": {
-			"Default": 180,
+			"Default": "180",
 			"Section": "MachineTweaks"
 		}
 	},
@@ -83,28 +83,28 @@
 		// Conversion Amount Choice
 		{
 			"Name": "ResourceEggConversionChoice",
-			"Value": 0.5,
+			"Value": "0.5",
 			"When": {
 				"ResourceEggConversionAmount": "0.5x"
 			}
 		},
 		{
 			"Name": "ResourceEggConversionChoice",
-			"Value": 1,
+			"Value": "1",
 			"When": {
 				"ResourceEggConversionAmount": "Default"
 			}
 		},
 		{
 			"Name": "ResourceEggConversionChoice",
-			"Value": 2,
+			"Value": "2",
 			"When": {
 				"ResourceEggConversionAmount": "2x"
 			}
 		},
 		{
 			"Name": "ResourceEggConversionChoice",
-			"Value": 4,
+			"Value": "4",
 			"When": {
 				"ResourceEggConversionAmount": "4x"
 			}
@@ -112,21 +112,21 @@
 		// Egg Sell Price
 		{
 			"Name": "ResourceEggSellPriceChoice",
-			"Value": 50,
+			"Value": "50",
 			"When": {
 				"ResourceEggSellPrice": "Default"
 			}
 		},
 		{
 			"Name": "ResourceEggSellPriceChoice",
-			"Value": 100,
+			"Value": "100",
 			"When": {
 				"ResourceEggSellPrice": "2x"
 			}
 		},
 		{
 			"Name": "ResourceEggSellPriceChoice",
-			"Value": 200,
+			"Value": "200",
 			"When": {
 				"ResourceEggSellPrice": "4x"
 			}
@@ -134,21 +134,21 @@
 		// Resource Chicken Incubation Time
 		{
 			"Name": "ResourceChickenIncubationTimeChoice",
-			"Value": 4500,
+			"Value": "4500",
 			"When": {
 				"ResourceChickenIncubationTime": "0.5x"
 			}
 		},
 		{
 			"Name": "ResourceChickenIncubationTimeChoice",
-			"Value": 9000,
+			"Value": "9000",
 			"When": {
 				"ResourceChickenIncubationTime": "Default"
 			}
 		},
 		{
 			"Name": "ResourceChickenIncubationTimeChoice",
-			"Value": 18000,
+			"Value": "18000",
 			"When": {
 				"ResourceChickenIncubationTime": "2x"
 			}
@@ -156,21 +156,21 @@
 		// Resource Chicken Incubation Time
 		{
 			"Name": "ResourceChickenPriceChoice",
-			"Value": 800,
+			"Value": "800",
 			"When": {
 				"ResourceChickenPrice": "0.5x"
 			}
 		},
 		{
 			"Name": "ResourceChickenPriceChoice",
-			"Value": 1600,
+			"Value": "1600",
 			"When": {
 				"ResourceChickenPrice": "Default"
 			}
 		},
 		{
 			"Name": "ResourceChickenPriceChoice",
-			"Value": 3200,
+			"Value": "3200",
 			"When": {
 				"ResourceChickenPrice": "2x"
 			}
@@ -178,21 +178,21 @@
 		// Chickens Days to Produce
 		{
 			"Name": "ResourceChickenDaysToProduceChoice",
-			"Value": 0.5,
+			"Value": "0.5",
 			"When": {
 				"ResourceChickenDaysToProduce": "0.5x"
 			}
 		},
 		{
 			"Name": "ResourceChickenDaysToProduceChoice",
-			"Value": 1,
+			"Value": "1",
 			"When": {
 				"ResourceChickenDaysToProduce": "Default"
 			}
 		},
 		{
 			"Name": "ResourceChickenDaysToProduceChoice",
-			"Value": 2,
+			"Value": "2",
 			"When": {
 				"ResourceChickenDaysToProduce": "2x"
 			}
@@ -200,21 +200,21 @@
 		// Chickens Days to Mature
 		{
 			"Name": "ResourceChickenDaysToMatureChoice",
-			"Value": 0.5,
+			"Value": "0.5",
 			"When": {
 				"ResourceChickenDaysToMature": "0.5x"
 			}
 		},
 		{
 			"Name": "ResourceChickenDaysToMatureChoice",
-			"Value": 1,
+			"Value": "1",
 			"When": {
 				"ResourceChickenDaysToMature": "Default"
 			}
 		},
 		{
 			"Name": "ResourceChickenDaysToMatureChoice",
-			"Value": 2,
+			"Value": "2",
 			"When": {
 				"ResourceChickenDaysToMature": "2x"
 			}
@@ -256,6 +256,12 @@
 			"Target": "{{ModId}}/BaitChicken, {{ModId}}/BaitChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
+		// Bone Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/BoneChicken, {{ModId}}/BoneChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
 		// Clay Chicken
 		{
 			"Action": "Load",
@@ -284,6 +290,12 @@
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/GeodeChicken, {{ModId}}/GeodeChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
+		// Gold Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/GoldChicken, {{ModId}}/GoldChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Hardwood Chicken
@@ -343,6 +355,11 @@
 		{
 			"Action": "Include",
 			"FromFile": "assets/chickens/iron.json, assets/chickens/geode.json, assets/chickens/moss.json, assets/chickens/quartz.json"
+		},
+		// Level 4
+		{
+			"Action": "Include",
+			"FromFile": "assets/chickens/bone.json, assets/chickens/gold.json"
 		},
 		// Everything else
 		{

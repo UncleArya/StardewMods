@@ -64,6 +64,45 @@
 							],
 							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
 						},
+						// Bone Chicken
+						{
+							"Id": "{{ModId}}.BoneEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.BoneEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)881",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeBoneEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeBoneEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)881",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
 						// Clay Chicken
 						{
 							"Id": "{{ModId}}.ClayEgg",
@@ -297,6 +336,45 @@
 									"ItemId": "(O)749",
 									"Condition": "MINE_LOWEST_LEVEL_REACHED 120",
 									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						// Gold Chicken
+						{
+							"Id": "{{ModId}}.GoldEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.GoldEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)384",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeGoldEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeGoldEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)384",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
 									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
 									"IncrementMachineParentSheetIndex": 1
 								}

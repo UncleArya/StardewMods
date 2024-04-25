@@ -1,0 +1,106 @@
+{
+	"Changes": [
+		// Gold Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.GoldChicken": {
+					"DisplayName": "{{i18n: Chicken.GoldChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": ["{{ModId}}.GoldEgg", "{{ModId}}.LargeGoldEgg", "{{ModId}}.GoldEggFusionChamber"],
+					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
+					"BirthText": "{{i18n: Chicken.GoldChicken.BirthText}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.GoldEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeGoldEgg"
+						}
+					],
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/GoldChicken",
+					"BabyTexture": "{{ModId}}/GoldChickenBaby",
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.3}}, 0, up }}"
+				}
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.GoldEgg": {
+					"Name": "{{ModId}}.GoldEgg",
+					"DisplayName": "{{i18n: Egg.Gold.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.3}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 16, // Update
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["resource_egg_item", "color_gold"]
+				},
+				"{{ModId}}.LargeGoldEgg": {
+					"Name": "{{ModId}}.LargeGoldEgg",
+					"DisplayName": "{{i18n: LargeEgg.Gold.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.3) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 17, // Update
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["large_resource_egg_item", "color_gold"]
+				},
+				"{{ModId}}.GoldEggFusionChamber": {
+					"Name": "{{ModId}}.GoldEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Gold.Name}}",
+					"Description": "{{i18n: FusionChamber.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.3) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/FusionChambers",
+					"SpriteIndex": 2, // Update
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true
+				}
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/GoldChicken",
+			"FromFile": "assets/images/hattastyle/GoldChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/GoldChickenBaby",
+			"FromFile": "assets/images/hattastyle/GoldChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}

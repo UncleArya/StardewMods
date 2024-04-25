@@ -115,5 +115,17 @@ Lines Changed: 89
 	"config.ConverterPurchasePrice.name": "Converter Purchase Price",
 	"config.ConverterPurchasePrice.description": "Price of purchasing the Resource Egg Converter from Marnie\nDefault: 1000",
 	/*CHANGED*/ "config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
-	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180"
+	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180",
+
+	/*Added*/ "Chicken.GoldChicken.Name": "Gold Chicken",
+	/*Added*/ "Chicken.GoldChicken.BirthText": "A baby gold chicken was born!",
+	/*Added*/ "Egg.Gold.Name": "Gold Egg",
+	/*Added*/ "LargeEgg.Gold.Name": "Large Gold Egg",
+	/*Added*/ "FusionChamber.Gold.Name": "Gold Egg Fusion Chamber",
+
+	/*Added*/ "Chicken.BoneChicken.Name": "Bone Chicken",
+	/*Added*/ "Chicken.BoneChicken.BirthText": "A baby bone chicken was born!",
+	/*Added*/ "Egg.Bone.Name": "Bone Egg",
+	/*Added*/ "LargeEgg.Bone.Name": "Large Bone Egg",
+	/*Added*/ "FusionChamber.Bone.Name": "Bone Egg Fusion Chamber"
 }

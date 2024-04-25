@@ -4,10 +4,12 @@
 
 -   Added new Level 2 Chickens (Bait Chicken, Sap Chicken)
 -   Added new Level 3 Chickens (Iron Chicken, Quartz Chicken, Moss Chicken, Geode Chicken)
--   Added craftable Iron and Quartz Fusion Chambers and their recipes
+-	Added new Level 4 Chickens (Bone, Gold)
+-   Added craftable Gold, Iron and Quartz Fusion Chambers and their recipes
 -	Added [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) as a dependency to allow for custom node spawns
--	[Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) and [Farm Type Manager ](https://www.nexusmods.com/stardewvalley/mods/3231) are technically not a firm requirement but if they are not installed then the Geode, Bait, and Fiber chickens are not obtainable and the Moss chicken egg forage conditions will not apply
+-	[Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) and [Farm Type Manager ](https://www.nexusmods.com/stardewvalley/mods/3231) are technically not a firm requirement but if they are not installed then the Bait, Bone, Geode, and Fiber chickens are not obtainable and the Moss chicken egg forage conditions will not apply
 -	Added 4 custom geode stone nodes and conditions for them to drop geode chicken eggs
+-	Added custom fossil stone node and clump and conditions for them to drop bone chicken eggs
 -   Added forage and drop conditions for moss chicken egg
 -   Added forage condition for bait chicken egg
 -	Added drop condition for sap chicken egg
