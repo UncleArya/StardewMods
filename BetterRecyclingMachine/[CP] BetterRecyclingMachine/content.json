@@ -3,32 +3,32 @@
 	"ConfigSchema": {
 		"EnableArtifacts": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for artifacts to be recycled in the Recycling Machine"
 		},
 		"EnableFertilizers": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for fertilizers and soils to be recycled in the Recycling Machine"
 		},
 		"EnableSprinklers": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Description": "Allows for sprinklers to be recycled in the Recycling Machine"
 		},
 		"EnableFences": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Description": "Allows for fences and gates to be recycled in the Recycling Machine"
 		},
 		"EnableSigns": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Description": "Allows for signs to be recycled in the Recycling Machine"
 		},
 		"EnableTorches": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for torches to be recycled in the Recycling Machine"
 		}
 	},
@@ -388,7 +388,7 @@
 					"OutputItem": [
 						{
 							"Id": "{{ModId}}.AllArtifacts",
-							"RandomItemId": ["(O)388", "(O)390", "(O)330", "(O)381", "(O)881"],
+							"RandomItemId": ["(O)388", "(O)390", "(O)330", "(O)382", "(O)881"],
 							"MinStack": 5,
 							"MaxStack": 10
 						}
