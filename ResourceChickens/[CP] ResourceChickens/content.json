@@ -244,6 +244,18 @@
 				"ObjectAppearanceVersion": "HattaStyle"
 			}
 		},
+		// Buildings
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/GrandCoop",
+			"FromFile": "assets/images/buildings/{{TargetWithoutPath}}.png"
+		},
+		// Maps
+		{
+			"Action": "Load",
+			"Target": "Maps/{{ModId}}.Coop4",
+			"FromFile": "assets/maps/Coop4.tmx"
+		},
 		// Shop Textures
 		{
 			"Action": "Load",
@@ -364,7 +376,7 @@
 		// Everything else
 		{
 			"Action": "Include",
-			"FromFile": "assets/data/craftingrecipes.json, assets/data/customnodes.json, assets/data/machines.json, assets/chickens/vanilla.json"
+			"FromFile": "assets/data/buildings.json, assets/data/craftingrecipes.json, assets/data/customnodes.json, assets/data/machines.json, assets/chickens/vanilla.json"
 		}
 	]
 }

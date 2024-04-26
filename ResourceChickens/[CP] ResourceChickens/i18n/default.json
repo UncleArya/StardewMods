@@ -127,5 +127,8 @@ Lines Changed: 89
 	/*Added*/ "Chicken.BoneChicken.BirthText": "A baby bone chicken was born!",
 	/*Added*/ "Egg.Bone.Name": "Bone Egg",
 	/*Added*/ "LargeEgg.Bone.Name": "Large Bone Egg",
-	/*Added*/ "FusionChamber.Bone.Name": "Bone Egg Fusion Chamber"
+	/*Added*/ "FusionChamber.Bone.Name": "Bone Egg Fusion Chamber",
+
+	/*Added*/ "GrandCoop.Building.Name": "Grand Coop",
+	/*Added*/ "GrandCoop.Building.Description": "Houses 24 coop-dwelling animals. An extra large coop upgrade to fit all your animals."
 }
