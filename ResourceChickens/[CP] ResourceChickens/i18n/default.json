@@ -129,6 +129,6 @@ Lines Changed: 89
 	/*Added*/ "LargeEgg.Bone.Name": "Large Bone Egg",
 	/*Added*/ "FusionChamber.Bone.Name": "Bone Egg Fusion Chamber",
 
-	/*Added*/ "GrandCoop.Building.Name": "Grand Coop",
-	/*Added*/ "GrandCoop.Building.Description": "Houses 24 coop-dwelling animals. An extra large coop upgrade to fit all your animals."
+	/*Added*/ "GiantCoop.Building.Name": "Giant Coop",
+	/*Added*/ "GiantCoop.Building.Description": "Houses 24 coop-dwelling animals. Adds a second egg incubator."
 }

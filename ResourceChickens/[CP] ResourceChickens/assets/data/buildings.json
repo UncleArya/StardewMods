@@ -4,10 +4,10 @@
 			"Action": "EditData",
 			"Target": "Data/Buildings",
 			"Entries": {
-				"{{ModId}}.GrandCoop": {
-					"Name": "{{i18n: GrandCoop.Building.Name}}",
-					"Description": "{{i18n: GrandCoop.Building.Description}}",
-					"Texture": "{{ModId}}/GrandCoop",
+				"{{ModId}}.GiantCoop": {
+					"Name": "{{i18n: GiantCoop.Building.Name}}",
+					"Description": "{{i18n: GiantCoop.Building.Description}}",
+					"Texture": "{{ModId}}/GiantCoop",
 					"SourceRect": {
 						"X": 0,
 						"Y": 0,
@@ -52,24 +52,64 @@
 					"AnimalDoorOpenSound": "doorCreak",
 					"AnimalDoorCloseDuration": 0.3125,
 					"AnimalDoorCloseSound": "doorCreakReverse",
-					// "IndoorItems": [
-					// 	{
-					// 		"ItemId": "",
-					// 		"Tile": {
-					// 			"X": 0,
-					// 			"Y": 0
-					// 		}
-					// 	}
-					// ],
-					// "IndoorItemMoves": [
-					// 	{
-					// 		"ItemId": "",
-					// 		"Tile": {
-					// 			"X": 0,
-					// 			"Y": 0
-					// 		}
-					// 	}
-					// ],
+					"IndoorItemMoves": [
+						{
+							"Id": "MoveFeederIncubator",
+							"Source": {
+								"X": 2,
+								"Y": 3
+							},
+							"Destination": {
+								"X": 3,
+								"Y": 3
+							},
+							"Size": {
+								"X": 2,
+								"Y": 1
+							}
+						},
+						{
+							"Id": "MoveRightWall",
+							"Source": {
+								"X": 21,
+								"Y": 7
+							},
+							"Destination": {
+								"X": 33,
+								"Y": 13
+							},
+							"Size": {
+								"X": 1,
+								"Y": 2
+							}
+						},
+						{
+							"Id": "MoveBottomWall",
+							"Source": {
+								"X": 3,
+								"Y": 8
+							},
+							"Destination": {
+								"X": 3,
+								"Y": 14
+							},
+							"Size": {
+								"X": 19,
+								"Y": 1
+							}
+						}
+					],
+					"IndoorItems": [
+						{
+							"Id": "Second_Incubator",
+							"ItemId": "(BC)101",
+							"Tile": {
+								"X": 2,
+								"Y": 3
+							},
+							"Indestructible": false
+						}
+					],
 					"IndoorMap": "{{ModId}}.Coop4",
 					"IndoorMapType": "StardewValley.AnimalHouse",
 					"MaxOccupants": 24,
