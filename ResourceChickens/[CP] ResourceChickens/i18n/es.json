@@ -1,7 +1,7 @@
 /*
 ~Notes to translators~ Update 0.3.0
-Lines Added: 28-39, 57-68, 74-75, 90-92, 98-114
-Lines Changed: 89
+Lines Added: 28-43, 61-76, 82-85, 93-94, 104-106, 112-128
+Lines Changed: 131
 */
 // Thank you translators!!
 {
@@ -27,10 +27,14 @@ Lines Changed: 89
 	"Chicken.Level1.MissingBuildingDescription": "Requiere la construcción de un Corral",
 	/*Added*/ "Chicken.BaitChicken.Name": "Bait Chicken",
 	/*Added*/ "Chicken.BaitChicken.BirthText": "A baby bait chicken was born!",
+	/*Added*/ "Chicken.BoneChicken.Name": "Bone Chicken",
+	/*Added*/ "Chicken.BoneChicken.BirthText": "A baby bone chicken was born!",
 	/*Added*/ "Chicken.IronChicken.Name": "Iron Chicken",
 	/*Added*/ "Chicken.IronChicken.BirthText": "A baby iron chicken was born!",
 	/*Added*/ "Chicken.GeodeChicken.Name": "Geode Chicken",
 	/*Added*/ "Chicken.GeodeChicken.BirthText": "A baby geode chicken was born!",
+	/*Added*/ "Chicken.GoldChicken.Name": "Gold Chicken",
+	/*Added*/ "Chicken.GoldChicken.BirthText": "A baby gold chicken was born!",
 	/*Added*/ "Chicken.MossChicken.Name": "Moss Chicken",
 	/*Added*/ "Chicken.MossChicken.BirthText": "A baby moss chicken was born!",
 	/*Added*/ "Chicken.QuartzChicken.Name": "Quartz Chicken",
@@ -56,10 +60,14 @@ Lines Changed: 89
 	"ResourceEgg.Description": "Un huevo especial que puede convertirse en recursos en el Convertidor de Huevos de Recursos. También puede convertirse en mayonesa o usarse para cocinar.",
 	/*Added*/ "Egg.Bait.Name": "Bait Egg",
 	/*Added*/ "LargeEgg.Bait.Name": "Large Bait Egg",
+	/*Added*/ "Egg.Bone.Name": "Bone Egg",
+	/*Added*/ "LargeEgg.Bone.Name": "Large Bone Egg",
 	/*Added*/ "Egg.Iron.Name": "Iron Egg",
 	/*Added*/ "LargeEgg.Iron.Name": "Large Iron Egg",
 	/*Added*/ "Egg.Geode.Name": "Geode Egg",
 	/*Added*/ "LargeEgg.Geode.Name": "Large Geode Egg",
+	/*Added*/ "Egg.Gold.Name": "Gold Egg",
+	/*Added*/ "LargeEgg.Gold.Name": "Large Gold Egg",
 	/*Added*/ "Egg.Moss.Name": "Moss Egg",
 	/*Added*/ "LargeEgg.Moss.Name": "Large Moss Egg",
 	/*Added*/ "Egg.Quartz.Name": "Quartz Egg",
@@ -71,6 +79,8 @@ Lines Changed: 89
 	"FusionChamber.Copper.Name": "Cámara de fusión de huevos de cobre",
 	"FusionChamber.Hardwood.Name": "Cámara de fusión de huevos de madera noble",
 	"FusionChamber.Description": "Introducir en una incubadora de huevos para incubar un pollito de recursos",
+	/*Added*/ "FusionChamber.Bone.Name": "Bone Egg Fusion Chamber",
+	/*Added*/ "FusionChamber.Gold.Name": "Gold Egg Fusion Chamber",
 	/*Added*/ "FusionChamber.Iron.Name": "Iron Egg Fusion Chamber",
 	/*Added*/ "FusionChamber.Quartz.Name": "Quartz Egg Fusion Chamber",
 
@@ -78,6 +88,10 @@ Lines Changed: 89
 	"BigCraftable.ResourceEggConverter.Name": "Convertidor de huevos de recursos",
 	"BigCraftable.ResourceEggConverter.Description": "Convierte los huevos de recursos especiales, puestos por las gallinas de recursos, en útiles materiales de construcción y artesanía.",
 	"BigCraftable.ResourceEggConverter.InvalidItemMessage": "En esta máquina sólo pueden colocarse huevos de recursos especiales.",
+
+	// Buildings
+	/*Added*/ "GiantCoop.Building.Name": "Giant Coop",
+	/*Added*/ "GiantCoop.Building.Description": "Houses 24 coop-dwelling animals. Adds a second egg incubator.",
 
 	// Config
 	// Appearance & Behaviour

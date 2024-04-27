@@ -1,7 +1,7 @@
 /*
 ~Notes to translators~ Update 0.3.0
-Lines Added: 28-39, 57-68, 74-75, 90-92, 98-114
-Lines Changed: 89
+Lines Added: 28-43, 61-76, 82-85, 93-94, 104-106, 112-128
+Lines Changed: 131
 */
 // Thank you translators!!
 {
@@ -27,10 +27,14 @@ Lines Changed: 89
 	"Chicken.Level1.MissingBuildingDescription": "Requires construction of a Coop",
 	/*Added*/ "Chicken.BaitChicken.Name": "Bait Chicken",
 	/*Added*/ "Chicken.BaitChicken.BirthText": "A baby bait chicken was born!",
+	/*Added*/ "Chicken.BoneChicken.Name": "Bone Chicken",
+	/*Added*/ "Chicken.BoneChicken.BirthText": "A baby bone chicken was born!",
 	/*Added*/ "Chicken.IronChicken.Name": "Iron Chicken",
 	/*Added*/ "Chicken.IronChicken.BirthText": "A baby iron chicken was born!",
 	/*Added*/ "Chicken.GeodeChicken.Name": "Geode Chicken",
 	/*Added*/ "Chicken.GeodeChicken.BirthText": "A baby geode chicken was born!",
+	/*Added*/ "Chicken.GoldChicken.Name": "Gold Chicken",
+	/*Added*/ "Chicken.GoldChicken.BirthText": "A baby gold chicken was born!",
 	/*Added*/ "Chicken.MossChicken.Name": "Moss Chicken",
 	/*Added*/ "Chicken.MossChicken.BirthText": "A baby moss chicken was born!",
 	/*Added*/ "Chicken.QuartzChicken.Name": "Quartz Chicken",
@@ -56,10 +60,14 @@ Lines Changed: 89
 	"ResourceEgg.Description": "A special egg that can be turned into resources in the Resource Egg Converter. Can also be turned into mayo or used for cooking.",
 	/*Added*/ "Egg.Bait.Name": "Bait Egg",
 	/*Added*/ "LargeEgg.Bait.Name": "Large Bait Egg",
+	/*Added*/ "Egg.Bone.Name": "Bone Egg",
+	/*Added*/ "LargeEgg.Bone.Name": "Large Bone Egg",
 	/*Added*/ "Egg.Iron.Name": "Iron Egg",
 	/*Added*/ "LargeEgg.Iron.Name": "Large Iron Egg",
 	/*Added*/ "Egg.Geode.Name": "Geode Egg",
 	/*Added*/ "LargeEgg.Geode.Name": "Large Geode Egg",
+	/*Added*/ "Egg.Gold.Name": "Gold Egg",
+	/*Added*/ "LargeEgg.Gold.Name": "Large Gold Egg",
 	/*Added*/ "Egg.Moss.Name": "Moss Egg",
 	/*Added*/ "LargeEgg.Moss.Name": "Large Moss Egg",
 	/*Added*/ "Egg.Quartz.Name": "Quartz Egg",
@@ -71,6 +79,8 @@ Lines Changed: 89
 	"FusionChamber.Copper.Name": "Copper Egg Fusion Chamber",
 	"FusionChamber.Hardwood.Name": "Hardwood Egg Fusion Chamber",
 	"FusionChamber.Description": "Insert into an egg incubator to hatch a baby resource chicken",
+	/*Added*/ "FusionChamber.Bone.Name": "Bone Egg Fusion Chamber",
+	/*Added*/ "FusionChamber.Gold.Name": "Gold Egg Fusion Chamber",
 	/*Added*/ "FusionChamber.Iron.Name": "Iron Egg Fusion Chamber",
 	/*Added*/ "FusionChamber.Quartz.Name": "Quartz Egg Fusion Chamber",
 
@@ -78,6 +88,10 @@ Lines Changed: 89
 	"BigCraftable.ResourceEggConverter.Name": "Resource Egg Converter",
 	"BigCraftable.ResourceEggConverter.Description": "Turns special resource eggs laid by resource chickens into helpful building and crafting materials.",
 	"BigCraftable.ResourceEggConverter.InvalidItemMessage": "Only special resource eggs can be placed in this machine.",
+
+	// Buildings
+	/*Added*/ "GiantCoop.Building.Name": "Giant Coop",
+	/*Added*/ "GiantCoop.Building.Description": "Houses 24 coop-dwelling animals. Adds a second egg incubator.",
 
 	// Config
 	// Appearance & Behaviour
@@ -115,20 +129,5 @@ Lines Changed: 89
 	"config.ConverterPurchasePrice.name": "Converter Purchase Price",
 	"config.ConverterPurchasePrice.description": "Price of purchasing the Resource Egg Converter from Marnie\nDefault: 1000",
 	/*CHANGED*/ "config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
-	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180",
-
-	/*Added*/ "Chicken.GoldChicken.Name": "Gold Chicken",
-	/*Added*/ "Chicken.GoldChicken.BirthText": "A baby gold chicken was born!",
-	/*Added*/ "Egg.Gold.Name": "Gold Egg",
-	/*Added*/ "LargeEgg.Gold.Name": "Large Gold Egg",
-	/*Added*/ "FusionChamber.Gold.Name": "Gold Egg Fusion Chamber",
-
-	/*Added*/ "Chicken.BoneChicken.Name": "Bone Chicken",
-	/*Added*/ "Chicken.BoneChicken.BirthText": "A baby bone chicken was born!",
-	/*Added*/ "Egg.Bone.Name": "Bone Egg",
-	/*Added*/ "LargeEgg.Bone.Name": "Large Bone Egg",
-	/*Added*/ "FusionChamber.Bone.Name": "Bone Egg Fusion Chamber",
-
-	/*Added*/ "GiantCoop.Building.Name": "Giant Coop",
-	/*Added*/ "GiantCoop.Building.Description": "Houses 24 coop-dwelling animals. Adds a second egg incubator."
+	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180"
 }
