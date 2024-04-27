@@ -159,6 +159,13 @@
 					]
 				}
 			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/PaintData",
+			"Entries": {
+				"{{ModId}}.GiantCoop": "Building/-15 0/Roof/-10 5/Trim/-10 5"
+			}
 		}
 	]
 }

@@ -247,7 +247,7 @@
 		// Buildings
 		{
 			"Action": "Load",
-			"Target": "{{ModId}}/GiantCoop",
+			"Target": "{{ModId}}/GiantCoop, {{ModId}}/GiantCoop_PaintMask",
 			"FromFile": "assets/images/buildings/{{TargetWithoutPath}}.png"
 		},
 		// Maps
