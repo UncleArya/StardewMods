@@ -169,6 +169,115 @@
 				},
 				"DaysUntilSpawnsExpire": 1
 			},
+			// Moss Egg - Weed Spawns
+			{
+				"SpringItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedMossEgg",
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"SummerItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedMossEgg",
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"FallItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedMossEgg",
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"WinterItemIndex": null,
+				"UniqueAreaID": "ResourceChickens.Forest.MossWeed",
+				"MapName": "Forest",
+				"MinimumSpawnsPerDay": 3,
+				"MaximumSpawnsPerDay": 5,
+				"IncludeTerrainTypes": ["All"],
+				"ExcludeTerrainTypes": [],
+				"IncludeCoordinates": [],
+				"ExcludeCoordinates": [],
+				"StrictTileChecking": "Maximum",
+				"SpawnTiming": {
+					"StartTime": 600,
+					"EndTime": 600,
+					"MinimumTimeBetweenSpawns": 10,
+					"MaximumSimultaneousSpawns": null,
+					"OnlySpawnIfAPlayerIsPresent": false,
+					"SpawnSound": ""
+				},
+				"ExtraConditions": {
+					"Years": [],
+					"Seasons": [],
+					"Days": [],
+					"WeatherYesterday": [],
+					"WeatherToday": ["GreenRain"],
+					"WeatherTomorrow": [],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 3"],
+					"CPConditions": {},
+					"EPUPreconditions": [],
+					"LimitedNumberOfSpawns": null
+				},
+				"DaysUntilSpawnsExpire": 1
+			},
+			{
+				"SpringItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"SummerItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"FallItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
+						"PercentChanceToSpawn": 50
+					}
+				],
+				"WinterItemIndex": null,
+				"UniqueAreaID": "ResourceChickens.Railroad.Fiber",
+				"MapName": "Railroad",
+				"MinimumSpawnsPerDay": 1,
+				"MaximumSpawnsPerDay": 1,
+				"IncludeTerrainTypes": ["Diggable"],
+				"ExcludeTerrainTypes": [],
+				"IncludeCoordinates": [],
+				"ExcludeCoordinates": [],
+				"StrictTileChecking": "Maximum",
+				"SpawnTiming": {
+					"StartTime": 600,
+					"EndTime": 600,
+					"MinimumTimeBetweenSpawns": 10,
+					"MaximumSimultaneousSpawns": null,
+					"OnlySpawnIfAPlayerIsPresent": false,
+					"SpawnSound": ""
+				},
+				"ExtraConditions": {
+					"Years": [],
+					"Seasons": [],
+					"Days": [],
+					"WeatherYesterday": [],
+					"WeatherToday": [],
+					"WeatherTomorrow": [],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 2"],
+					"CPConditions": {},
+					"EPUPreconditions": [],
+					"LimitedNumberOfSpawns": null
+				},
+				"DaysUntilSpawnsExpire": 1
+			},
 			// Bait Egg - Beach
 			{
 				"SpringItemIndex": [

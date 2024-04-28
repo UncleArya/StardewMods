@@ -29,6 +29,8 @@
 -	**Bone Chicken**
 -   **Gold Chicken**
 
+#### MORE CHICKENS IN PROGRESS!
+
 Purchase level 1 baby Resource Chickens from Marnie once you have a Coop constructed. Resource Chickens cost twice as much as vanilla chickens because they can be twice as helpful. Resource eggs can be converted into resources, turned into mayo, and used in cooking recipes.
 
 Level 2 and above chickens produce eggs that provide higher tier resources but can only be obtained through gameplay.
@@ -50,7 +52,7 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | Geode | Rare drop from geode stones in the Mines and Skull Cavern | Mining Level 3 |
 | Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Level 3 |
 | Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming Level 4 |
-| Moss | Rare drop from shaking/chopping green rain trees, forage in the Forest day after green rain | Foraging Level 3 |
+| Moss | Rare drop from shaking/chopping green rain trees, green rain weeds, forage in the Forest day after green rain | Foraging Level 3 |
 | Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming Level 4 |
 | Sap | Rare drop from chopping Oak, Maple, Pine, or Mahogany trees | Foraging Level 2 |
 | Stone | Purchase from Marnie | Construct a Coop |
