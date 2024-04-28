@@ -106,19 +106,23 @@ Resource eggs can be put into a Resource Egg Converter to produce their respecti
 
 </details>
 
-### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/a3e758b3-eae3-43b3-b765-8afb25873018)
+### New Coop Upgrade
+
+To help make room on your farm for all your new chickens, a 3rd upgrade to the Coop is now available to build from Robin. The Giant Coop can house up to 24 Coop animals and also comes with a second Egg Incubator with the building upgrade. The larger Coop map gives you lots of space for your machines and chests.
+
+### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/c05fe851-0764-4c98-8249-6012fb946468)
 
 -   [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) - Required
 -   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain Bone, Geode, and Fiber Chickens
 -   [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) - Required to obtain Bait, Bone, Moss, and Fiber Chickens
 
-### ![gameplay](https://github.com/UncleArya/ResourceChickens/assets/100550741/6a142d2f-303b-478c-ab36-187242fbb7c5)
+### ![gameplay](https://github.com/UncleArya/StardewMods/assets/100550741/eb4f4717-2b68-4ef3-a15c-a0eba6c60920)
 
 Resource Chickens can start producing large resource eggs once you reach a 2 heart relationship with them (configurable), which can be turned into slightly more resources.  
 <br/>Works with [Automate](https://www.nexusmods.com/stardewvalley/mods/1063)!  
 <br/>Also works with the Auto Grabber!
 
-### ![customisability](https://github.com/UncleArya/ResourceChickens/assets/100550741/e5511628-d9f7-4163-9aac-6d7b76028b0d)
+### ![customisability](https://github.com/UncleArya/StardewMods/assets/100550741/38408dab-56c8-4502-a844-9e8a56223625)
 
 Feel like aspects of Resource Chickens are overpowered or underpowered? There are many difficulty and balancing settings to customise your playthrough. Either change directly in the config.json or by using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098) (recommended).  
 <br/>Some of what can be customised:
@@ -131,7 +135,7 @@ Feel like aspects of Resource Chickens are overpowered or underpowered? There ar
 -   Change what tier of Coop (Coop, Big Coop, Deluxe Coop) is required before you can purchase Resource Chickens
 -   And lots more!
 
-### ![future-plans](https://github.com/UncleArya/ResourceChickens/assets/100550741/1c910e82-8daf-4eaa-acfe-a54dfb07f3b1)
+### ![future-plans](https://github.com/UncleArya/StardewMods/assets/100550741/a0b8acd2-7ebc-4c41-8fc7-841cf51a2ce9)
 
 Here are my goals as I continue to develop and update Resource Chickens:
 
@@ -139,7 +143,7 @@ Here are my goals as I continue to develop and update Resource Chickens:
 -   Adding increasingly rare chicken eggs that must be unlocked and obtained through gameplay
 -   Interesting, balanced, and fun ways to obtain end-game level resources
 
-### ![sprite-art](https://github.com/UncleArya/ResourceChickens/assets/100550741/b80fee2d-eb74-4fce-bef5-7b9051fe7751)
+### ![sprite-art](https://github.com/UncleArya/StardewMods/assets/100550741/96364db0-0a6b-4aab-bba5-a935206ff74b)
 
 Some spirtes are edits done by me of existing vanilla sprites originally made by ConcernedApe, with many sprites being original creations made by [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652).
 </br>
@@ -159,19 +163,19 @@ Some spirtes are edits done by me of existing vanilla sprites originally made by
 </br>
 </br>Reference images are on the [Nexus page](https://www.nexusmods.com/stardewvalley/mods/21800) and also in the mod folder.
 
-### ![localisation](https://github.com/UncleArya/ResourceChickens/assets/100550741/73dda029-4b5e-44c9-a5d6-5c32b530dc9b)
+### ![localisation](https://github.com/UncleArya/StardewMods/assets/100550741/0745adca-903d-4e42-8010-d2e8eefe8d33)
 
 Current languages supported: English 🇬🇧, Chinese 🇨🇳 (Thanks [Orville9972](https://www.nexusmods.com/users/73926958)), Spanish 🇪🇸 (Thanks [LuCiiel20](https://forums.nexusmods.com/profile/11110368-luciiel20/)), and Turkish 🇹🇷 (Thanks [Stola90](https://forums.nexusmods.com/profile/193926774-stola90/))
 
 Want to help translate this mod into another language? This mod is fully prepared for i18n localisation. Download the default.json file in the i18n folder of this mod or reach out to me over Discord (UncleArya). I can then add your translation file to the main mod file for improved localisation support.
 
-### ![compatibility](https://github.com/UncleArya/ResourceChickens/assets/100550741/6fd7bf0e-ffc8-4edb-82f0-9125eef99c80)
+### ![compatibility](https://github.com/UncleArya/StardewMods/assets/100550741/62adfeb8-14bd-4bb0-87bf-0c63bc97935a)
 
 This mod relies entirely on [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915), so it should be fully compatible with pretty much every other mod out there.
 
 Please let me know if you come across any issues.
 
-### ![install](https://github.com/UncleArya/ResourceChickens/assets/100550741/3c2f1601-d779-4a6f-8fab-e72baf1365fb)
+### ![install](https://github.com/UncleArya/StardewMods/assets/100550741/4517bdc4-2d2d-4263-81bf-02dd1bc0d7e1)
 
 -   Ensure you have [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915)
 -   Ensure you have [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) and [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357)
