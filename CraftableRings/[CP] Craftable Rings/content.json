@@ -1,0 +1,13 @@
+{
+	"Format": "2.0.0",
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Entries": {
+				"{{ModId}}.SmallGlowRing": "(O)378 10 (O)766 5/Home/516/false/Combat 1/Small Glow Ring",
+				"{{ModId}}.SmallMagnetRing": "(O)378 10 (O)684 5/Home/518/false/Mining 1/Small Magnet Ring"
+			}
+		}
+	]
+}
