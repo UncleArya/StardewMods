@@ -1,4 +1,4 @@
-### ![ChickenCollection](https://github.com/UncleArya/ResourceChickens/assets/100550741/db27f280-450f-49df-a394-b757d0098274)
+### ![ChickenCollection](https://github.com/UncleArya/StardewMods/assets/100550741/027c1bfb-a05f-4e7b-b676-12b78655860f)
 
 <br/>**Show your chickens some love and they will reward you with special eggs that can be converted into crafting and building resources**.
 
@@ -90,7 +90,7 @@ _If you feel geode chicken eggs are too rare or not rare enough, please provide 
 
 </details>
 
-### ![MachineCollection](https://github.com/UncleArya/ResourceChickens/assets/100550741/cdf60653-c2c5-4c56-8a72-55142987edab)
+### ![MachineCollection](https://github.com/UncleArya/StardewMods/assets/100550741/62834e48-8fa4-4100-8c9c-7a1326175557)
 
 <br/>**Craft (or purchase) a Resource Egg Converter**  
 The crafting recipe for the Resource Egg Converter is unlocked once reaching Farming skill level 2. Marnie will also start selling the Resource Egg Converter at that time as well. Once a resource egg is put into the machine, it takes 3 hours for them to be turned into a resource. (Production time can be adjusted in the configs).
@@ -147,7 +147,7 @@ Some spirtes are edits done by me of existing vanilla sprites originally made by
 </br>
 </br>**Vanilla Style:** recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe.
 
-![vanilla-style-transparent](https://github.com/UncleArya/ResourceChickens/assets/100550741/37c86e12-92ae-482c-8e37-031cc3aaaa9d)
+![vanilla-style-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/7adabe95-40e7-4934-abc9-0809f7312bc3)
 
 </br>**Hatta Style:** custom and unique sprites created by the wonderfully talented [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 
