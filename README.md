@@ -14,6 +14,10 @@ Use the Recycling Machine for more than just trash. Recycle artifacts, fertilize
 A simple content pack for Stardew that allows for aging of far more artisan goods in the Cask using only Content Patcher.
 </br>[Github Repository](https://github.com/UncleArya/StardewMods/tree/main/CaskMaster) | [Nexus Mods Page](https://www.nexusmods.com/stardewvalley/mods/22588)
 
+### Craftable Rings
+Adds unlockable early-game crafting recipes for the small glow ring and small magnet ring.
+</br>[Github Repository](https://github.com/UncleArya/StardewMods/tree/main/CraftableRings) | [Nexus Mods Page](https://www.nexusmods.com/stardewvalley/mods/23347)
+
 ### Farm Cave Minecart
 Adds an additional minecart location to your Farm's cave.
 </br>[Github Repository](https://github.com/UncleArya/StardewMods/tree/main/FarmCaveMinecart) | [Nexus Mods Page](https://www.nexusmods.com/stardewvalley/mods/14870)
