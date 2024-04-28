@@ -5,7 +5,7 @@
 	"Description": "Adds a crafting recipe for the small glow ring and small magnet ring",
 	"UniqueID": "UncleArya.CraftableRings",
 	"MinimumApiVersion": "4.0.0",
-	"UpdateKeys": [""],
+	"UpdateKeys": ["Nexus:23347"],
 	"ContentPackFor": {
 		"UniqueID": "Pathoschild.ContentPatcher"
 	}
