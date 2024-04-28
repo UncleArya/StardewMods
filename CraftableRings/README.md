@@ -1,3 +1,5 @@
+![modbanner](https://github.com/UncleArya/StardewMods/assets/100550741/3c2c0ee1-b937-49a0-8b30-c91235ca6ebb)
+
 Adds unlockable early-game crafting recipes for the small glow ring and small magnet ring.
 
 I have been playing mostly on Steam Deck since 1.6 released and the one downside is how dark and impossible it is to see at night time in game without a glow ring.
