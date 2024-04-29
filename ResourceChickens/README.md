@@ -106,9 +106,9 @@ Resource eggs can be put into a Resource Egg Converter to produce their respecti
 
 </details>
 
-### ![new-coop-upgrade](https://github.com/UncleArya/StardewMods/assets/100550741/416ce4f4-1a22-4daf-b6dd-ca1cc434047c)
+### ![coopbanner](https://github.com/UncleArya/StardewMods/assets/100550741/26e158be-52b3-4502-9807-69250ec1fa13)
 
-To help make room on your farm for all your new chickens, a 3rd upgrade to the Coop is now available to build from Robin. The Giant Coop can house up to 24 Coop animals and also comes with a second Egg Incubator with the building upgrade. The larger Coop map gives you lots of space for your machines and chests.
+To help make room on your farm for all your new chickens, a 3rd upgrade to the Coop is now available to build from Robin. The Giant Coop can house up to 24 Coop animals and also comes with a second Egg Incubator with the building upgrade. The larger Coop map gives you lots of space for your machines and chests. The buidling sprite was also made by the lovely [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 
 ### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/c05fe851-0764-4c98-8249-6012fb946468)
 
