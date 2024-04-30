@@ -100,7 +100,7 @@ Resource eggs can be put into a Resource Egg Converter to produce their respecti
 <details>
 <summary>Machine Production Amounts Per Chicken Type</summary>
 	
-![stats](https://github.com/UncleArya/StardewMods/assets/100550741/8f17d042-56e0-4c6a-9381-803f288c7e23)
+![stats](https://github.com/UncleArya/StardewMods/assets/100550741/5aa2ff7f-346e-405d-8c63-18bcb0696eda)
 
 **_Can be increased or decreased in the configs_**
 
