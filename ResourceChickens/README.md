@@ -100,15 +100,15 @@ Resource eggs can be put into a Resource Egg Converter to produce their respecti
 <details>
 <summary>Machine Production Amounts Per Chicken Type</summary>
 	
-![stats](https://github.com/UncleArya/StardewMods/assets/100550741/8f17d042-56e0-4c6a-9381-803f288c7e23)
+![stats](https://github.com/UncleArya/StardewMods/assets/100550741/5aa2ff7f-346e-405d-8c63-18bcb0696eda)
 
 **_Can be increased or decreased in the configs_**
 
 </details>
 
-### ![new-coop-upgrade](https://github.com/UncleArya/StardewMods/assets/100550741/416ce4f4-1a22-4daf-b6dd-ca1cc434047c)
+### ![coopbanner](https://github.com/UncleArya/StardewMods/assets/100550741/257de0f9-a94d-43b2-a570-2d95ebcf3952)
 
-To help make room on your farm for all your new chickens, a 3rd upgrade to the Coop is now available to build from Robin. The Giant Coop can house up to 24 Coop animals and also comes with a second Egg Incubator with the building upgrade. The larger Coop map gives you lots of space for your machines and chests.
+To help make room on your farm for all your new chickens, a 3rd upgrade to the Coop is now available to build from Robin. The Giant Coop can house up to 24 Coop animals and also comes with a second Egg Incubator with the building upgrade. The larger Coop map gives you lots of space for your machines and chests. The buidling sprite was also made by the lovely [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 
 ### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/c05fe851-0764-4c98-8249-6012fb946468)
 
@@ -155,11 +155,11 @@ Some spirtes are edits done by me of existing vanilla sprites originally made by
 
 </br>**Hatta Style:** custom and unique sprites created by the wonderfully talented [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 
-![hatta-style-transparent](https://github.com/UncleArya/ResourceChickens/assets/100550741/01f6e506-9598-46a7-8ada-11165b1ae696)
+![hatta-style-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/2cf0bd4e-f2d2-47f4-938b-c9ce36eda5fe)
 
 </br>You can also enable vanilla chickens to look Hatta Style
 
-![hatta-style-vanilla-transparent](https://github.com/UncleArya/ResourceChickens/assets/100550741/8896a3c8-b793-4b59-94ca-8e03fb1c0eab)
+![hatta-style-vanilla-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/e4b181c4-72f2-4168-b652-1efd92db90d0)
 </br>
 </br>Reference images are on the [Nexus page](https://www.nexusmods.com/stardewvalley/mods/21800) and also in the mod folder.
 
