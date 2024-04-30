@@ -155,11 +155,11 @@ Some spirtes are edits done by me of existing vanilla sprites originally made by
 
 </br>**Hatta Style:** custom and unique sprites created by the wonderfully talented [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 
-![hatta-style-transparent](https://github.com/UncleArya/ResourceChickens/assets/100550741/01f6e506-9598-46a7-8ada-11165b1ae696)
+![hatta-style-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/2cf0bd4e-f2d2-47f4-938b-c9ce36eda5fe)
 
 </br>You can also enable vanilla chickens to look Hatta Style
 
-![hatta-style-vanilla-transparent](https://github.com/UncleArya/ResourceChickens/assets/100550741/8896a3c8-b793-4b59-94ca-8e03fb1c0eab)
+![hatta-style-vanilla-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/e4b181c4-72f2-4168-b652-1efd92db90d0)
 </br>
 </br>Reference images are on the [Nexus page](https://www.nexusmods.com/stardewvalley/mods/21800) and also in the mod folder.
 
