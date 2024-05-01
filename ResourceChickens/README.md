@@ -1,4 +1,4 @@
-### ![ChickenCollection](https://github.com/UncleArya/StardewMods/assets/100550741/027c1bfb-a05f-4e7b-b676-12b78655860f)
+### ![ChickenCollection](https://github.com/UncleArya/StardewMods/assets/100550741/cc82a253-164d-4b4d-a1b5-775aa67d9e6c)
 
 <br/>**Show your chickens some love and they will reward you with special eggs that can be converted into crafting and building resources**.
 
@@ -151,16 +151,16 @@ Some spirtes are edits done by me of existing vanilla sprites originally made by
 </br>
 </br>**Vanilla Style:** recolourings and edits done by me of existing vanilla sprites originally made by ConcernedApe.
 
-![vanilla-style-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/7adabe95-40e7-4934-abc9-0809f7312bc3)
+![vanilla-style-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/d543014e-1ba2-4ebb-aca9-83a1068299ef)
 
 </br>**Hatta Style:** custom and unique sprites created by the wonderfully talented [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 
-![hatta-style-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/2cf0bd4e-f2d2-47f4-938b-c9ce36eda5fe)
+![hatta-style-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/9d9bc450-3aef-4f71-b9db-a99e117429f9)
 
 </br>You can also enable vanilla chickens to look Hatta Style
 
-![hatta-style-vanilla-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/e4b181c4-72f2-4168-b652-1efd92db90d0)
-</br>
+</![hatta-style-vanilla-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/50ccb2ba-8302-4bc0-b654-cfe2fdc76f46)
+br>
 </br>Reference images are on the [Nexus page](https://www.nexusmods.com/stardewvalley/mods/21800) and also in the mod folder.
 
 ### ![localisation](https://github.com/UncleArya/StardewMods/assets/100550741/0745adca-903d-4e42-8010-d2e8eefe8d33)
