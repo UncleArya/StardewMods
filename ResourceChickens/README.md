@@ -159,8 +159,8 @@ Some spirtes are edits done by me of existing vanilla sprites originally made by
 
 </br>You can also enable vanilla chickens to look Hatta Style
 
-</![hatta-style-vanilla-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/50ccb2ba-8302-4bc0-b654-cfe2fdc76f46)
-br>
+![hatta-style-vanilla-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/50ccb2ba-8302-4bc0-b654-cfe2fdc76f46)
+</br>
 </br>Reference images are on the [Nexus page](https://www.nexusmods.com/stardewvalley/mods/21800) and also in the mod folder.
 
 ### ![localisation](https://github.com/UncleArya/StardewMods/assets/100550741/0745adca-903d-4e42-8010-d2e8eefe8d33)
