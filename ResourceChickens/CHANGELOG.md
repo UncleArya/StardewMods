@@ -5,6 +5,7 @@
 -   Added new Level 2 Chickens (Bait Chicken, Sap Chicken)
 -   Added new Level 3 Chickens (Iron Chicken, Quartz Chicken, Moss Chicken, Geode Chicken)
 -	Added new Level 4 Chickens (Bone, Gold)
+-	New custom sprites created for all chickens (Vanilla and Hatta Style) by [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)
 -	Added a upgrade to the Deluxe Coop called the Giant Coop
 -	Giant Coop has a capacity of 24 coop animals and adds a second egg incubator
 -   Added craftable Gold, Iron and Quartz Fusion Chambers and their recipes

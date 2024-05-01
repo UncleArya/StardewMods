@@ -32,8 +32,8 @@
 					],
 					"BuildDays": 2,
 					"BuildingToUpgrade": "Deluxe Coop",
-					"UpgradeSignTile": "2, 2", // FIXME
-					"UpgradeSignHeight": 18.0, // FIXME
+					"UpgradeSignTile": "2, 2",
+					"UpgradeSignHeight": 18.0,
 					"Size": {
 						"X": 6,
 						"Y": 3
