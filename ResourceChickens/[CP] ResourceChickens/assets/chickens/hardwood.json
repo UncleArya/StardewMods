@@ -31,6 +31,8 @@
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/HardwoodChicken",
 					"BabyTexture": "{{ModId}}/HardwoodChickenBaby",
+					"SleepFrame": 17,
+					"UseDoubleUniqueAnimationFrames": true,
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",

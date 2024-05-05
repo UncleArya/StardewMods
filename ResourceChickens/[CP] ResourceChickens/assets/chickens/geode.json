@@ -27,6 +27,8 @@
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/GeodeChicken",
 					"BabyTexture": "{{ModId}}/GeodeChickenBaby",
+					"SleepFrame": 17,
+					"UseDoubleUniqueAnimationFrames": true,
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",

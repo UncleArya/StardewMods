@@ -54,21 +54,6 @@
 					"AnimalDoorCloseSound": "doorCreakReverse",
 					"IndoorItemMoves": [
 						{
-							"Id": "MoveFeederIncubator",
-							"Source": {
-								"X": 2,
-								"Y": 3
-							},
-							"Destination": {
-								"X": 3,
-								"Y": 3
-							},
-							"Size": {
-								"X": 2,
-								"Y": 1
-							}
-						},
-						{
 							"Id": "MoveRightWall",
 							"Source": {
 								"X": 21,
@@ -104,8 +89,8 @@
 							"Id": "Second_Incubator",
 							"ItemId": "(BC)101",
 							"Tile": {
-								"X": 2,
-								"Y": 3
+								"X": 1,
+								"Y": 11
 							},
 							"Indestructible": false
 						}
