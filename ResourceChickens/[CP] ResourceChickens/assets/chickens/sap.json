@@ -27,8 +27,6 @@
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/SapChicken",
 					"BabyTexture": "{{ModId}}/SapChickenBaby",
-					"SleepFrame": 17,
-					"UseDoubleUniqueAnimationFrames": true,
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
@@ -102,6 +100,17 @@
 					]
 				},
 				"3": {
+					"ChopItems": [
+						{
+							"Id": "{{ModId}}.SapEgg",
+							"ItemId": "{{ModId}}.SapEgg",
+							"MinSize": "Tree",
+							"Chance": 0.05,
+							"Condition": "PLAYER_FORAGING_LEVEL Current 2"
+						}
+					]
+				},
+				"8": {
 					"ChopItems": [
 						{
 							"Id": "{{ModId}}.SapEgg",

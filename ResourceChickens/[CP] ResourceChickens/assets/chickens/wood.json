@@ -38,8 +38,6 @@
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/WoodChicken",
 					"BabyTexture": "{{ModId}}/WoodChickenBaby",
-					"SleepFrame": 17,
-					"UseDoubleUniqueAnimationFrames": true,
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",

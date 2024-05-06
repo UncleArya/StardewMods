@@ -1,16 +1,12 @@
 # Changelog
 
-## 0.4.0
-
--   Added new Level 5 Chicken (Iridium)
--   Added craftable Iridium Fusion Chamber
-
 ## 0.3.1
 
--   Changed resource chicken sleep sprite to correct sprite
--   Giant Coop: Moved spawn location of second incubator to spot that shouldn't conflict with previously places items or modded coops. (you can pickup and move the Second incubator when hit with a pickaxe/axe)
--   Sap Chicken: Removed sap egg from drop pool of Mahogany Tree due to game bug
--   Updated Spanish translation
+-	Changed resource chicken sleep sprite to correct sprite
+-	Giant Coop: Moved spawn location of second incubator to spot that shouldn't conflict with previously places items or modded coops. (you can pickup and move the Second incubator when hit with a pickaxe/axe)
+-	Sap Chicken: Removed sap egg from drop pool of Mahogany Tree due to game bug
+-	Updated Spanish translation
+
 
 ## 0.3.0
 

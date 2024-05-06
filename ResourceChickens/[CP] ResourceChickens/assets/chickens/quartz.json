@@ -31,8 +31,6 @@
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/QuartzChicken",
 					"BabyTexture": "{{ModId}}/QuartzChickenBaby",
-					"SleepFrame": 17,
-					"UseDoubleUniqueAnimationFrames": true,
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
