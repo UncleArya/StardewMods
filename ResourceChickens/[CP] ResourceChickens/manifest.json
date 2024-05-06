@@ -1,7 +1,7 @@
 {
 	"Name": "Resource Chickens",
 	"Author": "UncleArya",
-	"Version": "0.4.0",
+	"Version": "0.3.1",
 	"Description": "Adds new resource chickens to the game that produce special eggs that can be converted into resources",
 	"UniqueID": "UncleArya.ResourceChickens",
 	"MinimumApiVersion": "4.0.0",
