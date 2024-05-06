@@ -292,6 +292,12 @@
 			"Target": "{{ModId}}/CopperChicken, {{ModId}}/CopperChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
+		// Farmer Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/FarmerChicken, {{ModId}}/FarmerChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
 		// Fiber Chicken
 		{
 			"Action": "Load",
@@ -372,7 +378,7 @@
 		// Level 3
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/iron.json, assets/chickens/geode.json, assets/chickens/moss.json, assets/chickens/quartz.json"
+			"FromFile": "assets/chickens/iron.json, assets/chickens/farmer.json, assets/chickens/geode.json, assets/chickens/moss.json, assets/chickens/quartz.json"
 		},
 		// Level 4
 		{
@@ -387,7 +393,7 @@
 		// Everything else
 		{
 			"Action": "Include",
-			"FromFile": "assets/data/buildings.json, assets/data/craftingrecipes.json, assets/data/customnodes.json, assets/data/machines.json, assets/chickens/vanilla.json"
+			"FromFile": "assets/data/buildings.json, assets/data/craftingrecipes.json, assets/data/customnodes.json, assets/data/machines.json, assets/data/mail.json, assets/data/triggeractions.json, assets/data/quests.json, assets/chickens/vanilla.json"
 		}
 	]
 }

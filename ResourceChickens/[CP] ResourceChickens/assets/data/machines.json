@@ -220,6 +220,93 @@
 							],
 							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
 						},
+						// Farmer Chicken
+						{
+							"Id": "{{ModId}}.FarmerEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.FarmerEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)368",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)370",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)465",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)770",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)MixedFlowerSeeds",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeFarmerEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeFarmerEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)368",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)370",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)465",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)770",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)MixedFlowerSeeds",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
 						// Fiber Chicken
 						{
 							"Id": "{{ModId}}.FiberEgg",

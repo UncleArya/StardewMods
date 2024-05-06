@@ -131,9 +131,25 @@ Lines Changed:
 	"config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
 	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180",
 
+	// 0.4.0
+	// Quests
+	"Quest.FirstFarmerEgg.Title": "Marnie Needs Seeds",
+	"Quest.FirstFarmerEgg.Description": "Marnie has a strange new chicken that she needs your help finding food for. Mixed seeds seem to be all it will eat.",
+	"Quest.FirstFarmerEgg.Hint": "Bring Marnie 30 mixed seeds",
+	"Quest.FirstFarmerEgg.Reaction": "Thanks! I think this is exactly what the chicken needed. It laid an egg this morning, why don't you have it. [UncleArya.ResourceChickens.FarmerEgg]",
+
+	// Mail
+	"Mail.FarmerEgg.QuestStart.Title": "Marnie Needs Seeds",
+	"Mail.FarmerEgg.QuestStart.Text": "Hello @,^I have come across a strange new kind of chicken that I think you would be very interested in. If you could bring me some mixed seeds to feed it, I bet it would lay an egg you could use. Thanks!^    -Marnie",
+
 	"Chicken.IridiumChicken.Name": "Iridium Chicken",
 	"Chicken.IridiumChicken.BirthText": "A baby iridium chicken was born!",
 	"Egg.Iridium.Name": "Iridium Egg",
 	"LargeEgg.Iridium.Name": "Large Iridium Egg",
 	"FusionChamber.Iridium.Name": "Iridium Egg Fusion Chamber",
+
+	"Chicken.FarmerChicken.Name": "Farmer Chicken",
+	"Chicken.FarmerChicken.BirthText": "A baby farmer chicken was born!",
+	"Egg.Farmer.Name": "Farmer Egg",
+	"LargeEgg.Farmer.Name": "Large Farmer Egg",
 }

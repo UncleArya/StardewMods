@@ -8,7 +8,11 @@
 				"{{ModId}}.IridiumChicken": {
 					"DisplayName": "{{i18n: Chicken.IridiumChicken.Name}}",
 					"House": "Coop",
-					"EggItemIds": ["{{ModId}}.IridiumEgg", "{{ModId}}.LargeIridiumEgg", "{{ModId}}.IridiumEggFusionChamber"],
+					"EggItemIds": [
+						"{{ModId}}.IridiumEgg",
+						"{{ModId}}.LargeIridiumEgg",
+						"{{ModId}}.IridiumEggFusionChamber"
+					],
 					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1.15}}, 0, down }}",
 					"BirthText": "{{i18n: Chicken.IridiumChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 4}}, 0, down }}",

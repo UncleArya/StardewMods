@@ -8,7 +8,7 @@
 				"{{ModId}}.BoneChicken": {
 					"DisplayName": "{{i18n: Chicken.BoneChicken.Name}}",
 					"House": "Coop",
-					"EggItemIds": ["{{ModId}}.BoneEgg", "{{ModId}}.LargeBoneEgg", "{{ModId}}.BoneEggFusionChamber"],
+					"EggItemIds": ["{{ModId}}.BoneEgg", "{{ModId}}.LargeBoneEgg"],
 					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
 					"BirthText": "{{i18n: Chicken.BoneChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",

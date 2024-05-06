@@ -1,32 +1,32 @@
 {
 	"Changes": [
-		// Geode Chicken
+		// Farmer Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.GeodeChicken": {
-					"DisplayName": "{{i18n: Chicken.GeodeChicken.Name}}",
+				"{{ModId}}.FarmerChicken": {
+					"DisplayName": "{{i18n: Chicken.FarmerChicken.Name}}",
 					"House": "Coop",
-					"EggItemIds": ["{{ModId}}.GeodeEgg", "{{ModId}}.LargeGeodeEgg"],
+					"EggItemIds": ["{{ModId}}.FarmerEgg", "{{ModId}}.LargeFarmerEgg"],
 					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
-					"BirthText": "{{i18n: Chicken.GeodeChicken.BirthText}}",
+					"BirthText": "{{i18n: Chicken.FarmerChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.GeodeEgg"
+							"ItemId": "{{ModId}}.FarmerEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeGeodeEgg"
+							"ItemId": "{{ModId}}.LargeFarmerEgg"
 						}
 					],
 					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/GeodeChicken",
-					"BabyTexture": "{{ModId}}/GeodeChickenBaby",
+					"Texture": "{{ModId}}/FarmerChicken",
+					"BabyTexture": "{{ModId}}/FarmerChickenBaby",
 					"SleepFrame": 17,
 					"UseDoubleUniqueAnimationFrames": true,
 					"ProfessionForHappinessBoost": 2,
@@ -42,51 +42,50 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.GeodeEgg": {
-					"Name": "{{ModId}}.GeodeEgg",
-					"DisplayName": "{{i18n: Egg.Geode.Name}}",
+				"{{ModId}}.FarmerEgg": {
+					"Name": "{{ModId}}.FarmerEgg",
+					"DisplayName": "{{i18n: Egg.Farmer.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
 					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.2}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 24,
+					"SpriteIndex": 32,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_grey"]
+					"ContextTags": ["resource_egg_item"]
 				},
-				"{{ModId}}.LargeGeodeEgg": {
-					"Name": "{{ModId}}.LargeGeodeEgg",
-					"DisplayName": "{{i18n: LargeEgg.Geode.Name}}",
+				"{{ModId}}.LargeFarmerEgg": {
+					"Name": "{{ModId}}.LargeFarmerEgg",
+					"DisplayName": "{{i18n: LargeEgg.Farmer.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
 					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 25,
+					"SpriteIndex": 33,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_grey"]
+					"ContextTags": ["large_resource_egg_item"]
 				}
 			}
 		},
-		// HattaStyle Sprites
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/GeodeChicken",
-			"FromFile": "assets/images/hattastyle/GeodeChicken.png",
+			"Target": "{{ModId}}/FarmerChicken",
+			"FromFile": "assets/images/hattastyle/FarmerChicken.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/GeodeChickenBaby",
-			"FromFile": "assets/images/hattastyle/GeodeChickenBaby.png",
+			"Target": "{{ModId}}/FarmerChickenBaby",
+			"FromFile": "assets/images/hattastyle/FarmerChickenBaby.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}

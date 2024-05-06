@@ -1,0 +1,16 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"{{ModId}}.FarmerEggQuest.Start": {
+					"Id": "{{ModId}}.FarmerEggQuest.Start",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_FARMING_LEVEL Any 4, PLAYER_HEARTS Any Marnie 5",
+					"Action": "AddMail All {{ModId}}.FarmerEggMail.QuestStart now"
+				}
+			}
+		}
+	]
+}

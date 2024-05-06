@@ -8,7 +8,7 @@
 				"{{ModId}}.MossChicken": {
 					"DisplayName": "{{i18n: Chicken.MossChicken.Name}}",
 					"House": "Coop",
-					"EggItemIds": ["{{ModId}}.MossEgg", "{{ModId}}.LargeMossEgg", "{{ModId}}.MossEggFusionChamber"],
+					"EggItemIds": ["{{ModId}}.MossEgg", "{{ModId}}.LargeMossEgg"],
 					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
 					"BirthText": "{{i18n: Chicken.MossChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",

@@ -20,6 +20,7 @@
 #### Level 3 Chickens
 
 -   **Geode Chicken**
+-	**Farmer Chicken**
 -   **Iron Chicken**
 -   **Moss Chicken**
 -   **Quartz Chicken**
@@ -28,6 +29,10 @@
 
 -	**Bone Chicken**
 -   **Gold Chicken**
+
+#### Level 5 Chickens
+
+-	**Iridium Chicken**
 
 #### MORE CHICKENS IN PROGRESS!
 
@@ -47,10 +52,12 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | Clay | Purchase from Marnie | Construct a Coop |
 | Coal | Purchase from Marnie | Construct a Coop |
 | Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming Level 3 |
+| Farmer | Complete a quest from Marnie after reaching 5 hearts of friendship with her | Farming level 4 |
 | Fiber | Drop from breaking weeds in the Forest or Railroad, forage in the Secret Woods | Forage Level 3 |
 | Gold | Craft and incubate a Gold Egg Fusion Chamber | Farming level 5 |
 | Geode | Rare drop from geode stones in the Mines and Skull Cavern | Mining Level 3 |
 | Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Level 3 |
+| Iridium | Craft and incubate an Iridium Egg Fusion Chamber | Farming Level 6 |
 | Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming Level 4 |
 | Moss | Rare drop from shaking/chopping green rain trees, destroying green rain weeds, forage in the Forest day after green rain, destroying weeds in the forest day after normal rain | Foraging Level 3 |
 | Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming Level 4 |

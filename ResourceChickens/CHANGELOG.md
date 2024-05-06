@@ -2,7 +2,9 @@
 
 ## 0.4.0 (upcoming - not released yet)
 
+-   Added new Level 3 Chicken (Farmer)
 -   Added new Level 5 Chicken (Iridium)
+-   Created quest to obtain a Farmer Chicken Egg once you have satisfied the unlock conditions
 -   Added craftable Iridium Fusion Chamber
 
 ## 0.3.2
@@ -10,7 +12,7 @@
 -   Added Portuguese (BR) language support. Thanks [Pontassnape](https://next.nexusmods.com/profile/pontassnape/about-me)!
 -   Added additional spawn conditions for obtaining moss chicken egg
 -   Slightly reduced spawn rate of custom geode nodes
--	Slightly reduced spawn rate of sap chicken egg
+-   Slightly reduced spawn rate of sap chicken egg
 
 ## 0.3.1
 
