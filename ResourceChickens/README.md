@@ -47,14 +47,14 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 	
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
-| Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging level 4 |
+| Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging Level 4 |
 | Bait | Forage around the Beach Tide Pools the day after rain | Fishing Level 2 |
 | Clay | Purchase from Marnie | Construct a Coop |
 | Coal | Purchase from Marnie | Construct a Coop |
 | Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming Level 3 |
-| Farmer | Complete a quest from Marnie after reaching 5 hearts of friendship with her | Farming level 4 |
+| Farmer | Complete a quest from Marnie after reaching 5 hearts of friendship with her | Farming Level 4 |
 | Fiber | Drop from breaking weeds in the Forest or Railroad, forage in the Secret Woods | Forage Level 3 |
-| Gold | Craft and incubate a Gold Egg Fusion Chamber | Farming level 5 |
+| Gold | Craft and incubate a Gold Egg Fusion Chamber | Farming Level 5 |
 | Geode | Rare drop from geode stones in the Mines and Skull Cavern | Mining Level 3 |
 | Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Level 3 |
 | Iridium | Craft and incubate an Iridium Egg Fusion Chamber | Farming Level 6 |
