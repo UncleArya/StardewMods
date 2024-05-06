@@ -17,7 +17,9 @@
 				"{{ModId}}.HardwoodEggFusionChamber": "{{ModId}}.LargeWoodEgg 1 {{ModId}}.LargeClayEgg 1 (O)709 20 (O)338 10/Home/{{ModId}}.HardwoodEggFusionChamber/false/Farming 3/{{i18n: FusionChamber.Hardwood.Name}}",
 				"{{ModId}}.IronEggFusionChamber": "{{ModId}}.LargeCopperEgg 1 {{ModId}}.LargeCoalEgg 1 (O)335 5 (O)338 10/Home/{{ModId}}.IronEggFusionChamber/false/Farming 4/{{i18n: FusionChamber.Iron.Name}}",
 				"{{ModId}}.QuartzEggFusionChamber": "{{ModId}}.LargeHardwoodEgg 1 {{ModId}}.LargeStoneEgg 1 (O)709 40 (O)338 10/Home/{{ModId}}.QuartzEggFusionChamber/false/Farming 4/{{i18n: FusionChamber.Quartz.Name}}",
-				"{{ModId}}.GoldEggFusionChamber": "{{ModId}}.LargeIronEgg 1 {{ModId}}.LargeQuartzEgg 1 (O)336 5 (O)338 10/Home/{{ModId}}.GoldEggFusionChamber/false/Farming 5/{{i18n: FusionChamber.Gold.Name}}"
+				"{{ModId}}.GoldEggFusionChamber": "{{ModId}}.LargeIronEgg 1 {{ModId}}.LargeQuartzEgg 1 (O)336 5 (O)338 10/Home/{{ModId}}.GoldEggFusionChamber/false/Farming 5/{{i18n: FusionChamber.Gold.Name}}",
+				"{{ModId}}.IridiumEggFusionChamber": "{{ModId}}.LargeGoldEgg 1 {{ModId}}.LargeBoneEgg 1 (O)337 5 (O)338 10/Home/{{ModId}}.IridiumEggFusionChamber/false/Farming 6/{{i18n: FusionChamber.Iridium.Name}}"
+
 			}
 		}
 	]

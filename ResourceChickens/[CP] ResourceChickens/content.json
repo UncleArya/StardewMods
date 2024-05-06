@@ -316,6 +316,12 @@
 			"Target": "{{ModId}}/HardwoodChicken, {{ModId}}/HardwoodChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
+		// Iridium Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/IridiumChicken, {{ModId}}/IridiumChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
 		// Iron Chicken
 		{
 			"Action": "Load",
@@ -372,6 +378,11 @@
 		{
 			"Action": "Include",
 			"FromFile": "assets/chickens/bone.json, assets/chickens/gold.json"
+		},
+		// Level 5
+		{
+			"Action": "Include",
+			"FromFile": "assets/chickens/iridium.json"
 		},
 		// Everything else
 		{

@@ -1,30 +1,34 @@
 # Changelog
 
+## 0.4.0
+
+-   Added new Level 5 Chicken (Iridium)
+-   Added craftable Iridium Fusion Chamber
+
 ## 0.3.1
 
--	Changed resource chicken sleep sprite to correct sprite
--	Giant Coop: Moved spawn location of second incubator to spot that shouldn't conflict with previously places items or modded coops. (you can pickup and move the Second incubator when hit with a pickaxe/axe)
--	Sap Chicken: Removed sap egg from drop pool of Mahogany Tree due to game bug
--	Updated Spanish translation
-
+-   Changed resource chicken sleep sprite to correct sprite
+-   Giant Coop: Moved spawn location of second incubator to spot that shouldn't conflict with previously places items or modded coops. (you can pickup and move the Second incubator when hit with a pickaxe/axe)
+-   Sap Chicken: Removed sap egg from drop pool of Mahogany Tree due to game bug
+-   Updated Spanish translation
 
 ## 0.3.0
 
 -   Added new Level 2 Chickens (Bait Chicken, Sap Chicken)
 -   Added new Level 3 Chickens (Iron Chicken, Quartz Chicken, Moss Chicken, Geode Chicken)
--	Added new Level 4 Chickens (Bone, Gold)
--	New custom sprites created for all chickens (Vanilla and Hatta Style) by [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)
--	Added a upgrade to the Deluxe Coop called the Giant Coop
--	Giant Coop has a capacity of 24 coop animals and adds a second egg incubator
+-   Added new Level 4 Chickens (Bone, Gold)
+-   New custom sprites created for all chickens (Vanilla and Hatta Style) by [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)
+-   Added a upgrade to the Deluxe Coop called the Giant Coop
+-   Giant Coop has a capacity of 24 coop animals and adds a second egg incubator
 -   Added craftable Gold, Iron and Quartz Fusion Chambers and their recipes
--	Added [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) as a dependency to allow for custom node spawns
--	[Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) and [Farm Type Manager ](https://www.nexusmods.com/stardewvalley/mods/3231) are technically not a firm requirement but if they are not installed then the Bait, Bone, Geode, and Fiber chickens are not obtainable and the Moss chicken egg forage conditions will not apply
--	Added 4 custom geode stone nodes and conditions for them to drop geode chicken eggs
--	Added custom fossil stone node and clump and conditions for them to drop bone chicken eggs
+-   Added [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) as a dependency to allow for custom node spawns
+-   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) and [Farm Type Manager ](https://www.nexusmods.com/stardewvalley/mods/3231) are technically not a firm requirement but if they are not installed then the Bait, Bone, Geode, and Fiber chickens are not obtainable and the Moss chicken egg forage conditions will not apply
+-   Added 4 custom geode stone nodes and conditions for them to drop geode chicken eggs
+-   Added custom fossil stone node and clump and conditions for them to drop bone chicken eggs
 -   Added forage and drop conditions for moss chicken egg
 -   Added forage condition for bait chicken egg
--	Added drop condition for sap chicken egg
--	Changed fiber egg drop condition from artifact spot to drop chance from custom weeds
+-   Added drop condition for sap chicken egg
+-   Changed fiber egg drop condition from artifact spot to drop chance from custom weeds
 -   Slightly increased forage spawn rate for fiber chicken egg
 -   Greatly simplified the config options for better clarity and readability
 -   Added difficulty options (easier and harder) for: amount of resources obtained from resource eggs, egg price, chicken price, days for a baby chicken to hatch, days for a baby chicken to mature, days for a chicken to produce an egg
@@ -35,8 +39,8 @@
 -   Combined resource egg converter processing options into a singular time for all resource eggs
 -   Combined mayo machine processing options into a singular time for all resource eggs
 -   Removed Progression Mode and ability to disable individual chickens, as level 1 chickens are now all required to obtain higher level chickens
--	Reorganized file & folder structure to better align with CP best practices and support future updates
--	Be sure to fully delete previous mod folder when updating, do not overwrite
+-   Reorganized file & folder structure to better align with CP best practices and support future updates
+-   Be sure to fully delete previous mod folder when updating, do not overwrite
 
 ## 0.2.2
 

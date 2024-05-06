@@ -1,0 +1,108 @@
+{
+	"Changes": [
+		// Iridium Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.IridiumChicken": {
+					"DisplayName": "{{i18n: Chicken.IridiumChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": ["{{ModId}}.IridiumEgg", "{{ModId}}.LargeIridiumEgg", "{{ModId}}.IridiumEggFusionChamber"],
+					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1.15}}, 0, down }}",
+					"BirthText": "{{i18n: Chicken.IridiumChicken.BirthText}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 4}}, 0, down }}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.IridiumEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeIridiumEgg"
+						}
+					],
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 2}}, 0, up }}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/IridiumChicken",
+					"BabyTexture": "{{ModId}}/IridiumChickenBaby",
+					"SleepFrame": 17,
+					"UseDoubleUniqueAnimationFrames": true,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.4}}, 0, up }}"
+				}
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.IridiumEgg": {
+					"Name": "{{ModId}}.IridiumEgg",
+					"DisplayName": "{{i18n: Egg.Iridium.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.4}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 30,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["resource_egg_item", "color_iridium"]
+				},
+				"{{ModId}}.LargeIridiumEgg": {
+					"Name": "{{ModId}}.LargeIridiumEgg",
+					"DisplayName": "{{i18n: LargeEgg.Iridium.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.4) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 31,
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["large_resource_egg_item", "color_iridium"]
+				},
+				"{{ModId}}.IridiumEggFusionChamber": {
+					"Name": "{{ModId}}.IridiumEggFusionChamber",
+					"DisplayName": "{{i18n: FusionChamber.Iridium.Name}}",
+					"Description": "{{i18n: FusionChamber.Description}}",
+					"Type": "Basic",
+					"Category": -18,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.4) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/FusionChambers",
+					"SpriteIndex": 5,
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true
+				}
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/IridiumChicken",
+			"FromFile": "assets/images/hattastyle/IridiumChicken.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/IridiumChickenBaby",
+			"FromFile": "assets/images/hattastyle/IridiumChickenBaby.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		}
+	]
+}
