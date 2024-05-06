@@ -67,7 +67,7 @@
 							"Floors": "1/39, 121/-999",
 							"Type": "All",
 							"Condition": "PLAYER_MINING_LEVEL Current 3",
-							"SpawnFrequency": 0.002
+							"SpawnFrequency": 0.001
 						}
 					]
 				},
@@ -92,7 +92,7 @@
 							"Floors": "41/79, 121/-999",
 							"Type": "All",
 							"Condition": "PLAYER_MINING_LEVEL Current 3",
-							"SpawnFrequency": 0.002
+							"SpawnFrequency": 0.001
 						}
 					]
 				},
@@ -117,7 +117,7 @@
 							"Floors": "81/119, 121/-999",
 							"Type": "All",
 							"Condition": "PLAYER_MINING_LEVEL Current 3",
-							"SpawnFrequency": 0.002
+							"SpawnFrequency": 0.001
 						}
 					]
 				},

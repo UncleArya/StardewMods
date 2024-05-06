@@ -60,7 +60,7 @@
 				},
 				"DaysUntilSpawnsExpire": 1
 			},
-			// Fiber Egg - Weed Spawns
+			// Fiber Egg - Weed Spawns - Forest
 			{
 				"SpringItemIndex": [
 					{
@@ -115,6 +115,7 @@
 				},
 				"DaysUntilSpawnsExpire": 1
 			},
+			// Fiber Egg - Weed Spawns - Railroad
 			{
 				"SpringItemIndex": [
 					{
@@ -169,7 +170,7 @@
 				},
 				"DaysUntilSpawnsExpire": 1
 			},
-			// Moss Egg - Weed Spawns
+			// Moss Egg - Weed Spawns - Forest
 			{
 				"SpringItemIndex": [
 					{
@@ -214,7 +215,7 @@
 					"Years": [],
 					"Seasons": [],
 					"Days": [],
-					"WeatherYesterday": [],
+					"WeatherYesterday": ["Rain", "Storm"],
 					"WeatherToday": ["GreenRain"],
 					"WeatherTomorrow": [],
 					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 3"],
@@ -224,31 +225,20 @@
 				},
 				"DaysUntilSpawnsExpire": 1
 			},
+			// Moss Egg - Forest - Day After Green Rain
 			{
-				"SpringItemIndex": [
-					{
-						"Category": "Object",
-						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
-						"PercentChanceToSpawn": 50
-					}
-				],
+				"SpringItemIndex": null,
 				"SummerItemIndex": [
 					{
 						"Category": "Object",
-						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
-						"PercentChanceToSpawn": 50
+						"Name": "UncleArya.ResourceChickens.MossEgg",
+						"PercentChanceToSpawn": 100
 					}
 				],
-				"FallItemIndex": [
-					{
-						"Category": "Object",
-						"Name": "UncleArya.ResourceChickens.WeedFiberEgg",
-						"PercentChanceToSpawn": 50
-					}
-				],
+				"FallItemIndex": null,
 				"WinterItemIndex": null,
-				"UniqueAreaID": "ResourceChickens.Railroad.Fiber",
-				"MapName": "Railroad",
+				"UniqueAreaID": "ResourceChickens.Forest.Moss",
+				"MapName": "Forest",
 				"MinimumSpawnsPerDay": 1,
 				"MaximumSpawnsPerDay": 1,
 				"IncludeTerrainTypes": ["Diggable"],
@@ -268,10 +258,10 @@
 					"Years": [],
 					"Seasons": [],
 					"Days": [],
-					"WeatherYesterday": [],
+					"WeatherYesterday": ["GreenRain"],
 					"WeatherToday": [],
 					"WeatherTomorrow": [],
-					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 2"],
+					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 3"],
 					"CPConditions": {},
 					"EPUPreconditions": [],
 					"LimitedNumberOfSpawns": null
@@ -327,49 +317,6 @@
 					"WeatherToday": [],
 					"WeatherTomorrow": [],
 					"GameStateQueries": ["PLAYER_FISHING_LEVEL Current 2"],
-					"CPConditions": {},
-					"EPUPreconditions": [],
-					"LimitedNumberOfSpawns": null
-				},
-				"DaysUntilSpawnsExpire": 1
-			},
-			// Moss Egg - Forest
-			{
-				"SpringItemIndex": null,
-				"SummerItemIndex": [
-					{
-						"Category": "Object",
-						"Name": "UncleArya.ResourceChickens.MossEgg",
-						"PercentChanceToSpawn": 100
-					}
-				],
-				"FallItemIndex": null,
-				"WinterItemIndex": null,
-				"UniqueAreaID": "ResourceChickens.Forest.Moss",
-				"MapName": "Forest",
-				"MinimumSpawnsPerDay": 1,
-				"MaximumSpawnsPerDay": 1,
-				"IncludeTerrainTypes": ["Diggable"],
-				"ExcludeTerrainTypes": [],
-				"IncludeCoordinates": [],
-				"ExcludeCoordinates": [],
-				"StrictTileChecking": "Maximum",
-				"SpawnTiming": {
-					"StartTime": 600,
-					"EndTime": 600,
-					"MinimumTimeBetweenSpawns": 10,
-					"MaximumSimultaneousSpawns": null,
-					"OnlySpawnIfAPlayerIsPresent": false,
-					"SpawnSound": ""
-				},
-				"ExtraConditions": {
-					"Years": [],
-					"Seasons": [],
-					"Days": [],
-					"WeatherYesterday": ["GreenRain"],
-					"WeatherToday": [],
-					"WeatherTomorrow": [],
-					"GameStateQueries": ["PLAYER_FORAGING_LEVEL Current 3"],
 					"CPConditions": {},
 					"EPUPreconditions": [],
 					"LimitedNumberOfSpawns": null

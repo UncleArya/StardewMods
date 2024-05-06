@@ -5,6 +5,13 @@
 -   Added new Level 5 Chicken (Iridium)
 -   Added craftable Iridium Fusion Chamber
 
+## 0.3.2
+
+-   Added Portuguese (BR) language support. Thanks [Pontassnape](https://next.nexusmods.com/profile/pontassnape/about-me)!
+-   Added additional spawn conditions for obtaining moss chicken egg
+-   Slightly reduced spawn rate of custom geode nodes
+-	Slightly reduced spawn rate of sap chicken egg
+
 ## 0.3.1
 
 -   Changed resource chicken sleep sprite to correct sprite

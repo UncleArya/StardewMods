@@ -85,7 +85,7 @@
 							"Id": "{{ModId}}.SapEgg",
 							"ItemId": "{{ModId}}.SapEgg",
 							"MinSize": "Tree",
-							"Chance": 0.05,
+							"Chance": 0.02,
 							"Condition": "PLAYER_FORAGING_LEVEL Current 2"
 						}
 					]
@@ -96,7 +96,7 @@
 							"Id": "{{ModId}}.SapEgg",
 							"ItemId": "{{ModId}}.SapEgg",
 							"MinSize": "Tree",
-							"Chance": 0.05,
+							"Chance": 0.02,
 							"Condition": "PLAYER_FORAGING_LEVEL Current 2"
 						}
 					]
@@ -107,7 +107,7 @@
 							"Id": "{{ModId}}.SapEgg",
 							"ItemId": "{{ModId}}.SapEgg",
 							"MinSize": "Tree",
-							"Chance": 0.05,
+							"Chance": 0.02,
 							"Condition": "PLAYER_FORAGING_LEVEL Current 2"
 						}
 					]
