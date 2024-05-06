@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4.0 (upcoming - not completed yet)
+## 0.4.0 (upcoming - not released yet)
 
 -   Added new Level 5 Chicken (Iridium)
 -   Added craftable Iridium Fusion Chamber
