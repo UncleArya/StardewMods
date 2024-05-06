@@ -27,6 +27,8 @@
 					"Sound": "cluck",
 					"Texture": "{{ModId}}/BoneChicken",
 					"BabyTexture": "{{ModId}}/BoneChickenBaby",
+					"SleepFrame": 17,
+					"UseDoubleUniqueAnimationFrames": true,
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
