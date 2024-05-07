@@ -1,39 +1,39 @@
 {
 	"Changes": [
-		// Farmer Chicken
+		// Monster Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.FarmerChicken": {
-					"DisplayName": "{{i18n: Chicken.FarmerChicken.Name}}",
+				"{{ModId}}.MonsterChicken": {
+					"DisplayName": "{{i18n: Chicken.MonsterChicken.Name}}",
 					"House": "Coop",
-					"EggItemIds": ["{{ModId}}.FarmerEgg", "{{ModId}}.LargeFarmerEgg"],
+					"EggItemIds": ["{{ModId}}.MonsterEgg", "{{ModId}}.LargeMonsterEgg"],
 					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
-					"BirthText": "{{i18n: Chicken.FarmerChicken.BirthText}}",
+					"BirthText": "{{i18n: Chicken.MonsterChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.FarmerEgg"
+							"ItemId": "{{ModId}}.MonsterEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeFarmerEgg"
+							"ItemId": "{{ModId}}.LargeMonsterEgg"
 						}
 					],
 					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/FarmerChicken",
-					"BabyTexture": "{{ModId}}/FarmerChickenBaby",
+					"Texture": "{{ModId}}/MonsterChicken",
+					"BabyTexture": "{{ModId}}/MonsterChickenBaby",
 					"SleepFrame": 17,
 					"UseDoubleUniqueAnimationFrames": true,
 					"ProfessionForHappinessBoost": 2,
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
 					"HappinessDrain": 20,
-					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.2}}, 0, up }}"
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.3}}, 0, up }}"
 				}
 			}
 		},
@@ -42,30 +42,30 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.FarmerEgg": {
-					"Name": "{{ModId}}.FarmerEgg",
-					"DisplayName": "{{i18n: Egg.Farmer.Name}}",
+				"{{ModId}}.MonsterEgg": {
+					"Name": "{{ModId}}.MonsterEgg",
+					"DisplayName": "{{i18n: Egg.Monster.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.2}}, 0, up }}",
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.3}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 32,
+					"SpriteIndex": 28, // UPDATE
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
 					"ContextTags": ["resource_egg_item"]
 				},
-				"{{ModId}}.LargeFarmerEgg": {
-					"Name": "{{ModId}}.LargeFarmerEgg",
-					"DisplayName": "{{i18n: LargeEgg.Farmer.Name}}",
+				"{{ModId}}.LargeMonsterEgg": {
+					"Name": "{{ModId}}.LargeMonsterEgg",
+					"DisplayName": "{{i18n: LargeEgg.Monster.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.3) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 33,
+					"SpriteIndex": 29, // UPDATE
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
@@ -74,24 +74,24 @@
 				}
 			}
 		},
-		// Adds Farmer Egg for sale with Marnie
+		// Adds Monster Egg for sale with Krobus
 		{
 			"Action": "EditData",
 			"Target": "Data/Shops",
-			"TargetField": ["AnimalShop", "Items"],
+			"TargetField": ["ShadowShop", "Items"],
 			"Entries": {
-				"{{ModId}}.FarmerEggMarnie": {
-					"Id": "{{ModId}}.FarmerEggMarnie",
-					"ItemId": "{{ModId}}.FarmerEgg",
-					"Condition": "PLAYER_HAS_MAIL Current {{ModId}}.FarmerEggMail.EggForSale Any",
-					"Price": 3000,
+				"{{ModId}}.MonsterEggKrobus": {
+					"Id": "{{ModId}}.MonsterEggKrobus",
+					"ItemId": "{{ModId}}.MonsterEgg",
+					"Condition": "PLAYER_HEARTS Current Krobus 3",
+					"Price": 5000,
 					"AvailableStock": 1
 				}
 			},
 			"MoveEntries": [
 				{
-					"Id": "{{ModId}}.FarmerEggMarnie",
-					"BeforeId": "(BC)45"
+					"Id": "{{ModId}}.MonsterEggKrobus",
+					"BeforeId": "(BC)34"
 				}
 			]
 		}

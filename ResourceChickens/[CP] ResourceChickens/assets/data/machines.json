@@ -807,7 +807,13 @@
 					"Condition": "PLAYER_FARMING_LEVEL Current 2",
 					"Price": "{{ConverterPurchasePrice}}"
 				}
-			}
+			},
+			"MoveEntries": [
+				{
+					"Id": "(BC){{ModId}}.ResourceEggConverter",
+					"BeforeId": "(BC)45"
+				}
+			]
 		},
 		// Edits to the Mayonnaise Machine
 		{

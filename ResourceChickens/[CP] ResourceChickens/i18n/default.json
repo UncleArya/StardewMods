@@ -140,7 +140,9 @@ Lines Changed:
 
 	// Mail
 	"Mail.FarmerEgg.QuestStart.Title": "Marnie Needs Seeds",
-	"Mail.FarmerEgg.QuestStart.Text": "Hello @,^I have come across a strange new kind of chicken that I think you would be very interested in. If you could bring me some mixed seeds to feed it, I bet it would lay an egg you could use. Thanks!^    -Marnie",
+	"Mail.FarmerEgg.QuestStart.Text": "Hello @,^I have come across a strange new kind of chicken that I think you would be very interested in. However, it seems to only want to eat my mixed seeds and I am all out. Could you please bring me some so I can keep it fed? Thanks!^    -Marnie",
+	"Mail.FarmerEgg.EggForSale.Title": "New Egg for Sale",
+	"Mail.FarmerEgg.EggForSale.Text": "Hey @!^Thanks again for helping me feed my new chicken. It sure is a cute one, isn't it? It looks like a little farmer! By the way, if you ever run out of their eggs you can now buy one from me. Have a great day.^    -Marnie",
 
 	"Chicken.IridiumChicken.Name": "Iridium Chicken",
 	"Chicken.IridiumChicken.BirthText": "A baby iridium chicken was born!",
@@ -152,4 +154,9 @@ Lines Changed:
 	"Chicken.FarmerChicken.BirthText": "A baby farmer chicken was born!",
 	"Egg.Farmer.Name": "Farmer Egg",
 	"LargeEgg.Farmer.Name": "Large Farmer Egg",
+
+	"Chicken.MonsterChicken.Name": "Monster Chicken",
+	"Chicken.MonsterChicken.BirthText": "A baby monster chicken was born!",
+	"Egg.Monster.Name": "Monster Egg",
+	"LargeEgg.Monster.Name": "Large Monster Egg"
 }

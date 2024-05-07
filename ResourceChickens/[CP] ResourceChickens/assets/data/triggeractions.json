@@ -9,6 +9,12 @@
 					"Trigger": "DayStarted",
 					"Condition": "PLAYER_FARMING_LEVEL Any 4, PLAYER_HEARTS Any Marnie 5",
 					"Action": "AddMail All {{ModId}}.FarmerEggMail.QuestStart now"
+				},
+				"{{ModId}}.FarmerEggQuest.EggForSale": {
+					"Id": "{{ModId}}.FarmerEggQuest.EggForSale",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_HAS_ITEM Any {{ModId}}.FarmerEgg 1",
+					"Action": "AddMail All {{ModId}}.FarmerEggMail.EggForSale now"
 				}
 			}
 		}

@@ -383,7 +383,7 @@
 		// Level 4
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/bone.json, assets/chickens/gold.json"
+			"FromFile": "assets/chickens/bone.json, assets/chickens/gold.json, assets/chickens/monster.json"
 		},
 		// Level 5
 		{

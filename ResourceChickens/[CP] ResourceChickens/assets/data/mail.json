@@ -4,7 +4,8 @@
 			"Action": "EditData",
 			"Target": "Data/Mail",
 			"Entries": {
-				"{{ModId}}.FarmerEggMail.QuestStart": "{{i18n: Mail.FarmerEgg.QuestStart.Text}}%item quest {{ModId}}.FirstFarmerEggQuest true %%[#]{{i18n: Mail.FarmerEgg.QuestStart.Title}}"
+				"{{ModId}}.FarmerEggMail.QuestStart": "{{i18n: Mail.FarmerEgg.QuestStart.Text}}%item quest {{ModId}}.FirstFarmerEggQuest true %%[#]{{i18n: Mail.FarmerEgg.QuestStart.Title}}",
+				"{{ModId}}.FarmerEggMail.EggForSale": "{{i18n: Mail.FarmerEgg.EggForSale.Text}}[#]{{i18n: Mail.FarmerEgg.EggForSale.Title}}"
 			}
 		}
 	]
