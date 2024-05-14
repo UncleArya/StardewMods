@@ -3,10 +3,11 @@
 ## 0.4.0 (upcoming - not released yet)
 
 -   Added new Level 3 Chicken (Farmer)
--   Added new Level 4 Chicken (Monster)
+-   Added new Level 4 Chickens (Bomb, Monster)
 -   Added new Level 5 Chicken (Iridium)
--   Created quest to obtain a Farmer Chicken Egg once you have satisfied the unlock conditions
--   Added spawn conditions for Monster Chicken Egg
+-   Created quest to obtain a Farmer Chicken Egg
+-   Added spawn conditions for Bomb and Monster Chicken Eggs
+-   Added shop items for Krobus, Marnie, and the Dwarf once unlock conditions are satisfied
 -   Added craftable Iridium Fusion Chamber
 
 ## 0.3.4

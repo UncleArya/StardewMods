@@ -67,7 +67,7 @@
 							"Floors": "1/39, 121/-999",
 							"Type": "All",
 							"Condition": "PLAYER_MINING_LEVEL Current 3",
-							"SpawnFrequency": 0.001
+							"SpawnFrequency": 0.0015
 						}
 					]
 				},
@@ -92,7 +92,7 @@
 							"Floors": "41/79, 121/-999",
 							"Type": "All",
 							"Condition": "PLAYER_MINING_LEVEL Current 3",
-							"SpawnFrequency": 0.001
+							"SpawnFrequency": 0.0015
 						}
 					]
 				},
@@ -117,7 +117,7 @@
 							"Floors": "81/119, 121/-999",
 							"Type": "All",
 							"Condition": "PLAYER_MINING_LEVEL Current 3",
-							"SpawnFrequency": 0.001
+							"SpawnFrequency": 0.0015
 						}
 					]
 				},
@@ -142,7 +142,7 @@
 							"Floors": "21/-999",
 							"Type": "All",
 							"Condition": "PLAYER_MINING_LEVEL Current 3",
-							"SpawnFrequency": 0.001
+							"SpawnFrequency": 0.0015
 						}
 					]
 				},
@@ -215,6 +215,30 @@
 							"Type": "All",
 							"Condition": "PLAYER_COMBAT_LEVEL Current 5",
 							"SpawnFrequency": 0.003
+						}
+					]
+				},
+				// Barrel - Bomb Egg
+				"{{ModId}}.SkullCavernBarrelBombEgg": {
+					"DisplayName": "Bomb Egg Barrel",
+					"Texture": "{{ModId}}/Items",
+					"SpriteIndex": 10,
+					"Width": 1,
+					"Height": 2,
+					"Health": 3,
+					"Tool": "AnyExceptWateringCan",
+					"ItemDropped": "{{ModId}}.BombEgg",
+					"MinDrops": 1,
+					"MaxDrops": 1,
+					"Debris": "wood",
+					"Sound": "woodWhack",
+					"BreakingSound": "barrelBreak",
+					"MineSpawns": [
+						{
+							"Floors": "121/-999",
+							"Type": "All",
+							"Condition": "PLAYER_MINING_LEVEL Current 4",
+							"SpawnFrequency": 0.2
 						}
 					]
 				}

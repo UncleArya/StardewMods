@@ -1,32 +1,32 @@
 {
 	"Changes": [
-		// Monster Chicken
+		// Bomb Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.MonsterChicken": {
-					"DisplayName": "{{i18n: Chicken.MonsterChicken.Name}}",
+				"{{ModId}}.BombChicken": {
+					"DisplayName": "{{i18n: Chicken.BombChicken.Name}}",
 					"House": "Coop",
-					"EggItemIds": ["{{ModId}}.MonsterEgg", "{{ModId}}.LargeMonsterEgg"],
+					"EggItemIds": ["{{ModId}}.BombEgg", "{{ModId}}.LargeBombEgg"],
 					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
-					"BirthText": "{{i18n: Chicken.MonsterChicken.BirthText}}",
+					"BirthText": "{{i18n: Chicken.BombChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.MonsterEgg"
+							"ItemId": "{{ModId}}.BombEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeMonsterEgg"
+							"ItemId": "{{ModId}}.LargeBombEgg"
 						}
 					],
 					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/MonsterChicken",
-					"BabyTexture": "{{ModId}}/MonsterChickenBaby",
+					"Texture": "{{ModId}}/BombChicken",
+					"BabyTexture": "{{ModId}}/BombChickenBaby",
 					"SleepFrame": 17,
 					"UseDoubleUniqueAnimationFrames": true,
 					"ProfessionForHappinessBoost": 2,
@@ -42,9 +42,9 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.MonsterEgg": {
-					"Name": "{{ModId}}.MonsterEgg",
-					"DisplayName": "{{i18n: Egg.Monster.Name}}",
+				"{{ModId}}.BombEgg": {
+					"Name": "{{ModId}}.BombEgg",
+					"DisplayName": "{{i18n: Egg.Bomb.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
@@ -57,9 +57,9 @@
 					"ExcludeFromRandomSale": true,
 					"ContextTags": ["resource_egg_item"]
 				},
-				"{{ModId}}.LargeMonsterEgg": {
-					"Name": "{{ModId}}.LargeMonsterEgg",
-					"DisplayName": "{{i18n: LargeEgg.Monster.Name}}",
+				"{{ModId}}.LargeBombEgg": {
+					"Name": "{{ModId}}.LargeBombEgg",
+					"DisplayName": "{{i18n: LargeEgg.Bomb.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
@@ -74,24 +74,24 @@
 				}
 			}
 		},
-		// Adds Monster Egg for sale with Krobus
+		// Adds Bomb Egg for sale with the Dwarf
 		{
 			"Action": "EditData",
 			"Target": "Data/Shops",
-			"TargetField": ["ShadowShop", "Items"],
+			"TargetField": ["Dwarf", "Items"],
 			"Entries": {
-				"{{ModId}}.MonsterEggKrobus": {
-					"Id": "{{ModId}}.MonsterEggKrobus",
-					"ItemId": "{{ModId}}.MonsterEgg",
-					"Condition": "PLAYER_HAS_MAIL Current {{ModId}}.MonsterEggMail.EggForSale Any",
+				"{{ModId}}.BombEggDwarf": {
+					"Id": "{{ModId}}.BombEggDwarf",
+					"ItemId": "{{ModId}}.BombEgg",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModId}}.BombEggMail.EggForSale Any",
 					"Price": 5000,
 					"AvailableStock": 1
 				}
 			},
 			"MoveEntries": [
 				{
-					"Id": "{{ModId}}.MonsterEggKrobus",
-					"BeforeId": "(BC)34"
+					"Id": "{{ModId}}.BombEggDwarf",
+					"BeforeId": "(O)243"
 				}
 			]
 		}

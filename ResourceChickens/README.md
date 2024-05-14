@@ -23,17 +23,18 @@
 -   **Iron Chicken**
 -   **Moss Chicken**
 -   **Quartz Chicken**
--	**Farmer Chicken**
+-   **Farmer Chicken**
 
 #### Level 4 Chickens
 
--	**Bone Chicken**
+-   **Bomb Chicken**
+-   **Bone Chicken**
 -   **Gold Chicken**
--	**Monster Chicken**
+-   **Monster Chicken**
 
 #### Level 5 Chickens
 
--	**Iridium Chicken**
+-   **Iridium Chicken**
 
 #### MORE CHICKENS IN PROGRESS!
 
@@ -49,14 +50,15 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
 | Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging Level 4 |
+| Bomb | Rare drop from barels in the Skull Cavern, or purchasable from the Dwarf after 3 hearts of friendship with them | Mining Level 4 |
 | Bait | Forage around the Beach Tide Pools the day after rain | Fishing Level 2 |
 | Clay | Purchase from Marnie | Construct a Coop |
 | Coal | Purchase from Marnie | Construct a Coop |
 | Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming Level 3 |
-| Farmer | Complete a quest from Marnie after reaching 5 hearts of friendship with her, egg becomes purchasable from Marnie after the quest is complete | Farming Level 4 |
+| Farmer | Complete a quest from Marnie after reaching 3 hearts of friendship with her, egg becomes purchasable from Marnie after the quest is complete | Farming Level 4 |
 | Fiber | Drop from breaking weeds in the Forest or Railroad, forage in the Secret Woods | Forage Level 3 |
 | Gold | Craft and incubate a Gold Egg Fusion Chamber | Farming Level 5 |
-| Geode | Rare drop from geode stones in the Mines and Skull Cavern | Mining Level 3 |
+| Geode | Rare drop from geode stones in the Mines and Skull Cavern, can also spawn in the Quarry | Mining Level 3 |
 | Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Level 3 |
 | Iridium | Craft and incubate an Iridium Egg Fusion Chamber | Farming Level 6 |
 | Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming Level 4 |

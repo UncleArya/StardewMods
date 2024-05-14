@@ -134,15 +134,19 @@ Lines Changed:
 	// 0.4.0
 	// Quests
 	"Quest.FirstFarmerEgg.Title": "Marnie Needs Seeds",
-	"Quest.FirstFarmerEgg.Description": "Marnie has a strange new chicken that she needs your help finding food for. Mixed seeds seem to be all it will eat.",
+	"Quest.FirstFarmerEgg.Description": "Marnie has a curious new chicken that she needs your help finding food for. Mixed seeds seem to be all it will eat.",
 	"Quest.FirstFarmerEgg.Hint": "Bring Marnie 30 mixed seeds",
 	"Quest.FirstFarmerEgg.Reaction": "Thanks! I think this is exactly what the chicken needed. It laid an egg this morning, why don't you have it. [UncleArya.ResourceChickens.FarmerEgg]",
 
 	// Mail
+	"Mail.BombEgg.EggForSale.Title": "Egg Found in Mines",
+	"Mail.BombEgg.EggForSale.Text": "Hello friend,^I found a strange egg in the mines. You can buy it from me because it is dangerous down there and I don't want you to get hurt.^    -Dwarf",
 	"Mail.FarmerEgg.QuestStart.Title": "Marnie Needs Seeds",
 	"Mail.FarmerEgg.QuestStart.Text": "Hello @,^I have come across a strange new kind of chicken that I think you would be very interested in. However, it seems to only want to eat my mixed seeds and I am all out. Could you please bring me some so I can keep it fed? Thanks!^    -Marnie",
 	"Mail.FarmerEgg.EggForSale.Title": "New Egg for Sale",
 	"Mail.FarmerEgg.EggForSale.Text": "Hey @!^Thanks again for helping me feed my new chicken. It sure is a cute one, isn't it? It looks like a little farmer! By the way, if you ever run out of their eggs you can now buy one from me. Have a great day.^    -Marnie",
+	"Mail.MonsterEgg.EggForSale.Title": "Krobus Found Something",
+	"Mail.MonsterEgg.EggForSale.Text": "@,^One of your objects washed into the sewer yesterday. I think it came from a type of animal you have on your farm. You can have it if you want.^    -Krobus [letterbg 2]",
 
 	"Chicken.IridiumChicken.Name": "Iridium Chicken",
 	"Chicken.IridiumChicken.BirthText": "A baby iridium chicken was born!",
@@ -158,5 +162,10 @@ Lines Changed:
 	"Chicken.MonsterChicken.Name": "Monster Chicken",
 	"Chicken.MonsterChicken.BirthText": "A baby monster chicken was born!",
 	"Egg.Monster.Name": "Monster Egg",
-	"LargeEgg.Monster.Name": "Large Monster Egg"
+	"LargeEgg.Monster.Name": "Large Monster Egg",
+
+	"Chicken.BombChicken.Name": "Bomb Chicken",
+	"Chicken.BombChicken.BirthText": "A baby bomb chicken was born! ...that sounds unsafe.",
+	"Egg.Bomb.Name": "Bomb Egg",
+	"LargeEgg.Bomb.Name": "Large Bomb Egg"
 }

@@ -64,6 +64,117 @@
 							],
 							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
 						},
+						// Bomb Chicken
+						{
+							"Id": "{{ModId}}.BombEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.BombEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)286",
+									"Condition": "PLAYER_MINING_LEVEL Current 4",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)286",
+									"Condition": "PLAYER_MINING_LEVEL Current 4",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)286",
+									"Condition": "PLAYER_MINING_LEVEL Current 4",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)287",
+									"Condition": "PLAYER_MINING_LEVEL Current 6",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)287",
+									"Condition": "PLAYER_MINING_LEVEL Current 6",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)288",
+									"Condition": "PLAYER_MINING_LEVEL Current 8",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeBombEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeBombEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)286",
+									"Condition": "PLAYER_MINING_LEVEL Current 4",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)286",
+									"Condition": "PLAYER_MINING_LEVEL Current 4",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)286",
+									"Condition": "PLAYER_MINING_LEVEL Current 4",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)287",
+									"Condition": "PLAYER_MINING_LEVEL Current 6",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)287",
+									"Condition": "PLAYER_MINING_LEVEL Current 6",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)288",
+									"Condition": "PLAYER_MINING_LEVEL Current 8",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
 						// Bone Chicken
 						{
 							"Id": "{{ModId}}.BoneEgg",
@@ -578,6 +689,93 @@
 							"OutputItem": [
 								{
 									"ItemId": "(O)380",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						// Monster Chicken
+						{
+							"Id": "{{ModId}}.MonsterEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.MonsterEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)766",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)766",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)767",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)768",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)769",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeMonsterEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeMonsterEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)766",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)766",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)767",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)768",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)769",
 									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
 									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
 									"IncrementMachineParentSheetIndex": 1

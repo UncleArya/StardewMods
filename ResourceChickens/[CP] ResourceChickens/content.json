@@ -268,6 +268,12 @@
 			"Target": "{{ModId}}/BaitChicken, {{ModId}}/BaitChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
+		// Bomb Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/BombChicken, {{ModId}}/BombChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
 		// Bone Chicken
 		{
 			"Action": "Load",
@@ -334,6 +340,12 @@
 			"Target": "{{ModId}}/IronChicken, {{ModId}}/IronChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
+		// Monster Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/MonsterChicken, {{ModId}}/MonsterChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
 		// Moss Chicken
 		{
 			"Action": "Load",
@@ -383,7 +395,7 @@
 		// Level 4
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/bone.json, assets/chickens/gold.json, assets/chickens/monster.json"
+			"FromFile": "assets/chickens/bomb.json, assets/chickens/bone.json, assets/chickens/gold.json, assets/chickens/monster.json"
 		},
 		// Level 5
 		{
