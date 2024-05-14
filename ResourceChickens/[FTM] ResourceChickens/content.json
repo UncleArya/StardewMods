@@ -444,6 +444,67 @@
 					"LimitedNumberOfSpawns": null
 				},
 				"DaysUntilSpawnsExpire": 1
+			},
+			// Geode Egg - Quarry
+			{
+				"SpringItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.GeodeStoneEgg",
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"SummerItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.GeodeStoneEgg",
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"FallItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.GeodeStoneEgg",
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"WinterItemIndex": [
+					{
+						"Category": "Object",
+						"Name": "UncleArya.ResourceChickens.GeodeStoneEgg",
+						"PercentChanceToSpawn": 100
+					}
+				],
+				"UniqueAreaID": "ResourceChickens.Quarry.Geode",
+				"MapName": "Mountain",
+				"MinimumSpawnsPerDay": 1,
+				"MaximumSpawnsPerDay": 1,
+				"IncludeTerrainTypes": ["Diggable"],
+				"ExcludeTerrainTypes": [],
+				"IncludeCoordinates": ["109,11/130,35"],
+				"ExcludeCoordinates": [],
+				"StrictTileChecking": "Maximum",
+				"SpawnTiming": {
+					"StartTime": 600,
+					"EndTime": 600,
+					"MinimumTimeBetweenSpawns": 10,
+					"MaximumSimultaneousSpawns": null,
+					"OnlySpawnIfAPlayerIsPresent": false,
+					"SpawnSound": ""
+				},
+				"ExtraConditions": {
+					"Years": [],
+					"Seasons": [],
+					"Days": [],
+					"WeatherYesterday": [],
+					"WeatherToday": [],
+					"WeatherTomorrow": [],
+					"GameStateQueries": ["PLAYER_MINING_LEVEL Current 3"],
+					"CPConditions": {},
+					"EPUPreconditions": [],
+					"LimitedNumberOfSpawns": null
+				},
+				"DaysUntilSpawnsExpire": 1
 			}
 		],
 		"PercentExtraSpawnsPerForagingLevel": 0,
