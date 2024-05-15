@@ -143,7 +143,7 @@ The larger Coop map gives you lots of space for your machines and chests. The bu
 ### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/c05fe851-0764-4c98-8249-6012fb946468)
 
 -   [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) - Required
--   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain Bone, Geode, and Fiber Chickens
+-   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain Bomb, Bone, Geode, Fiber, and Monster Chickens
 -   [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) - Required to obtain Bait, Bone, Moss, and Fiber Chickens
 
 ### ![gameplay](https://github.com/UncleArya/StardewMods/assets/100550741/eb4f4717-2b68-4ef3-a15c-a0eba6c60920)
@@ -195,7 +195,7 @@ Vanilla style sprites are edits done by Tophatta and I, of existing vanilla spri
 
 ### ![localisation](https://github.com/UncleArya/StardewMods/assets/100550741/0745adca-903d-4e42-8010-d2e8eefe8d33)
 
-Current languages supported: English 🇬🇧, Chinese 🇨🇳 (Thanks [Orville9972](https://www.nexusmods.com/users/73926958)), Spanish 🇪🇸 (Thanks [LuCiiel20](https://forums.nexusmods.com/profile/11110368-luciiel20/)), Turkish 🇹🇷 (Thanks [Stola90](https://forums.nexusmods.com/profile/193926774-stola90/)), and Portuguese (BR) 🇧🇷 (Thanks [Pontassnape](https://next.nexusmods.com/profile/pontassnape/about-me))!
+Current languages supported: English 🇬🇧, Chinese 🇨🇳 (Thanks [Orville9972](https://www.nexusmods.com/users/73926958)), Spanish 🇪🇸 (Thanks [LuCiiel20](https://forums.nexusmods.com/profile/11110368-luciiel20/)), Turkish 🇹🇷 (Thanks [Stola90](https://forums.nexusmods.com/profile/193926774-stola90/)), Portuguese (BR) 🇧🇷 (Thanks [Pontassnape](https://next.nexusmods.com/profile/pontassnape/about-me)), and French 🇫🇷 (Thanks [Hultra00](https://next.nexusmods.com/profile/Hultra00/about-me))!
 
 Want to help translate this mod into another language? This mod is fully prepared for i18n localisation. Download the default.json file in the i18n folder of this mod or reach out to me over Discord (UncleArya). I can then add your translation file to the main mod file for improved localisation support.
 
