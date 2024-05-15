@@ -135,10 +135,10 @@ Resource eggs can be put into a Resource Egg Converter to produce their respecti
 ### ![coopbanner](https://github.com/UncleArya/StardewMods/assets/100550741/257de0f9-a94d-43b2-a570-2d95ebcf3952)
 
 To help make room on your farm for all your new chickens, a 3rd upgrade to the Coop is now available to build from Robin. The Giant Coop can house up to 24 Coop animals and also comes with a second Egg Incubator with the building upgrade. The second incubator that comes with the Giant Coop upgrade can be picked up by hitting it with an axe or pickaxe and then placed anywhere else in the coop (must be placed in the coop to hatch chickens).
-</br>
-**Note: if multiple incubators are ready to hatch chickens in the same coop, you must leave and re-enter the coop after naming each chicken. The game only allows for naming and spawning 1 chicken at a time. After naming the first chicken, simply exit and re-enter the coop to receive the prompt to name the next chicken.**
-</br>
+
 The larger Coop map gives you lots of space for your machines and chests. The buidling sprite was also made by the lovely [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
+
+**Note: if multiple incubators are ready to hatch chickens in the same coop, you must leave and re-enter the coop after naming each chicken. The game only allows for naming and spawning 1 chicken at a time. After naming the first chicken, simply exit and re-enter the coop to receive the prompt to name the next chicken.**
 
 ### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/c05fe851-0764-4c98-8249-6012fb946468)
 
