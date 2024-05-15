@@ -135,15 +135,15 @@ Resource eggs can be put into a Resource Egg Converter to produce their respecti
 ### ![coopbanner](https://github.com/UncleArya/StardewMods/assets/100550741/257de0f9-a94d-43b2-a570-2d95ebcf3952)
 
 To help make room on your farm for all your new chickens, a 3rd upgrade to the Coop is now available to build from Robin. The Giant Coop can house up to 24 Coop animals and also comes with a second Egg Incubator with the building upgrade. The second incubator that comes with the Giant Coop upgrade can be picked up by hitting it with an axe or pickaxe and then placed anywhere else in the coop (must be placed in the coop to hatch chickens).
-</br>
-**Note: if multiple incubators are ready to hatch chickens in the same coop, you must leave and re-enter the coop after naming each chicken. The game only allows for naming and spawning 1 chicken at a time. After naming the first chicken, simply exit and re-enter the coop to receive the prompt to name the next chicken.**
-</br>
+
 The larger Coop map gives you lots of space for your machines and chests. The building sprite was also made by the lovely [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
+
+**Note: if multiple incubators are ready to hatch chickens in the same coop, you must leave and re-enter the coop after naming each chicken. The game only allows for naming and spawning 1 chicken at a time. After naming the first chicken, simply exit and re-enter the coop to receive the prompt to name the next chicken.**
 
 ### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/c05fe851-0764-4c98-8249-6012fb946468)
 
 -   [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) - Required
--   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain Bone, Geode, and Fiber Chickens
+-   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain Bomb, Bone, Geode, Fiber, and Monster Chickens
 -   [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) - Required to obtain Bait, Bone, Moss, and Fiber Chickens
 
 ### ![gameplay](https://github.com/UncleArya/StardewMods/assets/100550741/eb4f4717-2b68-4ef3-a15c-a0eba6c60920)
@@ -195,7 +195,7 @@ Vanilla style sprites are edits done by Tophatta and I, of existing vanilla spri
 
 ### ![localisation](https://github.com/UncleArya/StardewMods/assets/100550741/0745adca-903d-4e42-8010-d2e8eefe8d33)
 
-Current languages supported: English 🇬🇧, Chinese 🇨🇳 (Thanks [Orville9972](https://www.nexusmods.com/users/73926958)), Spanish 🇪🇸 (Thanks [LuCiiel20](https://forums.nexusmods.com/profile/11110368-luciiel20/)), Turkish 🇹🇷 (Thanks [Stola90](https://forums.nexusmods.com/profile/193926774-stola90/)), and Portuguese (BR) 🇧🇷 (Thanks [Pontassnape](https://next.nexusmods.com/profile/pontassnape/about-me))!
+Current languages supported: English 🇬🇧, Chinese 🇨🇳 (Thanks [Orville9972](https://www.nexusmods.com/users/73926958)), Spanish 🇪🇸 (Thanks [LuCiiel20](https://forums.nexusmods.com/profile/11110368-luciiel20/)), Turkish 🇹🇷 (Thanks [Stola90](https://forums.nexusmods.com/profile/193926774-stola90/)), Portuguese (BR) 🇧🇷 (Thanks [Pontassnape](https://next.nexusmods.com/profile/pontassnape/about-me)), and French 🇫🇷 (Thanks [Hultra00](https://next.nexusmods.com/profile/Hultra00/about-me))!
 
 Want to help translate this mod into another language? This mod is fully prepared for i18n localisation. Download the default.json file in the i18n folder of this mod or reach out to me over Discord (UncleArya). I can then add your translation file to the main mod file for improved localisation support.
 
