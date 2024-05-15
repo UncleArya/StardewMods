@@ -138,7 +138,7 @@ To help make room on your farm for all your new chickens, a 3rd upgrade to the C
 </br>
 **Note: if multiple incubators are ready to hatch chickens in the same coop, you must leave and re-enter the coop after naming each chicken. The game only allows for naming and spawning 1 chicken at a time. After naming the first chicken, simply exit and re-enter the coop to receive the prompt to name the next chicken.**
 </br>
-The larger Coop map gives you lots of space for your machines and chests. The buidling sprite was also made by the lovely [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
+The larger Coop map gives you lots of space for your machines and chests. The building sprite was also made by the lovely [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 
 ### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/c05fe851-0764-4c98-8249-6012fb946468)
 
@@ -179,7 +179,7 @@ Vanilla style sprites are edits done by Tophatta and I, of existing vanilla spri
 </br>
 </br>There are currently two appearance options for Resource Chickens sprites using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098):
 </br>
-</br>**Vanilla Style:** recolourings and edits done by Tophatta and I of existing vanilla sprites originally made by ConcernedApe.
+</br>**Vanilla Style:** recolouring and edits done by Tophatta and I of existing vanilla sprites originally made by ConcernedApe.
 
 ![vanilla-style-transparent](https://github.com/UncleArya/StardewMods/assets/100550741/d543014e-1ba2-4ebb-aca9-83a1068299ef)
 
