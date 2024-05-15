@@ -58,11 +58,11 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | Farmer | Complete a quest from Marnie after reaching 3 hearts of friendship with her, egg becomes purchasable from Marnie after the quest is complete | Farming Level 4 |
 | Fiber | Drop from breaking weeds in the Forest or Railroad, forage in the Secret Woods | Forage Level 3 |
 | Gold | Craft and incubate a Gold Egg Fusion Chamber | Farming Level 5 |
-| Geode | Rare drop from geode stones in the Mines and Skull Cavern, can also spawn in the Quarry | Mining Level 3 |
+| Geode | Rare drop from geode egg nodes in the Mines and Skull Cavern, can also spawn in the Quarry | Mining Level 3 |
 | Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Level 3 |
 | Iridium | Craft and incubate an Iridium Egg Fusion Chamber | Farming Level 6 |
 | Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming Level 4 |
-| Monster | Drop from rare custom Monster Nest node in the Quarry mine, or purchasable from Krobus after 3 hearts of friendship with them | Combat Level 5 |
+| Monster | Drop from rare custom Monster Nest nodes in the Quarry mine, or purchasable from Krobus after 3 hearts of friendship with them | Combat Level 5 |
 | Moss | Rare drop from shaking/chopping green rain trees, destroying green rain weeds, forage in the Forest day after green rain, destroying weeds in the forest day after normal rain | Foraging Level 3 |
 | Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming Level 4 |
 | Sap | Rare drop from chopping Oak, Maple, Pine, or Mahogany trees | Foraging Level 2 |
@@ -88,7 +88,7 @@ _If you feel fiber chicken egg forage spots are too rare or not rare enough, ple
 <details>
 <summary>Spoiler: How to Find and Process Geode Eggs</summary>
 
-Once you have reached **Mining skill level 3**, four types of custom geode stones will have a rare chance to spawn in the Mines, each containing a geode chicken egg.
+Once you have reached **Mining skill level 3**, a custom geode egg mining node will have a rare chance to spawn in the Mines containing a geode chicken egg.
 
 Geode chicken eggs, when placed in the Resource Egg Converter will randomly produce the following:
 
@@ -98,6 +98,21 @@ Geode chicken eggs, when placed in the Resource Egg Converter will randomly prod
 -   An omni geode once any player has reached the bottom of the Mines
 
 _If you feel geode chicken eggs are too rare or not rare enough, please provide feedback._
+
+</details>
+</br>
+<details>
+<summary>Spoiler: How Processing Bomb Eggs Works</summary>
+
+Once you have reached **Mining skill level 4**, Bomb Eggs become obtainable.
+
+Bomb chicken eggs, when placed in the Resource Egg Converter will randomly produce the following based on the player's current mining level:
+
+-   Mining Level less than 6: 100% Cherry Bomb
+-   Mining Level less than 8: 60% Cherry Bomb, 40% Bomb
+-   Mining Level greater than 8: 50% Cherry Bomb, 33% Bomb, 17% Mega Bomb
+
+_Bombs and Mega Bombs are only available at higher mining levels to align with when their crafting recipes becoming available to attempt keeping them as balanced as possible._
 
 </details>
 
@@ -119,7 +134,11 @@ Resource eggs can be put into a Resource Egg Converter to produce their respecti
 
 ### ![coopbanner](https://github.com/UncleArya/StardewMods/assets/100550741/257de0f9-a94d-43b2-a570-2d95ebcf3952)
 
-To help make room on your farm for all your new chickens, a 3rd upgrade to the Coop is now available to build from Robin. The Giant Coop can house up to 24 Coop animals and also comes with a second Egg Incubator with the building upgrade. The second incubator that comes with the Giant Coop upgrade can be picked up by hitting it with an axe or pickaxe and then placed anywhere else in the coop (must be placed in the coop to hatch chickens). The larger Coop map gives you lots of space for your machines and chests. The buidling sprite was also made by the lovely [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
+To help make room on your farm for all your new chickens, a 3rd upgrade to the Coop is now available to build from Robin. The Giant Coop can house up to 24 Coop animals and also comes with a second Egg Incubator with the building upgrade. The second incubator that comes with the Giant Coop upgrade can be picked up by hitting it with an axe or pickaxe and then placed anywhere else in the coop (must be placed in the coop to hatch chickens).
+</br>
+**Note: if multiple incubators are ready to hatch chickens in the same coop, you must leave and re-enter the coop after naming each chicken. The game only allows for naming and spawning 1 chicken at a time. After naming the first chicken, simply exit and re-enter the coop to receive the prompt to name the next chicken.**
+</br>
+The larger Coop map gives you lots of space for your machines and chests. The buidling sprite was also made by the lovely [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652)!
 
 ### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/c05fe851-0764-4c98-8249-6012fb946468)
 

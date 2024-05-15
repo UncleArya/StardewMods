@@ -91,22 +91,6 @@
 					"ExcludeFromRandomSale": true
 				}
 			}
-		},
-		{
-			"Action": "EditImage",
-			"Target": "{{ModId}}/IridiumChicken",
-			"FromFile": "assets/images/hattastyle/IridiumChicken.png",
-			"When": {
-				"ChickenAppearanceVersion": "HattaStyle"
-			}
-		},
-		{
-			"Action": "EditImage",
-			"Target": "{{ModId}}/IridiumChickenBaby",
-			"FromFile": "assets/images/hattastyle/IridiumChickenBaby.png",
-			"When": {
-				"ChickenAppearanceVersion": "HattaStyle"
-			}
 		}
 	]
 }

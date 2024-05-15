@@ -9,6 +9,7 @@
 -   Added spawn conditions for Bomb and Monster Chicken Eggs
 -   Added shop items for Krobus, Marnie, and the Dwarf once unlock conditions are satisfied
 -   Added craftable Iridium Fusion Chamber
+-   Created custom Geode Egg mining node; Geode Eggs now drop only from the custom node, not from vanilla-looking geode nodes
 
 ## 0.3.4
 

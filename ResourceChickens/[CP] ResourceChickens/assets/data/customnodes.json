@@ -46,36 +46,11 @@
 					"BreakingSound": "cut",
 					"CountTowards": "Weeds"
 				},
-				// Geode Stone
+				// Custom Geode Egg Stone
 				"{{ModId}}.GeodeStoneEgg": {
 					"Type": "Stone",
 					"Texture": "{{ModId}}/Items",
-					"SpriteIndex": 4,
-					"Width": 1,
-					"Height": 1,
-					"Health": 3,
-					"Tool": "Pickaxe",
-					"ItemDropped": "{{ModId}}.GeodeEgg",
-					"MinDrops": 1,
-					"MaxDrops": 1,
-					"Debris": "stone",
-					"Sound": "hammer",
-					"BreakingSound": "stoneCrack",
-					"CountTowards": "GeodesBroken",
-					"MineSpawns": [
-						{
-							"Floors": "1/39, 121/-999",
-							"Type": "All",
-							"Condition": "PLAYER_MINING_LEVEL Current 3",
-							"SpawnFrequency": 0.0015
-						}
-					]
-				},
-				// Frozen Geode Stone
-				"{{ModId}}.FrozenGeodeStoneEgg": {
-					"Type": "Stone",
-					"Texture": "{{ModId}}/Items",
-					"SpriteIndex": 5,
+					"SpriteIndex": 1,
 					"Width": 1,
 					"Height": 1,
 					"Health": 6,
@@ -89,57 +64,7 @@
 					"CountTowards": "GeodesBroken",
 					"MineSpawns": [
 						{
-							"Floors": "41/79, 121/-999",
-							"Type": "All",
-							"Condition": "PLAYER_MINING_LEVEL Current 3",
-							"SpawnFrequency": 0.0015
-						}
-					]
-				},
-				// Magma Geode Stone
-				"{{ModId}}.MagmaGeodeStoneEgg": {
-					"Type": "Stone",
-					"Texture": "{{ModId}}/Items",
-					"SpriteIndex": 6,
-					"Width": 1,
-					"Height": 1,
-					"Health": 9,
-					"Tool": "Pickaxe",
-					"ItemDropped": "{{ModId}}.GeodeEgg",
-					"MinDrops": 1,
-					"MaxDrops": 1,
-					"Debris": "stone",
-					"Sound": "hammer",
-					"BreakingSound": "stoneCrack",
-					"CountTowards": "GeodesBroken",
-					"MineSpawns": [
-						{
-							"Floors": "81/119, 121/-999",
-							"Type": "All",
-							"Condition": "PLAYER_MINING_LEVEL Current 3",
-							"SpawnFrequency": 0.0015
-						}
-					]
-				},
-				// Omni Geode Stone
-				"{{ModId}}.OmniGeodeStoneEgg": {
-					"Type": "Stone",
-					"Texture": "{{ModId}}/Items",
-					"SpriteIndex": 7,
-					"Width": 1,
-					"Height": 1,
-					"Health": 12,
-					"Tool": "Pickaxe",
-					"ItemDropped": "{{ModId}}.GeodeEgg",
-					"MinDrops": 1,
-					"MaxDrops": 1,
-					"Debris": "stone",
-					"Sound": "hammer",
-					"BreakingSound": "stoneCrack",
-					"CountTowards": "GeodesBroken",
-					"MineSpawns": [
-						{
-							"Floors": "21/-999",
+							"Floors": "1/-999",
 							"Type": "All",
 							"Condition": "PLAYER_MINING_LEVEL Current 3",
 							"SpawnFrequency": 0.0015
