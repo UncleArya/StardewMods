@@ -1,6 +1,11 @@
 {
 	"Format": "2.0.0",
 	"ConfigSchema": {
+		"ProgressionMode": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Enabling Progression Mode means that you must ship 20 of each crop grown from wild seeds before the wild seeds to become available for purchase from Pierre."
+		},
 		"CarrotPrice": {
 			"AllowValues": "10,20,30,40,50,60,70,80,90,100",
 			"Default": "30"
@@ -37,7 +42,33 @@
 					"ID": "{{ModId}}.CarrotSeeds",
 					"AfterID": "(O)475"
 				}
-			]
+			],
+			"When": {
+				"ProgressionMode": false
+			}
+		},
+		// Add carrot seeds - PROGRESSION MODE
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["SeedShop", "Items"],
+			"Entries": {
+				"{{ModId}}.CarrotSeeds": {
+					"Id": "{{ModId}}.CarrotSeeds",
+					"ItemId": "(O)CarrotSeeds",
+					"Condition": "SEASON spring, PLAYER_SHIPPED_BASIC_ITEM Any (O)Carrot 20",
+					"Price": "{{query: {{CarrotPrice}} / 2}}"
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}.CarrotSeeds",
+					"AfterID": "(O)475"
+				}
+			],
+			"When": {
+				"ProgressionMode": true
+			}
 		},
 		// Add summer squash seeds
 		{
@@ -57,7 +88,33 @@
 					"ID": "{{ModId}}.SummerSquashSeeds",
 					"AfterID": "(O)484"
 				}
-			]
+			],
+			"When": {
+				"ProgressionMode": false
+			}
+		},
+		// Add summer squash seeds - PROGRESSION MODE
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["SeedShop", "Items"],
+			"Entries": {
+				"{{ModId}}.SummerSquashSeeds": {
+					"Id": "{{ModId}}.SummerSquashSeeds",
+					"ItemId": "(O)SummerSquashSeeds",
+					"Condition": "SEASON summer, PLAYER_SHIPPED_BASIC_ITEM Any (O)SummerSquash 20",
+					"Price": "{{query: {{SummerSquashPrice}} / 2}}"
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}.SummerSquashSeeds",
+					"AfterID": "(O)484"
+				}
+			],
+			"When": {
+				"ProgressionMode": true
+			}
 		},
 		// Add broccoli seeds
 		{
@@ -77,7 +134,33 @@
 					"ID": "{{ModId}}.BroccoliSeeds",
 					"BeforeID": "(O)425"
 				}
-			]
+			],
+			"When": {
+				"ProgressionMode": false
+			}
+		},
+		// Add broccoli seeds - PROGRESSION MODE
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["SeedShop", "Items"],
+			"Entries": {
+				"{{ModId}}.BroccoliSeeds": {
+					"Id": "{{ModId}}.BroccoliSeeds",
+					"ItemId": "(O)BroccoliSeeds",
+					"Condition": "SEASON fall, PLAYER_SHIPPED_BASIC_ITEM Any (O)Broccoli 20",
+					"Price": "{{query: {{BroccoliPrice}} / 2}}"
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}.BroccoliSeeds",
+					"BeforeID": "(O)425"
+				}
+			],
+			"When": {
+				"ProgressionMode": true
+			}
 		},
 		// Add powdermelon seeds
 		{
@@ -97,7 +180,33 @@
 					"ID": "{{ModId}}.PowdermelonSeeds",
 					"ToPosition": "Top"
 				}
-			]
+			],
+			"When": {
+				"ProgressionMode": false
+			}
+		},
+		// Add powdermelon seeds - PROGRESSION MODE
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["SeedShop", "Items"],
+			"Entries": {
+				"{{ModId}}.PowdermelonSeeds": {
+					"Id": "{{ModId}}.PowdermelonSeeds",
+					"ItemId": "(O)PowdermelonSeeds",
+					"Condition": "SEASON winter, PLAYER_SHIPPED_BASIC_ITEM Any (O)Powdermelon 20",
+					"Price": "{{query: {{PowdermelonPrice}} / 2}}"
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}.PowdermelonSeeds",
+					"ToPosition": "Top"
+				}
+			],
+			"When": {
+				"ProgressionMode": true
+			}
 		}
 	]
 }
