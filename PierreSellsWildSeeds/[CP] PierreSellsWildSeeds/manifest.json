@@ -1,0 +1,12 @@
+{
+	"Name": "Pierre Sells Wild Seeds",
+	"Author": "UncleArya",
+	"Version": "1.0.0",
+	"Description": "Adds the 4 wild seeds obtained from seed spots for sale at Pierre's",
+	"UniqueID": "UncleArya.PierreSellsWildSeeds",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": ["Nexus:24103"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}

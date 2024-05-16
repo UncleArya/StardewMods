@@ -1,0 +1,103 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {
+		"CarrotPrice": {
+			"AllowValues": "10,20,30,40,50,60,70,80,90,100",
+			"Default": "30"
+		},
+		"SummerSquashPrice": {
+			"AllowValues": "10,20,30,40,50,60,70,80,90,100",
+			"Default": "50"
+		},
+		"BroccoliPrice": {
+			"AllowValues": "10,20,30,40,50,60,70,80,90,100",
+			"Default": "60"
+		},
+		"PowdermelonPrice": {
+			"AllowValues": "10,20,30,40,50,60,70,80,90,100",
+			"Default": "30"
+		}
+	},
+	"Changes": [
+		// Add carrot seeds
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["SeedShop", "Items"],
+			"Entries": {
+				"{{ModId}}.CarrotSeeds": {
+					"Id": "{{ModId}}.CarrotSeeds",
+					"ItemId": "(O)CarrotSeeds",
+					"Condition": "SEASON spring",
+					"Price": "{{query: {{CarrotPrice}} / 2}}"
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}.CarrotSeeds",
+					"AfterID": "(O)475"
+				}
+			]
+		},
+		// Add summer squash seeds
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["SeedShop", "Items"],
+			"Entries": {
+				"{{ModId}}.SummerSquashSeeds": {
+					"Id": "{{ModId}}.SummerSquashSeeds",
+					"ItemId": "(O)SummerSquashSeeds",
+					"Condition": "SEASON summer",
+					"Price": "{{query: {{SummerSquashPrice}} / 2}}"
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}.SummerSquashSeeds",
+					"AfterID": "(O)484"
+				}
+			]
+		},
+		// Add broccoli seeds
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["SeedShop", "Items"],
+			"Entries": {
+				"{{ModId}}.BroccoliSeeds": {
+					"Id": "{{ModId}}.BroccoliSeeds",
+					"ItemId": "(O)BroccoliSeeds",
+					"Condition": "SEASON fall",
+					"Price": "{{query: {{BroccoliPrice}} / 2}}"
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}.BroccoliSeeds",
+					"BeforeID": "(O)425"
+				}
+			]
+		},
+		// Add powdermelon seeds
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["SeedShop", "Items"],
+			"Entries": {
+				"{{ModId}}.PowdermelonSeeds": {
+					"Id": "{{ModId}}.PowdermelonSeeds",
+					"ItemId": "(O)PowdermelonSeeds",
+					"Condition": "SEASON winter",
+					"Price": "{{query: {{PowdermelonPrice}} / 2}}"
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}.PowdermelonSeeds",
+					"ToPosition": "Top"
+				}
+			]
+		}
+	]
+}
