@@ -1,3 +1,5 @@
+![modbanner](https://github.com/UncleArya/StardewMods/assets/100550741/c053ad96-098d-4376-a1de-9a7651c2fb00)
+
 This simple mod adds the 4 new wild seeds for sale at Pierre's.
 
 Each seed type can only be purchased in their respective growing season.
