@@ -22,6 +22,10 @@ Adds unlockable early-game crafting recipes for the small glow ring and small ma
 Adds an additional minecart location to your Farm's cave.
 </br>[Github Repository](https://github.com/UncleArya/StardewMods/tree/main/FarmCaveMinecart) | [Nexus Mods Page](https://www.nexusmods.com/stardewvalley/mods/14870)
 
+### Pierre Sells Wild Seeds
+Adds the 4 wild seeds obtained from hidden seed spots for sale at Pierre's.
+</br>[Github Repository](https://github.com/UncleArya/StardewMods/tree/main/PierreSellsWildSeeds) | [Nexus Mods Page](https://www.nexusmods.com/stardewvalley/mods/24103)
+
 ### Resource Chickens
 Resource Chickens introduces a brand new way to gather crafting and building resources in Stardew through raising some special new chickens, resource chickens!
 </br>[Github Repository](https://github.com/UncleArya/StardewMods/tree/main/ResourceChickens) | [Nexus Mods Page](https://www.nexusmods.com/stardewvalley/mods/21800)
