@@ -13,83 +13,88 @@ BALANCING NOTES
 	"ConfigSchema": {
 		"AllowJelly": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for jelly to be placed in casks"
 		},
 		"AllowJuice": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for juice to be placed in casks"
 		},
 		"AllowPickles": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for pickles to be placed in casks"
 		},
 		"AllowHoney": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for honey to be placed in casks"
 		},
 		"AllowTruffleOil": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for truffle oil to be placed in casks"
 		},
 		"AllowAgedRoe": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for aged roe to be placed in casks"
 		},
 		"AllowCaviar": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for caviar to be placed in casks"
 		},
 		"AllowRaisins": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for raisins to be placed in casks"
 		},
 		"AllowDriedFruit": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for dried fruit to be placed in casks"
 		},
 		"AllowDriedMushrooms": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for dried mushrooms to be placed in casks"
 		},
 		"AllowSmokedFish": {
 			"AllowValues": "true, false",
-			"Default": true,
+			"Default": "true",
 			"Description": "Allows for smoked fish to be placed in casks"
 		},
 		"AllowMayo": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Description": "Allows for mayo to be placed in casks"
 		},
 		"AllowSyrups": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Description": "Allows for syrups, resin, and tar to be placed in casks"
 		},
 		"AllowCoffee": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Description": "Allows for coffee to be placed in casks"
 		},
 		"AllowGreenTea": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Description": "Allows for green tea to be placed in casks"
 		},
 		"AllowOil": {
 			"AllowValues": "true, false",
-			"Default": false,
+			"Default": "false",
 			"Description": "Allows for oil to be placed in casks"
+		},
+		"AllowCooking": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Allows for cooking items to be placed in casks"
 		}
 	},
 	"Changes": [
@@ -99,8 +104,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.Jelly": {
-					"Id": "{{ModId}}.Caskmaster.Jelly",
+				"{{ModId}}.Jelly": {
+					"Id": "{{ModId}}.Jelly",
 					"Triggers": [
 						{
 							"Id": "Jelly",
@@ -130,19 +135,30 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.Juice": {
-					"Id": "{{ModId}}.Caskmaster.Juice",
+				"{{ModId}}.Juice": {
+					"Id": "{{ModId}}.Juice",
 					"Triggers": [
 						{
 							"Id": "Juice",
 							"Trigger": "ItemPlacedInMachine",
 							"RequiredTags": ["juice_item"],
 							"RequiredCount": 1
+						},
+						{
+							"Id": "Ginger Ale",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)903",
+							"RequiredCount": 1
+						},
+						{
+							"Id": "Cranberry Candy",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)612",
+							"RequiredCount": 1
 						}
 					],
 					"OutputItem": [
 						{
-							"Id": "Juice",
 							"CustomData": {
 								"AgingMultiplier": "4"
 							},
@@ -155,15 +171,14 @@ BALANCING NOTES
 				"AllowJuice": true
 			}
 		},
-
 		// Pickles
 		{
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.Pickles": {
-					"Id": "{{ModId}}.Caskmaster.Pickles",
+				"{{ModId}}.Pickles": {
+					"Id": "{{ModId}}.Pickles",
 					"Triggers": [
 						{
 							"Id": "Pickles",
@@ -187,15 +202,14 @@ BALANCING NOTES
 				"AllowPickles": true
 			}
 		},
-
 		// Honey
 		{
 			"Action": "EditData",
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.Honey": {
-					"Id": "{{ModId}}.Caskmaster.Honey",
+				"{{ModId}}.Honey": {
+					"Id": "{{ModId}}.Honey",
 					"Triggers": [
 						{
 							"Id": "Honey",
@@ -225,8 +239,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.TruffleOil": {
-					"Id": "{{ModId}}.Caskmaster.TruffleOil",
+				"{{ModId}}.TruffleOil": {
+					"Id": "{{ModId}}.TruffleOil",
 					"Triggers": [
 						{
 							"Id": "TruffleOil",
@@ -256,8 +270,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.AgedRoe": {
-					"Id": "{{ModId}}.Caskmaster.AgedRoe",
+				"{{ModId}}.AgedRoe": {
+					"Id": "{{ModId}}.AgedRoe",
 					"Triggers": [
 						{
 							"Id": "AgedRoe",
@@ -287,8 +301,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.Caviar": {
-					"Id": "{{ModId}}.Caskmaster.Caviar",
+				"{{ModId}}.Caviar": {
+					"Id": "{{ModId}}.Caviar",
 					"Triggers": [
 						{
 							"Id": "Caviar",
@@ -318,8 +332,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.Raisins": {
-					"Id": "{{ModId}}.Caskmaster.Raisins",
+				"{{ModId}}.Raisins": {
+					"Id": "{{ModId}}.Raisins",
 					"Triggers": [
 						{
 							"Id": "Raisins",
@@ -349,8 +363,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.DriedFruit": {
-					"Id": "{{ModId}}.Caskmaster.DriedFruit",
+				"{{ModId}}.DriedFruit": {
+					"Id": "{{ModId}}.DriedFruit",
 					"Triggers": [
 						{
 							"Id": "DriedFruit",
@@ -380,8 +394,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.DriedMushrooms": {
-					"Id": "{{ModId}}.Caskmaster.DriedMushrooms",
+				"{{ModId}}.DriedMushrooms": {
+					"Id": "{{ModId}}.DriedMushrooms",
 					"Triggers": [
 						{
 							"Id": "DriedMushrooms",
@@ -411,8 +425,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.SmokedFish": {
-					"Id": "{{ModId}}.Caskmaster.SmokedFish",
+				"{{ModId}}.SmokedFish": {
+					"Id": "{{ModId}}.SmokedFish",
 					"Triggers": [
 						{
 							"Id": "SmokedFish",
@@ -442,8 +456,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.Mayo": {
-					"Id": "{{ModId}}.Caskmaster.Mayo",
+				"{{ModId}}.Mayo": {
+					"Id": "{{ModId}}..Mayo",
 					"Triggers": [
 						{
 							"Id": "Mayo",
@@ -473,8 +487,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.Syrups": {
-					"Id": "{{ModId}}.Caskmaster.Syrups",
+				"{{ModId}}.Syrups": {
+					"Id": "{{ModId}}.Syrups",
 					"Triggers": [
 						{
 							"Id": "Syrups",
@@ -504,19 +518,24 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.Coffee": {
-					"Id": "{{ModId}}.Caskmaster.Coffee",
+				"{{ModId}}.Coffee": {
+					"Id": "{{ModId}}.Coffee",
 					"Triggers": [
 						{
 							"Id": "Coffee",
 							"Trigger": "ItemPlacedInMachine",
 							"RequiredItemId": "(O)395",
 							"RequiredCount": 1
+						},
+						{
+							"Id": "Espresso",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)253",
+							"RequiredCount": 1
 						}
 					],
 					"OutputItem": [
 						{
-							"Id": "Coffee",
 							"CustomData": {
 								"AgingMultiplier": "4"
 							},
@@ -535,8 +554,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.GreenTea": {
-					"Id": "{{ModId}}.Caskmaster.GreenTea",
+				"{{ModId}}.GreenTea": {
+					"Id": "{{ModId}}.GreenTea",
 					"Triggers": [
 						{
 							"Id": "GreenTea",
@@ -566,8 +585,8 @@ BALANCING NOTES
 			"Target": "Data/Machines",
 			"TargetField": ["(BC)163", "OutputRules"],
 			"Entries": {
-				"{{ModId}}Caskmaster.Oil": {
-					"Id": "{{ModId}}.Caskmaster.Oil",
+				"{{ModId}}.Oil": {
+					"Id": "{{ModId}}.Oil",
 					"Triggers": [
 						{
 							"Id": "Oil",
@@ -589,6 +608,37 @@ BALANCING NOTES
 			},
 			"When": {
 				"AllowOil": true
+			}
+		},
+		// Cooking
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)163", "OutputRules"],
+			"Entries": {
+				"{{ModId}}.Cooking": {
+					"Id": "{{ModId}}.Cooking",
+					"Triggers": [
+						{
+							"Id": "Cooking",
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["category_cooking"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "Cooking",
+							"CustomData": {
+								"AgingMultiplier": "4"
+							},
+							"OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask"
+						}
+					]
+				}
+			},
+			"When": {
+				"AllowCooking": true
 			}
 		}
 	]

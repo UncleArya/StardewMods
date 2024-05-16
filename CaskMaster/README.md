@@ -22,9 +22,10 @@
 
 -   Mayo
 -   Syrups (Maple Syrup, Pine Tar, Oak Resin)
--   Coffee
+-   Coffee & Espresso
 -   Green Tea
 -   Oil
+-   Cooking items
 
 Any other items you would like to be added into casks? Let me know!
 
@@ -53,6 +54,7 @@ I have attempted to balance processing time based on the average sell value of a
 | Coffee          | 14              |
 | Green Tea       | 14              |
 | Oil             | 14              |
+| Cooking         | 14              |
 </details>
 
 #### Sell Prices

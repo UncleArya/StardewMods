@@ -1,8 +1,8 @@
 {
 	"Name": "CaskMaster",
 	"Author": "UncleArya",
-	"Version": "1.0.0",
-	"Description": "Makes changes and tweaks to casks",
+	"Version": "1.1.0",
+	"Description": "Allows for the aging of all artisan goods in casks",
 	"UniqueID": "UncleArya.Caskmaster",
 	"MinimumApiVersion": "4.0.0",
 	"UpdateKeys": ["Nexus: 22588"],
