@@ -8,7 +8,7 @@
 		},
 		"EnableFertilizers": {
 			"AllowValues": "true, false",
-			"Default": "true",
+			"Default": "false",
 			"Description": "Allows for fertilizers and soils to be recycled in the Recycling Machine"
 		},
 		"EnableSprinklers": {
@@ -28,8 +28,23 @@
 		},
 		"EnableTorches": {
 			"AllowValues": "true, false",
-			"Default": "true",
+			"Default": "false",
 			"Description": "Allows for torches to be recycled in the Recycling Machine"
+		},
+		"EnableTackle": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Allows for fishing tackle (bobbers, lures, etc) to be recycled in the Recycling Machine"
+		},
+		"EnableChests": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Allows for chests to be recycled in the Recycling Machine"
+		},
+		"EnableTotems": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "Allows for totems to be recycled in the Recycling Machine"
 		}
 	},
 	"Changes": [
@@ -810,6 +825,176 @@
 			},
 			"When": {
 				"EnableTorches": true
+			}
+		},
+		// Tackle
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)20", "OutputRules"],
+			"Entries": {
+				"{{ModId}}.Tackle": {
+					"Id": "{{ModId}}.Tackle",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["category_tackle"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Tackle",
+							"RandomItemId": ["(O)378", "(O)380", "(O)384"],
+							"MinStack": 3,
+							"MaxStack": 5
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				}
+			},
+			"When": {
+				"EnableTackle": true
+			}
+		},
+		// Chests
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)20", "OutputRules"],
+			"Entries": {
+				// Normal chest
+				"{{ModId}}.Chest": {
+					"Id": "{{ModId}}.Chest",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(BC)130",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.Chest",
+							"ItemId": "(O)388",
+							"MinStack": 25,
+							"MaxStack": 40
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Stone chest
+				"{{ModId}}.StoneChest": {
+					"Id": "{{ModId}}.StoneChest",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(BC)232",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.StoneChest",
+							"ItemId": "(O)390",
+							"MinStack": 25,
+							"MaxStack": 40
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Big chest
+				"{{ModId}}.BigChest": {
+					"Id": "{{ModId}}.BigChest",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(BC)BigChest",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)388",
+							"MinStack": 75,
+							"MaxStack": 100
+						},
+						{
+							"ItemId": "(O)378",
+							"MinStack": 4,
+							"MaxStack": 8
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Big stone chest
+				"{{ModId}}.BigStoneChest": {
+					"Id": "{{ModId}}.BigStoneChest",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(BC)BigStoneChest",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"Id": "{{ModId}}.BigStoneChest",
+							"ItemId": "(O)390",
+							"MinStack": 150,
+							"MaxStack": 200
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				}
+			},
+			"When": {
+				"EnableChests": true
+			}
+		},
+		// Totems
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)20", "OutputRules"],
+			"Entries": {
+				"{{ModId}}.Totems": {
+					"Id": "{{ModId}}.Totems",
+					"Triggers": [
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["totem_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)390",
+							"MinStack": 15,
+							"MaxStack": 20
+						},
+						{
+							"ItemId": "(O)709",
+							"MinStack": 2,
+							"MaxStack": 3
+						},
+						{
+							"ItemId": "(O)771",
+							"MinStack": 10,
+							"MaxStack": 20
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				}
+			},
+			"When": {
+				"EnableTotems": true
 			}
 		}
 	]
