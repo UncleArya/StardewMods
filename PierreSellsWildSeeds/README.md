@@ -6,7 +6,7 @@ Each seed type can only be purchased in their respective growing season.
 
 ### Progression Mode (Optional)
 
-If enabled, you must ship 20 of each crop grown from wild seeds before the wild seeds become available for purchase from Pierre.
+If enabled, you must ship 50 (or a custom amount) of each crop grown from wild seeds before the wild seeds become available for purchase from Pierre. To increase this number, simply enter your desired amount via GMCM.
 
 Progression Mode is disabled by default, allowing for the purchase of wild seeds immediately.
 

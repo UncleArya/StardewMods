@@ -6,6 +6,10 @@
 			"Default": "false",
 			"Description": "Enabling Progression Mode means that you must ship 20 of each crop grown from wild seeds before the wild seeds to become available for purchase from Pierre."
 		},
+		"AmountNeededToShip": {
+			"Default": "50",
+			"Description": "Amount of a crop that needs to be shipped before the seeds become available to purchase."
+		},
 		"CarrotPrice": {
 			"AllowValues": "10,20,30,40,50,60,70,80,90,100",
 			"Default": "30"
@@ -56,7 +60,7 @@
 				"{{ModId}}.CarrotSeeds": {
 					"Id": "{{ModId}}.CarrotSeeds",
 					"ItemId": "(O)CarrotSeeds",
-					"Condition": "SEASON spring, PLAYER_SHIPPED_BASIC_ITEM Any (O)Carrot 20",
+					"Condition": "SEASON spring, PLAYER_SHIPPED_BASIC_ITEM Any (O)Carrot {{AmountNeededToShip}}",
 					"Price": "{{query: {{CarrotPrice}} / 2}}"
 				}
 			},
@@ -102,7 +106,7 @@
 				"{{ModId}}.SummerSquashSeeds": {
 					"Id": "{{ModId}}.SummerSquashSeeds",
 					"ItemId": "(O)SummerSquashSeeds",
-					"Condition": "SEASON summer, PLAYER_SHIPPED_BASIC_ITEM Any (O)SummerSquash 20",
+					"Condition": "SEASON summer, PLAYER_SHIPPED_BASIC_ITEM Any (O)SummerSquash {{AmountNeededToShip}}",
 					"Price": "{{query: {{SummerSquashPrice}} / 2}}"
 				}
 			},
@@ -148,7 +152,7 @@
 				"{{ModId}}.BroccoliSeeds": {
 					"Id": "{{ModId}}.BroccoliSeeds",
 					"ItemId": "(O)BroccoliSeeds",
-					"Condition": "SEASON fall, PLAYER_SHIPPED_BASIC_ITEM Any (O)Broccoli 20",
+					"Condition": "SEASON fall, PLAYER_SHIPPED_BASIC_ITEM Any (O)Broccoli {{AmountNeededToShip}}",
 					"Price": "{{query: {{BroccoliPrice}} / 2}}"
 				}
 			},
@@ -194,7 +198,7 @@
 				"{{ModId}}.PowdermelonSeeds": {
 					"Id": "{{ModId}}.PowdermelonSeeds",
 					"ItemId": "(O)PowdermelonSeeds",
-					"Condition": "SEASON winter, PLAYER_SHIPPED_BASIC_ITEM Any (O)Powdermelon 20",
+					"Condition": "SEASON winter, PLAYER_SHIPPED_BASIC_ITEM Any (O)Powdermelon {{AmountNeededToShip}}",
 					"Price": "{{query: {{PowdermelonPrice}} / 2}}"
 				}
 			},

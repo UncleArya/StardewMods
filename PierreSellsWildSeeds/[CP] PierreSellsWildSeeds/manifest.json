@@ -1,7 +1,7 @@
 {
 	"Name": "Pierre Sells Wild Seeds",
 	"Author": "UncleArya",
-	"Version": "1.1.0",
+	"Version": "1.2.0",
 	"Description": "Adds the 4 wild seeds obtained from seed spots for sale at Pierre's",
 	"UniqueID": "UncleArya.PierreSellsWildSeeds",
 	"MinimumApiVersion": "4.0.0",
