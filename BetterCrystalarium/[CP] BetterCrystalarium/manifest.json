@@ -1,0 +1,12 @@
+{
+	"Name": "Better Crystalarium",
+	"Author": "UncleArya",
+	"Version": "1.0.0",
+	"Description": "Do more with the Crystalarium",
+	"UniqueID": "UncleArya.BetterCrystalarium",
+	"MinimumApiVersion": "4.0.0",
+	"UpdateKeys": ["Nexus:"],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}

@@ -1,0 +1,450 @@
+{
+	"Format": "2.0.0",
+	"ConfigSchema": {},
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": ["(BC)21", "OutputRules"],
+			"Entries": {
+				// Prismatic Shard
+				"{{ModId}}.PrismaticShard": {
+					"Id": "{{ModId}}.PrismaticShard",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)74",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)74",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)74",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 26600
+				},
+				// Radioactive Bar
+				"{{ModId}}.RadioactiveBar": {
+					"Id": "{{ModId}}.RadioactiveBar",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)910",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)910",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)910",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 40000
+				},
+				// Iridium Bar
+				"{{ModId}}.IridiumBar": {
+					"Id": "{{ModId}}.IridiumBar",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)337",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)337",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)337",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 13300
+				},
+				// Gold Bar
+				"{{ModId}}.GoldBar": {
+					"Id": "{{ModId}}.GoldBar",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)336",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)336",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)336",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 3300
+				},
+				// Iron Bar
+				"{{ModId}}.IronBar": {
+					"Id": "{{ModId}}.IronBar",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)335",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)335",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)335",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 1600
+				},
+				// Copper Bar
+				"{{ModId}}.CopperBar": {
+					"Id": "{{ModId}}.CopperBar",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)334",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)334",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)334",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 800
+				},
+				// Artifacts
+				"{{ModId}}.Artifacts": {
+					"Id": "{{ModId}}.Artifacts",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredTags": ["item_type_arch"],
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["item_type_arch"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN_ID",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 11200
+				},
+				// Geode
+				"{{ModId}}.Geode": {
+					"Id": "{{ModId}}.Geode",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)535",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)535",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)535",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 800
+				},
+				// Frozen Geode
+				"{{ModId}}.FrozenGeode": {
+					"Id": "{{ModId}}.FrozenGeode",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)536",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)536",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)536",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 1600
+				},
+				// Magma Geode
+				"{{ModId}}.MagmaGeode": {
+					"Id": "{{ModId}}.MagmaGeode",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)537",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)537",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)537",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 2400
+				},
+				// Omni Geode
+				"{{ModId}}.OmniGeode": {
+					"Id": "{{ModId}}.OmniGeode",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)749",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)749",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)749",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 3200
+				},
+				// Artifact Trove
+				"{{ModId}}.ArtifactTrove": {
+					"Id": "{{ModId}}.ArtifactTrove",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)275",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)275",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)275",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 4800
+				},
+				// Mystery Box
+				"{{ModId}}.MysteryBox": {
+					"Id": "{{ModId}}.MysteryBox",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)MysteryBox",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)MysteryBox",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)MysteryBox",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 6400
+				},
+				// Golden Mystery Box
+				"{{ModId}}.GoldenMysteryBox": {
+					"Id": "{{ModId}}.GoldenMysteryBox",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)GoldenMysteryBox",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)GoldenMysteryBox",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)GoldenMysteryBox",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 12800
+				},
+				// Totems
+				"{{ModId}}.Totems": {
+					"Id": "{{ModId}}.Totems",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredTags": ["totem_item"],
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredTags": ["totem_item"],
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "DROP_IN_ID",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 4800
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}.PrismaticShard",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.RadioactiveBar",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.IridiumBar",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.GoldBar",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.IronBar",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.CopperBar",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.Artifacts",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.Geode",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.FrozenGeode",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.MagmaGeode",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.OmniGeode",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.ArtifactTrove",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.MysteryBox",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.GoldenMysteryBox",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.Totems",
+					"ToPosition": "Top"
+				}
+			]
+		}
+	]
+}
