@@ -50,7 +50,7 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
 | Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging Level 4 |
-| Bomb | Rare drop from barels in the Skull Cavern, or purchasable from the Dwarf after 3 hearts of friendship with them | Mining Level 4 |
+| Bomb | Rare drop from barels in the Skull Cavern, becomes purchasable from the Dwarf after 3 hearts of friendship with them | Mining Level 4 |
 | Bait | Forage around the Beach Tide Pools the day after rain | Fishing Level 2 |
 | Clay | Purchase from Marnie | Construct a Coop |
 | Coal | Purchase from Marnie | Construct a Coop |
@@ -62,7 +62,7 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Level 3 |
 | Iridium | Craft and incubate an Iridium Egg Fusion Chamber | Farming Level 6 |
 | Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming Level 4 |
-| Monster | Drop from rare custom Monster Nest nodes in the Quarry mine, or purchasable from Krobus after 3 hearts of friendship with them | Combat Level 5 |
+| Monster | Drop from rare custom Monster Nest nodes in the Quarry mine, becomes purchasable from Krobus after 3 hearts of friendship with them | Combat Level 5 |
 | Moss | Rare drop from shaking/chopping green rain trees, destroying green rain weeds, forage in the Forest day after green rain, destroying weeds in the forest day after normal rain | Foraging Level 3 |
 | Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming Level 4 |
 | Sap | Rare drop from chopping Oak, Maple, Pine, or Mahogany trees | Foraging Level 2 |
