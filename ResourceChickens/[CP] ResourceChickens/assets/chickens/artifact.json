@@ -1,0 +1,100 @@
+{
+	"Changes": [
+		// Artifact Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.ArtifactChicken": {
+					"DisplayName": "{{i18n: Chicken.ArtifactChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": ["{{ModId}}.ArtifactEgg", "{{ModId}}.LargeArtifactEgg"],
+					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1.15}}, 0, down }}",
+					"BirthText": "{{i18n: Chicken.ArtifactChicken.BirthText}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 4}}, 0, down }}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.ArtifactEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeArtifactEgg"
+						}
+					],
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 2}}, 0, up }}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/ArtifactChicken",
+					"BabyTexture": "{{ModId}}/ArtifactChickenBaby",
+					"SleepFrame": 17,
+					"UseDoubleUniqueAnimationFrames": true,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.4}}, 0, up }}"
+				}
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.ArtifactEgg": {
+					"Name": "{{ModId}}.ArtifactEgg",
+					"DisplayName": "{{i18n: Egg.Artifact.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.4}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 38,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["resource_egg_item", "color_brown"]
+				},
+				"{{ModId}}.LargeArtifactEgg": {
+					"Name": "{{ModId}}.LargeArtifactEgg",
+					"DisplayName": "{{i18n: LargeEgg.Artifact.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.4) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 39,
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["large_resource_egg_item", "color_brown"]
+				}
+			}
+		},
+		// Adds Artifact Egg for trade with Desert Trader
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["DesertTrade", "Items"],
+			"Entries": {
+				"{{ModId}}.ArtifactEggDesertTrader": {
+					"Id": "{{ModId}}.ArtifactEggDesertTrader",
+					"ItemId": "{{ModId}}.ArtifactEgg",
+					"Condition": "PLAYER_HAS_MAIL Current {{ModId}}.ArtifactEggMail.QuestStart Received",
+					"AvailableStock": 1,
+					"TradeItemId": "{{ModId}}.LargeGeodeEgg",
+					"TradeItemAmount": 3
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "{{ModId}}.ArtifactEggDesertTrader",
+					"AfterId": "(O)275"
+				}
+			]
+		}
+	]
+}

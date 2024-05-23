@@ -4,10 +4,10 @@
 
 -   Added new Level 3 Chicken (Farmer)
 -   Added new Level 4 Chickens (Bomb, Monster)
--   Added new Level 5 Chicken (Iridium)
+-   Added new Level 5 Chickens (Artifact, Iridium)
 -   Created quest to obtain a Farmer Chicken Egg
 -   Added spawn conditions for Bomb and Monster Chicken Eggs
--   Added shop items for Krobus, Marnie, and the Dwarf once unlock conditions are satisfied
+-   Added shop items for Krobus, Marnie, the Dwarf, and the Desert Trader once unlock conditions are satisfied
 -   Added craftable Iridium Fusion Chamber
 -   Created custom Geode Egg mining node; Geode Eggs now drop only from the custom node, not from vanilla-looking geode nodes
 

@@ -27,6 +27,12 @@
 					"Trigger": "DayStarted",
 					"Condition": "PLAYER_COMBAT_LEVEL Any 5, PLAYER_HEARTS Any Krobus 3",
 					"Action": "AddMail All {{ModId}}.MonsterEggMail.EggForSale now"
+				},
+				"{{ModId}}.ArtifactEggQuest.Start": {
+					"Id": "{{ModId}}.ArtifactEggQuest.Start",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_MINING_LEVEL Any 5",
+					"Action": "AddMail All {{ModId}}.ArtifactEggMail.QuestStart now"
 				}
 			}
 		}

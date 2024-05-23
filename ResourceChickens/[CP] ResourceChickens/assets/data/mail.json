@@ -7,7 +7,8 @@
 				"{{ModId}}.FarmerEggMail.QuestStart": "{{i18n: Mail.FarmerEgg.QuestStart.Text}}%item quest {{ModId}}.FirstFarmerEggQuest true %%[#]{{i18n: Mail.FarmerEgg.QuestStart.Title}}",
 				"{{ModId}}.FarmerEggMail.EggForSale": "{{i18n: Mail.FarmerEgg.EggForSale.Text}}[#]{{i18n: Mail.FarmerEgg.EggForSale.Title}}",
 				"{{ModId}}.BombEggMail.EggForSale": "{{i18n: Mail.BombEgg.EggForSale.Text}}[#]{{i18n: Mail.BombEgg.EggForSale.Title}}",
-				"{{ModId}}.MonsterEggMail.EggForSale": "{{i18n: Mail.MonsterEgg.EggForSale.Text}}[#]{{i18n: Mail.MonsterEgg.EggForSale.Title}}"
+				"{{ModId}}.MonsterEggMail.EggForSale": "{{i18n: Mail.MonsterEgg.EggForSale.Text}}[#]{{i18n: Mail.MonsterEgg.EggForSale.Title}}",
+				"{{ModId}}.ArtifactEggMail.QuestStart": "{{i18n: Mail.ArtifactEgg.QuestStart.Text}}%item quest {{ModId}}.FirstArtifactEggQuest true %%[#]{{i18n: Mail.ArtifactEgg.QuestStart.Title}}"
 			}
 		}
 	]

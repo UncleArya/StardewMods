@@ -25,6 +25,45 @@
 			"Entries": {
 				"(BC){{ModId}}.ResourceEggConverter": {
 					"OutputRules": [
+						// Artifact Chicken
+						{
+							"Id": "{{ModId}}.ArtifactEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.ArtifactEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)275",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeArtifactEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeArtifactEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)275",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
 						// Bait Chicken
 						{
 							"Id": "{{ModId}}.BaitEgg",

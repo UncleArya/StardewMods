@@ -34,6 +34,7 @@
 
 #### Level 5 Chickens
 
+-   **Artifact Chicken**
 -   **Iridium Chicken**
 
 #### MORE CHICKENS IN PROGRESS!
@@ -49,6 +50,7 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 	
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
+| Artifact | Acquirable from the Desert Trader once a short quest involving Sandy has been received | Mining Level 5 |
 | Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging Level 4 |
 | Bomb | Rare drop from barels in the Skull Cavern, becomes purchasable from the Dwarf after 3 hearts of friendship with them | Mining Level 4 |
 | Bait | Forage around the Beach Tide Pools the day after rain | Fishing Level 2 |
@@ -202,6 +204,8 @@ Want to help translate this mod into another language? This mod is fully prepare
 ### ![compatibility](https://github.com/UncleArya/StardewMods/assets/100550741/62adfeb8-14bd-4bb0-87bf-0c63bc97935a)
 
 This mod relies entirely on [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915), so it should be fully compatible with pretty much every other mod out there.
+
+Works with [Machine Progression System](https://www.nexusmods.com/stardewvalley/mods/21720). The mod author has added support for resource eggs into their mayo machines!
 
 Please let me know if you come across any issues.
 

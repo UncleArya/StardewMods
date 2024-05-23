@@ -4,7 +4,8 @@
 			"Action": "EditData",
 			"Target": "Data/Quests",
 			"Entries": {
-				"{{ModId}}.FirstFarmerEggQuest": "ItemDelivery/{{i18n: Quest.FirstFarmerEgg.Title}}/{{i18n: Quest.FirstFarmerEgg.Description}}/{{i18n: Quest.FirstFarmerEgg.Hint}}/Marnie (O)770 30/-1/0/-1/true/{{i18n: Quest.FirstFarmerEgg.Reaction}}"
+				"{{ModId}}.FirstFarmerEggQuest": "ItemDelivery/{{i18n: Quest.FirstFarmerEgg.Title}}/{{i18n: Quest.FirstFarmerEgg.Description}}/{{i18n: Quest.FirstFarmerEgg.Hint}}/Marnie (O)770 30/-1/0/-1/true/{{i18n: Quest.FirstFarmerEgg.Reaction}}",
+				"{{ModId}}.FirstArtifactEggQuest": "ItemDelivery/{{i18n: Quest.FirstArtifactEgg.Title}}/{{i18n: Quest.FirstArtifactEgg.Description}}/{{i18n: Quest.FirstArtifactEgg.Hint}}/Sandy (O)595 5/-1/0/-1/true/{{i18n: Quest.FirstArtifactEgg.Reaction}}"
 			}
 		}
 	]

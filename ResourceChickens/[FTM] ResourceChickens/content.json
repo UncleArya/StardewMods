@@ -417,7 +417,7 @@
 				"UniqueAreaID": "ResourceChickens.Desert.Bone",
 				"MapName": "Desert",
 				"MinimumSpawnsPerDay": 1,
-				"MaximumSpawnsPerDay": 3,
+				"MaximumSpawnsPerDay": 1,
 				"IncludeTerrainTypes": ["Diggable"],
 				"ExcludeTerrainTypes": [],
 				"IncludeCoordinates": [],

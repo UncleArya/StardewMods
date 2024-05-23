@@ -55,7 +55,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item"]
+					"ContextTags": ["resource_egg_item", "color_red"]
 				},
 				"{{ModId}}.LargeBombEgg": {
 					"Name": "{{ModId}}.LargeBombEgg",
@@ -70,7 +70,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item"]
+					"ContextTags": ["large_resource_egg_item", "color_red"]
 				}
 			}
 		},

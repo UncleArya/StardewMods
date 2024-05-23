@@ -135,8 +135,12 @@ Lines Changed:
 	// Quests
 	"Quest.FirstFarmerEgg.Title": "Marnie Needs Seeds",
 	"Quest.FirstFarmerEgg.Description": "Marnie has a curious new chicken that she needs your help finding food for. Mixed seeds seem to be all it will eat.",
-	"Quest.FirstFarmerEgg.Hint": "Bring Marnie 30 mixed seeds",
+	"Quest.FirstFarmerEgg.Hint": "Bring Marnie 30 Mixed Seeds",
 	"Quest.FirstFarmerEgg.Reaction": "Thanks! I think this is exactly what the chicken needed. It laid an egg this morning, why don't you have it. [UncleArya.ResourceChickens.FarmerEgg]",
+	"Quest.FirstArtifactEgg.Title": "A Surprise for Sandy",
+	"Quest.FirstArtifactEgg.Description": "The Desert Trader would like to surprise her friend Sandy with some fresh, farm grown flowers. Bring Sandy 5 fairy rose flowers to brighten up her day.",
+	"Quest.FirstArtifactEgg.Hint": "Bring Sandy 5 Fairy Rose",
+	"Quest.FirstArtifactEgg.Reaction": "For me? Wow, thank you. That is so kind of you! I love flowers from the valley.",
 
 	// Mail
 	"Mail.BombEgg.EggForSale.Title": "Egg Found in Mines",
@@ -147,6 +151,8 @@ Lines Changed:
 	"Mail.FarmerEgg.EggForSale.Text": "Hey @!^Thanks again for helping me feed my new chicken. It sure is a cute one, isn't it? It looks like a little farmer! By the way, if you ever run out of their eggs you can now buy one from me. Have a great day.^    -Marnie",
 	"Mail.MonsterEgg.EggForSale.Title": "Krobus Found Something",
 	"Mail.MonsterEgg.EggForSale.Text": "@,^One of your objects washed into the sewer yesterday. I think it came from a type of animal you have on your farm. You can have it if you want.^    -Krobus [letterbg 2]",
+	"Mail.ArtifactEgg.QuestStart.Title": "Flowers for Sandy",
+	"Mail.ArtifactEgg.QuestStart.Text": "Hello Farmer @,^I really want to give my friend Sandy some lovely flowers but they just don't grow out here in the desert nearly as well as they do in the valley. Could you please help me bring her some Fairy Rose flowers?^    -Desert Trader [letterbg 1]",
 
 	"Chicken.IridiumChicken.Name": "Iridium Chicken",
 	"Chicken.IridiumChicken.BirthText": "A baby iridium chicken was born!",
@@ -167,5 +173,10 @@ Lines Changed:
 	"Chicken.BombChicken.Name": "Bomb Chicken",
 	"Chicken.BombChicken.BirthText": "A baby bomb chicken was born! ...that sounds unsafe.",
 	"Egg.Bomb.Name": "Bomb Egg",
-	"LargeEgg.Bomb.Name": "Large Bomb Egg"
+	"LargeEgg.Bomb.Name": "Large Bomb Egg",
+
+	"Chicken.ArtifactChicken.Name": "Artifact Chicken",
+	"Chicken.ArtifactChicken.BirthText": "A baby artifact chicken was born!",
+	"Egg.Artifact.Name": "Artifact Egg",
+	"LargeEgg.Artifact.Name": "Large Artifact Egg"
 }

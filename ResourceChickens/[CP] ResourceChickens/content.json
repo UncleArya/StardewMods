@@ -262,6 +262,12 @@
 			"Target": "{{ModId}}/ClayShopTexture, {{ModId}}/CoalShopTexture, {{ModId}}/StoneShopTexture, {{ModId}}/WoodShopTexture",
 			"FromFile": "assets/images/shops/{{TargetWithoutPath}}.png"
 		},
+		// Artifact Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/ArtifactChicken, {{ModId}}/ArtifactChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
 		// Bait Chicken
 		{
 			"Action": "Load",
@@ -400,7 +406,7 @@
 		// Level 5
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/iridium.json"
+			"FromFile": "assets/chickens/artifact.json, assets/chickens/iridium.json"
 		},
 		// Everything else
 		{
