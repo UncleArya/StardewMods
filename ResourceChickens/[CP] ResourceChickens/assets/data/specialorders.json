@@ -1,0 +1,79 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"{{ModId}}.FirstArtifactEgg": {
+					"Name": "[{{ModId}}.FirstArtifactEgg.Name]",
+					"Requester": "Gunther",
+					"Duration": "TwoWeeks",
+					"Repeatable": "true",
+					"RequiredTags": "mail_{{ModId}}.Mail.ArtifactEgg.QuestStart",
+					"OrderType": "ResourceChickens",
+					"SpecialRule": "",
+					"Text": "[{{ModId}}.FirstArtifactEgg.Text]",
+					"ItemToRemoveOnEnd": null,
+					"MailToRemoveOnEnd": null,
+					"RandomizedElements": null,
+					"Objectives": [
+						{
+							"Type": "Gift",
+							"Text": "[{{ModId}}.FirstArtifactEgg.Objective1.Text]",
+							"RequiredCount": "1",
+							"TargetName": "Linus",
+							"Data": {
+								"AcceptedContextTags": "item_unclearya.resourcechickens.geodeegg/item_unclearya.resourcechickens.largegeodeegg"
+							}
+						},
+						{
+							"Type": "Gift",
+							"Text": "[{{ModId}}.FirstArtifactEgg.Objective2.Text]",
+							"RequiredCount": "1",
+							"TargetName": "Lewis",
+							"Data": {
+								"AcceptedContextTags": "item_cactus_fruit"
+							}
+						},
+						{
+							"Type": "Gift",
+							"Text": "[{{ModId}}.FirstArtifactEgg.Objective3.Text]",
+							"RequiredCount": "1",
+							"TargetName": "Sandy",
+							"Data": {
+								"AcceptedContextTags": "flower_item"
+							}
+						},
+						{
+							"Type": "Gift",
+							"Text": "[{{ModId}}.FirstArtifactEgg.Objective4.Text]",
+							"RequiredCount": "1",
+							"TargetName": "Krobus",
+							"Data": {
+								"AcceptedContextTags": "item_diamond"
+							}
+						},
+						{
+							"Type": "Gift",
+							"Text": "[{{ModId}}.FirstArtifactEgg.Objective5.Text]",
+							"RequiredCount": "1",
+							"TargetName": "Dwarf",
+							"Data": {
+								"AcceptedContextTags": "item_emerald"
+							}
+						}
+					],
+					"Rewards": [
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "{{ModId}}.Mail.ArtifactEgg.QuestComplete",
+								"NoLetter": "false"
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}

@@ -32,7 +32,7 @@
 					"Id": "{{ModId}}.ArtifactEggQuest.Start",
 					"Trigger": "DayStarted",
 					"Condition": "PLAYER_MINING_LEVEL Any 5",
-					"Action": "AddMail All {{ModId}}.ArtifactEggMail.QuestStart now"
+					"Action": "AddMail All {{ModId}}.Mail.ArtifactEgg.QuestStart now"
 				}
 			}
 		}

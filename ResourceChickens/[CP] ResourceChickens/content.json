@@ -1,5 +1,5 @@
 {
-	"Format": "2.0.0",
+	"Format": "2.1.0",
 	// Config
 	"ConfigSchema": {
 		// Appearance & Behaviour
@@ -408,10 +408,20 @@
 			"Action": "Include",
 			"FromFile": "assets/chickens/artifact.json, assets/chickens/iridium.json"
 		},
+		// Quests & Special Orders
+		{
+			"Action": "Include",
+			"FromFile": "assets/data/specialorders.json, assets/data/specialorderstrings.json, assets/data/quests.json"
+		},
+		// Mail & Trigger Actions
+		{
+			"Action": "Include",
+			"FromFile": "assets/data/mail.json, assets/data/triggeractions.json"
+		},
 		// Everything else
 		{
 			"Action": "Include",
-			"FromFile": "assets/data/buildings.json, assets/data/craftingrecipes.json, assets/data/customnodes.json, assets/data/machines.json, assets/data/mail.json, assets/data/triggeractions.json, assets/data/quests.json, assets/chickens/vanilla.json"
+			"FromFile": "assets/data/buildings.json, assets/data/craftingrecipes.json, assets/data/customnodes.json, assets/data/machines.json, assets/chickens/vanilla.json"
 		}
 	]
 }

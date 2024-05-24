@@ -132,15 +132,18 @@ Lines Changed:
 	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180",
 
 	// 0.4.0
-	// Quests
+	// Quests & Special Orders
 	"Quest.FirstFarmerEgg.Title": "Marnie Needs Seeds",
 	"Quest.FirstFarmerEgg.Description": "Marnie has a curious new chicken that she needs your help finding food for. Mixed seeds seem to be all it will eat.",
 	"Quest.FirstFarmerEgg.Hint": "Bring Marnie 30 Mixed Seeds",
 	"Quest.FirstFarmerEgg.Reaction": "Thanks! I think this is exactly what the chicken needed. It laid an egg this morning, why don't you have it. [UncleArya.ResourceChickens.FarmerEgg]",
-	"Quest.FirstArtifactEgg.Title": "A Surprise for Sandy",
-	"Quest.FirstArtifactEgg.Description": "The Desert Trader would like to surprise her friend Sandy with some fresh, farm grown flowers. Bring Sandy 5 fairy rose flowers to brighten up her day.",
-	"Quest.FirstArtifactEgg.Hint": "Bring Sandy 5 Fairy Rose",
-	"Quest.FirstArtifactEgg.Reaction": "For me? Wow, thank you. That is so kind of you! I love flowers from the valley.",
+	"Quest.FirstArtifactEgg.Name": "Acts of Kindness",
+	"Quest.FirstArtifactEgg.Text": "Gunther would like your help completing some random acts of kindness around the valley. He has a new type of chicken egg to give you once you are done.",
+	"Quest.FirstArtifactEgg.Objective1.Text": "Give a geode egg to Linus",
+	"Quest.FirstArtifactEgg.Objective2.Text": "Give a cactus fruit to Lewis",
+	"Quest.FirstArtifactEgg.Objective3.Text": "Give a flower to Sandy",
+	"Quest.FirstArtifactEgg.Objective4.Text": "Give a diamond to Krobus",
+	"Quest.FirstArtifactEgg.Objective5.Text": "Give an emerald to the Dwarf",
 
 	// Mail
 	"Mail.BombEgg.EggForSale.Title": "Egg Found in Mines",
@@ -151,8 +154,10 @@ Lines Changed:
 	"Mail.FarmerEgg.EggForSale.Text": "Hey @!^Thanks again for helping me feed my new chicken. It sure is a cute one, isn't it? It looks like a little farmer! By the way, if you ever run out of their eggs you can now buy one from me. Have a great day.^    -Marnie",
 	"Mail.MonsterEgg.EggForSale.Title": "Krobus Found Something",
 	"Mail.MonsterEgg.EggForSale.Text": "@,^One of your objects washed into the sewer yesterday. I think it came from a type of animal you have on your farm. You can have it if you want.^    -Krobus [letterbg 2]",
-	"Mail.ArtifactEgg.QuestStart.Title": "Flowers for Sandy",
-	"Mail.ArtifactEgg.QuestStart.Text": "Hello Farmer @,^I really want to give my friend Sandy some lovely flowers but they just don't grow out here in the desert nearly as well as they do in the valley. Could you please help me bring her some Fairy Rose flowers?^    -Desert Trader [letterbg 1]",
+	"Mail.ArtifactEgg.QuestStart.Title": "Random Acts of Kindness",
+	"Mail.ArtifactEgg.QuestStart.Text": "Hello Farmer @,^You have been doing so many kind things for me by donating all these fascinating artifacts to the museum. I would like your help in spreading that kindness throughout the valley. If you can help me, I could give you this unique chicken egg I recently discovered.^    -Gunther",
+	"Mail.ArtifactEgg.QuestComplete.Title": "Kindness Achieved",
+	"Mail.ArtifactEgg.QuestComplete.Text": "Hey Farmer @,^Thank you so much for helping me brighten everyone's day! Here is a chicken egg I think you might be interested in. The Desert Trader also told me she was going to start offering these for trades if you wanted more of them.^    -Gunther",
 
 	"Chicken.IridiumChicken.Name": "Iridium Chicken",
 	"Chicken.IridiumChicken.BirthText": "A baby iridium chicken was born!",

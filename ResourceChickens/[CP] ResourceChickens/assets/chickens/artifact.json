@@ -83,7 +83,7 @@
 				"{{ModId}}.ArtifactEggDesertTrader": {
 					"Id": "{{ModId}}.ArtifactEggDesertTrader",
 					"ItemId": "{{ModId}}.ArtifactEgg",
-					"Condition": "PLAYER_HAS_MAIL Current {{ModId}}.ArtifactEggMail.QuestStart Received",
+					"Condition": "ANY \"PLAYER_HAS_MAIL Current {{ModId}}.Mail.ArtifactEgg.QuestComplete Received\" \"PLAYER_MINING_LEVEL Any 9\"",
 					"AvailableStock": 1,
 					"TradeItemId": "{{ModId}}.LargeGeodeEgg",
 					"TradeItemAmount": 3

@@ -50,7 +50,7 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 	
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
-| Artifact | Acquirable from the Desert Trader once a short quest involving Sandy has been received | Mining Level 5 |
+| Artifact | Acquirable from the Desert Trader once a quest from Gunther is completed, or once the player reaches Mining Level 8 if quest isn't completed | Mining Level 5 |
 | Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging Level 4 |
 | Bomb | Rare drop from barels in the Skull Cavern, becomes purchasable from the Dwarf after 3 hearts of friendship with them | Mining Level 4 |
 | Bait | Forage around the Beach Tide Pools the day after rain | Fishing Level 2 |

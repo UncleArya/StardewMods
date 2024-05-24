@@ -1,0 +1,17 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderstrings",
+			"Entries": {
+				"{{ModId}}.FirstArtifactEgg.Name": "{{i18n: Quest.FirstArtifactEgg.Name}}",
+				"{{ModId}}.FirstArtifactEgg.Text": "{{i18n: Quest.FirstArtifactEgg.Text}}",
+				"{{ModId}}.FirstArtifactEgg.Objective1.Text": "{{i18n: Quest.FirstArtifactEgg.Objective1.Text}}",
+				"{{ModId}}.FirstArtifactEgg.Objective2.Text": "{{i18n: Quest.FirstArtifactEgg.Objective2.Text}}",
+				"{{ModId}}.FirstArtifactEgg.Objective3.Text": "{{i18n: Quest.FirstArtifactEgg.Objective3.Text}}",
+				"{{ModId}}.FirstArtifactEgg.Objective4.Text": "{{i18n: Quest.FirstArtifactEgg.Objective4.Text}}",
+				"{{ModId}}.FirstArtifactEgg.Objective5.Text": "{{i18n: Quest.FirstArtifactEgg.Objective5.Text}}"
+			}
+		}
+	]
+}
