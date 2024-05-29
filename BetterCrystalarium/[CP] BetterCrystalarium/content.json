@@ -1,5 +1,5 @@
 {
-	"Format": "2.0.0",
+	"Format": "2.1.0",
 	"ConfigSchema": {},
 	"Changes": [
 		{
@@ -381,6 +381,31 @@
 					],
 					"UseFirstValidOutput": true,
 					"MinutesUntilReady": 4800
+				},
+				// Pearl
+				"{{ModId}}.Pearl": {
+					"Id": "{{ModId}}.Pearl",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)797",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)797",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)797",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 33300
 				}
 			},
 			"MoveEntries": [
@@ -442,6 +467,10 @@
 				},
 				{
 					"ID": "{{ModId}}.Totems",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.Pearl",
 					"ToPosition": "Top"
 				}
 			]
