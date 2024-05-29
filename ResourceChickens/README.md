@@ -19,6 +19,7 @@
 
 #### Level 3 Chickens
 
+-   **Aquatic Chicken**
 -   **Geode Chicken**
 -   **Iron Chicken**
 -   **Moss Chicken**
@@ -51,9 +52,10 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
 | Artifact | Acquirable from the Desert Trader once a quest from Gunther is completed, or once the player reaches Mining Level 8 if quest isn't completed | Mining Level 5 |
+| Aquatic | Forage around the Beach Tide Pools the day of or day after rain | Fishing Level 3 |
 | Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging Level 4 |
 | Bomb | Rare drop from barels in the Skull Cavern, becomes purchasable from the Dwarf after 3 hearts of friendship with them | Mining Level 4 |
-| Bait | Forage around the Beach Tide Pools the day after rain | Fishing Level 2 |
+| Bait | Rare chance of appearing in fishing treasure chests, becomes purchasable from Willy after getting the Ol' Mariner Achievement | Fishing Level 2 |
 | Clay | Purchase from Marnie | Construct a Coop |
 | Coal | Purchase from Marnie | Construct a Coop |
 | Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming Level 3 |
@@ -145,8 +147,8 @@ The larger Coop map gives you lots of space for your machines and chests. The bu
 ### ![dependencies](https://github.com/UncleArya/StardewMods/assets/100550741/c05fe851-0764-4c98-8249-6012fb946468)
 
 -   [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) - Required
--   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain Bomb, Bone, Geode, Fiber, and Monster Chickens
--   [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) - Required to obtain Bait, Bone, Moss, and Fiber Chickens
+-   [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) - Required to obtain most level 2+ chickens
+-   [Farm Type Manager](https://www.nexusmods.com/stardewvalley/mods/3231) - Required to obtain most level 2+ chickens
 
 ### ![gameplay](https://github.com/UncleArya/StardewMods/assets/100550741/eb4f4717-2b68-4ef3-a15c-a0eba6c60920)
 

@@ -92,20 +92,32 @@
 				}
 			}
 		},
+		// Hatta sprites
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/CopperChicken",
-			"FromFile": "assets/images/hattastyle/CopperChicken.png",
+			"Target": "{{ModId}}/CopperChicken, {{ModId}}/CopperChickenBaby",
+			"FromFile": "assets/images/hattastyle/Hatta{{TargetWithoutPath}}.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
+		// Allow Skins Feature
 		{
-			"Action": "EditImage",
-			"Target": "{{ModId}}/CopperChickenBaby",
-			"FromFile": "assets/images/hattastyle/CopperChickenBaby.png",
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Fields": {
+				"{{ModId}}.CopperChicken": {
+					"Skins": [
+						{
+							"Id": "{{ModId}}.CopperHattaStyle",
+							"Texture": "{{ModId}}/HattaCopperChicken",
+							"BabyTexture": "{{ModId}}/HattaCopperChickenBaby"
+						}
+					]
+				}
+			},
 			"When": {
-				"ChickenAppearanceVersion": "HattaStyle"
+				"ChickenAppearanceVersion": "Both"
 			}
 		}
 	]

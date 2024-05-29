@@ -4,8 +4,8 @@
 	"ConfigSchema": {
 		// Appearance & Behaviour
 		"ChickenAppearanceVersion": {
-			"AllowValues": "VanillaStyle, HattaStyle",
-			"Default": "VanillaStyle",
+			"AllowValues": "VanillaStyle, HattaStyle, Both",
+			"Default": "Both",
 			"Section": "AppearanceBehaviour"
 		},
 		"VanillaChickensMatchHattaStyle": {
@@ -268,11 +268,23 @@
 			"Target": "{{ModId}}/ArtifactChicken, {{ModId}}/ArtifactChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Bait Chicken
+		// Aquatic Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/AquaticChicken, {{ModId}}/AquaticChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
+		// Bait Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/BaitChicken, {{ModId}}/BaitChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
+		// Bait Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaBaitChicken, {{ModId}}/HattaBaitChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
 		// Bomb Chicken
 		{
@@ -280,29 +292,53 @@
 			"Target": "{{ModId}}/BombChicken, {{ModId}}/BombChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Bone Chicken
+		// Bone Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/BoneChicken, {{ModId}}/BoneChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Clay Chicken
+		// Bone Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaBoneChicken, {{ModId}}/HattaBoneChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Clay Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/ClayChicken, {{ModId}}/ClayChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Coal Chicken
+		// Clay Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaClayChicken, {{ModId}}/HattaClayChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Coal Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/CoalChicken, {{ModId}}/CoalChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Copper Chicken
+		// Coal Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaCoalChicken, {{ModId}}/HattaCoalChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Copper Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/CopperChicken, {{ModId}}/CopperChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
+		// Copper Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaCopperChicken, {{ModId}}/HattaCopperChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
 		// Farmer Chicken
 		{
@@ -310,41 +346,77 @@
 			"Target": "{{ModId}}/FarmerChicken, {{ModId}}/FarmerChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Fiber Chicken
+		// Fiber Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/FiberChicken, {{ModId}}/FiberChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Geode Chicken
+		// Fiber Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaFiberChicken, {{ModId}}/HattaFiberChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Geode Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/GeodeChicken, {{ModId}}/GeodeChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Gold Chicken
+		// Geode Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaGeodeChicken, {{ModId}}/HattaGeodeChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Gold Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/GoldChicken, {{ModId}}/GoldChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Hardwood Chicken
+		// Gold Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaGoldChicken, {{ModId}}/HattaGoldChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Hardwood Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/HardwoodChicken, {{ModId}}/HardwoodChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Iridium Chicken
+		// Hardwood Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaHardwoodChicken, {{ModId}}/HattaHardwoodChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Iridium Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/IridiumChicken, {{ModId}}/IridiumChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Iron Chicken
+		// Iridium Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaIridiumChicken, {{ModId}}/HattaIridiumChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Iron Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/IronChicken, {{ModId}}/IronChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
+		// Iron Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaIronChicken, {{ModId}}/HattaIronChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
 		// Monster Chicken
 		{
@@ -352,35 +424,65 @@
 			"Target": "{{ModId}}/MonsterChicken, {{ModId}}/MonsterChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Moss Chicken
+		// Moss Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/MossChicken, {{ModId}}/MossChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Quartz Chicken
+		// Moss Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaMossChicken, {{ModId}}/HattaMossChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Quartz Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/QuartzChicken, {{ModId}}/QuartzChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Sap Chicken
+		// Quartz Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaQuartzChicken, {{ModId}}/HattaQuartzChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Sap Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/SapChicken, {{ModId}}/SapChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Stone Chicken
+		// Sap Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaSapChicken, {{ModId}}/HattaSapChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Stone Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/StoneChicken, {{ModId}}/StoneChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Wood Chicken
+		// Stone Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaStoneChicken, {{ModId}}/HattaStoneChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Wood Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/WoodChicken, {{ModId}}/WoodChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
+		// Wood Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaWoodChicken, {{ModId}}/HattaWoodChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
 		// Include Chickens
 		// Level 1
@@ -396,7 +498,7 @@
 		// Level 3
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/iron.json, assets/chickens/farmer.json, assets/chickens/geode.json, assets/chickens/moss.json, assets/chickens/quartz.json"
+			"FromFile": "assets/chickens/aquatic.json, assets/chickens/iron.json, assets/chickens/farmer.json, assets/chickens/geode.json, assets/chickens/moss.json, assets/chickens/quartz.json"
 		},
 		// Level 4
 		{

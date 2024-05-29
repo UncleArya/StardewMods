@@ -92,20 +92,32 @@
 				}
 			}
 		},
+		// Hatta sprites
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/IridiumChicken",
-			"FromFile": "assets/images/hattastyle/IridiumChicken.png",
+			"Target": "{{ModId}}/IridiumChicken, {{ModId}}/IridiumChickenBaby",
+			"FromFile": "assets/images/hattastyle/Hatta{{TargetWithoutPath}}.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
+		// Allow Skins Feature
 		{
-			"Action": "EditImage",
-			"Target": "{{ModId}}/IridiumChickenBaby",
-			"FromFile": "assets/images/hattastyle/IridiumChickenBaby.png",
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Fields": {
+				"{{ModId}}.IridiumChicken": {
+					"Skins": [
+						{
+							"Id": "{{ModId}}.IridiumHattaStyle",
+							"Texture": "{{ModId}}/HattaIridiumChicken",
+							"BabyTexture": "{{ModId}}/HattaIridiumChickenBaby"
+						}
+					]
+				}
+			},
 			"When": {
-				"ChickenAppearanceVersion": "HattaStyle"
+				"ChickenAppearanceVersion": "Both"
 			}
 		}
 	]

@@ -8,11 +8,7 @@
 				"{{ModId}}.IronChicken": {
 					"DisplayName": "{{i18n: Chicken.IronChicken.Name}}",
 					"House": "Coop",
-					"EggItemIds": [
-						"{{ModId}}.IronEgg",
-						"{{ModId}}.LargeIronEgg",
-						"{{ModId}}.IronEggFusionChamber"
-					],
+					"EggItemIds": ["{{ModId}}.IronEgg", "{{ModId}}.LargeIronEgg", "{{ModId}}.IronEggFusionChamber"],
 					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
 					"BirthText": "{{i18n: Chicken.IronChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
@@ -92,20 +88,32 @@
 				}
 			}
 		},
+		// Hatta sprites
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/IronChicken",
-			"FromFile": "assets/images/hattastyle/IronChicken.png",
+			"Target": "{{ModId}}/IronChicken, {{ModId}}/IronChickenBaby",
+			"FromFile": "assets/images/hattastyle/Hatta{{TargetWithoutPath}}.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
+		// Allow Skins Feature
 		{
-			"Action": "EditImage",
-			"Target": "{{ModId}}/IronChickenBaby",
-			"FromFile": "assets/images/hattastyle/IronChickenBaby.png",
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Fields": {
+				"{{ModId}}.IronChicken": {
+					"Skins": [
+						{
+							"Id": "{{ModId}}.IronHattaStyle",
+							"Texture": "{{ModId}}/HattaIronChicken",
+							"BabyTexture": "{{ModId}}/HattaIronChickenBaby"
+						}
+					]
+				}
+			},
 			"When": {
-				"ChickenAppearanceVersion": "HattaStyle"
+				"ChickenAppearanceVersion": "Both"
 			}
 		}
 	]

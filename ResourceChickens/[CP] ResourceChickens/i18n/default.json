@@ -96,7 +96,7 @@ Lines Changed:
 	// Config
 	// Appearance & Behaviour
 	"config.ChickenAppearanceVersion.name": "Chicken Appearance Style",
-	"config.ChickenAppearanceVersion.description": "Choose the sprite style you would like for your resource chickens. Reference images on Nexus and in mod folder.\nVanillaStyle: vanilla chicken sprites recoloured by UncleArya\nHattaStyle: custom chicken sprites made by Tophatta",
+	/*CHANGED*/"config.ChickenAppearanceVersion.description": "Choose the sprite style you would like for your resource chickens. Reference images on Nexus and in mod folder.\nVanillaStyle: vanilla chicken sprites recoloured by UncleArya\nHattaStyle: custom chicken sprites made by Tophatta\nBoth: randomly chooses from both styles",
 	"config.VanillaChickensMatchHattaStyle.name": "Vanilla Chickens Hatta Style",
 	"config.VanillaChickensMatchHattaStyle.description": "Vanilla chicken sprites will be replaced by custom chicken sprites made by Tophatta. Matches Resource Chickens set to Hatta Style. Reference images on Nexus and in mod folder.",
 	"config.ChickensCanSwim.name": "Chickens Can Swim",
@@ -183,5 +183,10 @@ Lines Changed:
 	"Chicken.ArtifactChicken.Name": "Artifact Chicken",
 	"Chicken.ArtifactChicken.BirthText": "A baby artifact chicken was born!",
 	"Egg.Artifact.Name": "Artifact Egg",
-	"LargeEgg.Artifact.Name": "Large Artifact Egg"
+	"LargeEgg.Artifact.Name": "Large Artifact Egg",
+
+	"Chicken.AquaticChicken.Name": "Aquatic Chicken",
+	"Chicken.AquaticChicken.BirthText": "A baby aquatic chicken was born!",
+	"Egg.Aquatic.Name": "Aquatic Egg",
+	"LargeEgg.Aquatic.Name": "Large Aquatic Egg"
 }

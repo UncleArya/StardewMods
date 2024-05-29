@@ -64,6 +64,73 @@
 							],
 							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
 						},
+						// Aquatic Chicken
+						{
+							"Id": "{{ModId}}.AquaticEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.AquaticEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"RandomItemId": ["(O)392", "(O)394"],
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"Condition": "RANDOM 0.1",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"RandomItemId": ["(O)152", "(O)153", "(O)157"],
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"Condition": "RANDOM 0.4",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"RandomItemId": ["(O)393", "(O)397"],
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeAquaticEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeAquaticEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"RandomItemId": ["(O)392", "(O)394"],
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"Condition": "RANDOM 0.1",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"RandomItemId": ["(O)152", "(O)153", "(O)157"],
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"Condition": "RANDOM 0.4",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"RandomItemId": ["(O)393", "(O)397"],
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
 						// Bait Chicken
 						{
 							"Id": "{{ModId}}.BaitEgg",
@@ -1047,8 +1114,8 @@
 			},
 			"MoveEntries": [
 				{
-					"Id": "(BC){{ModId}}.ResourceEggConverter",
-					"BeforeId": "(BC)45"
+					"ID": "(BC){{ModId}}.ResourceEggConverter",
+					"BeforeID": "(BC)45"
 				}
 			]
 		},

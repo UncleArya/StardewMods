@@ -2,15 +2,20 @@
 
 ## 0.4.0 (upcoming - not released yet)
 
--   Added new Level 3 Chicken (Farmer)
+-   Added new Level 3 Chickens (Aquatic, Farmer)
 -   Added new Level 4 Chickens (Bomb, Monster)
 -   Added new Level 5 Chickens (Artifact, Iridium)
 -   Created quest to obtain a Farmer Chicken Egg
--	Created quest to obtain an Artifact Chicken Egg
--   Added spawn conditions for Bomb and Monster Chicken Eggs
+-   Created quest to obtain an Artifact Chicken Egg
+-   Added spawn conditions for Aquatic, Bomb and Monster Chicken Eggs
 -   Added craftable Iridium Fusion Chamber
--   Added shop items for Krobus, Marnie, the Dwarf, and the Desert Trader once unlock conditions are satisfied
+-   Changed condition for obtaining Bait Chicken Egg using the new custom fishing treasure feature in [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357)
+-   Players must update [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) to version 1.6 (or higher) for this feature
+-   Added shop items for Krobus, Marnie, Willy, the Dwarf, and the Desert Trader once unlock conditions are satisfied
 -   Created custom Geode Egg mining node; Geode Eggs now drop only from the custom node, not from vanilla-looking geode nodes
+-   Added config option to allow chicken sprite styles to be randomized and allow both Vanilla or Hatta style at the same time (defaults to on) for chickens that have multiple sprite options (not all chickens do)
+-   This setting only applies to new chickens, will not affect existing chickens
+-   Appearance options can alternatively be set to only Vanilla Style or only Hatta Style
 
 ## 0.3.4
 

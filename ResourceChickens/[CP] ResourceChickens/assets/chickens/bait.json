@@ -74,21 +74,81 @@
 				}
 			}
 		},
+		// Hatta sprites
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/BaitChicken",
-			"FromFile": "assets/images/hattastyle/BaitChicken.png",
+			"Target": "{{ModId}}/BaitChicken, {{ModId}}/BaitChickenBaby",
+			"FromFile": "assets/images/hattastyle/Hatta{{TargetWithoutPath}}.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
+		// Allow Skins Feature
 		{
-			"Action": "EditImage",
-			"Target": "{{ModId}}/BaitChickenBaby",
-			"FromFile": "assets/images/hattastyle/BaitChickenBaby.png",
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Fields": {
+				"{{ModId}}.BaitChicken": {
+					"Skins": [
+						{
+							"Id": "{{ModId}}.BaitHattaStyle",
+							"Texture": "{{ModId}}/HattaBaitChicken",
+							"BabyTexture": "{{ModId}}/HattaBaitChickenBaby"
+						}
+					]
+				}
+			},
 			"When": {
-				"ChickenAppearanceVersion": "HattaStyle"
+				"ChickenAppearanceVersion": "Both"
 			}
+		},
+		// Add spawn condition in fishing treasure chests
+		{
+			"Action": "EditData",
+			"Target": "Mods/mistyspring.ItemExtensions/Treasure",
+			"Entries": {
+				"{{ModId}}.BaitEggTreasure": {
+					"ItemId": "(O)308",
+					"Chance": 1,
+					"MinStack": 1,
+					"MaxStack": 1
+					// "Condition": "PLAYER_FISHING_LEVEL Current 2"
+				}
+			}
+		},
+		// Add spawn condition in panning
+		{
+			"Action": "EditData",
+			"Target": "Mods/mistyspring.ItemExtensions/Panning",
+			"Entries": {
+				"{{ModId}}.BaitEggPanning": {
+					"ItemId": "UncleArya.ResourceChickens.BaitEgg",
+					"MinStack": 1,
+					"MaxStack": 1,
+					"Chance": 0.1
+				}
+			}
+		},
+		// For sale with Willy after getting Ol' Mariner achievement
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["FishShop", "Items"],
+			"Entries": {
+				"{{ModId}}.BaitEggWilly": {
+					"Id": "{{ModId}}.BaitEggWilly",
+					"ItemId": "{{ModId}}.BaitEgg",
+					"Condition": "PLAYER_HAS_ACHIEVEMENT Current 25",
+					"Price": 3000,
+					"AvailableStock": 1
+				}
+			},
+			"MoveEntries": [
+				{
+					"ID": "{{ModId}}.BaitEggWilly",
+					"AfterID": "(O)685"
+				}
+			]
 		}
 	]
 }

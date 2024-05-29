@@ -3,7 +3,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/Blue Chicken",
-			"FromFile": "assets/images/hattastyle/BlueChicken",
+			"FromFile": "assets/images/hattastyle/BlueChicken.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}
@@ -11,7 +11,7 @@
 		{
 			"Action": "EditImage",
 			"Target": "Animals/BabyBlue Chicken",
-			"FromFile": "assets/images/hattastyle/BlueChickenBaby",
+			"FromFile": "assets/images/hattastyle/BlueChickenBaby.png",
 			"When": {
 				"VanillaChickensMatchHattaStyle": true
 			}

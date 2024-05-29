@@ -1,32 +1,32 @@
 {
 	"Changes": [
-		// Geode Chicken
+		// Aquatic Chicken
 		{
 			"Action": "EditData",
 			"Target": "Data/FarmAnimals",
 			"Entries": {
-				"{{ModId}}.GeodeChicken": {
-					"DisplayName": "{{i18n: Chicken.GeodeChicken.Name}}",
+				"{{ModId}}.AquaticChicken": {
+					"DisplayName": "{{i18n: Chicken.AquaticChicken.Name}}",
 					"House": "Coop",
-					"EggItemIds": ["{{ModId}}.GeodeEgg", "{{ModId}}.LargeGeodeEgg"],
+					"EggItemIds": ["{{ModId}}.AquaticEgg", "{{ModId}}.LargeAquaticEgg"],
 					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
-					"BirthText": "{{i18n: Chicken.GeodeChicken.BirthText}}",
+					"BirthText": "{{i18n: Chicken.AquaticChicken.BirthText}}",
 					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
 					"ProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.GeodeEgg"
+							"ItemId": "{{ModId}}.AquaticEgg"
 						}
 					],
 					"DeluxeProduceItemIds": [
 						{
-							"ItemId": "{{ModId}}.LargeGeodeEgg"
+							"ItemId": "{{ModId}}.LargeAquaticEgg"
 						}
 					],
 					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
 					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
 					"Sound": "cluck",
-					"Texture": "{{ModId}}/GeodeChicken",
-					"BabyTexture": "{{ModId}}/GeodeChickenBaby",
+					"Texture": "{{ModId}}/AquaticChicken",
+					"BabyTexture": "{{ModId}}/AquaticChickenBaby",
 					"SleepFrame": 17,
 					"UseDoubleUniqueAnimationFrames": true,
 					"ProfessionForHappinessBoost": 2,
@@ -42,64 +42,50 @@
 			"Action": "EditData",
 			"Target": "Data/Objects",
 			"Entries": {
-				"{{ModId}}.GeodeEgg": {
-					"Name": "{{ModId}}.GeodeEgg",
-					"DisplayName": "{{i18n: Egg.Geode.Name}}",
+				"{{ModId}}.AquaticEgg": {
+					"Name": "{{ModId}}.AquaticEgg",
+					"DisplayName": "{{i18n: Egg.Aquatic.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
 					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.2}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 24,
+					"SpriteIndex": 40,
 					"Edibility": 10,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_grey"]
+					"ContextTags": ["resource_egg_item", "color_blue"]
 				},
-				"{{ModId}}.LargeGeodeEgg": {
-					"Name": "{{ModId}}.LargeGeodeEgg",
-					"DisplayName": "{{i18n: LargeEgg.Geode.Name}}",
+				"{{ModId}}.LargeAquaticEgg": {
+					"Name": "{{ModId}}.LargeAquaticEgg",
+					"DisplayName": "{{i18n: LargeEgg.Aquatic.Name}}",
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
 					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 25,
+					"SpriteIndex": 41,
 					"Edibility": 15,
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_grey"]
+					"ContextTags": ["large_resource_egg_item", "color_blue"]
 				}
 			}
 		},
-		// Hatta sprites
-		{
-			"Action": "EditImage",
-			"Target": "{{ModId}}/GeodeChicken, {{ModId}}/GeodeChickenBaby",
-			"FromFile": "assets/images/hattastyle/Hatta{{TargetWithoutPath}}.png",
-			"When": {
-				"ChickenAppearanceVersion": "HattaStyle"
-			}
-		},
-		// Allow Skins Feature
+		// Add spawn condition in fishing treasure chests
 		{
 			"Action": "EditData",
-			"Target": "Data/FarmAnimals",
-			"Fields": {
-				"{{ModId}}.GeodeChicken": {
-					"Skins": [
-						{
-							"Id": "{{ModId}}.GeodeHattaStyle",
-							"Texture": "{{ModId}}/HattaGeodeChicken",
-							"BabyTexture": "{{ModId}}/HattaGeodeChickenBaby"
-						}
-					]
+			"Target": "Mods/mistyspring.ItemExtensions/Treasure",
+			"Entries": {
+				"{{ModId}}.AquaticEgg": {
+					"ItemId": "{{ModId}}.AquaticEgg",
+					"MinStack": 1,
+					"MaxStack": 1,
+					"Chance": 0.01,
+					"Condition": "PLAYER_FISHING_LEVEL Current 3"
 				}
-			},
-			"When": {
-				"ChickenAppearanceVersion": "Both"
 			}
 		}
 	]

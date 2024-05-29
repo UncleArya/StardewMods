@@ -119,21 +119,32 @@
 				}
 			}
 		},
-		// HattaStyle Sprites
+		// Hatta sprites
 		{
 			"Action": "EditImage",
-			"Target": "{{ModId}}/MossChicken",
-			"FromFile": "assets/images/hattastyle/MossChicken.png",
+			"Target": "{{ModId}}/MossChicken, {{ModId}}/MossChickenBaby",
+			"FromFile": "assets/images/hattastyle/Hatta{{TargetWithoutPath}}.png",
 			"When": {
 				"ChickenAppearanceVersion": "HattaStyle"
 			}
 		},
+		// Allow Skins Feature
 		{
-			"Action": "EditImage",
-			"Target": "{{ModId}}/MossChickenBaby",
-			"FromFile": "assets/images/hattastyle/MossChickenBaby.png",
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Fields": {
+				"{{ModId}}.MossChicken": {
+					"Skins": [
+						{
+							"Id": "{{ModId}}.MossHattaStyle",
+							"Texture": "{{ModId}}/HattaMossChicken",
+							"BabyTexture": "{{ModId}}/HattaMossChickenBaby"
+						}
+					]
+				}
+			},
 			"When": {
-				"ChickenAppearanceVersion": "HattaStyle"
+				"ChickenAppearanceVersion": "Both"
 			}
 		}
 	]
