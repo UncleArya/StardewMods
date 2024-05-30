@@ -37,6 +37,7 @@
 
 -   **Artifact Chicken**
 -   **Iridium Chicken**
+-	**Volcano Chicken**
 
 #### MORE CHICKENS IN PROGRESS!
 
@@ -71,6 +72,7 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming Level 4 |
 | Sap | Rare drop from chopping Oak, Maple, Pine, or Mahogany trees | Foraging Level 2 |
 | Stone | Purchase from Marnie | Construct a Coop |
+| Volcano | Rare drop from volcano egg nodes in the Volcano mines | Mining Level 8 |
 | Wood | Purchase from Marnie | Construct a Coop |
 </details>
 </br>
@@ -181,7 +183,7 @@ Here are my goals as I continue to develop and update Resource Chickens:
 
 Vanilla style sprites are edits done by Tophatta and I, of existing vanilla sprites originally made by ConcernedApe. Hatta style sprites are original creations made by [Tophatta](https://www.nexusmods.com/stardewvalley/users/54445652).
 </br>
-</br>There are currently two appearance options for Resource Chickens sprites using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098):
+</br>There are currently two appearance options for Resource Chickens sprites using [GMCM](https://www.nexusmods.com/stardewvalley/mods/5098). You can also select 'Both' in the config options to have chicken sprites be randomized between both styles using the 1.6 Skins feature (not all chickens have 2 styles).
 </br>
 </br>**Vanilla Style:** recolouring and edits done by Tophatta and I of existing vanilla sprites originally made by ConcernedApe.
 

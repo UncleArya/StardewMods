@@ -5,7 +5,7 @@
 		// Appearance & Behaviour
 		"ChickenAppearanceVersion": {
 			"AllowValues": "VanillaStyle, HattaStyle, Both",
-			"Default": "Both",
+			"Default": "VanillaStyle",
 			"Section": "AppearanceBehaviour"
 		},
 		"VanillaChickensMatchHattaStyle": {
@@ -268,11 +268,17 @@
 			"Target": "{{ModId}}/ArtifactChicken, {{ModId}}/ArtifactChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
-		// Aquatic Chicken
+		// Aquatic Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/AquaticChicken, {{ModId}}/AquaticChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
+		// Aquatic Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaAquaticChicken, {{ModId}}/HattaAquaticChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
 		// Bait Chicken - Vanilla
 		{
@@ -286,11 +292,17 @@
 			"Target": "{{ModId}}/HattaBaitChicken, {{ModId}}/HattaBaitChickenBaby",
 			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
-		// Bomb Chicken
+		// Bomb Chicken - Vanilla
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/BombChicken, {{ModId}}/BombChickenBaby",
 			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
+		// Bomb Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaBombChicken, {{ModId}}/HattaBombChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
 		// Bone Chicken - Vanilla
 		{
@@ -472,6 +484,12 @@
 			"Target": "{{ModId}}/HattaStoneChicken, {{ModId}}/HattaStoneChickenBaby",
 			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
+		// Volcano Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/VolcanoChicken, {{ModId}}/VolcanoChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
 		// Wood Chicken - Vanilla
 		{
 			"Action": "Load",
@@ -508,7 +526,7 @@
 		// Level 5
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/artifact.json, assets/chickens/iridium.json"
+			"FromFile": "assets/chickens/artifact.json, assets/chickens/iridium.json, assets/chickens/volcano.json"
 		},
 		// Quests & Special Orders
 		{

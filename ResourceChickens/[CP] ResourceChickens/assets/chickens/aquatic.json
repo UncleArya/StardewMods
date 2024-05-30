@@ -74,6 +74,34 @@
 				}
 			}
 		},
+		// Hatta sprites
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/AquaticChicken, {{ModId}}/AquaticChickenBaby",
+			"FromFile": "assets/images/hattastyle/Hatta{{TargetWithoutPath}}.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		// Allow Skins Feature
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Fields": {
+				"{{ModId}}.AquaticChicken": {
+					"Skins": [
+						{
+							"Id": "{{ModId}}.AquaticHattaStyle",
+							"Texture": "{{ModId}}/HattaAquaticChicken",
+							"BabyTexture": "{{ModId}}/HattaAquaticChickenBaby"
+						}
+					]
+				}
+			},
+			"When": {
+				"ChickenAppearanceVersion": "Both"
+			}
+		},
 		// Add spawn condition in fishing treasure chests
 		{
 			"Action": "EditData",

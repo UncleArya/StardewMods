@@ -74,6 +74,34 @@
 				}
 			}
 		},
+		// Hatta sprites
+		{
+			"Action": "EditImage",
+			"Target": "{{ModId}}/BombChicken, {{ModId}}/BombChickenBaby",
+			"FromFile": "assets/images/hattastyle/Hatta{{TargetWithoutPath}}.png",
+			"When": {
+				"ChickenAppearanceVersion": "HattaStyle"
+			}
+		},
+		// Allow Skins Feature
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Fields": {
+				"{{ModId}}.BombChicken": {
+					"Skins": [
+						{
+							"Id": "{{ModId}}.BombHattaStyle",
+							"Texture": "{{ModId}}/HattaBombChicken",
+							"BabyTexture": "{{ModId}}/HattaBombChickenBaby"
+						}
+					]
+				}
+			},
+			"When": {
+				"ChickenAppearanceVersion": "Both"
+			}
+		},
 		// Adds Bomb Egg for sale with the Dwarf
 		{
 			"Action": "EditData",

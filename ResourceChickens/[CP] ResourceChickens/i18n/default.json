@@ -188,5 +188,10 @@ Lines Changed:
 	"Chicken.AquaticChicken.Name": "Aquatic Chicken",
 	"Chicken.AquaticChicken.BirthText": "A baby aquatic chicken was born!",
 	"Egg.Aquatic.Name": "Aquatic Egg",
-	"LargeEgg.Aquatic.Name": "Large Aquatic Egg"
+	"LargeEgg.Aquatic.Name": "Large Aquatic Egg",
+
+	"Chicken.VolcanoChicken.Name": "Volcano Chicken",
+	"Chicken.VolcanoChicken.BirthText": "A baby volcano chicken was born!",
+	"Egg.Volcano.Name": "Volcano Egg",
+	"LargeEgg.Volcano.Name": "Large Volcano Egg"
 }
