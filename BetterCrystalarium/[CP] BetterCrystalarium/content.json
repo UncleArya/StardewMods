@@ -1,6 +1,5 @@
 {
 	"Format": "2.1.0",
-	"ConfigSchema": {},
 	"Changes": [
 		{
 			"Action": "EditData",
@@ -105,7 +104,7 @@
 						}
 					],
 					"UseFirstValidOutput": true,
-					"MinutesUntilReady": 3300
+					"MinutesUntilReady": 3200
 				},
 				// Iron Bar
 				"{{ModId}}.IronBar": {
