@@ -1,3 +1,5 @@
+![banner](https://github.com/UncleArya/StardewMods/assets/100550741/84c49aea-20d4-43d9-986b-ee7cef8d5a59)
+
 # Better Crystalarium
 
 #### Process more items in the Crystalarium in a balanced way, such as Prismatic Shards, Mystery Boxes, Artifact Troves, and more!
