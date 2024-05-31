@@ -37,7 +37,8 @@
 
 -   **Artifact Chicken**
 -   **Iridium Chicken**
--	**Volcano Chicken**
+-   **Radioactive Chicken**
+-   **Volcano Chicken**
 
 #### MORE CHICKENS IN PROGRESS!
 
@@ -52,24 +53,25 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 	
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
-| Artifact | Acquirable from the Desert Trader once a quest from Gunther is completed, or once the player reaches Mining Level 8 if quest isn't completed | Mining Level 5 |
 | Aquatic | Forage around the Beach Tide Pools the day of or day after rain | Fishing Level 3 |
+| Artifact | Complete a quest from Gunther once reaching Mining Level 5, or trade with the Desert Trader at Mining Level 8 if quest isn't completed | Mining Level 5 |
 | Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging Level 4 |
-| Bomb | Rare drop from barels in the Skull Cavern, becomes purchasable from the Dwarf after 3 hearts of friendship with them | Mining Level 4 |
-| Bait | Rare chance of appearing in fishing treasure chests, becomes purchasable from Willy after getting the Ol' Mariner Achievement | Fishing Level 2 |
+| Bomb | Rare drop from barels in the Skull Cavern, also becomes purchasable from the Dwarf after 3 hearts of friendship with them | Mining Level 4 |
+| Bait | Rare chance of appearing in fishing treasure chests, also becomes purchasable from Willy after getting the Ol' Mariner Achievement | Fishing Level 2 |
 | Clay | Purchase from Marnie | Construct a Coop |
 | Coal | Purchase from Marnie | Construct a Coop |
 | Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming Level 3 |
-| Farmer | Complete a quest from Marnie after reaching 3 hearts of friendship with her, egg becomes purchasable from Marnie after the quest is complete | Farming Level 4 |
+| Farmer | Complete a quest from Marnie after reaching 3 hearts of friendship with her, also becomes purchasable from Marnie after the quest is complete | Farming Level 4 |
 | Fiber | Drop from breaking weeds in the Forest or Railroad, forage in the Secret Woods | Forage Level 3 |
 | Gold | Craft and incubate a Gold Egg Fusion Chamber | Farming Level 5 |
-| Geode | Rare drop from geode egg nodes in the Mines and Skull Cavern, can also spawn in the Quarry | Mining Level 3 |
+| Geode | Drop from rare custom mining nodes in the Mines and Skull Cavern, can also spawn in the Quarry | Mining Level 3 |
 | Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Level 3 |
 | Iridium | Craft and incubate an Iridium Egg Fusion Chamber | Farming Level 6 |
 | Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming Level 4 |
-| Monster | Drop from rare custom Monster Nest nodes in the Quarry mine, becomes purchasable from Krobus after 3 hearts of friendship with them | Combat Level 5 |
+| Monster | Drop from rare custom monster nest mining nodes in the Quarry mine, also becomes purchasable from Krobus after 3 hearts of friendship with them | Combat Level 5 |
 | Moss | Rare drop from shaking/chopping green rain trees, destroying green rain weeds, forage in the Forest day after green rain, destroying weeds in the forest day after normal rain | Foraging Level 3 |
 | Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming Level 4 |
+| Radioactive | Drop from rare custom mining nodes in the dangerous mode Mines and dangerous mode Skull Cavern | Combat Level 10 |
 | Sap | Rare drop from chopping Oak, Maple, Pine, or Mahogany trees | Foraging Level 2 |
 | Stone | Purchase from Marnie | Construct a Coop |
 | Volcano | Rare drop from volcano egg nodes in the Volcano mines | Mining Level 8 |
@@ -211,7 +213,9 @@ This mod relies entirely on [Content Patcher](https://www.nexusmods.com/stardewv
 
 Works with [Machine Progression System](https://www.nexusmods.com/stardewvalley/mods/21720). The mod author has added support for resource eggs into their mayo machines!
 
-Please let me know if you come across any issues.
+[A custom item bag](https://www.nexusmods.com/stardewvalley/articles/370) has been created by [Spartan586](https://next.nexusmods.com/profile/Spartan586/about-me) for the mod [Item Bags](https://www.nexusmods.com/stardewvalley/mods/5382).
+
+Please let me know if you come across any compatibility issues.
 
 ### ![install](https://github.com/UncleArya/StardewMods/assets/100550741/4517bdc4-2d2d-4263-81bf-02dd1bc0d7e1)
 

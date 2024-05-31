@@ -23,7 +23,7 @@
 					"MineSpawns": [
 						{
 							"Floors": "11/29, 121/-999",
-							"Type": "All",
+							"Type": "Normal",
 							"Condition": "PLAYER_FORAGING_LEVEL Current 2",
 							"SpawnFrequency": 0.001
 						}
@@ -65,7 +65,7 @@
 					"MineSpawns": [
 						{
 							"Floors": "1/-999",
-							"Type": "All",
+							"Type": "Normal",
 							"Condition": "PLAYER_MINING_LEVEL Current 3",
 							"SpawnFrequency": 0.0015
 						}
@@ -89,7 +89,7 @@
 					"MineSpawns": [
 						{
 							"Floors": "121/-999",
-							"Type": "All",
+							"Type": "Normal",
 							"Condition": "PLAYER_FORAGING_LEVEL Current 4",
 							"SpawnFrequency": 0.001
 						}
@@ -113,7 +113,7 @@
 					"MineSpawns": [
 						{
 							"Floors": "1/10",
-							"Type": "All",
+							"Type": "Normal",
 							"Condition": "PLAYER_FORAGING_LEVEL Current 4",
 							"SpawnFrequency": 0.1
 						}
@@ -162,7 +162,7 @@
 					"MineSpawns": [
 						{
 							"Floors": "121/-999",
-							"Type": "All",
+							"Type": "Normal",
 							"Condition": "PLAYER_MINING_LEVEL Current 4",
 							"SpawnFrequency": 0.2
 						}
@@ -190,6 +190,31 @@
 							"Type": "Volcano",
 							"Condition": "PLAYER_MINING_LEVEL Current 8",
 							"SpawnFrequency": 0.003
+						}
+					]
+				},
+				// Dangerous Mines - Radioactive Egg Node
+				"{{ModId}}.DangerousMineRadioactiveEgg": {
+					"DisplayName": "Radioactive Egg Node",
+					"Type": "Stone",
+					"Texture": "{{ModId}}/Items",
+					"SpriteIndex": 4,
+					"Width": 1,
+					"Height": 1,
+					"Health": 24,
+					"Tool": "Pickaxe",
+					"ItemDropped": "{{ModId}}.RadioactiveEgg",
+					"MinDrops": 1,
+					"MaxDrops": 1,
+					"Debris": "stone",
+					"Sound": "hammer",
+					"BreakingSound": "stoneCrack",
+					"MineSpawns": [
+						{
+							"Floors": "1/-999",
+							"Type": "Qi",
+							"Condition": "PLAYER_COMBAT_LEVEL Current 10",
+							"SpawnFrequency": 0.005
 						}
 					]
 				}

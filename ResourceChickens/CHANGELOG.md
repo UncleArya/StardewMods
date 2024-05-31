@@ -4,10 +4,10 @@
 
 -   Added new Level 3 Chickens (Aquatic, Farmer)
 -   Added new Level 4 Chickens (Bomb, Monster)
--   Added new Level 5 Chickens (Artifact, Iridium, Volcano)
+-   Added new Level 5 Chickens (Artifact, Iridium, Radioactive, Volcano)
 -   Created quest to obtain a Farmer Chicken Egg
 -   Created quest to obtain an Artifact Chicken Egg
--   Added spawn conditions for Aquatic, Bomb, Monster, and Volcano Chicken Eggs
+-   Added spawn conditions for Aquatic, Bomb, Monster, Radioactive, and Volcano Chicken Eggs
 -   Added craftable Iridium Fusion Chamber
 -   Changed condition for obtaining Bait Chicken Egg using the new custom fishing treasure feature in [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357)
 -   Players must update [Item Extensions](https://www.nexusmods.com/stardewvalley/mods/20357) to version 1.6 (or higher) for this feature

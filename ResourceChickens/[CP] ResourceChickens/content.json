@@ -262,12 +262,6 @@
 			"Target": "{{ModId}}/ClayShopTexture, {{ModId}}/CoalShopTexture, {{ModId}}/StoneShopTexture, {{ModId}}/WoodShopTexture",
 			"FromFile": "assets/images/shops/{{TargetWithoutPath}}.png"
 		},
-		// Artifact Chicken
-		{
-			"Action": "Load",
-			"Target": "{{ModId}}/ArtifactChicken, {{ModId}}/ArtifactChickenBaby",
-			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
-		},
 		// Aquatic Chicken - Vanilla
 		{
 			"Action": "Load",
@@ -279,6 +273,12 @@
 			"Action": "Load",
 			"Target": "{{ModId}}/HattaAquaticChicken, {{ModId}}/HattaAquaticChickenBaby",
 			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
+		// Artifact Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/ArtifactChicken, {{ModId}}/ArtifactChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
 		},
 		// Bait Chicken - Vanilla
 		{
@@ -460,6 +460,18 @@
 			"Target": "{{ModId}}/HattaQuartzChicken, {{ModId}}/HattaQuartzChickenBaby",
 			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
+		// Radioactive Chicken - Vanilla
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/RadioactiveChicken, {{ModId}}/RadioactiveChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
+		// Radioactive Chicken - Hatta
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/HattaRadioactiveChicken, {{ModId}}/HattaRadioactiveChickenBaby",
+			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
+		},
 		// Sap Chicken - Vanilla
 		{
 			"Action": "Load",
@@ -526,7 +538,7 @@
 		// Level 5
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/artifact.json, assets/chickens/iridium.json, assets/chickens/volcano.json"
+			"FromFile": "assets/chickens/artifact.json, assets/chickens/iridium.json, assets/chickens/radioactive.json, assets/chickens/volcano.json"
 		},
 		// Quests & Special Orders
 		{

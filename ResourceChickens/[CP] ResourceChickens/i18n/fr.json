@@ -1,7 +1,7 @@
 /*
-~Notes to translators~ Update 0.3.0
-Lines Added: 
-Lines Changed: 
+~Notes to translators~ Update 0.4.0
+Lines Added: 44-59, 93-108, 118, 130-154
+Lines Changed: 159
 */
 // Thank you translators!!
 {
@@ -41,6 +41,22 @@ Lines Changed:
 	"Chicken.QuartzChicken.BirthText": "Un poussin de Quartz est né!",
 	"Chicken.SapChicken.Name": "Poulet de Sève",
 	"Chicken.SapChicken.BirthText": "Un poussin de Sève est né!",
+	"Chicken.AquaticChicken.Name": "Aquatic Chicken",
+	"Chicken.AquaticChicken.BirthText": "A baby aquatic chicken was born!",
+	"Chicken.ArtifactChicken.Name": "Artifact Chicken",
+	"Chicken.ArtifactChicken.BirthText": "A baby artifact chicken was born!",
+	"Chicken.BombChicken.Name": "Bomb Chicken",
+	"Chicken.BombChicken.BirthText": "A baby bomb chicken was born! ...that sounds unsafe.",
+	"Chicken.FarmerChicken.Name": "Farmer Chicken",
+	"Chicken.FarmerChicken.BirthText": "A baby farmer chicken was born!",
+	"Chicken.IridiumChicken.Name": "Iridium Chicken",
+	"Chicken.IridiumChicken.BirthText": "A baby iridium chicken was born!",
+	"Chicken.MonsterChicken.Name": "Monster Chicken",
+	"Chicken.MonsterChicken.BirthText": "A baby monster chicken was born!",
+	"Chicken.RadioactiveChicken.Name": "Radioactive Chicken",
+	"Chicken.RadioactiveChicken.BirthText": "A baby radioactive chicken was born!",
+	"Chicken.VolcanoChicken.Name": "Volcano Chicken",
+	"Chicken.VolcanoChicken.BirthText": "A baby volcano chicken was born!",
 
 	// Eggs
 	"Egg.Clay.Name": "Oeuf d'Argile",
@@ -74,6 +90,22 @@ Lines Changed:
 	"LargeEgg.Quartz.Name": "Gros oeuf de Quartz",
 	"Egg.Sap.Name": "Oeuf de Sève",
 	"LargeEgg.Sap.Name": "Gros oeuf de Sève",
+	"Egg.Aquatic.Name": "Aquatic Egg",
+	"LargeEgg.Aquatic.Name": "Large Aquatic Egg",
+	"Egg.Artifact.Name": "Artifact Egg",
+	"LargeEgg.Artifact.Name": "Large Artifact Egg",
+	"Egg.Bomb.Name": "Bomb Egg",
+	"LargeEgg.Bomb.Name": "Large Bomb Egg",
+	"Egg.Farmer.Name": "Farmer Egg",
+	"LargeEgg.Farmer.Name": "Large Farmer Egg",
+	"Egg.Iridium.Name": "Iridium Egg",
+	"LargeEgg.Iridium.Name": "Large Iridium Egg",
+	"Egg.Monster.Name": "Monster Egg",
+	"LargeEgg.Monster.Name": "Large Monster Egg",
+	"Egg.Radioactive.Name": "Radioactive Egg",
+	"LargeEgg.Radioactive.Name": "Large Radioactive Egg",
+	"Egg.Volcano.Name": "Volcano Egg",
+	"LargeEgg.Volcano.Name": "Large Volcano Egg",
 
 	// Objects
 	"FusionChamber.Copper.Name": "Chambre de fusion d'oeuf de Cuivre",
@@ -83,6 +115,7 @@ Lines Changed:
 	"FusionChamber.Gold.Name": "Chambre de fusion d'oeuf d'Or",
 	"FusionChamber.Iron.Name": "Chambre de fusion d'oeuf de Fer",
 	"FusionChamber.Quartz.Name": "Chambre de fusion d'oeuf de Quartz",
+	"FusionChamber.Iridium.Name": "Iridium Egg Fusion Chamber",
 
 	// Big Craftables
 	"BigCraftable.ResourceEggConverter.Name": "Convertisseur d'oeuf de ressources",
@@ -93,10 +126,37 @@ Lines Changed:
 	"GiantCoop.Building.Name": "Poulailler géant",
 	"GiantCoop.Building.Description": "Acceuil 24 animaux de poulailler. Ajoute un second incubateur",
 
+	// Quests & Special Orders
+	"Quest.FirstFarmerEgg.Title": "Marnie Needs Seeds",
+	"Quest.FirstFarmerEgg.Description": "Marnie has a curious new chicken that she needs your help finding food for. Mixed seeds seem to be all it will eat.",
+	"Quest.FirstFarmerEgg.Hint": "Bring Marnie 30 Mixed Seeds",
+	"Quest.FirstFarmerEgg.Reaction": "Thanks! I think this is exactly what the chicken needed. It laid an egg this morning, why don't you have it. [UncleArya.ResourceChickens.FarmerEgg]",
+	"Quest.FirstArtifactEgg.Name": "Acts of Kindness",
+	"Quest.FirstArtifactEgg.Text": "Gunther would like your help completing some random acts of kindness around the valley. He has a new type of chicken egg to give you once you are done.",
+	"Quest.FirstArtifactEgg.Objective1.Text": "Give a geode egg to Linus",
+	"Quest.FirstArtifactEgg.Objective2.Text": "Give a cactus fruit to Lewis",
+	"Quest.FirstArtifactEgg.Objective3.Text": "Give a flower to Sandy",
+	"Quest.FirstArtifactEgg.Objective4.Text": "Give a diamond to Krobus",
+	"Quest.FirstArtifactEgg.Objective5.Text": "Give an emerald to the Dwarf",
+
+	// Mail
+	"Mail.BombEgg.EggForSale.Title": "Egg Found in Mines",
+	"Mail.BombEgg.EggForSale.Text": "Hello friend,^I found a strange egg in the mines. You can buy it from me because it is dangerous down there and I don't want you to get hurt.^    -Dwarf",
+	"Mail.FarmerEgg.QuestStart.Title": "Marnie Needs Seeds",
+	"Mail.FarmerEgg.QuestStart.Text": "Hello @,^I have come across a strange new kind of chicken that I think you would be very interested in. However, it seems to only want to eat my mixed seeds and I am all out. Could you please bring me some so I can keep it fed? Thanks!^    -Marnie",
+	"Mail.FarmerEgg.EggForSale.Title": "New Egg for Sale",
+	"Mail.FarmerEgg.EggForSale.Text": "Hey @!^Thanks again for helping me feed my new chicken. It sure is a cute one, isn't it? It looks like a little farmer! By the way, if you ever run out of their eggs you can now buy one from me. Have a great day.^    -Marnie",
+	"Mail.MonsterEgg.EggForSale.Title": "Krobus Found Something",
+	"Mail.MonsterEgg.EggForSale.Text": "@,^One of your objects washed into the sewer yesterday. I think it came from a type of animal you have on your farm. You can have it if you want.^    -Krobus [letterbg 2]",
+	"Mail.ArtifactEgg.QuestStart.Title": "Random Acts of Kindness",
+	"Mail.ArtifactEgg.QuestStart.Text": "Hello Farmer @,^You have been doing so many kind things for me by donating all these fascinating artifacts to the museum. I would like your help in spreading that kindness throughout the valley. If you can help me, I could give you this unique chicken egg I recently discovered.^    -Gunther",
+	"Mail.ArtifactEgg.QuestComplete.Title": "Kindness Achieved",
+	"Mail.ArtifactEgg.QuestComplete.Text": "Hey Farmer @,^Thank you so much for helping me brighten everyone's day! Here is a chicken egg I think you might be interested in. The Desert Trader also told me she was going to start offering these for trades if you wanted more of them.^    -Gunther",
+
 	// Config
 	// Appearance & Behaviour
 	"config.ChickenAppearanceVersion.name": "Apparence des poulets de ressources",
-	"config.ChickenAppearanceVersion.description": "Détermine l'apparence des poulets de ressources. Les images de références sont sur Nexus ou dans le fichier de mod.\nVanillaStyle: apparence de poulet classqiue recoloré par UncleArya\nHattaStyle: apparence de poulet customisé, fait par Tophatta",
+	/*CHANGED*/ "config.ChickenAppearanceVersion.description": "Détermine l'apparence des poulets de ressources. Les images de références sont sur Nexus ou dans le fichier de mod.\nVanillaStyle: apparence de poulet classqiue recoloré par UncleArya\nHattaStyle: apparence de poulet customisé, fait par Tophatta\nBoth: randomly chooses from both styles",
 	"config.VanillaChickensMatchHattaStyle.name": "Apparence Hatta des poulets classiques",
 	"config.VanillaChickensMatchHattaStyle.description": "L'apparances des poulets classiques sera remplacé par celle modifiée fait par Tophatta. S'accordant au style Hatta des poulets de ressources. Les images de références sont sur Nexus ou dans le fichier de mod.",
 	"config.ChickensCanSwim.name": "Les poulets peuvent nager",
