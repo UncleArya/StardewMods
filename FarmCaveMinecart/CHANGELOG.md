@@ -1,3 +1,10 @@
+# 1.5.0
+
+-	Added compatibility with [Additional Farm Cave](https://www.nexusmods.com/stardewvalley/mods/14109)
+-	Additional Farm Cave: Minecart is in the additional cave area unlocked after the Demetrius farm cave event
+-	Additional Farm Cave: Return spawn is at the back of the entrance cave, due to how that mod patches the vanilla Farm Cave
+-	Updated Content Patcher format version
+
 # 1.4.0
 
 -	added compatibility with [Hot Spring Farm Cave](https://www.nexusmods.com/stardewvalley/mods/5849)
