@@ -10,21 +10,24 @@ Only requires [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/191
 
 ### Items and Processing Times
 
-| Item               | Processing Time |
-| ------------------ | --------------- |
-| Prismatic Shard    | 17 Days         |
-| Pearl              | 21 Days         |
-| Artifact           | 7 Days          |
-| Artifact Trove     | 3 Days          |
-| Mystery Box        | 4 Days          |
-| Golden Mystery Box | 8 Days          |
-| Totems             | 3 Days          |
-| Copper Bar         | 13 Hours        |
-| Iron Bar           | 1 Day           |
-| Gold Bar           | 2 Days          |
-| Iridium Bar        | 8.5 Days        |
-| Radioactive Bar    | 25 Days         |
-| Geode              | 13 Hours        |
-| Frozen Geode       | 1 Day           |
-| Magma Geode        | 1.5 Days        |
-| Omni Geode         | 2 Days          |
+| Item                    | Processing Time |
+| ----------------------- | --------------- |
+| Prismatic Shard         | 17 Days         |
+| Pearl                   | 21 Days         |
+| Artifact                | 7 Days          |
+| Artifact Trove          | 3 Days          |
+| Mystery Box             | 4 Days          |
+| Golden Mystery Box      | 8 Days          |
+| Totems                  | 3 Days          |
+| Copper Bar              | 13 Hours        |
+| Iron Bar                | 1 Day           |
+| Gold Bar                | 2 Days          |
+| Iridium Bar             | 8.5 Days        |
+| Radioactive Bar         | 25 Days         |
+| Geode                   | 13 Hours        |
+| Frozen Geode            | 1 Day           |
+| Magma Geode             | 1.5 Days        |
+| Omni Geode              | 2 Days          |
+| Golden Coconut          | 3 Days          |
+| Wood, Stone, Clay, Coal | 20 Minutes      |
+| Hardwood                | 90 Minutes      |

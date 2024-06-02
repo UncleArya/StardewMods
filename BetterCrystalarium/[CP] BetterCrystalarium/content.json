@@ -405,6 +405,156 @@
 					],
 					"UseFirstValidOutput": true,
 					"MinutesUntilReady": 33300
+				},
+				// Golden Coconut
+				"{{ModId}}.GoldenCoconut": {
+					"Id": "{{ModId}}.GoldenCoconut",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)791",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)791",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)791",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 4800
+				},
+				// Wood
+				"{{ModId}}.Wood": {
+					"Id": "{{ModId}}.Wood",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)388",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)388",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)388",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 20
+				},
+				// Hardwood
+				"{{ModId}}.Hardwood": {
+					"Id": "{{ModId}}.Hardwood",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)709",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)709",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)709",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 90
+				},
+				// Stone
+				"{{ModId}}.Stone": {
+					"Id": "{{ModId}}.Stone",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)390",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)390",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)390",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 20
+				},
+				// Clay
+				"{{ModId}}.Clay": {
+					"Id": "{{ModId}}.Clay",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)330",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)330",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)330",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 20
+				},
+				// Coal
+				"{{ModId}}.Coal": {
+					"Id": "{{ModId}}.Coal",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)382",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)382",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)382",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 20
 				}
 			},
 			"MoveEntries": [
@@ -470,6 +620,30 @@
 				},
 				{
 					"ID": "{{ModId}}.Pearl",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.GoldenCoconut",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.Wood",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.Hardwood",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.Stone",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.Clay",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.Coal",
 					"ToPosition": "Top"
 				}
 			]
