@@ -53,11 +53,11 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 	
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
-| Aquatic | Forage around the Beach Tide Pools the day of or day after rain | Fishing Level 3 |
+| Aquatic | Forage around the Beach Tide Pools the day after rain or storms | Fishing Level 3 |
 | Artifact | Complete a quest from Gunther once reaching Mining Level 5, or trade with the Desert Trader at Mining Level 8 if quest isn't completed | Mining Level 5 |
 | Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging Level 4 |
 | Bomb | Rare drop from barels in the Skull Cavern, also becomes purchasable from the Dwarf after 3 hearts of friendship with them | Mining Level 4 |
-| Bait | Rare chance of appearing in fishing treasure chests, also becomes purchasable from Willy after getting the Ol' Mariner Achievement | Fishing Level 2 |
+| Bait | Forage around the Beach Tide Pools the day it is raining, also becomes purchasable from Willy after getting the Ol' Mariner Achievement | Fishing Level 2 |
 | Clay | Purchase from Marnie | Construct a Coop |
 | Coal | Purchase from Marnie | Construct a Coop |
 | Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming Level 3 |

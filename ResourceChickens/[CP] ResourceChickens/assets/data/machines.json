@@ -147,6 +147,26 @@
 									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
 									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
 									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)685",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)774",
+									"Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Wild Bait",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)DeluxeBait",
+									"Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Deluxe Bait",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
 								}
 							],
 							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
@@ -163,6 +183,26 @@
 							"OutputItem": [
 								{
 									"ItemId": "(O)685",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)685",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)774",
+									"Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Wild Bait",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)DeluxeBait",
+									"Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Deluxe Bait",
 									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
 									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
 									"IncrementMachineParentSheetIndex": 1

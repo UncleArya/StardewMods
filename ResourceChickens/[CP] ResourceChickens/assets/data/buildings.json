@@ -166,6 +166,29 @@
 			"Entries": {
 				"{{ModId}}.GiantCoop": "Building/-15 0/Roof/-10 5/Trim/-10 5"
 			}
+		},
+		// Maintain Deluxe Coop Appearance
+		{
+			"Action": "EditData",
+			"Target": "Data/Buildings",
+			"Fields": {
+				"{{ModId}}.GiantCoop": {
+					"Texture": "Buildings\\Deluxe Coop"
+				}
+			},
+			"When": {
+				"GiantCoopKeepsDeluxeDesign": true
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/PaintData",
+			"Entries": {
+				"{{ModId}}.GiantCoop": "Building/-25 0/Roof/-15 5/Trim/-25 0"
+			},
+			"When": {
+				"GiantCoopKeepsDeluxeDesign": true
+			}
 		}
 	]
 }

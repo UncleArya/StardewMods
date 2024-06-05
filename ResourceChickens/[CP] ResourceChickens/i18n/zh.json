@@ -1,6 +1,6 @@
 /*
 ~Notes to translators~ Update 0.4.0
-Lines Added: 44-59, 93-108, 118, 130-154
+Lines Added: 44-59, 93-108, 118, 130-154, 167-168
 Lines Changed: 159
 */
 // Thank you translators!!
@@ -164,6 +164,8 @@ Lines Changed: 159
 	"config.section.AppearanceBehaviour.name": "外观与行为",
 	"config.ObjectAppearanceVersion.name": "物品外观风格",
 	"config.ObjectAppearanceVersion.description": "选择你希望用于资源蛋转换器和蛋融合室等物体的精灵风格。\n参考Nexus上的图片和模组文件夹中的图片。\nVanillaStyle：由UncleArya和Tophatta创作的受vanilla启发的精灵\nHattaStyle：由Tophatta根据Gwen的中世纪工艺品灵感制作的自定义精灵",
+	"config.GiantCoopKeepsDeluxeDesign.name": "Keep Deluxe Coop Appearance",
+	"config.GiantCoopKeepsDeluxeDesign.description": "When enabled, the Giant Coop upgrade will only change the inside of the coop while retaining the external appearance of the Deluxe Coop",
 	// Difficulty & Balancing Scaling
 	"config.Level1ChickenRequiredBuilding.name": "所需建筑等级",
 	"config.Level1ChickenRequiredBuilding.description": "从玛妮那里购买资源鸡所需的鸡舍等级\n默认：1级鸡舍",

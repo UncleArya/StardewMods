@@ -23,6 +23,11 @@
 			"Default": "false",
 			"Section": "AppearanceBehaviour"
 		},
+		"GiantCoopKeepsDeluxeDesign": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Section": "AppearanceBehaviour"
+		},
 		// Difficulty Scaling
 		"Level1ChickenRequiredBuilding": {
 			"AllowValues": "Coop, Big Coop, Deluxe Coop",

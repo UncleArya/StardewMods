@@ -107,12 +107,25 @@
 			"Action": "EditData",
 			"Target": "Mods/mistyspring.ItemExtensions/Treasure",
 			"Entries": {
-				"{{ModId}}.AquaticEgg": {
+				"{{ModId}}.AquaticEggTreasure": {
 					"ItemId": "{{ModId}}.AquaticEgg",
 					"MinStack": 1,
 					"MaxStack": 1,
-					"Chance": 0.01,
+					"Chance": 0.03,
 					"Condition": "PLAYER_FISHING_LEVEL Current 3"
+				}
+			}
+		},
+		// Add spawn condition in panning
+		{
+			"Action": "EditData",
+			"Target": "Mods/mistyspring.ItemExtensions/Panning",
+			"Entries": {
+				"{{ModId}}.AquaticEggPanning": {
+					"ItemId": "{{ModId}}.AquaticEgg",
+					"MinStack": 1,
+					"MaxStack": 1,
+					"Chance": 0.05
 				}
 			}
 		}

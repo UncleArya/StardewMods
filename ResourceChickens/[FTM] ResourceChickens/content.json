@@ -323,31 +323,31 @@
 				},
 				"DaysUntilSpawnsExpire": 1
 			},
-			// Aquatic Egg - Beach
+			// Bait Egg - Beach
 			{
 				"SpringItemIndex": [
 					{
 						"Category": "Object",
-						"Name": "UncleArya.ResourceChickens.AquaticEgg",
+						"Name": "UncleArya.ResourceChickens.BaitEgg",
 						"PercentChanceToSpawn": 100
 					}
 				],
 				"SummerItemIndex": [
 					{
 						"Category": "Object",
-						"Name": "UncleArya.ResourceChickens.AquaticEgg",
+						"Name": "UncleArya.ResourceChickens.BaitEgg",
 						"PercentChanceToSpawn": 100
 					}
 				],
 				"FallItemIndex": [
 					{
 						"Category": "Object",
-						"Name": "UncleArya.ResourceChickens.AquaticEgg",
+						"Name": "UncleArya.ResourceChickens.BaitEgg",
 						"PercentChanceToSpawn": 100
 					}
 				],
 				"WinterItemIndex": null,
-				"UniqueAreaID": "ResourceChickens.Beach.Aquatic.RainToday",
+				"UniqueAreaID": "ResourceChickens.Beach.Bait.RainToday",
 				"MapName": "Beach",
 				"MinimumSpawnsPerDay": 1,
 				"MaximumSpawnsPerDay": 1,
@@ -371,7 +371,7 @@
 					"WeatherYesterday": [],
 					"WeatherToday": ["Rain", "Storm"],
 					"WeatherTomorrow": [],
-					"GameStateQueries": ["PLAYER_FISHING_LEVEL Current 3"],
+					"GameStateQueries": ["PLAYER_FISHING_LEVEL Current 2"],
 					"CPConditions": {},
 					"EPUPreconditions": [],
 					"LimitedNumberOfSpawns": null

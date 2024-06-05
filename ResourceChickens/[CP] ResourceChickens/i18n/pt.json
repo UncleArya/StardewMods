@@ -1,6 +1,6 @@
 /*
 ~Notes to translators~ Update 0.4.0
-Lines Added: 44-59, 93-108, 118, 130-154
+Lines Added: 44-59, 93-108, 118, 130-154, 167-168
 Lines Changed: 159
 */
 // Thank you translators!!
@@ -156,7 +156,7 @@ Lines Changed: 159
 	// Config
 	// Appearance & Behaviour
 	"config.ChickenAppearanceVersion.name": "Estilo de Aparência da Galinha",
-	"config.ChickenAppearanceVersion.description": "Escolha o estilo de sprite que você gostaria para suas galinhas de recursos. Imagens de referência no Nexus e na pasta do mod.\nEstiloVanilla: sprites de galinha vanilla recoloridos por UncleArya\nEstiloHatta: sprites de galinha personalizados feitos por Tophatta\nBoth: randomly chooses from both styles",
+	/*CHANGED*/ "config.ChickenAppearanceVersion.description": "Escolha o estilo de sprite que você gostaria para suas galinhas de recursos. Imagens de referência no Nexus e na pasta do mod.\nEstiloVanilla: sprites de galinha vanilla recoloridos por UncleArya\nEstiloHatta: sprites de galinha personalizados feitos por Tophatta\nBoth: randomly chooses from both styles",
 	"config.VanillaChickensMatchHattaStyle.name": "Galinhas Vanilla no Estilo Hatta",
 	"config.VanillaChickensMatchHattaStyle.description": "Sprites de galinha vanilla serão substituídos por sprites de galinha personalizados feitos por Tophatta. Combina com as Galinhas de Recursos definidas para o Estilo Hatta. Imagens de referência no Nexus e na pasta do mod.",
 	"config.ChickensCanSwim.name": "Galinhas Podem Nadar",
@@ -164,9 +164,11 @@ Lines Changed: 159
 	"config.section.AppearanceBehaviour.name": "Aparência & Comportamento",
 	"config.ObjectAppearanceVersion.name": "Estilo de Aparência de Objetos",
 	"config.ObjectAppearanceVersion.description": "Escolha o estilo de sprite que você gostaria para objetos como o Conversor de Ovos de Recursos e câmaras de fusão de ovos.\nImagens de referência no Nexus e na pasta do mod.\nEstiloVanilla: sprites inspirados em vanilla criados por UncleArya e Tophatta\nEstiloHatta: sprites personalizados feitos por Tophatta inspirados nos Artesanatos Medievais de Gwen",
+	"config.GiantCoopKeepsDeluxeDesign.name": "Keep Deluxe Coop Appearance",
+	"config.GiantCoopKeepsDeluxeDesign.description": "When enabled, the Giant Coop upgrade will only change the inside of the coop while retaining the external appearance of the Deluxe Coop",
 	// Difficulty & Balancing Scaling
 	"config.Level1ChickenRequiredBuilding.name": "Edifício Necessário",
-	/*CHANGED*/ "config.Level1ChickenRequiredBuilding.description": "O nível de galinheiro necessário para comprar uma galinha de recurso da Marnie\nPadrão: Galinheiro",
+	"config.Level1ChickenRequiredBuilding.description": "O nível de galinheiro necessário para comprar uma galinha de recurso da Marnie\nPadrão: Galinheiro",
 	"config.HeartsRequiredForLargeEggs.name": "Corações Necessários para Ovos Grandes",
 	"config.HeartsRequiredForLargeEggs.description": "A quantidade de corações de relacionamento completos necessários com uma galinha antes que ela possa produzir ovos grandes\nPadrão: 2",
 	"config.section.DifficultyScaling.name": "Dificuldade & Balanceamento",
