@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4.0 (upcoming - not released yet)
+## 0.4.0
 
 -   Added new Level 3 Chickens (Aquatic, Farmer)
 -   Added new Level 4 Chickens (Bomb, Monster)
@@ -14,8 +14,8 @@
 -	Added ability for Bait egg to also convert into Wild Bait and Deluxe Bait once conditions for obtaining those recipes have been met
 -   Added config option to allow chicken sprite styles to be randomized and allow both Vanilla or Hatta style at the same time for chickens that have multiple sprite options (not all chickens do)
 -   This setting only applies to new chickens, will not affect existing chickens
--   Appearance options can alternatively be set to only Vanilla Style or only Hatta Style
--	Added config option to allow for Giant Coop upgrade to retain the exterior appearance of the Deluxe Coop (requires save reload if changed while in game)
+-   Chicken appearance options can alternatively be set to only Vanilla Style or only Hatta Style
+-	Added config option to allow for Giant Coop upgrade to retain the exterior appearance of the Deluxe Coop (requires save reload if setting changed while in game)
 -	Updated translations: French, Spanish, Turkish (Thank you translators!)
 
 ## 0.3.4
