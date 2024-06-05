@@ -88,15 +88,14 @@ Once you have reached **Forage skill level 2**, the following will have a chance
 -   A fiber chicken egg in the [Secret Woods](https://stardewvalleywiki.com/Secret_Woods)
 -   Each map location will each have a **maximum of 1** fiber chicken egg spawn per day
 -   If a forage spawn has occurred in that map that day, it will reset and go away at the end of each day
-
-_If you feel fiber chicken egg forage spots are too rare or not rare enough, please provide feedback. This is not currently something that can be user configurable, so I attempted to balance it as evenly as I thought people would want_
-
 </details>
+
 </br>
+
 <details>
 <summary>Spoiler: How to Find and Process Geode Eggs</summary>
 
-Once you have reached **Mining skill level 3**, a custom geode egg mining node will have a rare chance to spawn in the Mines containing a geode chicken egg.
+Once you have reached **Mining skill level 3**, a custom geode egg mining node will have a rare chance to spawn in the Mines containing a geode chicken egg. The geode egg node can also spawn in the Quarry.
 
 Geode chicken eggs, when placed in the Resource Egg Converter will randomly produce the following:
 
@@ -104,11 +103,10 @@ Geode chicken eggs, when placed in the Resource Egg Converter will randomly prod
 -   A frozen geode once any player has reached level 40 in the Mines
 -   A magma geode once any player has reached level 80 in the Mines
 -   An omni geode once any player has reached the bottom of the Mines
-
-_If you feel geode chicken eggs are too rare or not rare enough, please provide feedback._
-
 </details>
+
 </br>
+
 <details>
 <summary>Spoiler: How Processing Bomb Eggs Works</summary>
 
@@ -172,14 +170,6 @@ Feel like aspects of Resource Chickens are overpowered or underpowered? There ar
 -   How long it takes to incubate and hatch baby resource chickens
 -   Change what tier of Coop (Coop, Big Coop, Deluxe Coop) is required before you can purchase Resource Chickens
 -   And lots more!
-
-### ![future-plans](https://github.com/UncleArya/StardewMods/assets/100550741/a0b8acd2-7ebc-4c41-8fc7-841cf51a2ce9)
-
-Here are my goals as I continue to develop and update Resource Chickens:
-
--   Adding new chicken breeds for additional resource types
--   Adding increasingly rare chicken eggs that must be unlocked and obtained through gameplay
--   Interesting, balanced, and fun ways to obtain end-game level resources
 
 ### ![sprite-art](https://github.com/UncleArya/StardewMods/assets/100550741/96364db0-0a6b-4aab-bba5-a935206ff74b)
 
