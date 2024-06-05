@@ -53,28 +53,28 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 	
 | Chicken Type | How To Obtain | Requirement |
 | --- | --- | --- |
-| Aquatic | Forage around the Beach Tide Pools the day after rain or storms | Fishing Level 3 |
-| Artifact | Complete a quest from Gunther once reaching Mining Level 5, or trade with the Desert Trader at Mining Level 8 if quest isn't completed | Mining Level 5 |
-| Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging Level 4 |
-| Bomb | Rare drop from barels in the Skull Cavern, also becomes purchasable from the Dwarf after 3 hearts of friendship with them | Mining Level 4 |
-| Bait | Forage around the Beach Tide Pools the day it is raining, also becomes purchasable from Willy after getting the Ol' Mariner Achievement | Fishing Level 2 |
+| Aquatic | Forage around the Beach Tide Pools the day after rain or storms | Fishing 3 |
+| Artifact | Complete a quest from Gunther once reaching Mining Level 5, or trade with the Desert Trader at Mining Level 8 if quest isn't completed | Mining 5 |
+| Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging 4 |
+| Bomb | Rare drop from barels in the Skull Cavern, also becomes purchasable from the Dwarf after 3 hearts of friendship with them | Mining 4 |
+| Bait | Forage around the Beach Tide Pools the day it is raining, also becomes purchasable from Willy after getting the Ol' Mariner Achievement | Fishing 2 |
 | Clay | Purchase from Marnie | Construct a Coop |
 | Coal | Purchase from Marnie | Construct a Coop |
-| Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming Level 3 |
-| Farmer | Complete a quest from Marnie after reaching 3 hearts of friendship with her, also becomes purchasable from Marnie after the quest is complete | Farming Level 4 |
-| Fiber | Drop from breaking weeds in the Forest or Railroad, forage in the Secret Woods | Forage Level 3 |
-| Gold | Craft and incubate a Gold Egg Fusion Chamber | Farming Level 5 |
-| Geode | Drop from rare custom mining nodes in the Mines and Skull Cavern, can also spawn in the Quarry | Mining Level 3 |
-| Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming Level 3 |
-| Iridium | Craft and incubate an Iridium Egg Fusion Chamber | Farming Level 6 |
-| Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming Level 4 |
-| Monster | Drop from rare custom monster nest mining nodes in the Quarry mine, also becomes purchasable from Krobus after 3 hearts of friendship with them | Combat Level 5 |
-| Moss | Rare drop from shaking/chopping green rain trees, destroying green rain weeds, forage in the Forest day after green rain, destroying weeds in the forest day after normal rain | Foraging Level 3 |
-| Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming Level 4 |
-| Radioactive | Drop from rare custom mining nodes in the dangerous mode Mines and dangerous mode Skull Cavern | Combat Level 10 |
-| Sap | Rare drop from chopping Oak, Maple, Pine, or Mahogany trees | Foraging Level 2 |
+| Copper | Craft and incubate a Copper Egg Fusion Chamber | Farming 3 |
+| Farmer | Complete a quest from Marnie after reaching 3 hearts of friendship with her, also becomes purchasable from Marnie after the quest is complete | Farming 4 |
+| Fiber | Drop from breaking weeds in the Forest or Railroad, forage in the Secret Woods | Forage 3 |
+| Gold | Craft and incubate a Gold Egg Fusion Chamber | Farming 5 |
+| Geode | Drop from rare custom mining nodes in the Mines and Skull Cavern, can also spawn in the Quarry | Mining 3 |
+| Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming 3 |
+| Iridium | Craft and incubate an Iridium Egg Fusion Chamber | Farming 6 |
+| Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming 4 |
+| Monster | Drop from rare custom monster nest mining nodes in the Quarry mine, also becomes purchasable from Krobus after 3 hearts of friendship with them | Combat 5 |
+| Moss | Rare drop from shaking/chopping green rain trees, destroying green rain weeds, forage in the Forest day after green rain, destroying weeds in the forest day after normal rain | Foraging 3 |
+| Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming 4 |
+| Radioactive | Drop from rare custom mining nodes in the dangerous mode Mines and dangerous mode Skull Cavern | Combat 10 |
+| Sap | Rare drop from chopping Oak, Maple, Pine, or Mahogany trees | Foraging 2 |
 | Stone | Purchase from Marnie | Construct a Coop |
-| Volcano | Rare drop from volcano egg nodes in the Volcano mines | Mining Level 8 |
+| Volcano | Rare drop from volcano egg nodes in the Volcano mines | Mining 8 |
 | Wood | Purchase from Marnie | Construct a Coop |
 </details>
 </br>
