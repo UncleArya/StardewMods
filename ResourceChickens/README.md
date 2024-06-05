@@ -1,4 +1,4 @@
-### ![ChickenCollection](https://github.com/UncleArya/StardewMods/assets/100550741/cc82a253-164d-4b4d-a1b5-775aa67d9e6c)
+![ChickenCollection](https://github.com/UncleArya/StardewMods/assets/100550741/0de7760c-681e-42fb-b20e-5004add64ea2)
 
 <br/>**Show your chickens some love and they will reward you with special eggs that can be converted into crafting and building resources**.
 
