@@ -7,7 +7,7 @@
 				"{{ModId}}.FirstArtifactEgg": {
 					"Name": "[{{ModId}}.FirstArtifactEgg.Name]",
 					"Requester": "Gunther",
-					"Duration": "Month",
+					"Duration": "TwoWeeks",
 					"Repeatable": "false",
 					"RequiredTags": "mail_{{ModId}}.Mail.ArtifactEgg.QuestStart",
 					"OrderType": "ResourceChickens",

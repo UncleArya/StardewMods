@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.1
+
+-	Fixed Gunther's quest so it unlocks at an appropriate time
+-	Fixed issue with mail getting sent twice in multiplayer
+
 ## 0.4.0
 
 -   Added new Level 3 Chickens (Aquatic, Farmer)
