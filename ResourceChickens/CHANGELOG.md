@@ -2,8 +2,9 @@
 
 ## 0.4.1
 
--	Fixed Gunther's quest so it unlocks at an appropriate time
--	Fixed issue with mail getting sent twice in multiplayer
+-   Fixed Gunther's quest so it unlocks at an appropriate time
+-   Fixed issue with mail getting sent twice in multiplayer
+-   Fixed instance where a 3rd egg incubator could be spawned in the Giant Coop after upgrading
 
 ## 0.4.0
 
@@ -16,12 +17,12 @@
 -   Added craftable Iridium Fusion Chamber
 -   Added shop items for Krobus, Marnie, Willy, the Dwarf, the Desert Trader, the Volcano Shop once unlock conditions are satisfied
 -   Created custom Geode Egg mining node; Geode Eggs now drop only from the custom node, not from vanilla-looking geode nodes
--	Added ability for Bait egg to also convert into Wild Bait and Deluxe Bait once conditions for obtaining those recipes have been met
+-   Added ability for Bait egg to also convert into Wild Bait and Deluxe Bait once conditions for obtaining those recipes have been met
 -   Added config option to allow chicken sprite styles to be randomized and allow both Vanilla or Hatta style at the same time for chickens that have multiple sprite options (not all chickens do)
 -   This setting only applies to new chickens, will not affect existing chickens
 -   Chicken appearance options can alternatively be set to only Vanilla Style or only Hatta Style
--	Added config option to allow for Giant Coop upgrade to retain the exterior appearance of the Deluxe Coop (requires save reload if setting changed while in game)
--	Updated translations: French, Spanish, Turkish (Thank you translators!)
+-   Added config option to allow for Giant Coop upgrade to retain the exterior appearance of the Deluxe Coop (requires save reload if setting changed while in game)
+-   Updated translations: French, Spanish, Turkish (Thank you translators!)
 
 ## 0.3.4
 

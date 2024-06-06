@@ -82,21 +82,6 @@
 								"X": 19,
 								"Y": 1
 							}
-						},
-						{
-							"Id": "Clear2ndIncubator",
-							"Source": {
-								"X": 1,
-								"Y": 11
-							},
-							"Destination": {
-								"X": 2,
-								"Y": 11
-							},
-							"Size": {
-								"X": 1,
-								"Y": 1
-							}
 						}
 					],
 					"IndoorItems": [
