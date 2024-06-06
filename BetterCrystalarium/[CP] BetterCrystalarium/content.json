@@ -555,6 +555,56 @@
 					],
 					"UseFirstValidOutput": true,
 					"MinutesUntilReady": 20
+				},
+				// Cinder Shard
+				"{{ModId}}.CinderShard": {
+					"Id": "{{ModId}}.CinderShard",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)848",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)848",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)848",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 800
+				},
+				// Dragon Tooth
+				"{{ModId}}.DragonTooth": {
+					"Id": "{{ModId}}.DragonTooth",
+					"Triggers": [
+						{
+							"Trigger": "OutputCollected",
+							"RequiredItemId": "(O)852",
+							"RequiredCount": 1
+						},
+						{
+							"Trigger": "ItemPlacedInMachine",
+							"RequiredItemId": "(O)852",
+							"RequiredCount": 1
+						}
+					],
+					"OutputItem": [
+						{
+							"ItemId": "(O)852",
+							"Minstack": 1,
+							"MaxStack": 1
+						}
+					],
+					"UseFirstValidOutput": true,
+					"MinutesUntilReady": 7200
 				}
 			},
 			"MoveEntries": [
@@ -644,6 +694,14 @@
 				},
 				{
 					"ID": "{{ModId}}.Coal",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.CinderShard",
+					"ToPosition": "Top"
+				},
+				{
+					"ID": "{{ModId}}.DragonTooth",
 					"ToPosition": "Top"
 				}
 			]

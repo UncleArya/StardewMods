@@ -31,3 +31,5 @@ Only requires [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/191
 | Golden Coconut          | 3 Days          |
 | Wood, Stone, Clay, Coal | 20 Minutes      |
 | Hardwood                | 90 Minutes      |
+| Cinder Shard            | 13 Hours        |
+| Dragon Tooth            | 4.5 Days        |
