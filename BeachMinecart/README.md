@@ -28,4 +28,3 @@ I took motivation from [Integrated Minecarts](https://www.nexusmods.com/stardewv
 
 -   [SMAPI](https://www.nexusmods.com/stardewvalley/mods/2400)
 -   [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915)
-
