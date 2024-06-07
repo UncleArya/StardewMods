@@ -44,5 +44,3 @@ Ice Cream Cows adds colourful and yummy new cows to your farm that produce flavo
 ### Flavorful Cows (CP) for 1.6
 Unofficial mod update from an outdated version [originally created by TheNovaSupreme](https://www.nexusmods.com/stardewvalley/mods/10293). Adds a new type of cow to the game which produce flavored milk (e.g. strawberry, chocolate, vanilla).
 </br>[Nexus Mods Page](https://www.nexusmods.com/stardewvalley/mods/22935)
-
-TEST
