@@ -1,6 +1,6 @@
 /*
 ~Notes to translators~ Update 0.4.0
-Lines Added: 167-168
+Lines Added: 
 Lines Changed:
 */
 // Thank you translators!!
@@ -164,8 +164,8 @@ Lines Changed:
 	"config.section.AppearanceBehaviour.name": "Apparence & Comportement",
 	"config.ObjectAppearanceVersion.name": "Apparence des objets",
 	"config.ObjectAppearanceVersion.description": "Détermine l'apparnece des objets comme le convertisseur d'oeuf de ressources et les chambres de fusion d'oeufs.\nLes images de références sont sur Nexus ou dans le fichier de mod.\nVanillaStyle: apparence inspirée par les poulets classqiues créée par UncleArya et Tophatta\nHattaStyle: apparence modifiée faite par Tophatta inspiré par Gwen's Medieval Craftables",
-	"config.GiantCoopKeepsDeluxeDesign.name": "Keep Deluxe Coop Appearance",
-	"config.GiantCoopKeepsDeluxeDesign.description": "When enabled, the Giant Coop upgrade will only change the inside of the coop while retaining the external appearance of the Deluxe Coop",
+	"config.GiantCoopKeepsDeluxeDesign.name": "Conserver l'apparence du poulailler de luxe",
+	"config.GiantCoopKeepsDeluxeDesign.description": "A l'activation, l'amélioration du poulailler géant ne changera que l'intérieur du poulailler sans changer l'apparence externe. De l'exterieur le poualliler géant sera le même que celui de luxe.",
 	// Difficulty & Balancing Scaling
 	"config.Level1ChickenRequiredBuilding.name": "Batiments requis",
 	"config.Level1ChickenRequiredBuilding.description": "Le niveau de poulailler requis pour acheter les poulets de ressources à Marnie\nDefault: Poulailler",

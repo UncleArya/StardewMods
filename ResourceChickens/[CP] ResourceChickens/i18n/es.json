@@ -1,6 +1,6 @@
 /*
 ~Notes to translators~ Update 0.4.0
-Lines Added: 167-168
+Lines Added: 
 Lines Changed:
 */
 // Thank you translators!!
@@ -164,8 +164,8 @@ Lines Changed:
 	"config.section.AppearanceBehaviour.name": "Apariencia y comportamiento",
 	"config.ObjectAppearanceVersion.name": "Estilo de apariencia del objeto",
 	"config.ObjectAppearanceVersion.description": "Elige el estilo de sprite que deseas para objetos como El convertidor de hueso de recursos y las cámaras de fusión de huevos.\nImágenes de referencia en Nexus y en la carpeta mod.\nVanillaStyle: sprites inspirados en vainilla creados por UncleArya y Tophatta.\nHattaStyle: sprites personalizados hechos por Tophatta inspirados en los Craftables medievales de Gwen",
-	"config.GiantCoopKeepsDeluxeDesign.name": "Keep Deluxe Coop Appearance",
-	"config.GiantCoopKeepsDeluxeDesign.description": "When enabled, the Giant Coop upgrade will only change the inside of the coop while retaining the external appearance of the Deluxe Coop",
+	"config.GiantCoopKeepsDeluxeDesign.name": "Mantener la apariencia de un gallinero de lujo",
+	"config.GiantCoopKeepsDeluxeDesign.description": "Cuando esté activada, la mejora del gallinero gigante sólo cambiará el interior del gallinero, conservando el aspecto exterior del gallinero de lujo.",
 	// Difficulty & Balancing
 	"config.Level1ChickenRequiredBuilding.name": "Construccion Requerida",
 	"config.Level1ChickenRequiredBuilding.description": "El nivel del Corral que necesitas para poder comprar Gallinas de recursos de Marnie\nPor defecto: Corral Básico",
