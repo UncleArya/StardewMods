@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.2
+
+-  Updated Spanish and French translations
+
 ## 0.4.1
 
 -   Fixed Gunther's quest so it unlocks at an appropriate time
