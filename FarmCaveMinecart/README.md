@@ -5,7 +5,7 @@
 #### Compatibility with some modded farm cave maps has been added. Check compatibility list below. There is a "Compatibility Mode" config option that can be enabled to attempt improving general compatibility if not directly added.
 
 **Language support for:** English 🇬🇧, German 🇩🇪, Spanish 🇪🇸, Portuguese 🇧🇷🇵🇹, French 🇫🇷, and Chinese 🇨🇳
-**Can be further localised for any language by using GMCM to enter a custom location name.**
+< /br>**Can be further localised for any language by using GMCM to enter a custom location name.**
 
 #### Compatibilities
 
