@@ -1,5 +1,5 @@
 {
-	"Format": "2.1.0",
+	"Format": "2.2.0",
 	//Config
 	"ConfigSchema": {
 		//Enabled
@@ -28,7 +28,31 @@
 				"HasMod |contains=Hesper.HotSpringFarmcave": false,
 				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": false
 			}
-		}
+		},
+		{
+			"Name": "HotSpringCave",
+			"Value": "true",
+			"When": {
+				"HasMod |contains=Hesper.HotSpringFarmcave": true,
+				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": false
+			}
+		},
+		{
+			"Name": "AdditionalFarmCave",
+			"Value": "true",
+			"When": {
+				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": true,
+				"HasMod |contains=Hesper.HotSpringFarmcave": false,
+			}
+		},
+		{
+			"Name": "HotSpringAdditionalFarmCave",
+			"Value": "true",
+			"When": {
+				"HasMod |contains=Hesper.HotSpringFarmcave": true,
+				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": true
+			}
+		},
 	],
 	"Changes": [
 		//Add minecart
@@ -39,7 +63,7 @@
 			"Entries": {
 				"{{ModId}}.FarmCave": {
 					"Id": "{{ModId}}.FarmCave",
-					"DisplayName": "{{i18n: Farm}}",
+					"DisplayName": "{{i18n: FarmCave}}",
 					"TargetLocation": "FarmCave",
 					"TargetTile": { "X": 6, "Y": 4 },
 					"TargetDirection": "down"
@@ -99,12 +123,12 @@
 			"Fields": {
 				"{{ModId}}.FarmCave": {
 					"Id": "{{ModId}}.FarmCave",
-					"TargetTile": { "X": 3, "Y": 8 }
+					"TargetTile": { "X": 4, "Y": 10 }
 				}
 			},
 			"When": {
 				"Enable Farm Cave Minecart": true,
-				"HasMod": "Hesper.HotSpringFarmcave"
+				"HotSpringCave": true,
 			}
 		},
 		{
@@ -112,10 +136,10 @@
 			"Target": "Maps/FarmCave",
 			"FromFile": "assets/FarmCave-HotSpring-AryaEdit.tmx",
 			"FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 2 },
-			"ToArea": { "X": 2, "Y": 6, "Width": 2, "Height": 2 },
+			"ToArea": { "X": 2, "Y": 9, "Width": 2, "Height": 2 },
 			"When": {
 				"Enable Farm Cave Minecart": true,
-				"HasMod": "Hesper.HotSpringFarmcave"
+				"HotSpringCave": true,
 			}
 		},
 		//Compat with Tikamin557's Additional Farm Cave
@@ -126,24 +150,51 @@
 			"Fields": {
 				"{{ModId}}.FarmCave": {
 					"Id": "{{ModId}}.FarmCave",
-					"TargetTile": { "X": 6, "Y": 3 }
+					"TargetTile": { "X": 4, "Y": 9 }
 				}
 			},
 			"When": {
 				"Enable Farm Cave Minecart": true,
-				"HasMod": "Tikamin557.CP.AdditionalFarmCave"
+				"AdditionalFarmCave": true,
 			}
 		},
 		{
 			"Action": "EditMap",
-			"Target": "Maps/Custom_AdditionalFarmCave",
-			"FromFile": "assets/FarmCave-Minecart.tmx",
-			"FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 3 },
-			"ToArea": { "X": 8, "Y": 3, "Width": 3, "Height": 3 },
+			"Target": "Maps/FarmCave",
+			"FromFile": "assets/FarmCave-AdditionalFarmCave-AryaEdit.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 2 },
+			"ToArea": { "X": 2, "Y": 8, "Width": 2, "Height": 2 },
 			"When": {
 				"Enable Farm Cave Minecart": true,
-				"HasMod": "Tikamin557.CP.AdditionalFarmCave"
+				"AdditionalFarmCave": true,
 			}
-		}
+		},
+		//Compat when has BOTH Hesper's Hot Spring Farm Cave and Tikamin557's Additional Farm Cave
+		{
+			"Action": "EditData",
+			"Target": "Data/Minecarts",
+			"TargetField": ["Default", "Destinations"],
+			"Fields": {
+				"{{ModId}}.FarmCave": {
+					"Id": "{{ModId}}.FarmCave",
+					"TargetTile": { "X": 4, "Y": 10 }
+				}
+			},
+			"When": {
+				"Enable Farm Cave Minecart": true,
+				"HotSpringAdditionalFarmCave": true,
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/FarmCave",
+			"FromFile": "assets/FarmCave-HotSpring-AryaEdit.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 2 },
+			"ToArea": { "X": 2, "Y": 9, "Width": 2, "Height": 2 },
+			"When": {
+				"Enable Farm Cave Minecart": true,
+				"HotSpringAdditionalFarmCave": true,
+			}
+		},
 	]
 }

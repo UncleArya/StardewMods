@@ -14,9 +14,12 @@
  <tileset firstgid="2040" name="mine" tilewidth="16" tileheight="16" tilecount="288" columns="16">
   <image source="Mines/mine.png" width="256" height="288"/>
  </tileset>
+ <tileset firstgid="2328" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="Mines/mine" width="256" height="288"/>
+ </tileset>
  <layer id="1" name="Back" width="2" height="2">
   <data encoding="base64" compression="zlib">
-   eJxbx8HAsB6IdwLxKSAGAB00AwE=
+   eJxbxMnAsAiId3IwMJwCYgAb8gLq
   </data>
  </layer>
  <objectgroup id="2" name="Back"/>
