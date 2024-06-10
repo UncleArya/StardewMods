@@ -1,8 +1,8 @@
+### This content pack adds 1 new minecart location to the farm cave, which becomes usable once you unlock the minecarts as normal.
+
 #### Works by default with the Vanilla farm cave map.
 
 #### Compatibility with some modded farm cave maps has been added. Check compatibility list below. There is a "Compatibility Mode" config option that can be enabled to attempt improving general compatibility if not directly added.
-
-This content pack adds 1 new minecart location to the vanilla farm cave, which becomes usable once you unlock the minecarts as normal. This mod should work with any farm map that uses the vanilla farm cave layout.
 
 **Language support for:** English 🇬🇧, German 🇩🇪, Spanish 🇪🇸, Portuguese 🇧🇷🇵🇹, French 🇫🇷, and Chinese 🇨🇳
 **Can be further localised for any language by using GMCM to enter a custom location name.**
@@ -14,7 +14,8 @@ This content pack adds 1 new minecart location to the vanilla farm cave, which b
 -	[Hot Spring Farm Cave](https://www.nexusmods.com/stardewvalley/mods/5849) - if Hot Spring Farm Cave is installed, a compatibility patch should automatically apply
 -	[More Lively Farm Cave](https://www.nexusmods.com/stardewvalley/mods/23190) - if More Lively Farm Cave is installed, a compatibility patch should automatically apply
 -	[Additional Farm Cave](https://www.nexusmods.com/stardewvalley/mods/14109) - if Additional Farm Cave is installed, a compatibility patch should automatically apply
--	An additional compatibility patch should also automatically apply if Additional Farm Cave is present with Hot Springs Farm Cave or More Lively Farm Cave
+
+An additional compatibility patch should also automatically apply if Additional Farm Cave is present with Hot Springs Farm Cave or More Lively Farm Cave
 
 #### Install:
 
