@@ -26,7 +26,8 @@
 			"Value": "true",
 			"When": {
 				"HasMod |contains=Hesper.HotSpringFarmcave": false,
-				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": false
+				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": false,
+				"HasMod |contains=Aimon.MoreLivelyFarmCave": false
 			}
 		},
 		{
@@ -34,7 +35,8 @@
 			"Value": "true",
 			"When": {
 				"HasMod |contains=Hesper.HotSpringFarmcave": true,
-				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": false
+				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": false,
+
 			}
 		},
 		{
@@ -43,6 +45,7 @@
 			"When": {
 				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": true,
 				"HasMod |contains=Hesper.HotSpringFarmcave": false,
+				"HasMod |contains=Aimon.MoreLivelyFarmCave": false
 			}
 		},
 		{
@@ -50,9 +53,23 @@
 			"Value": "true",
 			"When": {
 				"HasMod |contains=Hesper.HotSpringFarmcave": true,
-				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": true
+				"HasMod |contains=Tikamin557.CP.AdditionalFarmCave": true,
 			}
 		},
+		{
+			"Name": "MoreLivelyCave",
+			"Value": "true",
+			"When": {
+				"HasMod |contains=Aimon.MoreLivelyFarmCave": true
+			}
+		},
+		{
+			"Name": "MoreLivelyAdditionalCave",
+			"Value": "true",
+			"When": {
+				"HasMod |contains=Aimon.MoreLivelyFarmCave": true
+			}
+		}
 	],
 	"Changes": [
 		//Add minecart
@@ -194,6 +211,60 @@
 			"When": {
 				"Enable Farm Cave Minecart": true,
 				"HotSpringAdditionalFarmCave": true,
+			}
+		},
+		//Compat with Aimon111's More Lively Farm Cave
+		{
+			"Action": "EditData",
+			"Target": "Data/Minecarts",
+			"TargetField": ["Default", "Destinations"],
+			"Fields": {
+				"{{ModId}}.FarmCave": {
+					"Id": "{{ModId}}.FarmCave",
+					"TargetTile": { "X": 5, "Y": 11 }
+				}
+			},
+			"When": {
+				"Enable Farm Cave Minecart": true,
+				"MoreLivelyCave": true,
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/FarmCave",
+			"FromFile": "assets/FarmCave-MoreLively-AryaEdit.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 2 },
+			"ToArea": { "X": 3, "Y": 10, "Width": 2, "Height": 2 },
+			"When": {
+				"Enable Farm Cave Minecart": true,
+				"MoreLivelyCave": true,
+			}
+		},
+		//Compat with BOTH Aimon111's More Lively Farm Cave and Tikamin557's Additional Farm Cave
+		{
+			"Action": "EditData",
+			"Target": "Data/Minecarts",
+			"TargetField": ["Default", "Destinations"],
+			"Fields": {
+				"{{ModId}}.FarmCave": {
+					"Id": "{{ModId}}.FarmCave",
+					"TargetTile": { "X": 5, "Y": 11 }
+				}
+			},
+			"When": {
+				"Enable Farm Cave Minecart": true,
+				"MoreLivelyCave": true,
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/FarmCave",
+			"FromFile": "assets/FarmCave-MoreLively-AryaEdit.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 2 },
+			"ToArea": { "X": 3, "Y": 10, "Width": 2, "Height": 2 },
+			"When": {
+				"Enable Farm Cave Minecart": true,
+				"MoreLivelyAdditionalCave": true,
 			}
 		},
 	]

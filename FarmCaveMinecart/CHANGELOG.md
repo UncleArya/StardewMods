@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.6.0
+
+-	Added compatibility with [Additional Farm Cave](https://www.nexusmods.com/stardewvalley/mods/14109)
+-	if Additional Farm Cave is installed, the correct map edit should automatically apply
+
 ## 1.5.1
 
 -	Updated display name from 'Farm' to 'Farm Cave' for improved compatibility with [Integrated Minecarts](https://www.nexusmods.com/stardewvalley/mods/11881)
