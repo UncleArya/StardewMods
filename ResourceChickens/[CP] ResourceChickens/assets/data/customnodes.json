@@ -186,9 +186,9 @@
 					"BreakingSound": "stoneCrack",
 					"MineSpawns": [
 						{
-							"Floors": "1/9",
+							"Floors": "2/9",
 							"Type": "Volcano",
-							"Condition": "PLAYER_MINING_LEVEL Current 8",
+							"Condition": "PLAYER_MINING_LEVEL Current 8, !LOCATION_IS_MINES Here",
 							"SpawnFrequency": 0.003
 						}
 					]

@@ -1200,7 +1200,7 @@
  <objectgroup id="10" name="Buildings">
   <object id="3" name="TileData" x="16" y="16" width="16" height="32">
    <properties>
-    <property name="Action" value="MinecartTransport Default Beach"/>
+    <property name="Action" value="MinecartTransport Default unclearya.beachminecart.Beach"/>
    </properties>
   </object>
  </objectgroup>

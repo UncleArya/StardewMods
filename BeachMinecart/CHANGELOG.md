@@ -1,3 +1,8 @@
+# 1.4.1
+
+-	Changed Unique ID for better mod compatibility
+-	Updated CP format version
+
 # 1.4.0
 
 -   changed map patching method to significantly reduce file size and improve compatibility

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.3
+
+-	Added workaround to spawn condition of volcano egg due to a current bug in Item Extensions
+
 ## 0.4.2
 
 -  Updated Spanish and French translations
