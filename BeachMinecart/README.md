@@ -1,6 +1,6 @@
 This content pack adds 1 new minecart location at the beach, which becomes usable once you unlock the minecarts as normal. Can be optionally turned off on vanilla beach festival days. By default the new minecart is on the map for the Luau and Midnight Jellies festivals, but is not interactable due to how those festivals work. The Beach Minecart is interactable during the Night Market festival.
 
-**Built-in language support for:** English 🇬🇧, German 🇩🇪, Spanish 🇪🇸, Portuguese 🇧🇷🇵🇹, French 🇫🇷, Chinese 🇨🇳, and Italian 🇮🇹
+**Built-in language support for:** English 🇬🇧, German 🇩🇪, Spanish 🇪🇸, Portuguese 🇧🇷🇵🇹, French 🇫🇷, Chinese 🇨🇳, Italian 🇮🇹, and Hungarian 🇭🇺
 **Can be further localised for any language by using GMCM to enter a custom location name.**
 
 I created this because my partner kept complaining about having to run all the way to/from the beach and wished there was a minecart to get there faster.

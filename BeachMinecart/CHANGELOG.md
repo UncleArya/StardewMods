@@ -1,3 +1,7 @@
+# 1.4.2
+
+-	Added Hungarian language support (thanks [martin66789](https://github.com/martin66789))
+
 # 1.4.1
 
 -	Changed Unique ID for better mod compatibility
