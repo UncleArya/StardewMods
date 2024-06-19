@@ -61,7 +61,6 @@
 					"Debris": "stone",
 					"Sound": "hammer",
 					"BreakingSound": "stoneCrack",
-					"CountTowards": "GeodesBroken",
 					"MineSpawns": [
 						{
 							"Floors": "1/-999",

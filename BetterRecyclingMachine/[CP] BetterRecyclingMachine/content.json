@@ -1,5 +1,5 @@
 {
-	"Format": "2.0.0",
+	"Format": "2.2.0",
 	"ConfigSchema": {
 		"EnableArtifacts": {
 			"AllowValues": "true, false",
