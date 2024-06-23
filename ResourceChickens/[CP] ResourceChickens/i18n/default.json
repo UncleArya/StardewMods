@@ -191,5 +191,12 @@ Lines Changed: 159
 	"config.ConverterPurchasePrice.name": "Converter Purchase Price",
 	"config.ConverterPurchasePrice.description": "Price of purchasing the Resource Egg Converter from Marnie\nDefault: 1000",
 	"config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
-	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180"
+	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180",
+
+	
+	// Update 1.0.0
+	"Chicken.TapperChicken.Name": "Tapper Chicken",
+	"Chicken.TapperChicken.BirthText": "A baby tapper chicken was born!",
+	"Egg.Tapper.Name": "Tapper Egg",
+	"LargeEgg.Tapper.Name": "Large Tapper Egg"
 }

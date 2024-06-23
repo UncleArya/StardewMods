@@ -1,5 +1,5 @@
 {
-	"Format": "2.1.0",
+	"Format": "2.2.0",
 	// Config
 	"ConfigSchema": {
 		// Appearance & Behaviour
@@ -501,6 +501,12 @@
 			"Target": "{{ModId}}/HattaStoneChicken, {{ModId}}/HattaStoneChickenBaby",
 			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
+		// Tapper Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/TapperChicken, {{ModId}}/TapperChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
 		// Volcano Chicken
 		{
 			"Action": "Load",
@@ -538,7 +544,7 @@
 		// Level 4
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/bomb.json, assets/chickens/bone.json, assets/chickens/gold.json, assets/chickens/monster.json"
+			"FromFile": "assets/chickens/bomb.json, assets/chickens/bone.json, assets/chickens/gold.json, assets/chickens/monster.json, assets/chickens/tapper.json"
 		},
 		// Level 5
 		{

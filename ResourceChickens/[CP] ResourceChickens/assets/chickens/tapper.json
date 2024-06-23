@@ -1,0 +1,212 @@
+{
+	"Changes": [
+		// Tapper Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.TapperChicken": {
+					"DisplayName": "{{i18n: Chicken.TapperChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": ["{{ModId}}.TapperEgg", "{{ModId}}.LargeTapperEgg"],
+					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
+					"BirthText": "{{i18n: Chicken.TapperChicken.BirthText}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.TapperEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeTapperEgg"
+						}
+					],
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/TapperChicken",
+					"BabyTexture": "{{ModId}}/TapperChickenBaby",
+					"SleepFrame": 17,
+					"UseDoubleUniqueAnimationFrames": true,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.3}}, 0, up }}"
+				}
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.TapperEgg": {
+					"Name": "{{ModId}}.TapperEgg",
+					"DisplayName": "{{i18n: Egg.Tapper.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.3}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 46,
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["resource_egg_item", "color_grey"]
+				},
+				"{{ModId}}.LargeTapperEgg": {
+					"Name": "{{ModId}}.LargeTapperEgg",
+					"DisplayName": "{{i18n: LargeEgg.Tapper.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.3) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 47,
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["large_resource_egg_item", "color_grey"]
+				}
+			}
+		},
+		// Spawn Conditions
+		// Chop mahogany tree
+		{
+			"Action": "EditData",
+			"Target": "Data/WildTrees",
+			"TargetField": ["8", "ChopItems"],
+			"Entries": {
+				"{{ModId}}.TapperEggChop": {
+					"Id": "{{ModId}}.TapperEgg",
+					"ItemId": "{{ModId}}.TapperEgg",
+					"MinStack": 1,
+					"MaxStack": 1,
+					"Season": null,
+					"Chance": 0.1,
+					"MinSize": "Tree",
+					"MaxSize": null,
+					"ForStump": false,
+					"Condition": "PLAYER_FORAGING_LEVEL Current 5"
+				}
+			}
+		},
+		// Shake mahogany tree
+		{
+			"Action": "EditData",
+			"Target": "Data/WildTrees",
+			"TargetField": ["8", "ShakeItems"],
+			"Entries": {
+				"{{ModId}}.TapperEggShake": {
+					"Id": "{{ModId}}.TapperEgg",
+					"ItemId": "{{ModId}}.TapperEgg",
+					"MinStack": 1,
+					"MaxStack": 1,
+					"Season": null,
+					"Chance": 0.05,
+					"Condition": "PLAYER_FORAGING_LEVEL Current 5"
+				}
+			}
+		},
+		// Tap mahogany tree
+		{
+			"Action": "EditData",
+			"Target": "Data/WildTrees",
+			"TargetField": ["8", "TapItems"],
+			"Entries": {
+				"{{ModId}}.TapperEggTap": {
+					"Id": "{{ModId}}.TapperEgg",
+					"ItemId": "{{ModId}}.TapperEgg",
+					"MinStack": 1,
+					"MaxStack": 1,
+					"Season": null,
+					"Chance": 0.2,
+					"DaysUntilReady": 1,
+					"Condition": "PLAYER_FORAGING_LEVEL Current 5"
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "{{ModId}}.TapperEgg",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		// Tap oak tree
+		{
+			"Action": "EditData",
+			"Target": "Data/WildTrees",
+			"TargetField": ["1", "TapItems"],
+			"Entries": {
+				"{{ModId}}.TapperEggTap": {
+					"Id": "{{ModId}}.TapperEgg",
+					"ItemId": "{{ModId}}.TapperEgg",
+					"MinStack": 1,
+					"MaxStack": 1,
+					"Season": null,
+					"Chance": 0.02,
+					"DaysUntilReady": 1,
+					"Condition": "PLAYER_FORAGING_LEVEL Current 5"
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "{{ModId}}.TapperEgg",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		// Tap maple tree
+		{
+			"Action": "EditData",
+			"Target": "Data/WildTrees",
+			"TargetField": ["2", "TapItems"],
+			"Entries": {
+				"{{ModId}}.TapperEggTap": {
+					"Id": "{{ModId}}.TapperEgg",
+					"ItemId": "{{ModId}}.TapperEgg",
+					"MinStack": 1,
+					"MaxStack": 1,
+					"Season": null,
+					"Chance": 0.02,
+					"DaysUntilReady": 1,
+					"Condition": "PLAYER_FORAGING_LEVEL Current 5"
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "{{ModId}}.TapperEgg",
+					"ToPosition": "Top"
+				}
+			]
+		},
+		// Tap pine tree
+		{
+			"Action": "EditData",
+			"Target": "Data/WildTrees",
+			"TargetField": ["3", "TapItems"],
+			"Entries": {
+				"{{ModId}}.TapperEggTap": {
+					"Id": "{{ModId}}.TapperEgg",
+					"ItemId": "{{ModId}}.TapperEgg",
+					"MinStack": 1,
+					"MaxStack": 1,
+					"Season": null,
+					"Chance": 0.02,
+					"DaysUntilReady": 1,
+					"Condition": "PLAYER_FORAGING_LEVEL Current 5"
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "{{ModId}}.TapperEgg",
+					"ToPosition": "Top"
+				}
+			]
+		}
+	]
+}

@@ -1138,6 +1138,77 @@
 							],
 							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
 						},
+						// Tapper Chicken
+						{
+							"Id": "{{ModId}}.TapperEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.TapperEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)724",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"Condition": "RANDOM 0.25",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)725",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"Condition": "RANDOM 0.35",
+
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)726",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeTapperEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeTapperEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)724",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"Condition": "RANDOM 0.25",
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)725",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"Condition": "RANDOM 0.35",
+
+									"IncrementMachineParentSheetIndex": 1
+								},
+								{
+									"ItemId": "(O)726",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"UseFirstValidOutput": true,
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
 						// Volcano Chicken
 						{
 							"Id": "{{ModId}}.VolcanoEgg",
@@ -1261,7 +1332,7 @@
 			"MoveEntries": [
 				{
 					"ID": "(BC){{ModId}}.ResourceEggConverter",
-					"BeforeID": "(BC)45"
+					"BeforeID": "(BC)45",
 				}
 			]
 		},

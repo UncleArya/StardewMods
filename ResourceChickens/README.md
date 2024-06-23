@@ -32,6 +32,7 @@
 -   **Bone Chicken**
 -   **Gold Chicken**
 -   **Monster Chicken**
+-	**Tapper Chicken**
 
 #### Level 5 Chickens
 
@@ -72,8 +73,9 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | Moss | Rare drop from shaking/chopping green rain trees, destroying green rain weeds, forage in the Forest day after green rain, destroying weeds in the forest day after normal rain | Foraging 3 |
 | Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming 4 |
 | Radioactive | Drop from rare custom mining nodes in the dangerous mode Mines and dangerous mode Skull Cavern | Combat 10 |
-| Sap | Rare drop from chopping Oak, Maple, Pine, or Mahogany trees | Foraging 2 |
+| Sap | Rare drop from chopping Oak, Maple, or Pine trees | Foraging 2 |
 | Stone | Purchase from Marnie | Construct a Coop |
+| Tapper | Chance to be produced from tapping Mahogany trees. Rare drop from chopping or shaking Mahogany trees. Extremely rare chance to be produced from tapping Oak, Maple, or Pine trees | Foraging 5 |
 | Volcano | Rare drop from volcano egg nodes in the Volcano mines | Mining 8 |
 | Wood | Purchase from Marnie | Construct a Coop |
 </details>

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.0 (currently in progress - not released)
+
+-	Added new Level 4 Chicken (Tapper)
+-	Added spawn conditions for Tapper Egg
+
 ## 0.4.3
 
 -	Added workaround to spawn condition of volcano egg due to a current bug in Item Extensions
