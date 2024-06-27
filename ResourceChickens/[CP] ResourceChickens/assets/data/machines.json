@@ -210,6 +210,45 @@
 							],
 							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
 						},
+						// Battery Chicken
+						{
+							"Id": "{{ModId}}.BatteryEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.BatteryEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)787",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeBatteryEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeBatteryEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "(O)787",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+									"IncrementMachineParentSheetIndex": 1
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
 						// Bomb Chicken
 						{
 							"Id": "{{ModId}}.BombEgg",
@@ -1112,8 +1151,8 @@
 							"OutputItem": [
 								{
 									"ItemId": "(O)390",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
 									"IncrementMachineParentSheetIndex": 1
 								}
 							],
@@ -1131,8 +1170,8 @@
 							"OutputItem": [
 								{
 									"ItemId": "(O)390",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 40}}, 0, up }}",
 									"IncrementMachineParentSheetIndex": 1
 								}
 							],
@@ -1275,8 +1314,8 @@
 							"OutputItem": [
 								{
 									"ItemId": "(O)388",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
 									"IncrementMachineParentSheetIndex": 1
 								}
 							],
@@ -1294,8 +1333,8 @@
 							"OutputItem": [
 								{
 									"ItemId": "(O)388",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
+									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 40}}, 0, up }}",
 									"IncrementMachineParentSheetIndex": 1
 								}
 							],
@@ -1332,7 +1371,7 @@
 			"MoveEntries": [
 				{
 					"ID": "(BC){{ModId}}.ResourceEggConverter",
-					"BeforeID": "(BC)45",
+					"BeforeID": "(BC)45"
 				}
 			]
 		},

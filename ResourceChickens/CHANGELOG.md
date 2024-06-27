@@ -2,8 +2,11 @@
 
 ## 1.0.0 (currently in progress - not released)
 
--	Added new Level 4 Chicken (Tapper)
+-	Added new Level 4 Chickens (Battery, Tapper)
+-   Created quest to obtain a Battery Chicken Egg
 -	Added spawn conditions for Tapper Egg
+-   Added shop item for Clint once unlock conditions are satisfied
+-	Significantly increased amount of wood and stone obtained by converting Wood and Stone Eggs
 
 ## 0.4.3
 

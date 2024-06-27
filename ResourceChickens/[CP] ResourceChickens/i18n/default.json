@@ -193,10 +193,23 @@ Lines Changed: 159
 	"config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
 	"config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180",
 
-	
 	// Update 1.0.0
 	"Chicken.TapperChicken.Name": "Tapper Chicken",
 	"Chicken.TapperChicken.BirthText": "A baby tapper chicken was born!",
 	"Egg.Tapper.Name": "Tapper Egg",
-	"LargeEgg.Tapper.Name": "Large Tapper Egg"
+	"LargeEgg.Tapper.Name": "Large Tapper Egg",
+
+	"Chicken.BatteryChicken.Name": "Battery Chicken",
+	"Chicken.BatteryChicken.BirthText": "A baby battery chicken was born!",
+	"Egg.Battery.Name": "Battery Egg",
+	"LargeEgg.Battery.Name": "Large Battery Egg",
+
+	"Quest.FirstBatteryEgg.Name": "Renewable Energy",
+	"Quest.FirstBatteryEgg.Text": "I met a scientist in Zuzu city who has discovered a new type of renewable energy using chickens but needs your help obtaining the resources needed to complete the project.",
+	"Quest.FirstBatteryEgg.Objective1.Text": "Place 50 coal in the drop box outside Clint's",
+	"Quest.FirstBatteryEgg.Objective2.Text": "Place 10 gold bars in the drop box outside Clint's",
+	"Quest.FirstBatteryEgg.Objective3.Text": "Place 2 iridium bars in the drop box outside Clint's",
+
+	"Mail.BatteryEgg.QuestComplete.Title": "Renewable Chickens",
+	"Mail.BatteryEgg.QuestComplete.Text": "Hey @,^Thanks for helping my scientist friend in Zuzu complete their renewable energy project. They sent me a sample from their new chicken, but I think you should have it and raise it on your farm. If you need any more of their eggs, you can come get them from me!^    -Clint"
 }

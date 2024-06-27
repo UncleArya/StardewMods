@@ -297,6 +297,12 @@
 			"Target": "{{ModId}}/HattaBaitChicken, {{ModId}}/HattaBaitChickenBaby",
 			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
+		// Battery Chicken - Vanilla
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/BatteryChicken, {{ModId}}/BatteryChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
 		// Bomb Chicken - Vanilla
 		{
 			"Action": "Load",
@@ -544,7 +550,7 @@
 		// Level 4
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/bomb.json, assets/chickens/bone.json, assets/chickens/gold.json, assets/chickens/monster.json, assets/chickens/tapper.json"
+			"FromFile": "assets/chickens/battery.json, assets/chickens/bomb.json, assets/chickens/bone.json, assets/chickens/gold.json, assets/chickens/monster.json, assets/chickens/tapper.json"
 		},
 		// Level 5
 		{

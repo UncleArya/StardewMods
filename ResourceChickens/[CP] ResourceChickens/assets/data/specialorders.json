@@ -4,11 +4,12 @@
 			"Action": "EditData",
 			"Target": "Data/SpecialOrders",
 			"Entries": {
+				// Artifact Egg Quest
 				"{{ModId}}.FirstArtifactEgg": {
 					"Name": "[{{ModId}}.FirstArtifactEgg.Name]",
 					"Requester": "Gunther",
 					"Duration": "Month",
-					"Repeatable": "true",
+					"Repeatable": "True",
 					"RequiredTags": "mail_{{ModId}}.Mail.ArtifactEgg.QuestStart",
 					"OrderType": "ResourceChickens",
 					"SpecialRule": "",
@@ -69,6 +70,70 @@
 							"Data": {
 								"MailReceived": "{{ModId}}.Mail.ArtifactEgg.QuestComplete",
 								"NoLetter": "false"
+							}
+						}
+					]
+				},
+				// Battery Egg Quest - 50 coal, 10 gold, 2 iridium
+				"{{ModId}}.FirstBatteryEgg": {
+					"Name": "[{{ModId}}.FirstBatteryEgg.Name]",
+					"Requester": "Clint",
+					"Duration": "TwoWeeks",
+					"Repeatable": "False",
+					"RequiredTags": "",
+					"OrderType": "",
+					"SpecialRule": "",
+					"Text": "[{{ModId}}.FirstBatteryEgg.Text]",
+					"ItemToRemoveOnEnd": null,
+					"MailToRemoveOnEnd": null,
+					"RandomizedElements": null,
+					"Objectives": [
+						{
+							"Type": "Donate",
+							"Text": "[{{ModId}}.FirstBatteryEgg.Objective1.Text]",
+							"RequiredCount": "50",
+							"Data": {
+								"DropBox": "ClintBox",
+								"DropBoxGameLocation": "Town",
+								"DropBoxIndicatorLocation": "102 80",
+								"AcceptedContextTags": "item_coal"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[{{ModId}}.FirstBatteryEgg.Objective2.Text]",
+							"RequiredCount": "10",
+							"Data": {
+								"DropBox": "ClintBox",
+								"DropBoxGameLocation": "Town",
+								"DropBoxIndicatorLocation": "102 80",
+								"AcceptedContextTags": "item_gold_bar"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[{{ModId}}.FirstBatteryEgg.Objective3.Text]",
+							"RequiredCount": "2",
+							"Data": {
+								"DropBox": "ClintBox",
+								"DropBoxGameLocation": "Town",
+								"DropBoxIndicatorLocation": "102 80",
+								"AcceptedContextTags": "item_iridium_bar"
+							}
+						}
+					],
+					"Rewards": [
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "{{ModId}}.Mail.BatteryEgg.QuestComplete",
+								"NoLetter": "false"
+							}
+						},
+						{
+							"Type": "Money",
+							"Data": {
+								"Amount": "2000"
 							}
 						}
 					]
