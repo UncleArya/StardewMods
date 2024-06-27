@@ -2,7 +2,9 @@
 
 ## 1.0.0 (currently in progress - not released)
 
--	Added new Level 4 Chickens (Battery, Tapper)
+-	Added new Level 4 Chickens (Battery, Librarian, Tapper)
+-	Added new Level 5 Chicken (Lucky)
+-	Lowered Bone Chicken from Level 4 to Level 3
 -   Created quest to obtain a Battery Chicken Egg
 -	Added spawn conditions for Tapper Egg
 -   Added shop item for Clint once unlock conditions are satisfied

@@ -1,0 +1,138 @@
+{
+	"Changes": [
+		// Lucky Chicken
+		{
+			"Action": "EditData",
+			"Target": "Data/FarmAnimals",
+			"Entries": {
+				"{{ModId}}.LuckyChicken": {
+					"DisplayName": "{{i18n: Chicken.LuckyChicken.Name}}",
+					"House": "Coop",
+					"EggItemIds": ["{{ModId}}.LuckyEgg", "{{ModId}}.LargeLuckyEgg"],
+					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1.15}}, 0, down }}",
+					"BirthText": "{{i18n: Chicken.LuckyChicken.BirthText}}",
+					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 4}}, 0, down }}",
+					"ProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LuckyEgg"
+						}
+					],
+					"DeluxeProduceItemIds": [
+						{
+							"ItemId": "{{ModId}}.LargeLuckyEgg"
+						}
+					],
+					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 2}}, 0, up }}",
+					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+					"Sound": "cluck",
+					"Texture": "{{ModId}}/LuckyChicken",
+					"BabyTexture": "{{ModId}}/LuckyChickenBaby",
+					"SleepFrame": 17,
+					"UseDoubleUniqueAnimationFrames": true,
+					"ProfessionForHappinessBoost": 2,
+					"ProfessionForQualityBoost": 0,
+					"CanSwim": "{{ChickensCanSwim}}",
+					"HappinessDrain": 20,
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.4}}, 0, up }}"
+				}
+			}
+		},
+		// Chicken Eggs
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.LuckyEgg": {
+					"Name": "{{ModId}}.LuckyEgg",
+					"DisplayName": "{{i18n: Egg.Lucky.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.4}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 38, // UPDATE
+					"Edibility": 10,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["resource_egg_item", "color_brown"]
+				},
+				"{{ModId}}.LargeLuckyEgg": {
+					"Name": "{{ModId}}.LargeLuckyEgg",
+					"DisplayName": "{{i18n: LargeEgg.Lucky.Name}}",
+					"Description": "{{i18n: ResourceEgg.Description}}",
+					"Type": "Basic",
+					"Category": -5,
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.4) * 1.9}}, 0, up }}",
+					"Texture": "{{ModId}}/Eggs",
+					"SpriteIndex": 39, // UPDATE
+					"Edibility": 15,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["large_resource_egg_item", "color_brown"]
+				}
+			}
+		},
+		// Adds Lucky Egg Book
+		{
+			"Action": "EditData",
+			"Target": "Data/Objects",
+			"Entries": {
+				"{{ModId}}.LuckyChickenBook": {
+					"Name": "{{ModId}}.LuckyChickenBook",
+					"DisplayName": "{{i18n: Book.LuckyChicken.Name}}",
+					"Description": "{{i18n: Book.LuckyChicken.Description}}",
+					"Type": "asdf",
+					"Category": -102,
+					"Price": 25000,
+					"Texture": "{{ModId}}/Items",
+					"SpriteIndex": 4, // UPDATE
+					"Edibility": -300,
+					"ExcludeFromFishingCollection": true,
+					"ExcludeFromShippingCollection": true,
+					"ExcludeFromRandomSale": true,
+					"ContextTags": ["book_item"]
+				}
+			}
+		},
+		// Adds Lucky Egg Book Power
+		{
+			"Action": "EditData",
+			"Target": "Data/Powers",
+			"Entries": {
+				"{{ModId}}.LuckyChickenPower": {
+					"DisplayName": "{{i18n: Power.LuckyChicken.Name}}",
+					"Description": "{{i18n: Power.LuckyChicken.Description}}",
+					"TexturePath": "{{ModId}}/Items",
+					"TexturePosition": {
+						"X": 0,
+						"Y": 16
+					},
+					"UnlockedCondition": "PLAYER_STAT Current {{ModId}}.LuckyChickenBook 1"
+				}
+			}
+		},
+		// Adds Lucky Egg Book for sale with Bookseller
+		{
+			"Action": "EditData",
+			"Target": "Data/Shops",
+			"TargetField": ["Bookseller", "Items"],
+			"Entries": {
+				"{{ModId}}.LuckyEggBookseller": {
+					"Id": "{{ModId}}.LuckyEggBookseller",
+					"ItemId": "{{ModId}}.LuckyChickenBook",
+					"Condition": "PLAYER_COMBAT_LEVEL Current 5, PLAYER_FARMING_LEVEL Current 5, PLAYER_FISHING_LEVEL Current 5, PLAYER_FORAGING_LEVEL Current 5, PLAYER_MINING_LEVEL Current 5",
+					"Price": 20000,
+					"AvailableStock": 1
+				}
+			},
+			"MoveEntries": [
+				{
+					"Id": "{{ModId}}.LuckyEggBookseller",
+					"ToPosition": "Top"
+				}
+			]
+		}
+	]
+}

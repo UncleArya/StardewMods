@@ -204,6 +204,16 @@ Lines Changed: 159
 	"Egg.Battery.Name": "Battery Egg",
 	"LargeEgg.Battery.Name": "Large Battery Egg",
 
+	"Chicken.LibrarianChicken.Name": "Librarian Chicken",
+	"Chicken.LibrarianChicken.BirthText": "A baby librarian chicken was born! Shhhhhhh!",
+	"Egg.Librarian.Name": "Librarian Egg",
+	"LargeEgg.Librarian.Name": "Large Librarian Egg",
+
+	"Chicken.LuckyChicken.Name": "Lucky Chicken",
+	"Chicken.LuckyChicken.BirthText": "A baby lucky chicken was born!",
+	"Egg.Lucky.Name": "Lucky Egg",
+	"LargeEgg.Lucky.Name": "Large Lucky Egg",
+
 	"Quest.FirstBatteryEgg.Name": "Renewable Energy",
 	"Quest.FirstBatteryEgg.Text": "I met a scientist in Zuzu city who has discovered a new type of renewable energy using chickens but needs your help obtaining the resources needed to complete the project.",
 	"Quest.FirstBatteryEgg.Objective1.Text": "Place 50 coal in the drop box outside Clint's",
@@ -211,5 +221,14 @@ Lines Changed: 159
 	"Quest.FirstBatteryEgg.Objective3.Text": "Place 2 iridium bars in the drop box outside Clint's",
 
 	"Mail.BatteryEgg.QuestComplete.Title": "Renewable Chickens",
-	"Mail.BatteryEgg.QuestComplete.Text": "Hey @,^Thanks for helping my scientist friend in Zuzu complete their renewable energy project. They sent me a sample from their new chicken, but I think you should have it and raise it on your farm. If you need any more of their eggs, you can come get them from me!^    -Clint"
+	"Mail.BatteryEgg.QuestComplete.Text": "Hey @,^Thanks for helping my scientist friend in Zuzu complete their renewable energy project. They sent me a sample from their new chicken, but I think you should have it and raise it on your farm. If you need any more of their eggs, you can come get them from me!^    -Clint",
+	"Mail.LibrarianEgg.AchievementComplete.Title": "Chicken in the Library",
+	"Mail.LibrarianEgg.AchievementComplete.Text": "Hello Farmer,^The strangest thing happened while I was browsing the library shelves after you found all those lost books... I came across an abandoned bird nest on a bottom shelf with a strange egg still in it. I thought I should send it to you since you're so skilled at raising animals. Thank you for supporting your local library!^    -Gunther",
+
+	"Book.LuckyChicken.Name": "Egg Hunt Master",
+	"Book.LuckyChicken.Description": "You have a chance of finding rare resource eggs in the world.",
+
+	"Power.LuckyChicken.Name": "Egg Hunt Master",
+	"Power.LuckyChicken.Description": "You have a chance of finding rare resource eggs in the world."
+
 }

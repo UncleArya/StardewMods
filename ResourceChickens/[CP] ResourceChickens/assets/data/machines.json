@@ -881,6 +881,48 @@
 							],
 							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
 						},
+						// Librarian Chicken
+						{
+							"Id": "{{ModId}}.LibrarianEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LibrarianEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "RANDOM_ITEMS (O)",
+									"MaxItems": 1,
+									"PerItemCondition": "ITEM_CATEGORY Target -103"
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
+						{
+							"Id": "{{ModId}}.LargeLibrarianEgg",
+							"Triggers": [
+								{
+									"Trigger": "ItemPlacedInMachine",
+									"RequiredItemId": "{{ModId}}.LargeLibrarianEgg",
+									"RequiredCount": 1
+								}
+							],
+							"OutputItem": [
+								{
+									"ItemId": "RANDOM_ITEMS (O)",
+									"MaxItems": 1,
+									"PerItemCondition": "ITEM_CATEGORY Target -103"
+								},
+								{
+									"ItemId": "RANDOM_ITEMS (O)",
+									"MaxItems": 1,
+									"PerItemCondition": "ITEM_CATEGORY Target -102, !ITEM_ID Target (O)Book_QueenOfSauce, !ITEM_ID Target (O)Book_Speed2, !ITEM_ID Target {{ModId}}.LuckyChickenBook"
+								}
+							],
+							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+						},
 						// Monster Chicken
 						{
 							"Id": "{{ModId}}.MonsterEgg",

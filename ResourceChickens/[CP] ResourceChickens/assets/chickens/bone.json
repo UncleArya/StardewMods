@@ -33,7 +33,7 @@
 					"ProfessionForQualityBoost": 0,
 					"CanSwim": "{{ChickensCanSwim}}",
 					"HappinessDrain": 20,
-					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.3}}, 0, up }}"
+					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.2}}, 0, up }}"
 				}
 			}
 		},
@@ -48,7 +48,7 @@
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.3}}, 0, up }}",
+					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.2}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 26,
 					"Edibility": 10,
@@ -63,7 +63,7 @@
 					"Description": "{{i18n: ResourceEgg.Description}}",
 					"Type": "Basic",
 					"Category": -5,
-					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.3) * 1.9}}, 0, up }}",
+					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.2) * 1.9}}, 0, up }}",
 					"Texture": "{{ModId}}/Eggs",
 					"SpriteIndex": 27,
 					"Edibility": 15,

@@ -20,18 +20,19 @@
 #### Level 3 Chickens
 
 -   **Aquatic Chicken**
+-   **Bone Chicken**
+-   **Farmer Chicken**
 -   **Geode Chicken**
 -   **Iron Chicken**
 -   **Moss Chicken**
 -   **Quartz Chicken**
--   **Farmer Chicken**
 
 #### Level 4 Chickens
 
 -	**Battery Chicken**
 -   **Bomb Chicken**
--   **Bone Chicken**
 -   **Gold Chicken**
+-	**Librarian Chicken**
 -   **Monster Chicken**
 -	**Tapper Chicken**
 
@@ -39,6 +40,7 @@
 
 -   **Artifact Chicken**
 -   **Iridium Chicken**
+-	**Lucky Chicken**
 -   **Radioactive Chicken**
 -   **Volcano Chicken**
 

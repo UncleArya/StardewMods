@@ -33,6 +33,12 @@
 					"Trigger": "DayStarted",
 					"Condition": "PLAYER_MINING_LEVEL Current 5, PLAYER_HAS_MET Current Krobus, PLAYER_HAS_MET Current Dwarf, PLAYER_HAS_MET Current Sandy",
 					"Action": "AddMail Current {{ModId}}.Mail.ArtifactEgg.QuestStart now"
+				},
+				"{{ModId}}.LibrarianEgg.AchievementComplete": {
+					"Id": "{{ModId}}.LibrarianEgg.AchievementComplete",
+					"Trigger": "DayStarted",
+					"Condition": "FOUND_ALL_LOST_BOOKS, PLAYER_FORAGING_LEVEL Current 5",
+					"Action": "AddMail Current {{ModId}}.Mail.LibrarianEgg.AchievementComplete now"
 				}
 			}
 		}

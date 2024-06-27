@@ -297,7 +297,7 @@
 			"Target": "{{ModId}}/HattaBaitChicken, {{ModId}}/HattaBaitChickenBaby",
 			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
-		// Battery Chicken - Vanilla
+		// Battery Chicken
 		{
 			"Action": "Load",
 			"Target": "{{ModId}}/BatteryChicken, {{ModId}}/BatteryChickenBaby",
@@ -441,6 +441,18 @@
 			"Target": "{{ModId}}/HattaIronChicken, {{ModId}}/HattaIronChickenBaby",
 			"FromFile": "assets/images/hattastyle/{{TargetWithoutPath}}.png"
 		},
+		// Librarian Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/LibrarianChicken, {{ModId}}/LibrarianChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
+		// Lucky Chicken
+		{
+			"Action": "Load",
+			"Target": "{{ModId}}/LuckyChicken, {{ModId}}/LuckyChickenBaby",
+			"FromFile": "assets/images/chickens/{{TargetWithoutPath}}.png"
+		},
 		// Monster Chicken
 		{
 			"Action": "Load",
@@ -545,7 +557,7 @@
 		// Level 3
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/aquatic.json, assets/chickens/iron.json, assets/chickens/farmer.json, assets/chickens/geode.json, assets/chickens/moss.json, assets/chickens/quartz.json"
+			"FromFile": "assets/chickens/aquatic.json, assets/chickens/iron.json, assets/chickens/farmer.json, assets/chickens/geode.json, assets/chickens/librarian.json, assets/chickens/moss.json, assets/chickens/quartz.json"
 		},
 		// Level 4
 		{
@@ -555,7 +567,7 @@
 		// Level 5
 		{
 			"Action": "Include",
-			"FromFile": "assets/chickens/artifact.json, assets/chickens/iridium.json, assets/chickens/radioactive.json, assets/chickens/volcano.json"
+			"FromFile": "assets/chickens/artifact.json, assets/chickens/iridium.json, assets/chickens/lucky.json, assets/chickens/radioactive.json, assets/chickens/volcano.json"
 		},
 		// Quests & Special Orders
 		{
