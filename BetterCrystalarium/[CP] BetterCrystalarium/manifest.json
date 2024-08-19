@@ -1,12 +1,12 @@
 {
-	"Name": "Better Crystalarium",
-	"Author": "UncleArya",
-	"Version": "1.2.1",
-	"Description": "Process more items in the Crystalarium",
-	"UniqueID": "UncleArya.BetterCrystalarium",
-	"MinimumApiVersion": "4.0.0",
-	"UpdateKeys": ["Nexus:24737"],
-	"ContentPackFor": {
-		"UniqueID": "Pathoschild.ContentPatcher"
-	}
+    "Name": "Better Crystalarium",
+    "Author": "UncleArya",
+    "Version": "1.2.1",
+    "Description": "Process more items in the Crystalarium",
+    "UniqueID": "UncleArya.BetterCrystalarium",
+    "MinimumApiVersion": "4.0.0",
+    "UpdateKeys": ["Nexus:24737"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
 }

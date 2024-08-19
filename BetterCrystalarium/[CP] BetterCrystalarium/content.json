@@ -1,36 +1,25 @@
 {
     "Format": "2.3.0",
+    "ConfigSchema": {
+        // All Items
+        "EnableBetterCrystalarium": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Allows for all items to be inserted into the Crystalarium (except Prismatic Shards and Cinder Shards)"
+        },
+        // Prismatic Shards and Cinder Shards
+        "EnablePrismaticCinderShards": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Allows for Prismatic Shards and Cinder Shards to be inserted into the Crystalarium"
+        }
+    },
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": ["(BC)21", "OutputRules"],
             "Entries": {
-                // Prismatic Shard
-                "{{ModId}}.PrismaticShard": {
-                    "Id": "{{ModId}}.PrismaticShard",
-                    "Triggers": [
-                        {
-                            "Trigger": "OutputCollected",
-                            "RequiredItemId": "(O)74",
-                            "RequiredCount": 1
-                        },
-                        {
-                            "Trigger": "ItemPlacedInMachine",
-                            "RequiredItemId": "(O)74",
-                            "RequiredCount": 1
-                        }
-                    ],
-                    "OutputItem": [
-                        {
-                            "ItemId": "(O)74",
-                            "Minstack": 1,
-                            "MaxStack": 1
-                        }
-                    ],
-                    "UseFirstValidOutput": true,
-                    "MinutesUntilReady": 26600
-                },
                 // Radioactive Bar
                 "{{ModId}}.RadioactiveBar": {
                     "Id": "{{ModId}}.RadioactiveBar",
@@ -556,31 +545,6 @@
                     "UseFirstValidOutput": true,
                     "MinutesUntilReady": 20
                 },
-                // Cinder Shard
-                "{{ModId}}.CinderShard": {
-                    "Id": "{{ModId}}.CinderShard",
-                    "Triggers": [
-                        {
-                            "Trigger": "OutputCollected",
-                            "RequiredItemId": "(O)848",
-                            "RequiredCount": 1
-                        },
-                        {
-                            "Trigger": "ItemPlacedInMachine",
-                            "RequiredItemId": "(O)848",
-                            "RequiredCount": 1
-                        }
-                    ],
-                    "OutputItem": [
-                        {
-                            "ItemId": "(O)848",
-                            "Minstack": 1,
-                            "MaxStack": 1
-                        }
-                    ],
-                    "UseFirstValidOutput": true,
-                    "MinutesUntilReady": 800
-                },
                 // Dragon Tooth
                 "{{ModId}}.DragonTooth": {
                     "Id": "{{ModId}}.DragonTooth",
@@ -608,10 +572,6 @@
                 }
             },
             "MoveEntries": [
-                {
-                    "ID": "{{ModId}}.PrismaticShard",
-                    "ToPosition": "Top"
-                },
                 {
                     "ID": "{{ModId}}.RadioactiveBar",
                     "ToPosition": "Top"
@@ -697,14 +657,83 @@
                     "ToPosition": "Top"
                 },
                 {
-                    "ID": "{{ModId}}.CinderShard",
-                    "ToPosition": "Top"
-                },
-                {
                     "ID": "{{ModId}}.DragonTooth",
                     "ToPosition": "Top"
                 }
-            ]
+            ],
+            "When": {
+                "EnableBetterCrystalarium": true
+            }
+        },
+        // Prismatic Shard
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": ["(BC)21", "OutputRules"],
+            "Entries": {
+                "{{ModId}}.PrismaticShard": {
+                    "Id": "{{ModId}}.PrismaticShard",
+                    "Triggers": [
+                        {
+                            "Trigger": "OutputCollected",
+                            "RequiredItemId": "(O)74",
+                            "RequiredCount": 1
+                        },
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)74",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)74",
+                            "Minstack": 1,
+                            "MaxStack": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "MinutesUntilReady": 26600
+                },
+                // Cinder Shard
+                "{{ModId}}.CinderShard": {
+                    "Id": "{{ModId}}.CinderShard",
+                    "Triggers": [
+                        {
+                            "Trigger": "OutputCollected",
+                            "RequiredItemId": "(O)848",
+                            "RequiredCount": 1
+                        },
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)848",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)848",
+                            "Minstack": 1,
+                            "MaxStack": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "MinutesUntilReady": 800
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}.PrismaticShard",
+                    "ToPosition": "Top"
+                },
+                {
+                    "ID": "{{ModId}}.CinderShard",
+                    "ToPosition": "Top"
+                }
+            ],
+            "When": {
+                "EnablePrismaticCinderShards": true
+            }
         }
     ]
 }

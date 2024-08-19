@@ -6,6 +6,8 @@
 
 All items that can be processed in the Crystalarium have been balanced using an approximate rate of 120g/day (same as vanilla minerals) to duplicate an item. This results in very long processing times for rare and valuable items such as Prismatic Shards and Pearls.
 
+Using GMCM, you can optionally configure the mod so that only Prismatic Shards and Cinder Shards get added to items the Crystalarium can process, or the opposite where all items get added excepted Prismatic Shards and Cinder Shards. All items listed below are enabled by default.
+
 Only requires [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915).
 
 ### Items and Processing Times
