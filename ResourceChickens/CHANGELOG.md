@@ -2,12 +2,16 @@
 
 ## 1.0.0 (currently in progress - not released)
 
+-   Added new Level 2 Chicken (Hay)
 -   Added new Level 4 Chickens (Battery, Librarian, Tapper)
--   Added new Level 5 Chicken (Lucky)
+-   Added new Level 5 Chickens (Sapling, Qi)
 -   Lowered Bone Chicken from Level 4 to Level 3
 -   Created quest to obtain a Battery Chicken Egg
+-   Created quest to obtain a Librarian Chicken Egg
 -   Added spawn conditions for Tapper Egg
+-   Added shop item for Bookseller once unlock conditions are satisfied
 -   Added shop item for Clint once unlock conditions are satisfied
+-   Added shop items for Calico Egg Merchant, Marnie's shop at the Desert Festival, and Qi's Walnut Room shop
 -   Significantly increased amount of wood and stone obtained by converting Wood and Stone Eggs
 -   Updated Chinese translations (Thank you [axce47](https://next.nexusmods.com/profile/axce47/about-me))
 -   Updated Content Patcher version

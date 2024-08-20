@@ -1,0 +1,100 @@
+{
+    "Changes": [
+        // Qi Chicken
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}.QiChicken": {
+                    "DisplayName": "{{i18n: Chicken.QiChicken.Name}}",
+                    "House": "Coop",
+                    "EggItemIds": ["{{ModId}}.QiEgg", "{{ModId}}.LargeQiEgg"],
+                    "IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1.15}}, 0, down }}",
+                    "BirthText": "{{i18n: Chicken.QiChicken.BirthText}}",
+                    "DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+                    "ProduceItemIds": [
+                        {
+                            "ItemId": "{{ModId}}.QiEgg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "ItemId": "{{ModId}}.LargeQiEgg"
+                        }
+                    ],
+                    "DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 3}}, 0, up }}",
+                    "DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+                    "Sound": "cluck",
+                    "Texture": "{{ModId}}/QiChicken",
+                    "BabyTexture": "{{ModId}}/QiChickenBaby",
+                    "SleepFrame": 17,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 0,
+                    "CanSwim": "{{ChickensCanSwim}}",
+                    "HappinessDrain": 20,
+                    "SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.4}}, 0, up }}"
+                }
+            }
+        },
+        // Chicken Eggs
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}.QiEgg": {
+                    "Name": "{{ModId}}.QiEgg",
+                    "DisplayName": "{{i18n: Egg.Qi.Name}}",
+                    "Description": "{{i18n: ResourceEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.4}}, 0, up }}",
+                    "Texture": "{{ModId}}/Eggs",
+                    "SpriteIndex": 54,
+                    "Edibility": 10,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": ["resource_egg_item", "color_purple"]
+                },
+                "{{ModId}}.LargeQiEgg": {
+                    "Name": "{{ModId}}.LargeQiEgg",
+                    "DisplayName": "{{i18n: LargeEgg.Qi.Name}}",
+                    "Description": "{{i18n: ResourceEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.4) * 1.9}}, 0, up }}",
+                    "Texture": "{{ModId}}/Eggs",
+                    "SpriteIndex": 55,
+                    "Edibility": 15,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": ["large_resource_egg_item", "color_purple"]
+                }
+            }
+        },
+        // Adds Qi Egg for trade with Qi Reward Shop
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["QiGemShop", "Items"],
+            "Entries": {
+                "{{ModId}}.QiEggQiShop": {
+                    "Id": "{{ModId}}.QiEggQiShop",
+                    "ItemId": "{{ModId}}.QiEgg",
+                    "TradeItemId": "(O)858",
+                    "TradeItemAmount": 10,
+                    "AvailableStock": 1,
+                    "Condition": "PLAYER_COMBAT_LEVEL Current 10, PLAYER_FARMING_LEVEL Current 10, PLAYER_FISHING_LEVEL Current 10, PLAYER_FORAGING_LEVEL Current 10, PLAYER_MINING_LEVEL Current 10"
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "{{ModId}}.QiEggQiShop",
+                    "ToPosition": "Top"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "Changes": [
+        // Hay Chicken
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}.HayChicken": {
+                    "DisplayName": "{{i18n: Chicken.HayChicken.Name}}",
+                    "House": "Coop",
+                    "EggItemIds": ["{{ModId}}.HayEgg", "{{ModId}}.LargeHayEgg"],
+                    "IncubationTime": "{{ResourceChickenIncubationTimeChoice}}",
+                    "BirthText": "{{i18n: Chicken.HayChicken.BirthText}}",
+                    "DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+                    "ProduceItemIds": [
+                        {
+                            "ItemId": "{{ModId}}.HayEgg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "ItemId": "{{ModId}}.LargeHayEgg"
+                        }
+                    ],
+                    "DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 1}}, 0, up }}",
+                    "DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+                    "Sound": "cluck",
+                    "Texture": "{{ModId}}/HayChicken",
+                    "BabyTexture": "{{ModId}}/HayChickenBaby",
+                    "SleepFrame": 17,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 0,
+                    "CanSwim": "{{ChickensCanSwim}}",
+                    "HappinessDrain": 20,
+                    "SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.1}}, 0, up }}"
+                }
+            }
+        },
+        // Chicken Eggs
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}.HayEgg": {
+                    "Name": "{{ModId}}.HayEgg",
+                    "DisplayName": "{{i18n: Egg.Hay.Name}}",
+                    "Description": "{{i18n: ResourceEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.1}}, 0, up}}",
+                    "Texture": "{{ModId}}/Eggs",
+                    "SpriteIndex": 52,
+                    "Edibility": 10,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": ["resource_egg_item", "color_green"]
+                },
+                "{{ModId}}.LargeHayEgg": {
+                    "Name": "{{ModId}}.LargeHayEgg",
+                    "DisplayName": "{{i18n: LargeEgg.Hay.Name}}",
+                    "Description": "{{i18n: ResourceEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.1) * 1.9}}, 0, up }}",
+                    "Texture": "{{ModId}}/Eggs",
+                    "SpriteIndex": 53,
+                    "Edibility": 15,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": ["large_resource_egg_item", "color_green"]
+                }
+            }
+        },
+        // Adds Hay Egg for trade at Desert Festival
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["DesertFestival_EggShop", "Items"],
+            "Entries": {
+                "{{ModId}}.HayEggDesertEggShop": {
+                    "Id": "{{ModId}}.HayEggDesertEggShop",
+                    "ItemId": "{{ModId}}.HayEgg",
+                    "TradeItemId": "CalicoEgg",
+                    "TradeItemAmount": 70,
+                    "AvailableStock": 1,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 3"
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "{{ModId}}.HayEggDesertEggShop",
+                    "ToPosition": "Top"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["DesertFestival_Marnie", "Items"],
+            "Entries": {
+                "{{ModId}}.HayEggDesertMarnie": {
+                    "Id": "{{ModId}}.HayEggDesertMarnie",
+                    "ItemId": "{{ModId}}.HayEgg",
+                    "TradeItemId": "CalicoEgg",
+                    "TradeItemAmount": 50,
+                    "AvailableStock": 1,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 3"
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "{{ModId}}.HayEggDesertMarnie",
+                    "ToPosition": "Top"
+                }
+            ]
+        }
+    ]
+}

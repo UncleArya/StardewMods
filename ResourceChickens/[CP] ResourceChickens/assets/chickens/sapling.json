@@ -1,0 +1,100 @@
+{
+    "Changes": [
+        // Sapling Chicken
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}.SaplingChicken": {
+                    "DisplayName": "{{i18n: Chicken.SaplingChicken.Name}}",
+                    "House": "Coop",
+                    "EggItemIds": ["{{ModId}}.SaplingEgg", "{{ModId}}.LargeSaplingEgg"],
+                    "IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1.15}}, 0, down }}",
+                    "BirthText": "{{i18n: Chicken.SaplingChicken.BirthText}}",
+                    "DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 4}}, 0, down }}",
+                    "ProduceItemIds": [
+                        {
+                            "ItemId": "{{ModId}}.SaplingEgg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "ItemId": "{{ModId}}.LargeSaplingEgg"
+                        }
+                    ],
+                    "DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 7}}, 0, up }}",
+                    "DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+                    "Sound": "cluck",
+                    "Texture": "{{ModId}}/SaplingChicken",
+                    "BabyTexture": "{{ModId}}/SaplingChickenBaby",
+                    "SleepFrame": 17,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 0,
+                    "CanSwim": "{{ChickensCanSwim}}",
+                    "HappinessDrain": 20,
+                    "SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.4}}, 0, up }}"
+                }
+            }
+        },
+        // Chicken Eggs
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}.SaplingEgg": {
+                    "Name": "{{ModId}}.SaplingEgg",
+                    "DisplayName": "{{i18n: Egg.Sapling.Name}}",
+                    "Description": "{{i18n: ResourceEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.4}}, 0, up }}",
+                    "Texture": "{{ModId}}/Eggs",
+                    "SpriteIndex": 56,
+                    "Edibility": 10,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": ["resource_egg_item", "color_brown"]
+                },
+                "{{ModId}}.LargeSaplingEgg": {
+                    "Name": "{{ModId}}.LargeSaplingEgg",
+                    "DisplayName": "{{i18n: LargeEgg.Sapling.Name}}",
+                    "Description": "{{i18n: ResourceEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.4) * 1.9}}, 0, up }}",
+                    "Texture": "{{ModId}}/Eggs",
+                    "SpriteIndex": 57,
+                    "Edibility": 15,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": ["large_resource_egg_item", "color_brown"]
+                }
+            }
+        },
+        // Adds Sapling Egg for trade with Island Trader
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["IslandTrade", "Items"],
+            "Entries": {
+                "{{ModId}}.SaplingEggIslandTrader": {
+                    "Id": "{{ModId}}.SaplingEggIslandTrader",
+                    "ItemId": "{{ModId}}.SaplingEgg",
+                    "Condition": "IS_ISLAND_NORTH_BRIDGE_FIXED, WORLD_STATE_FIELD GoldenWalnutsFound 60, PLAYER_FARMING_LEVEL Current 10",
+                    "AvailableStock": 1,
+                    "TradeItemId": "(O)834",
+                    "TradeItemAmount": 3
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "{{ModId}}.SaplingEggIslandTrader",
+                    "BeforeId": "(O)69"
+                }
+            ]
+        }
+    ]
+}

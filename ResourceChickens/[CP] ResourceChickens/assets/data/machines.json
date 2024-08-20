@@ -1,1458 +1,1587 @@
 {
-	"Changes": [
-		// Resource Egg Converter
-		{
-			"Action": "EditData",
-			"Target": "Data/BigCraftables",
-			"Entries": {
-				"{{ModId}}.ResourceEggConverter": {
-					"Name": "{{ModId}}.ResourceEggConverter",
-					"DisplayName": "{{i18n: BigCraftable.ResourceEggConverter.Name}}",
-					"Description": "{{i18n: BigCraftable.ResourceEggConverter.Description}}",
-					"Price": 50,
-					"Fragility": 0,
-					"CanBePlacedIndoors": true,
-					"CanBePlacedOutdoors": true,
-					"Texture": "{{ModId}}/ResourceEggConverter",
-					"SpriteIndex": 0,
-					"ContextTags": ["category_big_craftable"]
-				}
-			}
-		},
-		{
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"Entries": {
-				"(BC){{ModId}}.ResourceEggConverter": {
-					"OutputRules": [
-						// Artifact Chicken
-						{
-							"Id": "{{ModId}}.ArtifactEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.ArtifactEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)275",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeArtifactEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeArtifactEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)275",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Aquatic Chicken
-						{
-							"Id": "{{ModId}}.AquaticEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.AquaticEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"RandomItemId": ["(O)392", "(O)394"],
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"Condition": "RANDOM 0.1",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"RandomItemId": ["(O)152", "(O)153", "(O)157"],
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"Condition": "RANDOM 0.4",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"RandomItemId": ["(O)393", "(O)397"],
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeAquaticEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeAquaticEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"RandomItemId": ["(O)392", "(O)394"],
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"Condition": "RANDOM 0.1",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"RandomItemId": ["(O)152", "(O)153", "(O)157"],
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"Condition": "RANDOM 0.4",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"RandomItemId": ["(O)393", "(O)397"],
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Bait Chicken
-						{
-							"Id": "{{ModId}}.BaitEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.BaitEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)685",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)685",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)774",
-									"Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Wild Bait",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)DeluxeBait",
-									"Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Deluxe Bait",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeBaitEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeBaitEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)685",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)685",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)774",
-									"Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Wild Bait",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)DeluxeBait",
-									"Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Deluxe Bait",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Battery Chicken
-						{
-							"Id": "{{ModId}}.BatteryEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.BatteryEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)787",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeBatteryEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeBatteryEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)787",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Bomb Chicken
-						{
-							"Id": "{{ModId}}.BombEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.BombEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)286",
-									"Condition": "PLAYER_MINING_LEVEL Current 4",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)286",
-									"Condition": "PLAYER_MINING_LEVEL Current 4",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)286",
-									"Condition": "PLAYER_MINING_LEVEL Current 4",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)287",
-									"Condition": "PLAYER_MINING_LEVEL Current 6",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)287",
-									"Condition": "PLAYER_MINING_LEVEL Current 6",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)288",
-									"Condition": "PLAYER_MINING_LEVEL Current 8",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeBombEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeBombEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)286",
-									"Condition": "PLAYER_MINING_LEVEL Current 4",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)286",
-									"Condition": "PLAYER_MINING_LEVEL Current 4",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)286",
-									"Condition": "PLAYER_MINING_LEVEL Current 4",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)287",
-									"Condition": "PLAYER_MINING_LEVEL Current 6",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)287",
-									"Condition": "PLAYER_MINING_LEVEL Current 6",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)288",
-									"Condition": "PLAYER_MINING_LEVEL Current 8",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Bone Chicken
-						{
-							"Id": "{{ModId}}.BoneEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.BoneEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)881",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeBoneEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeBoneEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)881",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Clay Chicken
-						{
-							"Id": "{{ModId}}.ClayEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.ClayEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)330",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeClayEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeClayEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)330",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Coal Chicken
-						{
-							"Id": "{{ModId}}.CoalEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.CoalEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)382",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeCoalEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeCoalEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)382",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Copper Chicken
-						{
-							"Id": "{{ModId}}.CopperEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.CopperEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)378",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeCopperEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeCopperEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)378",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 8}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Farmer Chicken
-						{
-							"Id": "{{ModId}}.FarmerEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.FarmerEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)368",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)370",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)465",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)770",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)MixedFlowerSeeds",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeFarmerEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeFarmerEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)368",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)370",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)465",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)770",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)MixedFlowerSeeds",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Fiber Chicken
-						{
-							"Id": "{{ModId}}.FiberEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.FiberEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)771",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeFiberEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeFiberEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)771",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Geode Chicken
-						{
-							"Id": "{{ModId}}.GeodeEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.GeodeEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)535",
-									"Condition": "MINE_LOWEST_LEVEL_REACHED 1",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)536",
-									"Condition": "MINE_LOWEST_LEVEL_REACHED 40",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)537",
-									"Condition": "MINE_LOWEST_LEVEL_REACHED 80",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)749",
-									"Condition": "MINE_LOWEST_LEVEL_REACHED 120",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeGeodeEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeGeodeEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)535",
-									"Condition": "MINE_LOWEST_LEVEL_REACHED 1",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)536",
-									"Condition": "MINE_LOWEST_LEVEL_REACHED 40",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)537",
-									"Condition": "MINE_LOWEST_LEVEL_REACHED 80",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)749",
-									"Condition": "MINE_LOWEST_LEVEL_REACHED 120",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Gold Chicken
-						{
-							"Id": "{{ModId}}.GoldEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.GoldEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)384",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeGoldEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeGoldEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)384",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Hardwood Chicken
-						{
-							"Id": "{{ModId}}.HardwoodEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.HardwoodEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)709",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeHardwoodEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeHardwoodEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)709",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Iridium Chicken
-						{
-							"Id": "{{ModId}}.IridiumEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.IridiumEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)386",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeIridiumEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeIridiumEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)386",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Iron Chicken
-						{
-							"Id": "{{ModId}}.IronEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.IronEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)380",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeIronEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeIronEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)380",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Librarian Chicken
-						{
-							"Id": "{{ModId}}.LibrarianEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LibrarianEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "RANDOM_ITEMS (O)",
-									"MaxItems": 1,
-									"PerItemCondition": "ITEM_CATEGORY Target -103"
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeLibrarianEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeLibrarianEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "RANDOM_ITEMS (O)",
-									"MaxItems": 1,
-									"PerItemCondition": "ITEM_CATEGORY Target -103"
-								},
-								{
-									"ItemId": "RANDOM_ITEMS (O)",
-									"MaxItems": 1,
-									"PerItemCondition": "ITEM_CATEGORY Target -102, !ITEM_ID Target (O)Book_QueenOfSauce, !ITEM_ID Target (O)Book_Speed2, !ITEM_ID Target {{ModId}}.LuckyChickenBook"
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Monster Chicken
-						{
-							"Id": "{{ModId}}.MonsterEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.MonsterEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)766",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)766",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)767",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)768",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)769",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeMonsterEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeMonsterEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)766",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)766",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)767",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)768",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)769",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Moss Chicken
-						{
-							"Id": "{{ModId}}.MossEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.MossEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)Moss",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeMossEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeMossEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)Moss",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Quartz Chicken
-						{
-							"Id": "{{ModId}}.QuartzEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.QuartzEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)80",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeQuartzEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeQuartzEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)80",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Radioactive Chicken
-						{
-							"Id": "{{ModId}}.RadioactiveEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.RadioactiveEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)74",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"Condition": "RANDOM 0.02",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)909",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeRadioactiveEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeRadioactiveEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)74",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"Condition": "RANDOM 0.02",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)909",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Sap Chicken
-						{
-							"Id": "{{ModId}}.SapEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.SapEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)92",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeSapEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeSapEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)92",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Stone Chicken
-						{
-							"Id": "{{ModId}}.StoneEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.StoneEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)390",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeStoneEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeStoneEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)390",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 40}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Tapper Chicken
-						{
-							"Id": "{{ModId}}.TapperEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.TapperEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)724",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"Condition": "RANDOM 0.25",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)725",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"Condition": "RANDOM 0.35",
+    "Changes": [
+        // Resource Egg Converter
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}.ResourceEggConverter": {
+                    "Name": "{{ModId}}.ResourceEggConverter",
+                    "DisplayName": "{{i18n: BigCraftable.ResourceEggConverter.Name}}",
+                    "Description": "{{i18n: BigCraftable.ResourceEggConverter.Description}}",
+                    "Price": 50,
+                    "Fragility": 0,
+                    "CanBePlacedIndoors": true,
+                    "CanBePlacedOutdoors": true,
+                    "Texture": "{{ModId}}/ResourceEggConverter",
+                    "SpriteIndex": 0,
+                    "ContextTags": ["category_big_craftable"]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}.ResourceEggConverter": {
+                    "OutputRules": [
+                        // Artifact Chicken
+                        {
+                            "Id": "{{ModId}}.ArtifactEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.ArtifactEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)275",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeArtifactEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeArtifactEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)275",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Aquatic Chicken
+                        {
+                            "Id": "{{ModId}}.AquaticEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.AquaticEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "RandomItemId": ["(O)392", "(O)394"],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "Condition": "RANDOM 0.1",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "RandomItemId": ["(O)152", "(O)153", "(O)157"],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "Condition": "RANDOM 0.4",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "RandomItemId": ["(O)393", "(O)397"],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeAquaticEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeAquaticEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "RandomItemId": ["(O)392", "(O)394"],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "Condition": "RANDOM 0.1",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "RandomItemId": ["(O)152", "(O)153", "(O)157"],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "Condition": "RANDOM 0.4",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "RandomItemId": ["(O)393", "(O)397"],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Bait Chicken
+                        {
+                            "Id": "{{ModId}}.BaitEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.BaitEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)685",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)685",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)774",
+                                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Wild Bait",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)DeluxeBait",
+                                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Deluxe Bait",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeBaitEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeBaitEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)685",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)685",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)774",
+                                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Wild Bait",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)DeluxeBait",
+                                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Any Deluxe Bait",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Battery Chicken
+                        {
+                            "Id": "{{ModId}}.BatteryEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.BatteryEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)787",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeBatteryEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeBatteryEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)787",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Bomb Chicken
+                        {
+                            "Id": "{{ModId}}.BombEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.BombEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)286",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 4",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)286",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 4",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)286",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 4",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)287",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 6",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)287",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 6",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)288",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 8",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeBombEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeBombEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)286",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 4",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)286",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 4",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)286",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 4",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)287",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 6",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)287",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 6",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)288",
+                                    "Condition": "PLAYER_MINING_LEVEL Current 8",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Bone Chicken
+                        {
+                            "Id": "{{ModId}}.BoneEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.BoneEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)881",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeBoneEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeBoneEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)881",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Clay Chicken
+                        {
+                            "Id": "{{ModId}}.ClayEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.ClayEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)330",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeClayEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeClayEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)330",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Coal Chicken
+                        {
+                            "Id": "{{ModId}}.CoalEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.CoalEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)382",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeCoalEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeCoalEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)382",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Copper Chicken
+                        {
+                            "Id": "{{ModId}}.CopperEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.CopperEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)378",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeCopperEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeCopperEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)378",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 8}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Farmer Chicken
+                        {
+                            "Id": "{{ModId}}.FarmerEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.FarmerEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)368",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)370",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)465",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)770",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)MixedFlowerSeeds",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeFarmerEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeFarmerEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)368",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)370",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)465",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)770",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)MixedFlowerSeeds",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Fiber Chicken
+                        {
+                            "Id": "{{ModId}}.FiberEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.FiberEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)771",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeFiberEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeFiberEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)771",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Geode Chicken
+                        {
+                            "Id": "{{ModId}}.GeodeEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.GeodeEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)535",
+                                    "Condition": "MINE_LOWEST_LEVEL_REACHED 1",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)536",
+                                    "Condition": "MINE_LOWEST_LEVEL_REACHED 40",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)537",
+                                    "Condition": "MINE_LOWEST_LEVEL_REACHED 80",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)749",
+                                    "Condition": "MINE_LOWEST_LEVEL_REACHED 120",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeGeodeEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeGeodeEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)535",
+                                    "Condition": "MINE_LOWEST_LEVEL_REACHED 1",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)536",
+                                    "Condition": "MINE_LOWEST_LEVEL_REACHED 40",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)537",
+                                    "Condition": "MINE_LOWEST_LEVEL_REACHED 80",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)749",
+                                    "Condition": "MINE_LOWEST_LEVEL_REACHED 120",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Gold Chicken
+                        {
+                            "Id": "{{ModId}}.GoldEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.GoldEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)384",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeGoldEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeGoldEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)384",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Hardwood Chicken
+                        {
+                            "Id": "{{ModId}}.HardwoodEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.HardwoodEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)709",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeHardwoodEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeHardwoodEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)709",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Hay Chicken
+                        {
+                            "Id": "{{ModId}}.HayEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.HayEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)178",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 15}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeHayEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeHayEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)178",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 15}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Iridium Chicken
+                        {
+                            "Id": "{{ModId}}.IridiumEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.IridiumEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)386",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeIridiumEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeIridiumEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)386",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Iron Chicken
+                        {
+                            "Id": "{{ModId}}.IronEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.IronEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)380",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeIronEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeIronEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)380",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Librarian Chicken
+                        {
+                            "Id": "{{ModId}}.LibrarianEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LibrarianEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "RANDOM_ITEMS (O)",
+                                    "MaxItems": 1,
+                                    "PerItemCondition": "ITEM_CATEGORY Target -103",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeLibrarianEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeLibrarianEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "RANDOM_ITEMS (O)",
+                                    "MaxItems": 1,
+                                    "PerItemCondition": "ITEM_CATEGORY Target -103",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "RANDOM_ITEMS (O)",
+                                    "MaxItems": 1,
+                                    "PerItemCondition": "ITEM_CATEGORY Target -102, !ITEM_ID Target (O)Book_QueenOfSauce, !ITEM_ID Target (O)Book_Speed2, !ITEM_ID Target {{ModId}}.LuckyChickenBook",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Monster Chicken
+                        {
+                            "Id": "{{ModId}}.MonsterEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.MonsterEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)766",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)766",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)767",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)768",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)769",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeMonsterEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeMonsterEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)766",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)766",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)767",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)768",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)769",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Moss Chicken
+                        {
+                            "Id": "{{ModId}}.MossEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.MossEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)Moss",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeMossEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeMossEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)Moss",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 4}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Qi Chicken
+                        {
+                            "Id": "{{ModId}}.QiEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.QiEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)858",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeQiEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeQiEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)858",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 5}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 8}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Quartz Chicken
+                        {
+                            "Id": "{{ModId}}.QuartzEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.QuartzEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)80",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeQuartzEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeQuartzEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)80",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Radioactive Chicken
+                        {
+                            "Id": "{{ModId}}.RadioactiveEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.RadioactiveEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)74",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "Condition": "RANDOM 0.02",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)909",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeRadioactiveEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeRadioactiveEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)74",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "Condition": "RANDOM 0.02",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)909",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Sap Chicken
+                        {
+                            "Id": "{{ModId}}.SapEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.SapEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)92",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeSapEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeSapEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)92",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 6}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Sapling Chicken
+                        {
+                            "Id": "{{ModId}}.SaplingEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.SaplingEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "RandomItemId": ["(O)629", "(O)628", "(O)630", "(O)631", "(O)632", "(O)633"],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeSaplingEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeSaplingEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "RandomItemId": [
+                                        "(O)629",
+                                        "(O)628",
+                                        "(O)630",
+                                        "(O)631",
+                                        "(O)632",
+                                        "(O)633",
+                                        "(O)835",
+                                        "(O)69"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Stone Chicken
+                        {
+                            "Id": "{{ModId}}.StoneEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.StoneEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)390",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeStoneEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeStoneEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)390",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 40}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Tapper Chicken
+                        {
+                            "Id": "{{ModId}}.TapperEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.TapperEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)724",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "Condition": "RANDOM 0.25",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)725",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "Condition": "RANDOM 0.35",
 
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)726",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"UseFirstValidOutput": true,
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeTapperEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeTapperEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)724",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"Condition": "RANDOM 0.25",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)725",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"Condition": "RANDOM 0.35",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)726",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "UseFirstValidOutput": true,
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeTapperEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeTapperEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)724",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "Condition": "RANDOM 0.25",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)725",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "Condition": "RANDOM 0.35",
 
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)726",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"UseFirstValidOutput": true,
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Volcano Chicken
-						{
-							"Id": "{{ModId}}.VolcanoEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.VolcanoEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)852",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"Condition": "RANDOM 0.1",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)848",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeVolcanoEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeVolcanoEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)852",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"Condition": "RANDOM 0.1",
-									"IncrementMachineParentSheetIndex": 1
-								},
-								{
-									"ItemId": "(O)848",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						// Wood Chicken
-						{
-							"Id": "{{ModId}}.WoodEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.WoodEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)388",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						},
-						{
-							"Id": "{{ModId}}.LargeWoodEgg",
-							"Triggers": [
-								{
-									"Trigger": "ItemPlacedInMachine",
-									"RequiredItemId": "{{ModId}}.LargeWoodEgg",
-									"RequiredCount": 1
-								}
-							],
-							"OutputItem": [
-								{
-									"ItemId": "(O)388",
-									"MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
-									"MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 40}}, 0, up }}",
-									"IncrementMachineParentSheetIndex": 1
-								}
-							],
-							"MinutesUntilReady": "{{ResourceEggProcessingTime}}"
-						}
-					],
-					"LoadEffects": [
-						{
-							"Sounds": [
-								{
-									"Id": "Ship"
-								}
-							]
-						}
-					],
-					"WobbleWhileWorking": true,
-					"InvalidItemMessage": "{{i18n: BigCraftable.ResourceEggConverter.InvalidItemMessage}}"
-				}
-			}
-		},
-		// Adds Resource Egg Converter for sale at Marnie's
-		{
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["AnimalShop", "Items"],
-			"Entries": {
-				"(BC){{ModId}}.ResourceEggConverter": {
-					"Id": "(BC){{ModId}}.ResourceEggConverter",
-					"ItemId": "(BC){{ModId}}.ResourceEggConverter",
-					"Condition": "PLAYER_FARMING_LEVEL Current 2",
-					"Price": "{{ConverterPurchasePrice}}"
-				}
-			},
-			"MoveEntries": [
-				{
-					"ID": "(BC){{ModId}}.ResourceEggConverter",
-					"BeforeID": "(BC)45"
-				}
-			]
-		},
-		// Edits to the Mayonnaise Machine
-		{
-			"Action": "EditData",
-			"Target": "Data/Machines",
-			"TargetField": ["(BC)24", "OutputRules"],
-			"Entries": {
-				"{{ModId}}.ResourceEggs": {
-					"Id": "{{ModId}}.ResourceEggs",
-					"Triggers": [
-						{
-							"RequiredTags": ["resource_egg_item"]
-						}
-					],
-					"OutputItem": [
-						{
-							"ItemId": "(O)306"
-						}
-					],
-					"MinutesUntilReady": "{{MayoMinutesUntilReady}}"
-				},
-				"{{ModId}}.LargeResourceEggs": {
-					"Id": "{{ModId}}.LargeResourceEggs",
-					"Triggers": [
-						{
-							"RequiredTags": ["large_resource_egg_item"]
-						}
-					],
-					"OutputItem": [
-						{
-							"ItemId": "(O)306",
-							"Quality": 2
-						}
-					],
-					"MinutesUntilReady": "{{MayoMinutesUntilReady}}"
-				}
-			}
-		}
-	]
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)726",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "UseFirstValidOutput": true,
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Volcano Chicken
+                        {
+                            "Id": "{{ModId}}.VolcanoEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.VolcanoEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)852",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "Condition": "RANDOM 0.1",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)848",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeVolcanoEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeVolcanoEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)852",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "Condition": "RANDOM 0.1",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)848",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        // Wood Chicken
+                        {
+                            "Id": "{{ModId}}.WoodEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.WoodEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)388",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 10}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        },
+                        {
+                            "Id": "{{ModId}}.LargeWoodEgg",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "{{ModId}}.LargeWoodEgg",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)388",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 20}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 40}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                }
+                            ],
+                            "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
+                        }
+                    ],
+                    "LoadEffects": [
+                        {
+                            "Sounds": [
+                                {
+                                    "Id": "Ship"
+                                }
+                            ]
+                        }
+                    ],
+                    "WobbleWhileWorking": true,
+                    "InvalidItemMessage": "{{i18n: BigCraftable.ResourceEggConverter.InvalidItemMessage}}"
+                }
+            }
+        },
+        // Adds Resource Egg Converter for sale at Marnie's
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["AnimalShop", "Items"],
+            "Entries": {
+                "(BC){{ModId}}.ResourceEggConverter": {
+                    "Id": "(BC){{ModId}}.ResourceEggConverter",
+                    "ItemId": "(BC){{ModId}}.ResourceEggConverter",
+                    "Condition": "PLAYER_FARMING_LEVEL Current 2",
+                    "Price": "{{ConverterPurchasePrice}}"
+                }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "(BC){{ModId}}.ResourceEggConverter",
+                    "BeforeID": "(BC)45"
+                }
+            ]
+        },
+        // Edits to the Mayonnaise Machine
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": ["(BC)24", "OutputRules"],
+            "Entries": {
+                "{{ModId}}.ResourceEggs": {
+                    "Id": "{{ModId}}.ResourceEggs",
+                    "Triggers": [
+                        {
+                            "RequiredTags": ["resource_egg_item"]
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)306"
+                        }
+                    ],
+                    "MinutesUntilReady": "{{MayoMinutesUntilReady}}"
+                },
+                "{{ModId}}.LargeResourceEggs": {
+                    "Id": "{{ModId}}.LargeResourceEggs",
+                    "Triggers": [
+                        {
+                            "RequiredTags": ["large_resource_egg_item"]
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)306",
+                            "Quality": 2
+                        }
+                    ],
+                    "MinutesUntilReady": "{{MayoMinutesUntilReady}}"
+                }
+            }
+        }
+    ]
 }

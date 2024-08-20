@@ -1,18 +1,19 @@
 {
-	"Changes": [
-		{
-			"Action": "EditData",
-			"Target": "Data/Mail",
-			"Entries": {
-				"{{ModId}}.FarmerEggMail.QuestStart": "{{i18n: Mail.FarmerEgg.QuestStart.Text}}%item quest {{ModId}}.FirstFarmerEggQuest true %%[#]{{i18n: Mail.FarmerEgg.QuestStart.Title}}",
-				"{{ModId}}.FarmerEggMail.EggForSale": "{{i18n: Mail.FarmerEgg.EggForSale.Text}}[#]{{i18n: Mail.FarmerEgg.EggForSale.Title}}",
-				"{{ModId}}.BombEggMail.EggForSale": "{{i18n: Mail.BombEgg.EggForSale.Text}}[#]{{i18n: Mail.BombEgg.EggForSale.Title}}",
-				"{{ModId}}.MonsterEggMail.EggForSale": "{{i18n: Mail.MonsterEgg.EggForSale.Text}}[#]{{i18n: Mail.MonsterEgg.EggForSale.Title}}",
-				"{{ModId}}.Mail.ArtifactEgg.QuestStart": "{{i18n: Mail.ArtifactEgg.QuestStart.Text}}%item specialOrder {{ModId}}.FirstArtifactEgg true %%[#]{{i18n: Mail.ArtifactEgg.QuestStart.Title}}",
-				"{{ModId}}.Mail.ArtifactEgg.QuestComplete": "{{i18n: Mail.ArtifactEgg.QuestComplete.Text}}%item object {{ModId}}.ArtifactEgg 1 %%[#]{{i18n: Mail.ArtifactEgg.QuestComplete.Title}}",
-				"{{ModId}}.Mail.BatteryEgg.QuestComplete": "{{i18n: Mail.BatteryEgg.QuestComplete.Text}}%item object {{ModId}}.BatteryEgg 1 %%[#]{{i18n: Mail.BatteryEgg.QuestComplete.Title}}",
-				"{{ModId}}.Mail.LibrarianEgg.AchievementComplete": "{{i18n: Mail.LibrarianEgg.AchievementComplete.Text}}%item object {{ModId}}.LibrarianEgg 1 %%[#]{{i18n: Mail.LibrarianEgg.AchievementComplete.Title}}"
-			}
-		}
-	]
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "{{ModId}}.FarmerEggMail.QuestStart": "{{i18n: Mail.FarmerEgg.QuestStart.Text}}%item quest {{ModId}}.FirstFarmerEggQuest true %%[#]{{i18n: Mail.FarmerEgg.QuestStart.Title}}",
+                "{{ModId}}.FarmerEggMail.EggForSale": "{{i18n: Mail.FarmerEgg.EggForSale.Text}}[#]{{i18n: Mail.FarmerEgg.EggForSale.Title}}",
+                "{{ModId}}.BombEggMail.EggForSale": "{{i18n: Mail.BombEgg.EggForSale.Text}}[#]{{i18n: Mail.BombEgg.EggForSale.Title}}",
+                "{{ModId}}.MonsterEggMail.EggForSale": "{{i18n: Mail.MonsterEgg.EggForSale.Text}}[#]{{i18n: Mail.MonsterEgg.EggForSale.Title}}",
+                "{{ModId}}.Mail.ArtifactEgg.QuestStart": "{{i18n: Mail.ArtifactEgg.QuestStart.Text}}%item specialOrder {{ModId}}.FirstArtifactEgg true %%[#]{{i18n: Mail.ArtifactEgg.QuestStart.Title}}",
+                "{{ModId}}.Mail.ArtifactEgg.QuestComplete": "{{i18n: Mail.ArtifactEgg.QuestComplete.Text}}%item object {{ModId}}.ArtifactEgg 1 %%[#]{{i18n: Mail.ArtifactEgg.QuestComplete.Title}}",
+                "{{ModId}}.Mail.BatteryEgg.QuestComplete": "{{i18n: Mail.BatteryEgg.QuestComplete.Text}}%item object {{ModId}}.BatteryEgg 1 %%[#]{{i18n: Mail.BatteryEgg.QuestComplete.Title}}",
+                "{{ModId}}.Mail.LibrarianEgg.AchievementComplete": "{{i18n: Mail.LibrarianEgg.AchievementComplete.Text}}%item object {{ModId}}.LibrarianEgg 1 %%[#]{{i18n: Mail.LibrarianEgg.AchievementComplete.Title}}",
+                "{{ModId}}.Mail.SaplingEgg.BridgeConstructed": "{{i18n: Mail.SaplingEgg.BridgeConstructed.Text}}%item object {{ModId}}.SaplingEgg 1 %%[#]{{i18n: Mail.SaplingEgg.BridgeConstructed.Title}}"
+            }
+        }
+    ]
 }

@@ -15,6 +15,7 @@
 -   **Copper Chicken**
 -   **Fiber Chicken**
 -   **Hardwood Chicken**
+-   **Hay Chicken**
 -   **Sap Chicken**
 
 #### Level 3 Chickens
@@ -29,22 +30,21 @@
 
 #### Level 4 Chickens
 
--	**Battery Chicken**
+-   **Battery Chicken**
 -   **Bomb Chicken**
 -   **Gold Chicken**
--	**Librarian Chicken**
+-   **Librarian Chicken**
 -   **Monster Chicken**
--	**Tapper Chicken**
+-   **Tapper Chicken**
 
 #### Level 5 Chickens
 
 -   **Artifact Chicken**
 -   **Iridium Chicken**
--	**Lucky Chicken**
+-   **Qi Chicken**
 -   **Radioactive Chicken**
+-   **Sapling Chicken**
 -   **Volcano Chicken**
-
-#### MORE CHICKENS IN PROGRESS!
 
 Purchase level 1 baby Resource Chickens from Marnie once you have a Coop constructed. Resource Chickens cost twice as much as vanilla chickens because they can be twice as helpful. Resource eggs can be converted into resources, turned into mayo, and used in cooking recipes.
 
@@ -71,13 +71,17 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | Gold | Craft and incubate a Gold Egg Fusion Chamber | Farming 5 |
 | Geode | Drop from rare custom mining nodes in the Mines and Skull Cavern, can also spawn in the Quarry | Mining 3 |
 | Hardwood | Craft and incubate a Hardwood Egg Fusion Chamber | Farming 3 |
+| Hay | Obtain in a trade from the Calico Egg Merchant at the Desert Festival (or cheaper from Marnie's shop at the festival) | Foraging Level 3 |
 | Iridium | Craft and incubate an Iridium Egg Fusion Chamber | Farming 6 |
 | Iron | Craft and incubate an Iron Egg Fusion Chamber | Farming 4 |
+| Librarian | Received in the mail once obtaining all lost library books, or can trade from the bookseller at Foraging Level 10 | Foraging Level 5 |
 | Monster | Drop from rare custom monster nest mining nodes in the Quarry mine, also becomes purchasable from Krobus after 3 hearts of friendship with them | Combat 5 |
 | Moss | Rare drop from shaking/chopping green rain trees, destroying green rain weeds, forage in the Forest day after green rain, destroying weeds in the forest day after normal rain | Foraging 3 |
+| Qi | Purchaseable from Qi's Walnut Room once room is unlocked and character has reached level 10 in all skills | All Skills Level 10 |
 | Quartz | Craft and incubate a Quartz Egg Fusion Chamber | Farming 4 |
 | Radioactive | Drop from rare custom mining nodes in the dangerous mode Mines and dangerous mode Skull Cavern | Combat 10 |
 | Sap | Rare drop from chopping Oak, Maple, or Pine trees | Foraging 2 |
+| Sapling | Received in the mail once you repair the north Ginger Island bridge and collecting at least 60 Golden Walnuts. Can also be acquired from the Island Trader | Farming Level 10 |
 | Stone | Purchase from Marnie | Construct a Coop |
 | Tapper | Chance to be produced from tapping Mahogany trees. Rare drop from chopping or shaking Mahogany trees. Extremely rare chance to be produced from tapping Oak, Maple, or Pine trees | Foraging 5 |
 | Volcano | Rare drop from volcano egg nodes in the Volcano mines | Mining 8 |
@@ -222,4 +226,4 @@ Please let me know if you come across any compatibility issues.
 -   If playing multiplayer, all players will need this mod and the mod dependencies too
 -   **Resource Chickens can be added to an existing save**
 -   If removing from an in-progress save, be sure to sell all Resource Chickens and mod items prior to removal
-as
+    as
