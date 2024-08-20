@@ -1,100 +1,100 @@
 {
-	"Changes": [
-		// Librarian Chicken
-		{
-			"Action": "EditData",
-			"Target": "Data/FarmAnimals",
-			"Entries": {
-				"{{ModId}}.LibrarianChicken": {
-					"DisplayName": "{{i18n: Chicken.LibrarianChicken.Name}}",
-					"House": "Coop",
-					"EggItemIds": ["{{ModId}}.LibrarianEgg", "{{ModId}}.LargeLibrarianEgg"],
-					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
-					"BirthText": "{{i18n: Chicken.LibrarianChicken.BirthText}}",
-					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
-					"ProduceItemIds": [
-						{
-							"ItemId": "{{ModId}}.LibrarianEgg"
-						}
-					],
-					"DeluxeProduceItemIds": [
-						{
-							"ItemId": "{{ModId}}.LargeLibrarianEgg"
-						}
-					],
-					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 7}}, 0, up }}",
-					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
-					"Sound": "cluck",
-					"Texture": "{{ModId}}/LibrarianChicken",
-					"BabyTexture": "{{ModId}}/LibrarianChickenBaby",
-					"SleepFrame": 17,
-					"UseDoubleUniqueAnimationFrames": true,
-					"ProfessionForHappinessBoost": 2,
-					"ProfessionForQualityBoost": 0,
-					"CanSwim": "{{ChickensCanSwim}}",
-					"HappinessDrain": 20,
-					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.3}}, 0, up }}"
-				}
-			}
-		},
-		// Chicken Eggs
-		{
-			"Action": "EditData",
-			"Target": "Data/Objects",
-			"Entries": {
-				"{{ModId}}.LibrarianEgg": {
-					"Name": "{{ModId}}.LibrarianEgg",
-					"DisplayName": "{{i18n: Egg.Librarian.Name}}",
-					"Description": "{{i18n: ResourceEgg.Description}}",
-					"Type": "Basic",
-					"Category": -5,
-					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.3}}, 0, up }}",
-					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 32, // UPDATE
-					"Edibility": 10,
-					"ExcludeFromFishingCollection": true,
-					"ExcludeFromShippingCollection": true,
-					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item"]
-				},
-				"{{ModId}}.LargeLibrarianEgg": {
-					"Name": "{{ModId}}.LargeLibrarianEgg",
-					"DisplayName": "{{i18n: LargeEgg.Librarian.Name}}",
-					"Description": "{{i18n: ResourceEgg.Description}}",
-					"Type": "Basic",
-					"Category": -5,
-					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.3) * 1.9}}, 0, up }}",
-					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 33, // UPDATE
-					"Edibility": 15,
-					"ExcludeFromFishingCollection": true,
-					"ExcludeFromShippingCollection": true,
-					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item"]
-				}
-			}
-		},
-		// Adds Librarian Egg for trade with Bookseller
-		{
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["BooksellerTrade", "Items"],
-			"Entries": {
-				"{{ModId}}.LibrarianEggBookseller": {
-					"Id": "{{ModId}}.LibrarianEggBookseller",
-					"ItemId": "{{ModId}}.LibrarianEgg",
-					"TradeItemId": "(O)Book_Grass",
-					"TradeItemAmount": 1,
-					"Condition": "PLAYER_FORAGING_LEVEL Current 10",
-					"AvailableStock": 1
-				}
-			},
-			"MoveEntries": [
-				{
-					"Id": "{{ModId}}.LibrarianEggBookseller",
-					"ToPosition": "Top"
-				}
-			]
-		}
-	]
+    "Changes": [
+        // Librarian Chicken
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}.LibrarianChicken": {
+                    "DisplayName": "{{i18n: Chicken.LibrarianChicken.Name}}",
+                    "House": "Coop",
+                    "EggItemIds": ["{{ModId}}.LibrarianEgg", "{{ModId}}.LargeLibrarianEgg"],
+                    "IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
+                    "BirthText": "{{i18n: Chicken.LibrarianChicken.BirthText}}",
+                    "DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+                    "ProduceItemIds": [
+                        {
+                            "ItemId": "{{ModId}}.LibrarianEgg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "ItemId": "{{ModId}}.LargeLibrarianEgg"
+                        }
+                    ],
+                    "DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 7}}, 0, up }}",
+                    "DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+                    "Sound": "cluck",
+                    "Texture": "{{ModId}}/LibrarianChicken",
+                    "BabyTexture": "{{ModId}}/LibrarianChickenBaby",
+                    "SleepFrame": 17,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 0,
+                    "CanSwim": "{{ChickensCanSwim}}",
+                    "HappinessDrain": 20,
+                    "SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.3}}, 0, up }}"
+                }
+            }
+        },
+        // Chicken Eggs
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}.LibrarianEgg": {
+                    "Name": "{{ModId}}.LibrarianEgg",
+                    "DisplayName": "{{i18n: Egg.Librarian.Name}}",
+                    "Description": "{{i18n: ResourceEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.3}}, 0, up }}",
+                    "Texture": "{{ModId}}/Eggs",
+                    "SpriteIndex": 50,
+                    "Edibility": 10,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": ["resource_egg_item"]
+                },
+                "{{ModId}}.LargeLibrarianEgg": {
+                    "Name": "{{ModId}}.LargeLibrarianEgg",
+                    "DisplayName": "{{i18n: LargeEgg.Librarian.Name}}",
+                    "Description": "{{i18n: ResourceEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.3) * 1.9}}, 0, up }}",
+                    "Texture": "{{ModId}}/Eggs",
+                    "SpriteIndex": 51,
+                    "Edibility": 15,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": ["large_resource_egg_item"]
+                }
+            }
+        },
+        // Adds Librarian Egg for trade with Bookseller
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["BooksellerTrade", "Items"],
+            "Entries": {
+                "{{ModId}}.LibrarianEggBookseller": {
+                    "Id": "{{ModId}}.LibrarianEggBookseller",
+                    "ItemId": "{{ModId}}.LibrarianEgg",
+                    "TradeItemId": "(O)Book_Grass",
+                    "TradeItemAmount": 1,
+                    "Condition": "PLAYER_FORAGING_LEVEL Current 10",
+                    "AvailableStock": 1
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "{{ModId}}.LibrarianEggBookseller",
+                    "ToPosition": "Top"
+                }
+            ]
+        }
+    ]
 }

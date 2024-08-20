@@ -222,3 +222,4 @@ Please let me know if you come across any compatibility issues.
 -   If playing multiplayer, all players will need this mod and the mod dependencies too
 -   **Resource Chickens can be added to an existing save**
 -   If removing from an in-progress save, be sure to sell all Resource Chickens and mod items prior to removal
+as

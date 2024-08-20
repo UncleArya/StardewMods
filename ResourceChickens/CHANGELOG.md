@@ -2,22 +2,24 @@
 
 ## 1.0.0 (currently in progress - not released)
 
--	Added new Level 4 Chickens (Battery, Librarian, Tapper)
--	Added new Level 5 Chicken (Lucky)
--	Lowered Bone Chicken from Level 4 to Level 3
+-   Added new Level 4 Chickens (Battery, Librarian, Tapper)
+-   Added new Level 5 Chicken (Lucky)
+-   Lowered Bone Chicken from Level 4 to Level 3
 -   Created quest to obtain a Battery Chicken Egg
--	Added spawn conditions for Tapper Egg
+-   Added spawn conditions for Tapper Egg
 -   Added shop item for Clint once unlock conditions are satisfied
--	Significantly increased amount of wood and stone obtained by converting Wood and Stone Eggs
+-   Significantly increased amount of wood and stone obtained by converting Wood and Stone Eggs
+-   Updated Chinese translations (Thank you [axce47](https://next.nexusmods.com/profile/axce47/about-me))
+-   Updated Content Patcher version
 
 ## 0.4.3
 
--	Added workaround to spawn condition of volcano egg due to a current bug in Item Extensions
--	Updated Portuguese translations
+-   Added workaround to spawn condition of volcano egg due to a current bug in Item Extensions
+-   Updated Portuguese translations
 
 ## 0.4.2
 
--  Updated Spanish and French translations
+-   Updated Spanish and French translations
 
 ## 0.4.1
 
