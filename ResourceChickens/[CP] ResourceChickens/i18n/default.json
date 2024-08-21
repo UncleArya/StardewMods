@@ -1,7 +1,7 @@
 /*
-~Notes to translators~ Update 0.4.0
-Lines Added: 44-59, 93-108, 118, 130-154, 167-168
-Lines Changed: 159
+~Notes to translators~ Update 1.0.0
+Lines Added: 60-84, 166-171, 186-192
+Lines Changed: 
 */
 // Thank you translators!!
 {
@@ -57,6 +57,31 @@ Lines Changed: 159
     "Chicken.RadioactiveChicken.BirthText": "A baby radioactive chicken was born!",
     "Chicken.VolcanoChicken.Name": "Volcano Chicken",
     "Chicken.VolcanoChicken.BirthText": "A baby volcano chicken was born!",
+    // Update 1.0.0
+    "Chicken.BatteryChicken.Name": "Battery Chicken",
+    "Chicken.BatteryChicken.BirthText": "A baby battery chicken was born!",
+    "Egg.Battery.Name": "Battery Egg",
+    "LargeEgg.Battery.Name": "Large Battery Egg",
+    "Chicken.HayChicken.Name": "Hay Chicken",
+    "Chicken.HayChicken.BirthText": "A baby hay chicken was born!",
+    "Egg.Hay.Name": "Hay Egg",
+    "LargeEgg.Hay.Name": "Large Hay Egg",
+    "Chicken.LibrarianChicken.Name": "Librarian Chicken",
+    "Chicken.LibrarianChicken.BirthText": "A baby librarian chicken was born! Shhhhhhh!",
+    "Egg.Librarian.Name": "Librarian Egg",
+    "LargeEgg.Librarian.Name": "Large Librarian Egg",
+    "Chicken.QiChicken.Name": "Qi Chicken",
+    "Chicken.QiChicken.BirthText": "A baby Qi chicken was born!",
+    "Egg.Qi.Name": "Qi Egg",
+    "LargeEgg.Qi.Name": "Large Qi Egg",
+    "Chicken.SaplingChicken.Name": "Sapling Chicken",
+    "Chicken.SaplingChicken.BirthText": "A baby sapling chicken was born!",
+    "Egg.Sapling.Name": "Sapling Egg",
+    "LargeEgg.Sapling.Name": "Large Sapling Egg",
+    "Chicken.TapperChicken.Name": "Tapper Chicken",
+    "Chicken.TapperChicken.BirthText": "A baby tapper chicken was born!",
+    "Egg.Tapper.Name": "Tapper Egg",
+    "LargeEgg.Tapper.Name": "Large Tapper Egg",
 
     // Eggs
     "Egg.Clay.Name": "Clay Egg",
@@ -138,6 +163,12 @@ Lines Changed: 159
     "Quest.FirstArtifactEgg.Objective3.Text": "Give a flower to Sandy",
     "Quest.FirstArtifactEgg.Objective4.Text": "Give a diamond to Krobus",
     "Quest.FirstArtifactEgg.Objective5.Text": "Give an emerald to the Dwarf",
+    // Update 1.0.0
+    "Quest.FirstBatteryEgg.Name": "Renewable Energy",
+    "Quest.FirstBatteryEgg.Text": "I met a scientist in Zuzu city who has discovered a new type of renewable energy using chickens but needs your help obtaining the resources needed to complete the project.",
+    "Quest.FirstBatteryEgg.Objective1.Text": "Place 50 coal in the drop box outside Clint's",
+    "Quest.FirstBatteryEgg.Objective2.Text": "Place 10 gold bars in the drop box outside Clint's",
+    "Quest.FirstBatteryEgg.Objective3.Text": "Place 2 iridium bars in the drop box outside Clint's",
 
     // Mail
     "Mail.BombEgg.EggForSale.Title": "Egg Found in Mines",
@@ -152,6 +183,13 @@ Lines Changed: 159
     "Mail.ArtifactEgg.QuestStart.Text": "Hello Farmer @,^You have been doing so many kind things for me by donating all these fascinating artifacts to the museum. I would like your help in spreading that kindness throughout the valley. If you can help me, I could give you this unique chicken egg I recently discovered.^    -Gunther",
     "Mail.ArtifactEgg.QuestComplete.Title": "Kindness Achieved",
     "Mail.ArtifactEgg.QuestComplete.Text": "Hey Farmer @,^Thank you so much for helping me brighten everyone's day! Here is a chicken egg I think you might be interested in. The Desert Trader also told me she was going to start offering these for trades if you wanted more of them.^    -Gunther",
+    // Update 1.0.0
+    "Mail.BatteryEgg.QuestComplete.Title": "Renewable Chickens",
+    "Mail.BatteryEgg.QuestComplete.Text": "Hey @,^Thanks for helping my scientist friend in Zuzu complete their renewable energy project. They sent me a sample from their new chicken, but I think you should have it and raise it on your farm. If you need any more of their eggs, you can come get them from me!^    -Clint",
+    "Mail.LibrarianEgg.AchievementComplete.Title": "Chicken in the Library",
+    "Mail.LibrarianEgg.AchievementComplete.Text": "Hello Farmer,^The strangest thing happened while I was browsing the library shelves after you found all those lost books... I came across an abandoned bird nest on a bottom shelf with a strange egg still in it. I thought I should send it to you since you're so skilled at raising animals. Thank you for supporting your local library!^    -Gunther",
+    "Mail.SaplingEgg.BridgeConstructed.Title": "Thanks for rescuing me!",
+    "Mail.SaplingEgg.BridgeConstructed.Text": "Hello Farmer,^Thank you so much for saving me from that horrible cave. I cannot thank you enough! I have heard you have a wonderful farm full of chickens so I thought you might want to add a new one to your farm. This is a special one I have only ever seen here on Ginger Island. I am sure you will raise it well. Thanks again!^    -Professor Snail",
 
     // Config
     // Appearance & Behaviour
@@ -191,49 +229,5 @@ Lines Changed: 159
     "config.ConverterPurchasePrice.name": "Converter Purchase Price",
     "config.ConverterPurchasePrice.description": "Price of purchasing the Resource Egg Converter from Marnie\nDefault: 1000",
     "config.MayoMinutesUntilReady.name": "Mayo Processing Time (Mins)",
-    "config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180",
-
-    // Update 1.0.0
-    "Chicken.TapperChicken.Name": "Tapper Chicken",
-    "Chicken.TapperChicken.BirthText": "A baby tapper chicken was born!",
-    "Egg.Tapper.Name": "Tapper Egg",
-    "LargeEgg.Tapper.Name": "Large Tapper Egg",
-
-    "Chicken.BatteryChicken.Name": "Battery Chicken",
-    "Chicken.BatteryChicken.BirthText": "A baby battery chicken was born!",
-    "Egg.Battery.Name": "Battery Egg",
-    "LargeEgg.Battery.Name": "Large Battery Egg",
-
-    "Chicken.LibrarianChicken.Name": "Librarian Chicken",
-    "Chicken.LibrarianChicken.BirthText": "A baby librarian chicken was born! Shhhhhhh!",
-    "Egg.Librarian.Name": "Librarian Egg",
-    "LargeEgg.Librarian.Name": "Large Librarian Egg",
-
-    "Chicken.QiChicken.Name": "Qi Chicken",
-    "Chicken.QiChicken.BirthText": "A baby Qi chicken was born!",
-    "Egg.Qi.Name": "Qi Egg",
-    "LargeEgg.Qi.Name": "Large Qi Egg",
-
-    "Chicken.SaplingChicken.Name": "Sapling Chicken",
-    "Chicken.SaplingChicken.BirthText": "A baby sapling chicken was born!",
-    "Egg.Sapling.Name": "Sapling Egg",
-    "LargeEgg.Sapling.Name": "Large Sapling Egg",
-
-    "Chicken.HayChicken.Name": "Hay Chicken",
-    "Chicken.HayChicken.BirthText": "A baby hay chicken was born!",
-    "Egg.Hay.Name": "Hay Egg",
-    "LargeEgg.Hay.Name": "Large Hay Egg",
-
-    "Quest.FirstBatteryEgg.Name": "Renewable Energy",
-    "Quest.FirstBatteryEgg.Text": "I met a scientist in Zuzu city who has discovered a new type of renewable energy using chickens but needs your help obtaining the resources needed to complete the project.",
-    "Quest.FirstBatteryEgg.Objective1.Text": "Place 50 coal in the drop box outside Clint's",
-    "Quest.FirstBatteryEgg.Objective2.Text": "Place 10 gold bars in the drop box outside Clint's",
-    "Quest.FirstBatteryEgg.Objective3.Text": "Place 2 iridium bars in the drop box outside Clint's",
-
-    "Mail.BatteryEgg.QuestComplete.Title": "Renewable Chickens",
-    "Mail.BatteryEgg.QuestComplete.Text": "Hey @,^Thanks for helping my scientist friend in Zuzu complete their renewable energy project. They sent me a sample from their new chicken, but I think you should have it and raise it on your farm. If you need any more of their eggs, you can come get them from me!^    -Clint",
-    "Mail.LibrarianEgg.AchievementComplete.Title": "Chicken in the Library",
-    "Mail.LibrarianEgg.AchievementComplete.Text": "Hello Farmer,^The strangest thing happened while I was browsing the library shelves after you found all those lost books... I came across an abandoned bird nest on a bottom shelf with a strange egg still in it. I thought I should send it to you since you're so skilled at raising animals. Thank you for supporting your local library!^    -Gunther",
-    "Mail.SaplingEgg.BridgeConstructed.Title": "Thanks for rescuing me!",
-    "Mail.SaplingEgg.BridgeConstructed.Text": "Hello Farmer,^Thank you so much for saving me from that horrible cave. I cannot thank you enough! I have heard you have a wonderful farm full of chickens so I thought you might want to add a new one to your farm. This is a special one I have only ever seen here on Ginger Island. I am sure you will raise it well. Thanks again!^    -Professor Snail"
+    "config.MayoMinutesUntilReady.description": "Length in minutes for a resource egg to be turned into mayo\nDefault: 180"
 }
