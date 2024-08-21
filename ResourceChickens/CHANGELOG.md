@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0 (currently in progress - not released)
+## 1.0.0
 
 -   Added new Level 2 Chicken (Hay)
 -   Added new Level 4 Chickens (Battery, Librarian, Tapper)
