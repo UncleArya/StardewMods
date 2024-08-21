@@ -212,11 +212,11 @@ Want to help translate this mod into another language? This mod is fully prepare
 This mod relies entirely on [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915), so it should be fully compatible with pretty much every other mod out there.
 
 Direct compatibility has been added for the following mods:
--   Ridgeside Village
--   Visit Mount Vapius
--   Cornucopia - More Crops
--   More Books
--   Button's Extra Books
+-   [Ridgeside Village](https://www.nexusmods.com/stardewvalley/mods/7286)
+-   [Visit Mount Vapius](https://www.nexusmods.com/stardewvalley/mods/9600)
+-   [Cornucopia - More Crops](https://www.nexusmods.com/stardewvalley/mods/19508)
+-   [More Books](https://www.nexusmods.com/stardewvalley/mods/23891)
+-   [Button's Extra Books](https://www.nexusmods.com/stardewvalley/mods/21526)
 
 **Sapling Egg:** If Cornucopia, Ridgeside, or Vapius is present, fruit trees from those mods will be in the drop pool
 **Librarian Egg:** If More Books and/or Button's Extra Books is present, books from that mod will be present in the drop pool for Large Librarian Eggs
