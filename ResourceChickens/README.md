@@ -211,6 +211,17 @@ Want to help translate this mod into another language? This mod is fully prepare
 
 This mod relies entirely on [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915), so it should be fully compatible with pretty much every other mod out there.
 
+Direct compatibility has been added for the following mods:
+-   Ridgeside Village
+-   Visit Mount Vapius
+-   Cornucopia - More Crops
+-   More Books
+-   Button's Extra Books
+
+**Sapling Egg:** If Cornucopia, Ridgeside, or Vapius is present, fruit trees from those mods will be in the drop pool
+**Librarian Egg:** If More Books and/or Button's Extra Books is present, books from that mod will be present in the drop pool for Large Librarian Eggs
+**Visit Mount Vapius:** If Vapius is present, items from Vapius will appear in the drop pool for: Geode Eggs, Artifact Eggs, Sapling Eggs, Tapper Eggs
+
 Works with [Machine Progression System](https://www.nexusmods.com/stardewvalley/mods/21720). The mod author has added support for resource eggs into their mayo machines!
 
 [A custom item bag](https://www.nexusmods.com/stardewvalley/articles/370) has been created by [Spartan586](https://next.nexusmods.com/profile/Spartan586/about-me) for the mod [Item Bags](https://www.nexusmods.com/stardewvalley/mods/5382).

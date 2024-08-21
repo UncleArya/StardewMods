@@ -41,6 +41,14 @@
                                     "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "IncrementMachineParentSheetIndex": 1
+                                },
+                                // Vapius
+                                {
+                                    "ItemId": "Lumisteria.MtVapius_Treasures_ArtifactTrove",
+                                    "Condition": "{{HasMod |contains=Lumisteria.MtVapius}}",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
                                 }
                             ],
                             "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
@@ -57,6 +65,14 @@
                             "OutputItem": [
                                 {
                                     "ItemId": "(O)275",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                // Vapius
+                                {
+                                    "ItemId": "Lumisteria.MtVapius_Treasures_ArtifactTrove",
+                                    "Condition": "{{HasMod |contains=Lumisteria.MtVapius}}",
                                     "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
                                     "IncrementMachineParentSheetIndex": 1
@@ -680,6 +696,14 @@
                                     "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "IncrementMachineParentSheetIndex": 1
+                                },
+                                // Vapius
+                                {
+                                    "ItemId": "Lumisteria.MtVapius_BlackGeode",
+                                    "Condition": "{{HasMod |contains=Lumisteria.MtVapius}}",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
                                 }
                             ],
                             "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
@@ -718,6 +742,14 @@
                                 {
                                     "ItemId": "(O)749",
                                     "Condition": "MINE_LOWEST_LEVEL_REACHED 120",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                // Vapius
+                                {
+                                    "ItemId": "Lumisteria.MtVapius_BlackGeode",
+                                    "Condition": "{{HasMod |contains=Lumisteria.MtVapius}}",
                                     "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 3}}, 0, up }}",
                                     "IncrementMachineParentSheetIndex": 1
@@ -1165,6 +1197,18 @@
                                     "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
                                     "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)80",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
+                                },
+                                {
+                                    "ItemId": "(O)82",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1
                                 }
                             ],
                             "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
@@ -1277,6 +1321,92 @@
                                     "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "IncrementMachineParentSheetIndex": 1
+                                },
+                                // Cornucopia Essentials Pack
+                                {
+                                    "RandomItemId": [
+                                        "Cornucopia_AvocadoSapling",
+                                        "Cornucopia_CocoaPodSapling",
+                                        "Cornucopia_PearSapling",
+                                        "Cornucopia_PistachioSapling"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "{{HasMod |contains=Cornucopia.MoreCrops}}"
+                                },
+                                // Cornucopia Extended Pack
+                                {
+                                    "RandomItemId": [
+                                        "Cornucopia_AlmondSapling",
+                                        "Cornucopia_BreadfruitSapling",
+                                        "Cornucopia_CashewSapling",
+                                        "Cornucopia_DragonFruitSapling",
+                                        "Cornucopia_DurianSapling",
+                                        "Cornucopia_FigSapling",
+                                        "Cornucopia_GrapefruitSapling",
+                                        "Cornucopia_LemonSapling",
+                                        "Cornucopia_LimeSapling",
+                                        "Cornucopia_LycheeSapling",
+                                        "Cornucopia_NectarineSapling",
+                                        "Cornucopia_PapayaSapling",
+                                        "Cornucopia_PecanSapling",
+                                        "Cornucopia_PersimmonSapling",
+                                        "Cornucopia_PlantainSapling",
+                                        "Cornucopia_PomeloSapling",
+                                        "Cornucopia_UmeSapling",
+                                        "Cornucopia_WalnutSapling",
+                                        "Cornucopia_YuzuSapling"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "{{HasMod |contains=Cornucopia.MoreCrops}}, PLAYER_HAS_MAIL Host Cornucopia.MoreCrops_ExtendedTreesPackEnabled Received"
+                                },
+                                // Cornucopia Herbs Pack
+                                {
+                                    "RandomItemId": [
+                                        "Cornucopia_CamphorLeavesSapling",
+                                        "Cornucopia_CinnamonSticksSapling",
+                                        "Cornucopia_EucalyptusLeavesSapling",
+                                        "Cornucopia_MelaleucaLeavesSapling",
+                                        "Cornucopia_NutmegSapling"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "{{HasMod |contains=Cornucopia.MoreCrops}}, PLAYER_HAS_MAIL Host Cornucopia.MoreCrops_HerbsPackEnabled Received"
+                                },
+                                // Ridgeside Village
+                                {
+                                    "RandomItemId": [
+                                        "Rafseazz.RSVCP_Cherry_Pluot_Sapling",
+                                        "Rafseazz.RSVCP_Desert_Tangelo_Sapling",
+                                        "Rafseazz.RSVCP_Ember_Blood_Lime_Sapling",
+                                        "Rafseazz.RSVCP_Highland_Jostaberry_Sapling",
+                                        "Rafseazz.RSVCP_Mountain_Plumcot_Sapling",
+                                        "Rafseazz.RSVCP_Northern_Limequat_Sapling",
+                                        "Rafseazz.RSVCP_Paradise_Rangpur_Sapling",
+                                        "Rafseazz.RSVCP_Tropi_Ugli_Fruit_Sapling"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "{{HasMod |contains=Rafseazz.RSVCP}}"
+                                },
+                                // Vapius
+                                {
+                                    "RandomItemId": [
+                                        "Lumisteria.MtVapius_FrostAppleSapling",
+                                        "Lumisteria.MtVapius_OliveSapling",
+                                        "Lumisteria.MtVapius_GrapeSapling",
+                                        "Lumisteria.MtVapius_CasalotierSapling",
+                                        "Lumisteria.MtVapius_LarimarSapling"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "{{HasMod |contains=Lumisteria.MtVapius}}"
                                 }
                             ],
                             "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
@@ -1305,6 +1435,92 @@
                                     "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "IncrementMachineParentSheetIndex": 1
+                                },
+                                // Cornucopia Essentials Pack
+                                {
+                                    "RandomItemId": [
+                                        "Cornucopia_AvocadoSapling",
+                                        "Cornucopia_CocoaPodSapling",
+                                        "Cornucopia_PearSapling",
+                                        "Cornucopia_PistachioSapling"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "{{HasMod |contains=Cornucopia.MoreCrops}}"
+                                },
+                                // Cornucopia Extended Pack
+                                {
+                                    "RandomItemId": [
+                                        "Cornucopia_AlmondSapling",
+                                        "Cornucopia_BreadfruitSapling",
+                                        "Cornucopia_CashewSapling",
+                                        "Cornucopia_DragonFruitSapling",
+                                        "Cornucopia_DurianSapling",
+                                        "Cornucopia_FigSapling",
+                                        "Cornucopia_GrapefruitSapling",
+                                        "Cornucopia_LemonSapling",
+                                        "Cornucopia_LimeSapling",
+                                        "Cornucopia_LycheeSapling",
+                                        "Cornucopia_NectarineSapling",
+                                        "Cornucopia_PapayaSapling",
+                                        "Cornucopia_PecanSapling",
+                                        "Cornucopia_PersimmonSapling",
+                                        "Cornucopia_PlantainSapling",
+                                        "Cornucopia_PomeloSapling",
+                                        "Cornucopia_UmeSapling",
+                                        "Cornucopia_WalnutSapling",
+                                        "Cornucopia_YuzuSapling"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "{{HasMod |contains=Cornucopia.MoreCrops}}, PLAYER_HAS_MAIL Host Cornucopia.MoreCrops_ExtendedTreesPackEnabled Received"
+                                },
+                                // Cornucopia Herbs Pack
+                                {
+                                    "RandomItemId": [
+                                        "Cornucopia_CamphorLeavesSapling",
+                                        "Cornucopia_CinnamonSticksSapling",
+                                        "Cornucopia_EucalyptusLeavesSapling",
+                                        "Cornucopia_MelaleucaLeavesSapling",
+                                        "Cornucopia_NutmegSapling"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "{{HasMod |contains=Cornucopia.MoreCrops}}, PLAYER_HAS_MAIL Host Cornucopia.MoreCrops_HerbsPackEnabled Received"
+                                },
+                                // Ridgeside Village
+                                {
+                                    "RandomItemId": [
+                                        "Rafseazz.RSVCP_Cherry_Pluot_Sapling",
+                                        "Rafseazz.RSVCP_Desert_Tangelo_Sapling",
+                                        "Rafseazz.RSVCP_Ember_Blood_Lime_Sapling",
+                                        "Rafseazz.RSVCP_Highland_Jostaberry_Sapling",
+                                        "Rafseazz.RSVCP_Mountain_Plumcot_Sapling",
+                                        "Rafseazz.RSVCP_Northern_Limequat_Sapling",
+                                        "Rafseazz.RSVCP_Paradise_Rangpur_Sapling",
+                                        "Rafseazz.RSVCP_Tropi_Ugli_Fruit_Sapling"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "{{HasMod |contains=Rafseazz.RSVCP}}"
+                                },
+                                // Vapius
+                                {
+                                    "RandomItemId": [
+                                        "Lumisteria.MtVapius_FrostAppleSapling",
+                                        "Lumisteria.MtVapius_OliveSapling",
+                                        "Lumisteria.MtVapius_GrapeSapling",
+                                        "Lumisteria.MtVapius_CasalotierSapling",
+                                        "Lumisteria.MtVapius_LarimarSapling"
+                                    ],
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "{{HasMod |contains=Lumisteria.MtVapius}}"
                                 }
                             ],
                             "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
@@ -1374,12 +1590,20 @@
 
                                     "IncrementMachineParentSheetIndex": 1
                                 },
+                                // Vapius
+                                {
+                                    "ItemId": "Lumisteria.MtVapius_BirchSap",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "RANDOM 0.25, {{HasMod |contains=Lumisteria.MtVapius}}"
+                                },
                                 {
                                     "ItemId": "(O)726",
                                     "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
                                     "IncrementMachineParentSheetIndex": 1
-                                }
+                                },
                             ],
                             "UseFirstValidOutput": true,
                             "MinutesUntilReady": "{{ResourceEggProcessingTime}}"
@@ -1408,6 +1632,14 @@
                                     "Condition": "RANDOM 0.35",
 
                                     "IncrementMachineParentSheetIndex": 1
+                                },
+                                // Vapius
+                                {
+                                    "ItemId": "Lumisteria.MtVapius_BirchSap",
+                                    "MinStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 1}}, 0, up }}",
+                                    "MaxStack": "{{Round: {{query: {{ResourceEggConversionChoice}} * 2}}, 0, up }}",
+                                    "IncrementMachineParentSheetIndex": 1,
+                                    "Condition": "RANDOM 0.25, {{HasMod |contains=Lumisteria.MtVapius}}"
                                 },
                                 {
                                     "ItemId": "(O)726",

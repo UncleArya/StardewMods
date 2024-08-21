@@ -15,6 +15,11 @@
 -   Bait Egg now has a change of appearing in fishing treasure chests and no longer appears on the beach as forage
 -   Significantly increased amount of wood and stone obtained by converting Wood and Stone Eggs
 -   Added 'egg_item' context tag to all resource eggs to improve compatibility (such as resource eggs now being usable in Gus's giant omelette special order)
+-   Large Quartz Egg now has a 33% chance of converting into Fire Quartz
+-   Added compatibility for: Ridgeside Village, Visit Mount Vapius, Cornucopia - More Crops, More Books, Button's Extra Books
+-   Sapling Egg: If Cornucopia, Ridgeside, or Vapius is present, fruit trees from those mods will be in the drop pool
+-   Librarian Egg: If More Books and/or Button's Extra Books is present, books from that mod will be present in the drop pool for Large Librarian Eggs
+-   Vapius: If Vapius is present, items from Vapius will appear in the drop pool for: Geode Eggs, Artifact Eggs, Sapling Eggs, Tapper Eggs
 -   Updated Chinese translations (Thank you [axce47](https://next.nexusmods.com/profile/axce47/about-me))
 -   Updated Content Patcher version
 

@@ -223,6 +223,21 @@
             "When": {
                 "ResourceChickenDaysToMature": "2x"
             }
+        },
+        // Mod Compatibility Flags
+        {
+            "Name": "EnableCornucopia",
+            "Value": "true",
+            "When": {
+                "HasMod |contains=Cornucopia.MoreCrops": true
+            }
+        },
+        {
+            "Name": "EnableRidgeside",
+            "Value": "true",
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true
+            }
         }
     ],
     // Changes
