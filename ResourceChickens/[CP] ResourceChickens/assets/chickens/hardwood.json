@@ -59,7 +59,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_brown"]
+					"ContextTags": ["resource_egg_item", "color_brown", "egg_item"]
 				},
 				"{{ModId}}.LargeHardwoodEgg": {
 					"Name": "{{ModId}}.LargeHardwoodEgg",
@@ -74,7 +74,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_brown"]
+					"ContextTags": ["large_resource_egg_item", "color_brown", "egg_item"]
 				},
 				"{{ModId}}.HardwoodEggFusionChamber": {
 					"Name": "{{ModId}}.HardwoodEggFusionChamber",

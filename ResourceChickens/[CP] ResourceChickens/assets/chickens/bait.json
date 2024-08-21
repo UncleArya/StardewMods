@@ -55,7 +55,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_pink"]
+					"ContextTags": ["resource_egg_item", "color_pink", "egg_item"]
 				},
 				"{{ModId}}.LargeBaitEgg": {
 					"Name": "{{ModId}}.LargeBaitEgg",
@@ -70,7 +70,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_pink"]
+					"ContextTags": ["large_resource_egg_item", "color_pink", "egg_item"]
 				}
 			}
 		},
@@ -109,7 +109,7 @@
 			"Entries": {
 				"{{ModId}}.BaitEggTreasure": {
 					"ItemId": "{{ModId}}.BaitEgg",
-					"Chance": 0.05,
+					"Chance": 0.1,
 					"MinStack": 1,
 					"MaxStack": 1,
 					"Condition": "PLAYER_FISHING_LEVEL Current 2"

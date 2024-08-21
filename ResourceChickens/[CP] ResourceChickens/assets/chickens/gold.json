@@ -55,7 +55,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_gold"]
+					"ContextTags": ["resource_egg_item", "color_gold", "egg_item"]
 				},
 				"{{ModId}}.LargeGoldEgg": {
 					"Name": "{{ModId}}.LargeGoldEgg",
@@ -70,7 +70,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_gold"]
+					"ContextTags": ["large_resource_egg_item", "color_gold", "egg_item"]
 				},
 				"{{ModId}}.GoldEggFusionChamber": {
 					"Name": "{{ModId}}.GoldEggFusionChamber",

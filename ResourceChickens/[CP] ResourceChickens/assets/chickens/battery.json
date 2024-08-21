@@ -55,7 +55,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_white"]
+					"ContextTags": ["resource_egg_item", "color_yellow", "egg_item"]
 				},
 				"{{ModId}}.LargeBatteryEgg": {
 					"Name": "{{ModId}}.LargeBatteryEgg",
@@ -70,7 +70,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_white"]
+					"ContextTags": ["large_resource_egg_item", "color_yellow", "egg_item"]
 				}
 			}
 		},

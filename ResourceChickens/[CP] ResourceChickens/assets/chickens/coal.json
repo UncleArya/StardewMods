@@ -66,7 +66,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_black"]
+					"ContextTags": ["resource_egg_item", "color_black", "egg_item"]
 				},
 				"{{ModId}}.LargeCoalEgg": {
 					"Name": "{{ModId}}.LargeCoalEgg",
@@ -81,7 +81,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_black"]
+					"ContextTags": ["large_resource_egg_item", "color_black", "egg_item"]
 				}
 			}
 		},

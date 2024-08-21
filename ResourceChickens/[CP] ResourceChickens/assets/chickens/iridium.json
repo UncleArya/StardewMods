@@ -59,7 +59,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_iridium"]
+					"ContextTags": ["resource_egg_item", "color_iridium", "egg_item"]
 				},
 				"{{ModId}}.LargeIridiumEgg": {
 					"Name": "{{ModId}}.LargeIridiumEgg",
@@ -74,7 +74,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_iridium"]
+					"ContextTags": ["large_resource_egg_item", "color_iridium", "egg_item"]
 				},
 				"{{ModId}}.IridiumEggFusionChamber": {
 					"Name": "{{ModId}}.IridiumEggFusionChamber",

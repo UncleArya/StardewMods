@@ -55,7 +55,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_orange"]
+					"ContextTags": ["resource_egg_item", "color_pink", "egg_item"]
 				},
 				"{{ModId}}.LargeVolcanoEgg": {
 					"Name": "{{ModId}}.LargeVolcanoEgg",
@@ -70,7 +70,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_orange"]
+					"ContextTags": ["large_resource_egg_item", "color_pink", "egg_item"]
 				}
 			}
 		},

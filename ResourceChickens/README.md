@@ -59,7 +59,7 @@ Each subsequent increase in chicken level adds 10% to both the sell price of egg
 | --- | --- | --- |
 | Aquatic | Forage around the Beach Tide Pools the day after rain or storms | Fishing 3 |
 | Artifact | Complete a quest from Gunther once reaching Mining Level 5, or trade with the Desert Trader at Mining Level 8 if quest isn't completed | Mining 5 |
-| Bait | Forage around the Beach Tide Pools the day it is raining, also becomes purchasable from Willy after getting the Ol' Mariner Achievement | Fishing 2 |
+| Bait | Rare chance to appear in fishing treasure chests once reaching Fishing Level 2, also becomes purchasable from Willy after getting the Ol' Mariner Achievement | Fishing 2 |
 | Battery | Complete a quest from Clint once the Special Orders board is available, also becomes purchaseable from Clint once reaching Mining Level 10 | Special Orders Board |
 | Bone | Rare drop from barrels in the Mines level 80+, fossil stones in the Skull Cavern, and some secret spots | Foraging 4 |
 | Bomb | Rare drop from barels in the Skull Cavern, also becomes purchasable from the Dwarf after 3 hearts of friendship with them | Mining 4 |

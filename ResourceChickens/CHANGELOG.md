@@ -12,7 +12,9 @@
 -   Added shop item for Bookseller once unlock conditions are satisfied
 -   Added shop item for Clint once unlock conditions are satisfied
 -   Added shop items for Calico Egg Merchant, Marnie's shop at the Desert Festival, and Qi's Walnut Room shop
+-   Bait Egg now has a change of appearing in fishing treasure chests and no longer appears on the beach as forage
 -   Significantly increased amount of wood and stone obtained by converting Wood and Stone Eggs
+-   Added 'egg_item' context tag to all resource eggs to improve compatibility (such as resource eggs now being usable in Gus's giant omelette special order)
 -   Updated Chinese translations (Thank you [axce47](https://next.nexusmods.com/profile/axce47/about-me))
 -   Updated Content Patcher version
 

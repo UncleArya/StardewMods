@@ -55,7 +55,7 @@
                     "ExcludeFromFishingCollection": true,
                     "ExcludeFromShippingCollection": true,
                     "ExcludeFromRandomSale": true,
-                    "ContextTags": ["resource_egg_item", "color_green"]
+                    "ContextTags": ["resource_egg_item", "color_orange", "egg_item"]
                 },
                 "{{ModId}}.LargeHayEgg": {
                     "Name": "{{ModId}}.LargeHayEgg",
@@ -70,7 +70,7 @@
                     "ExcludeFromFishingCollection": true,
                     "ExcludeFromShippingCollection": true,
                     "ExcludeFromRandomSale": true,
-                    "ContextTags": ["large_resource_egg_item", "color_green"]
+                    "ContextTags": ["large_resource_egg_item", "color_orange", "egg_item"]
                 }
             }
         },

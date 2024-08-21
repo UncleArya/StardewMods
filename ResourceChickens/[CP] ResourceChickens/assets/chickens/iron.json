@@ -55,7 +55,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_iron"]
+					"ContextTags": ["resource_egg_item", "color_iron", "egg_item"]
 				},
 				"{{ModId}}.LargeIronEgg": {
 					"Name": "{{ModId}}.LargeIronEgg",
@@ -70,7 +70,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_iron"]
+					"ContextTags": ["large_resource_egg_item", "color_iron", "egg_item"]
 				},
 				"{{ModId}}.IronEggFusionChamber": {
 					"Name": "{{ModId}}.IronEggFusionChamber",

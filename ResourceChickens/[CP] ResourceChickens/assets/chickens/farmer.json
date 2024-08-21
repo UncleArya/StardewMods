@@ -55,7 +55,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item"]
+					"ContextTags": ["resource_egg_item", "egg_item"]
 				},
 				"{{ModId}}.LargeFarmerEgg": {
 					"Name": "{{ModId}}.LargeFarmerEgg",
@@ -70,7 +70,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item"]
+					"ContextTags": ["large_resource_egg_item", "egg_item"]
 				}
 			}
 		},

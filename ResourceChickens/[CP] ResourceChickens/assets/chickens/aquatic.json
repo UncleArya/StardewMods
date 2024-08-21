@@ -55,7 +55,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_blue"]
+					"ContextTags": ["resource_egg_item", "color_blue", "egg_item"]
 				},
 				"{{ModId}}.LargeAquaticEgg": {
 					"Name": "{{ModId}}.LargeAquaticEgg",
@@ -70,7 +70,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_blue"]
+					"ContextTags": ["large_resource_egg_item", "color_blue", "egg_item"]
 				}
 			}
 		},

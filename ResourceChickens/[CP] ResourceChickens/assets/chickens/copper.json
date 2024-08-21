@@ -59,7 +59,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_copper"]
+					"ContextTags": ["resource_egg_item", "color_copper", "egg_item"]
 				},
 				"{{ModId}}.LargeCopperEgg": {
 					"Name": "{{ModId}}.LargeCopperEgg",
@@ -74,7 +74,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_copper"]
+					"ContextTags": ["large_resource_egg_item", "color_copper", "egg_item"]
 				},
 				"{{ModId}}.CopperEggFusionChamber": {
 					"Name": "{{ModId}}.CopperEggFusionChamber",

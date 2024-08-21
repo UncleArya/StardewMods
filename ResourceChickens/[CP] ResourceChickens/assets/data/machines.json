@@ -1581,7 +1581,17 @@
                     ],
                     "MinutesUntilReady": "{{MayoMinutesUntilReady}}"
                 }
-            }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "{{ModId}}.ResourceEggs",
+                    "ToPosition": "Top"
+                },
+                {
+                    "ID": "{{ModId}}.LargeResourceEggs",
+                    "ToPosition": "Top"
+                }
+            ]
         }
     ]
 }

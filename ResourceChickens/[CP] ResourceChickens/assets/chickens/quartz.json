@@ -59,7 +59,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_white"]
+					"ContextTags": ["resource_egg_item", "color_white", "egg_item"]
 				},
 				"{{ModId}}.LargeQuartzEgg": {
 					"Name": "{{ModId}}.LargeQuartzEgg",
@@ -74,7 +74,7 @@
 					"ExcludeFromFishingCollection": true,
 					"ExcludeFromShippingCollection": true,
 					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_white"]
+					"ContextTags": ["large_resource_egg_item", "color_white", "egg_item"]
 				},
 				"{{ModId}}.QuartzEggFusionChamber": {
 					"Name": "{{ModId}}.QuartzEggFusionChamber",
