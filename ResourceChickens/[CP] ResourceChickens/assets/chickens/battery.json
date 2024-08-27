@@ -1,113 +1,133 @@
 {
-	"Changes": [
-		// Battery Chicken
-		{
-			"Action": "EditData",
-			"Target": "Data/FarmAnimals",
-			"Entries": {
-				"{{ModId}}.BatteryChicken": {
-					"DisplayName": "{{i18n: Chicken.BatteryChicken.Name}}",
-					"House": "Coop",
-					"EggItemIds": ["{{ModId}}.BatteryEgg", "{{ModId}}.LargeBatteryEgg"],
-					"IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
-					"BirthText": "{{i18n: Chicken.BatteryChicken.BirthText}}",
-					"DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
-					"ProduceItemIds": [
-						{
-							"ItemId": "{{ModId}}.BatteryEgg"
-						}
-					],
-					"DeluxeProduceItemIds": [
-						{
-							"ItemId": "{{ModId}}.LargeBatteryEgg"
-						}
-					],
-					"DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 3}}, 0, up }}",
-					"DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
-					"Sound": "cluck",
-					"Texture": "{{ModId}}/BatteryChicken",
-					"BabyTexture": "{{ModId}}/BatteryChickenBaby",
-					"SleepFrame": 17,
-					"UseDoubleUniqueAnimationFrames": true,
-					"ProfessionForHappinessBoost": 2,
-					"ProfessionForQualityBoost": 0,
-					"CanSwim": "{{ChickensCanSwim}}",
-					"HappinessDrain": 20,
-					"SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.3}}, 0, up }}"
-				}
-			}
-		},
-		// Chicken Eggs
-		{
-			"Action": "EditData",
-			"Target": "Data/Objects",
-			"Entries": {
-				"{{ModId}}.BatteryEgg": {
-					"Name": "{{ModId}}.BatteryEgg",
-					"DisplayName": "{{i18n: Egg.Battery.Name}}",
-					"Description": "{{i18n: ResourceEgg.Description}}",
-					"Type": "Basic",
-					"Category": -5,
-					"Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.3}}, 0, up }}",
-					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 48,
-					"Edibility": 10,
-					"ExcludeFromFishingCollection": true,
-					"ExcludeFromShippingCollection": true,
-					"ExcludeFromRandomSale": true,
-					"ContextTags": ["resource_egg_item", "color_yellow", "egg_item"]
-				},
-				"{{ModId}}.LargeBatteryEgg": {
-					"Name": "{{ModId}}.LargeBatteryEgg",
-					"DisplayName": "{{i18n: LargeEgg.Battery.Name}}",
-					"Description": "{{i18n: ResourceEgg.Description}}",
-					"Type": "Basic",
-					"Category": -5,
-					"Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.3) * 1.9}}, 0, up }}",
-					"Texture": "{{ModId}}/Eggs",
-					"SpriteIndex": 49,
-					"Edibility": 15,
-					"ExcludeFromFishingCollection": true,
-					"ExcludeFromShippingCollection": true,
-					"ExcludeFromRandomSale": true,
-					"ContextTags": ["large_resource_egg_item", "color_yellow", "egg_item"]
-				}
-			}
-		},
-		// Add Clint Drop Box for Special Orders
-		{
-			"Action": "EditMap",
-			"Target": "Maps/Town",
-			"MapTiles": [
-				{
-					"Position": { "X": 102, "Y": 80 },
-					"Layer": "Buildings",
-					"SetProperties": {
-						"Action": "DropBox ClintBox"
-					}
-				}
-			]
-		},
-		// Adds Farmer Egg for sale with Marnie
-		{
-			"Action": "EditData",
-			"Target": "Data/Shops",
-			"TargetField": ["Blacksmith", "Items"],
-			"Entries": {
-				"{{ModId}}.BatteryEggClint": {
-					"Id": "{{ModId}}.BatteryEggClint",
-					"ItemId": "{{ModId}}.BatteryEgg",
-					"Condition": "ANY \"PLAYER_HAS_MAIL Current {{ModId}}.Mail.BatteryEgg.QuestComplete Received\" \"PLAYER_MINING_LEVEL Current 10\"",
-					"Price": 5000,
-					"AvailableStock": 1
-				}
-			},
-			"MoveEntries": [
-				{
-					"Id": "{{ModId}}.BatteryEggClint",
-					"ToPosition": "Top"
-				}
-			]
-		}
-	]
+    "Changes": [
+        // Battery Chicken
+        {
+            "Action": "EditData",
+            "Target": "Data/FarmAnimals",
+            "Entries": {
+                "{{ModId}}.BatteryChicken": {
+                    "DisplayName": "{{i18n: Chicken.BatteryChicken.Name}}",
+                    "House": "Coop",
+                    "EggItemIds": ["{{ModId}}.BatteryEgg", "{{ModId}}.LargeBatteryEgg"],
+                    "IncubationTime": "{{Round: {{query: {{ResourceChickenIncubationTimeChoice}} * 1}}, 0, down }}",
+                    "BirthText": "{{i18n: Chicken.BatteryChicken.BirthText}}",
+                    "DaysToMature": "{{Round: {{query: {{ResourceChickenDaysToMatureChoice}} * 3}}, 0, down }}",
+                    "ProduceItemIds": [
+                        {
+                            "ItemId": "{{ModId}}.BatteryEgg"
+                        }
+                    ],
+                    "DeluxeProduceItemIds": [
+                        {
+                            "ItemId": "{{ModId}}.LargeBatteryEgg"
+                        }
+                    ],
+                    "DaysToProduce": "{{Round: {{query: {{ResourceChickenDaysToProduceChoice}} * 3}}, 0, up }}",
+                    "DeluxeProduceMinimumFriendship": "{{query: {{HeartsRequiredForLargeEggs}} * 200}}",
+                    "Sound": "cluck",
+                    "Texture": "{{ModId}}/BatteryChicken",
+                    "BabyTexture": "{{ModId}}/BatteryChickenBaby",
+                    "SleepFrame": 17,
+                    "UseDoubleUniqueAnimationFrames": true,
+                    "ProfessionForHappinessBoost": 2,
+                    "ProfessionForQualityBoost": 0,
+                    "CanSwim": "{{ChickensCanSwim}}",
+                    "HappinessDrain": 20,
+                    "SellPrice": "{{Round: {{query: {{ResourceChickenPriceChoice}} * 1.3}}, 0, up }}"
+                }
+            }
+        },
+        // Chicken Eggs
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}.BatteryEgg": {
+                    "Name": "{{ModId}}.BatteryEgg",
+                    "DisplayName": "{{i18n: Egg.Battery.Name}}",
+                    "Description": "{{i18n: ResourceEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Round: {{query: {{ResourceEggSellPriceChoice}} * 1.3}}, 0, up }}",
+                    "Texture": "{{ModId}}/Eggs",
+                    "SpriteIndex": 48,
+                    "Edibility": 10,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": ["resource_egg_item", "color_yellow", "egg_item"]
+                },
+                "{{ModId}}.LargeBatteryEgg": {
+                    "Name": "{{ModId}}.LargeBatteryEgg",
+                    "DisplayName": "{{i18n: LargeEgg.Battery.Name}}",
+                    "Description": "{{i18n: ResourceEgg.Description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": "{{Round: {{query: ({{ResourceEggSellPriceChoice}} * 1.3) * 1.9}}, 0, up }}",
+                    "Texture": "{{ModId}}/Eggs",
+                    "SpriteIndex": 49,
+                    "Edibility": 15,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": ["large_resource_egg_item", "color_yellow", "egg_item"]
+                }
+            }
+        },
+        // Add Clint Drop Box for Special Orders
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "MapTiles": [
+                {
+                    "Position": { "X": 102, "Y": 80 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "DropBox ClintBox"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        // Add Clint Drop Box for Special Orders - SVE Compat
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "MapTiles": [
+                {
+                    "Position": { "X": 99, "Y": 80 },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "DropBox ClintBox"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        // Adds Farmer Egg for sale with Marnie
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": ["Blacksmith", "Items"],
+            "Entries": {
+                "{{ModId}}.BatteryEggClint": {
+                    "Id": "{{ModId}}.BatteryEggClint",
+                    "ItemId": "{{ModId}}.BatteryEgg",
+                    "Condition": "ANY \"PLAYER_HAS_MAIL Current {{ModId}}.Mail.BatteryEgg.QuestComplete Received\" \"PLAYER_MINING_LEVEL Current 10\"",
+                    "Price": 5000,
+                    "AvailableStock": 1
+                }
+            },
+            "MoveEntries": [
+                {
+                    "Id": "{{ModId}}.BatteryEggClint",
+                    "ToPosition": "Top"
+                }
+            ]
+        }
+    ]
 }

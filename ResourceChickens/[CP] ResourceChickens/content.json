@@ -238,6 +238,21 @@
             "When": {
                 "HasMod |contains=Rafseazz.RSVCP": true
             }
+        },
+        // Clint Dropbox Location
+        {
+            "Name": "ClintDropboxLocation",
+            "Value": "102 80",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        {
+            "Name": "ClintDropboxLocation",
+            "Value": "99 80",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
         }
     ],
     // Changes

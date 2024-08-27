@@ -1,144 +1,144 @@
 {
-	"Changes": [
-		{
-			"Action": "EditData",
-			"Target": "Data/SpecialOrders",
-			"Entries": {
-				// Artifact Egg Quest
-				"{{ModId}}.FirstArtifactEgg": {
-					"Name": "[{{ModId}}.FirstArtifactEgg.Name]",
-					"Requester": "Gunther",
-					"Duration": "Month",
-					"Repeatable": "True",
-					"RequiredTags": "mail_{{ModId}}.Mail.ArtifactEgg.QuestStart",
-					"OrderType": "ResourceChickens",
-					"SpecialRule": "",
-					"Text": "[{{ModId}}.FirstArtifactEgg.Text]",
-					"ItemToRemoveOnEnd": null,
-					"MailToRemoveOnEnd": null,
-					"RandomizedElements": null,
-					"Objectives": [
-						{
-							"Type": "Gift",
-							"Text": "[{{ModId}}.FirstArtifactEgg.Objective1.Text]",
-							"RequiredCount": "1",
-							"TargetName": "Linus",
-							"Data": {
-								"AcceptedContextTags": "item_unclearya.resourcechickens.geodeegg/item_unclearya.resourcechickens.largegeodeegg"
-							}
-						},
-						{
-							"Type": "Gift",
-							"Text": "[{{ModId}}.FirstArtifactEgg.Objective2.Text]",
-							"RequiredCount": "1",
-							"TargetName": "Lewis",
-							"Data": {
-								"AcceptedContextTags": "item_cactus_fruit"
-							}
-						},
-						{
-							"Type": "Gift",
-							"Text": "[{{ModId}}.FirstArtifactEgg.Objective3.Text]",
-							"RequiredCount": "1",
-							"TargetName": "Sandy",
-							"Data": {
-								"AcceptedContextTags": "flower_item"
-							}
-						},
-						{
-							"Type": "Gift",
-							"Text": "[{{ModId}}.FirstArtifactEgg.Objective4.Text]",
-							"RequiredCount": "1",
-							"TargetName": "Krobus",
-							"Data": {
-								"AcceptedContextTags": "item_diamond"
-							}
-						},
-						{
-							"Type": "Gift",
-							"Text": "[{{ModId}}.FirstArtifactEgg.Objective5.Text]",
-							"RequiredCount": "1",
-							"TargetName": "Dwarf",
-							"Data": {
-								"AcceptedContextTags": "item_emerald"
-							}
-						}
-					],
-					"Rewards": [
-						{
-							"Type": "Mail",
-							"Data": {
-								"MailReceived": "{{ModId}}.Mail.ArtifactEgg.QuestComplete",
-								"NoLetter": "false"
-							}
-						}
-					]
-				},
-				// Battery Egg Quest - 50 coal, 10 gold, 2 iridium
-				"{{ModId}}.FirstBatteryEgg": {
-					"Name": "[{{ModId}}.FirstBatteryEgg.Name]",
-					"Requester": "Clint",
-					"Duration": "TwoWeeks",
-					"Repeatable": "False",
-					"RequiredTags": "",
-					"OrderType": "",
-					"SpecialRule": "",
-					"Text": "[{{ModId}}.FirstBatteryEgg.Text]",
-					"ItemToRemoveOnEnd": null,
-					"MailToRemoveOnEnd": null,
-					"RandomizedElements": null,
-					"Objectives": [
-						{
-							"Type": "Donate",
-							"Text": "[{{ModId}}.FirstBatteryEgg.Objective1.Text]",
-							"RequiredCount": "50",
-							"Data": {
-								"DropBox": "ClintBox",
-								"DropBoxGameLocation": "Town",
-								"DropBoxIndicatorLocation": "102 80",
-								"AcceptedContextTags": "item_coal"
-							}
-						},
-						{
-							"Type": "Donate",
-							"Text": "[{{ModId}}.FirstBatteryEgg.Objective2.Text]",
-							"RequiredCount": "10",
-							"Data": {
-								"DropBox": "ClintBox",
-								"DropBoxGameLocation": "Town",
-								"DropBoxIndicatorLocation": "102 80",
-								"AcceptedContextTags": "item_gold_bar"
-							}
-						},
-						{
-							"Type": "Donate",
-							"Text": "[{{ModId}}.FirstBatteryEgg.Objective3.Text]",
-							"RequiredCount": "2",
-							"Data": {
-								"DropBox": "ClintBox",
-								"DropBoxGameLocation": "Town",
-								"DropBoxIndicatorLocation": "102 80",
-								"AcceptedContextTags": "item_iridium_bar"
-							}
-						}
-					],
-					"Rewards": [
-						{
-							"Type": "Mail",
-							"Data": {
-								"MailReceived": "{{ModId}}.Mail.BatteryEgg.QuestComplete",
-								"NoLetter": "false"
-							}
-						},
-						{
-							"Type": "Money",
-							"Data": {
-								"Amount": "2000"
-							}
-						}
-					]
-				}
-			}
-		}
-	]
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                // Artifact Egg Quest
+                "{{ModId}}.FirstArtifactEgg": {
+                    "Name": "[{{ModId}}.FirstArtifactEgg.Name]",
+                    "Requester": "Gunther",
+                    "Duration": "Month",
+                    "Repeatable": "True",
+                    "RequiredTags": "mail_{{ModId}}.Mail.ArtifactEgg.QuestStart",
+                    "OrderType": "ResourceChickens",
+                    "SpecialRule": "",
+                    "Text": "[{{ModId}}.FirstArtifactEgg.Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Gift",
+                            "Text": "[{{ModId}}.FirstArtifactEgg.Objective1.Text]",
+                            "RequiredCount": "1",
+                            "TargetName": "Linus",
+                            "Data": {
+                                "AcceptedContextTags": "item_unclearya.resourcechickens.geodeegg/item_unclearya.resourcechickens.largegeodeegg"
+                            }
+                        },
+                        {
+                            "Type": "Gift",
+                            "Text": "[{{ModId}}.FirstArtifactEgg.Objective2.Text]",
+                            "RequiredCount": "1",
+                            "TargetName": "Lewis",
+                            "Data": {
+                                "AcceptedContextTags": "item_cactus_fruit"
+                            }
+                        },
+                        {
+                            "Type": "Gift",
+                            "Text": "[{{ModId}}.FirstArtifactEgg.Objective3.Text]",
+                            "RequiredCount": "1",
+                            "TargetName": "Sandy",
+                            "Data": {
+                                "AcceptedContextTags": "flower_item"
+                            }
+                        },
+                        {
+                            "Type": "Gift",
+                            "Text": "[{{ModId}}.FirstArtifactEgg.Objective4.Text]",
+                            "RequiredCount": "1",
+                            "TargetName": "Krobus",
+                            "Data": {
+                                "AcceptedContextTags": "item_diamond"
+                            }
+                        },
+                        {
+                            "Type": "Gift",
+                            "Text": "[{{ModId}}.FirstArtifactEgg.Objective5.Text]",
+                            "RequiredCount": "1",
+                            "TargetName": "Dwarf",
+                            "Data": {
+                                "AcceptedContextTags": "item_emerald"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "{{ModId}}.Mail.ArtifactEgg.QuestComplete",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                // Battery Egg Quest - 50 coal, 10 gold, 2 iridium
+                "{{ModId}}.FirstBatteryEgg": {
+                    "Name": "[{{ModId}}.FirstBatteryEgg.Name]",
+                    "Requester": "Clint",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "False",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[{{ModId}}.FirstBatteryEgg.Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "[{{ModId}}.FirstBatteryEgg.Objective1.Text]",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "DropBox": "ClintBox",
+                                "DropBoxGameLocation": "Town",
+                                "DropBoxIndicatorLocation": "{{ClintDropboxLocation}}",
+                                "AcceptedContextTags": "item_coal"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[{{ModId}}.FirstBatteryEgg.Objective2.Text]",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "DropBox": "ClintBox",
+                                "DropBoxGameLocation": "Town",
+                                "DropBoxIndicatorLocation": "{{ClintDropboxLocation}}",
+                                "AcceptedContextTags": "item_gold_bar"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[{{ModId}}.FirstBatteryEgg.Objective3.Text]",
+                            "RequiredCount": "2",
+                            "Data": {
+                                "DropBox": "ClintBox",
+                                "DropBoxGameLocation": "Town",
+                                "DropBoxIndicatorLocation": "{{ClintDropboxLocation}}",
+                                "AcceptedContextTags": "item_iridium_bar"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "{{ModId}}.Mail.BatteryEgg.QuestComplete",
+                                "NoLetter": "false"
+                            }
+                        },
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]
 }
